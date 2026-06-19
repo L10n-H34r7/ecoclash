@@ -70,4 +70,4 @@
 
 ---
 
-🌱 [Sommaire](../Home.md) · [Artisanat](../artisanat.md) · [Synergies artisanat](../artisanat-synergies.md)
+🌱 [Sommaire](../Home.md) · [Artisanat](../artisanat.md) ·
