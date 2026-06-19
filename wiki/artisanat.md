@@ -1,26 +1,18 @@
 # 🔨 Artisanat, bricolage, « tout faire soi-même »
 
 ## 📂 Documents
-
-- **Artisanat, bricolage, tout faire soi-même** :
-- **Vannerie** → [@A — Comment tresser un panier en papier journal](blog/vannerie.md) · [Docs](http://www.mediafire.com/?c4o2bxfd3pnep)
 - **Meubles, objets, divers, outils** → @A · #D
 - **Vie sauvage, autosuffisance, free living, bushcraft** → (#D)
 
 ---
 
-## 📰 Articles
+## 📰 Articles divers
 
-- **[Comment tresser un panier avec du papier journal, vannerie de papier, récup](blog/vannerie.md)** — *« Rien ne se perd, rien ne se crée, tout se transforme… »* Apprendre la vannerie, le tressage du papier, de l'osier… Documents, liens, photos et vidéo.
 - **[Les perles des Archives / Vol1](blog/perles-archives.md)** — Quelques livres rares et intéressants (For English speakers).
-- **[Faites tout vous-même / Savoir revivre / Revivre à la campagne](blog/faites-vous-meme.md)**
 
 ---
 
 # 🔗 Liens Artisanat & Bricolage Low-Tech
-
-> 🆕 **Mise à jour avril 2026**
->
 > Fabrication d'outils, meubles, vannerie, couture, bushcraft, survival et DIY open-source. Techniques manuelles, réparables et autonomes.
 
 ---
@@ -44,7 +36,13 @@
 ---
 
 ## 🧺 Vannerie, Tressage & Objets en Matériaux Naturels
+- **[Comment tresser un panier avec du papier journal, vannerie de papier, récup](blog/vannerie.md)** — *« Rien ne se perd, rien ne se crée, tout se transforme… »* Apprendre la vannerie, le tressage du papier, de l'osier… Documents, liens, photos et vidéo.
+- 
+### 📂 Documents
+- **Vannerie** → [Docs](http://www.mediafire.com/?c4o2bxfd3pnep)
 
+
+#### 🔗 Liens
 - [**Vannerie.com**](https://www.vannerie.com/) — Techniques de vannerie traditionnelle, tutoriels et ressources (français).
 - [**Basketry and Beyond**](https://www.basketryandbeyond.org/) — Ressources internationales sur la vannerie et le tressage (anglais, avec guides pratiques).
 - [**r/Bushcraft (Reddit)**](https://www.reddit.com/r/Bushcraft/) — Section très active sur vannerie primitive, cordage et objets en matériaux naturels.
