@@ -4,43 +4,25 @@
 
 ---
 
-## ✊ Pourquoi ce wiki ?
+## ✊ Pourquoi ce wiki ? Le but de cet **infokiosque / médiathèque** est de réunir et partager des infos pratiques. Pour :
 
-Le but de cet **infokiosque / médiathèque** est de réunir et partager des infos pratiques. Pour :
-
-- 🌱 Cultiver, jardiner
-- 🏠 Construire, autoconstruire, fabriquer
-- 🔨 Fabriquer divers outils et objets, bricoler
-- 🍞 Manger, boire, cuisiner
-- 💊 Se soigner (plantes médicinales)
-- ⚡ Produire de l'énergie
-- 📚 Transmettre des savoirs populaires oubliés…
-
-Certains documents sont des créations numériques, d'autres sont disponibles en version papier (livre) — vous pouvez vous les procurer pour soutenir les auteurs et leurs projets (liens dans l'article associé ou via moteur de recherche).
-
-> **Merci de participer** à l'infokiosque en envoyant vos liens, infos et documents au moyen des commentaires, du formulaire de contact et de la dropbox !
-
-> Imprimer, créer, diffuser, partager vos infokiosques — **que la culture libre circule !**
+- 🏠 Construire, autoconstruire, fabriquer - 🔨 Fabriquer divers outils et objets, bricoler
+- 🌱 Cultiver, jardiner - 🍞 Manger, boire, cuisiner - 💊 Se soigner (plantes médicinales)
+- ⚡ Produire de l'énergie - 📚 Transmettre des savoirs populaires oubliés…
 
 ## 📚 Sections du wiki
 
-### 📖 Médiathèque
-
-L'infokiosque principal : dropbox collective, base de liens, brochures, magazines, catalogues.
+### 📖 Médiathèque / Infokiosque 
 
 ➡️ [Médiathèque](mediatheque.md) · [Liste de médiathèques & ressources](mediatheque-liste.md)
 
 ### 🏠 Habitat, autoconstruction
 
-Yourte, tipi, dôme géodésique, habitat léger, terre/paille, autoconstruction bioclimatique, low-tech…
-
-➡️ [Habitat, autoconstruction](habitat-autoconstruction.md)
+➡️ [Habitat, autoconstruction](habitat-autoconstruction.md) Yourte, tipi, dôme géodésique, habitat léger, terre/paille, autoconstruction bioclimatique, low-tech…
 
 ### 🌱 Cultiver, jardiner
 
-Permaculture, BRF, compost, purins, agroforesterie, apiculture, spiruline, champignons…
-
-➡️ [Cultiver, jardiner](cultiver-jardiner.md)
+➡️ [Cultiver, jardiner](cultiver-jardiner.md) Permaculture, BRF, compost, purins, agroforesterie, apiculture, spiruline, champignons…
 
 ### 🍞 Production, transformation
 
@@ -66,6 +48,26 @@ Actus, écolieux, partage/troc/don, mobilité/voyage, agendas…
 
 ➡️ [Synergies / Liens](synergies.md)
 
+> ## La synergie des synapses…
+>
+> *"La synergie est un effet positif de complémentarité dans une organisation. La synergie est communément de nos jours un phénomène par lequel plusieurs facteurs ou influences agissant ensemble créent un effet plus grand que la somme des effets attendus s'ils avaient opéré indépendamment, ou créent un effet que chacun d'entre eux n'aurait pas créé isolément."* — [Wik](http://fr.wikipedia.org/wiki/Synergie)
+>
+> *"Les synapses (du grec syn-ensemble ; haptein-toucher, saisir ; c'est-à-dire connexion) désigne une zone de contact fonctionnelle qui s'établit entre deux neurones, ou entre un neurone et une autre cellule (cellules musculaires, récepteurs sensoriels…). Elle assure la conversion d'un potentiel d'action"* — [Wik](http://fr.wikipedia.org/wiki/Synapse)
+
+---
+
+## 📑 Sous-sections
+
+- 📰 [Actu](synergies-actu.md) — News d'un monde… (flux Squat!net, UtopLib…)
+- 🌍 [Village global](synergies-village-global.md) — Lieux de vie, collectifs, fermes, squats, écolieux
+- 🎁 [Partage, échange, troc, don](synergies-partage.md) — Hébergement gratuit, volontariat, SEL, JEU, récup…
+- 🚲 [Mouvement, mobilité, voyage](synergies-mouvement.md) — Vélo, covoiturage, autostop, voyage…
+  - 🚶 [Nomades](synergies-mouvement-nomades.md) — Caravanes, marche, roulotte, wwoof…
+- 🕰️ [La porte du temps](synergies-porte-du-temps.md) — Agendas suisse, permaculture, chantiers, stages, rencontres…
+
+🌱 [Sommaire](Home.md) · [Médiathèque](mediatheque.md) · [Contact](contact.md)
+
+
 ### 📰 Blog
 
 Articles, tutoriels, reportages, présentations de lieux de vie, perles d'archives…
@@ -74,16 +76,4 @@ Articles, tutoriels, reportages, présentations de lieux de vie, perles d'archiv
 
 ---
 
-## 📌 À toi qui télécharges…
-
-La création de cette médiathèque libre à toustes est le fruit de longues heures de recherche, de mise en page, d'édition, d'upload, etc.
-
-> **Merci de soutenir l'initiative** par un don d'un montant libre, ou en contribuant au wiki (PR / issues bienvenues).
-
-## ✊ Trop petit ?!
-
-> *« Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique… et vous verrez lequel des deux empêche l'autre de dormir ! »* — Dalaï Lama
-
----
-
-🌱 [Voir le sommaire](_Sidebar.md) · [Contact](contact.md) · Source originale : [ecoclash.jimdofree.com](https://ecoclash.jimdofree.com/)
+🌱 Source originale : [ecoclash.jimdofree.com](https://ecoclash.jimdofree.com/)
