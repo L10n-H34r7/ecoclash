@@ -33,6 +33,25 @@ Techniques low-tech : pain au levain, fermentation, lacto-fermentation, séchage
 
 ---
 
+## 🍺 Bière, Vin, Cidre & Fabrication d'Alcool Maison
+Produire de l'alcool : comment faire de la bière, du vin, du cidre, du vinaigre, récolter et malter l'orge, distiller, faire des liqueurs…
+
+## 📂 Documents
+
+- **Faire de la bière, vin, cidre, vinaigre, récolter, malter l'orge et faire la bière…** (extraits divers) — 8p / 3 Mo · [(#)](http://www.mediafire.com/download/ay6ecmlkkj3wj2a/faire.de.la.biere.vin.cidre.vinaigre.-.ext.div.CTCL.8p.pdf)
+- **Traité théorique et pratique de la fabrication de la bière** — GB, 1848, 421p · Lien [(#)](http://www.mediafire.com/download/8g3y3l154548wx2/traite.theo.et+prat.fabrication.de.la.bi%C3%A8re.-.GB.-.1848.-.421p.pdf) — *Une bible qui date de 1848… !*
+- **Faites votre bière** — J.A. Chandon, 25p · [(#)](http://www.mediafire.com/download/icaal6dtvjf9uba/Faites.votre.biere.-.J.A.Chandon.-.25p.pdf)
+- **Dossier alcool** — Liqueur, distillation, gin, vodka, bière, vin… · [(#)](https://www.mediafire.com/folder/thbt6k3eei96w/Alcool%2C_vin%2C_bi%C3%A8re%2C_vinaigre)
+
+### 🔗 Liens
+
+- [**Home Distiller Forum**](https://homedistiller.org/forum/) — Forum spécialisé en fermentation et distillation amateur (anglais, très technique et actif).
+- [**r/Homebrewing (Reddit)**](https://www.reddit.com/r/Homebrewing/) — Communauté énorme pour brassage de bière, vin, cidre et hydromel.
+- [**r/mead (Reddit)**](https://www.reddit.com/r/mead/) — Dédié à la fabrication d'hydromel et boissons fermentées.
+- [Faire de la bière (Arfys)](http://www.arfy.fr/dotclear/index.php?post%2F2012%2F06%2F03%2FUn-Mindstorms%2C-de-l-eau%2C-un-peu-de-c%C3%A9r%C3%A9ales-et-hop-...) — Via Arfys.
+
+---
+
 ## 🥬 Lacto-Fermentation & Conservation sans Énergie
 
 ### 🔗 Liens
@@ -41,18 +60,6 @@ Techniques low-tech : pain au levain, fermentation, lacto-fermentation, séchage
 - [**Low Tech Journal – Conserver sans frigo**](https://www.lowtechjournal.fr/) — Techniques low-tech de séchage solaire, salaison, fumage et lacto-fermentation.
 - [**Forum Permaculture France**](https://forum.permaculture.fr/) — Section très active sur lacto-fermentation et conservation des récoltes.
 - [**r/fermentation (Reddit)**](https://www.reddit.com/r/fermentation/) — Grand forum international sur tous types de fermentation (lacto, alcoolique, etc.).
-
----
-
-## 🍺 Bière, Vin, Cidre & Fabrication d'Alcool Maison
-
-- Article — **[Comment faire de l'alcool, bière, cidre, vin…](blog/alcool.md)** — Produire de l'alcool : comment faire de la bière, du vin, du cidre, du vinaigre, récolter et malter l'orge, distiller, faire des liqueurs…
-
-### 🔗 Liens
-
-- [**Home Distiller Forum**](https://homedistiller.org/forum/) — Forum spécialisé en fermentation et distillation amateur (anglais, très technique et actif).
-- [**r/Homebrewing (Reddit)**](https://www.reddit.com/r/Homebrewing/) — Communauté énorme pour brassage de bière, vin, cidre et hydromel.
-- [**r/mead (Reddit)**](https://www.reddit.com/r/mead/) — Dédié à la fabrication d'hydromel et boissons fermentées.
 
 ---
 
