@@ -1,6 +1,4 @@
-# 🍞 Production, transformation
-
-> **Légende :** `(#D)` Les docs · `@A` Article associé
+# 🍞 Récolte, Production, Transformation & Conservation des Produits
 
 ---
 
@@ -9,21 +7,12 @@
 - **Produire, transformer** :
   - **Plantes médicinales, sauvages, utiles** → [Docs](http://www.mediafire.com/?plxjlwb4t4b4y)
   - **Manger, boire, recettes, cuisine…** → [@A / (#D)]
+ 
+> **Légende :** `(#D)` Les docs · `@A` Article associé
 
 ---
 
-## 📰 Articles
-
-### 🟡 2014
-
-- 25/08 — **[Faites tout vous-même / Savoir revivre / Revivre à la campagne](blog/faites-vous-meme.md)** — Trois livres mythiques pour l'autonomie (encyclopédie 1975, Massacrier, Seymour).
-- 25/08 — **[Recettes végétalienne, Guide végétarien et végétalien, Alimentation vivante](blog/recettes-vegan.md)** — Végétarien, végétalien, crudivore, alimentation vivante… Pourquoi, comment, la nutrition, philosophie, les recettes…
-- 11/08 — **[Comment faire de l'alcool, bière, cidre, vin…](blog/alcool.md)** — Produire de l'alcool : comment faire de la bière, du vin, du cidre, du vinaigre, récolter et malter l'orge, distiller, faire des liqueurs…
-- 11/08 — **[Pratique - Comment faire du pain](blog/pain.md)** — Faire un levain, cuire le pain, les différents types de pain, la farine, les céréales… Tout pour autoproduire son pain !
-
----
-
-# 🔗 Liens Récolte, Transformation & Conservation des Produits
+# 🔗 Liens 
 
 > 🆕 **Mise à jour avril 2026**
 >
@@ -33,6 +22,10 @@
 
 ## 🥖 Pain, Levain & Boulangerie Autonome
 
+- 11/08 — **[Pratique - Comment faire du pain](blog/pain.md)** — Faire un levain, cuire le pain, les différents types de pain, la farine, les céréales… Tout pour autoproduire son pain !
+
+### 🔗 Liens
+
 - [**Gerbeaud.com**](https://www.gerbeaud.com/) — Recettes de pain au levain, techniques de pétrissage et conservation du pain maison.
 - [**Révolution Fermentation**](https://revolutionfermentation.com/) — Guides détaillés sur le levain naturel, pain sans gluten et fermentation du pain (français, très clair).
 - [**r/Breadit (Reddit)**](https://www.reddit.com/r/Breadit/) — Communauté internationale très active pour pain, levain et troubleshooting (anglais).
@@ -40,6 +33,9 @@
 ---
 
 ## 🥬 Lacto-Fermentation & Conservation sans Énergie
+
+
+### 🔗 Liens
 
 - [**Révolution Fermentation**](https://revolutionfermentation.com/) — Recettes détaillées de choucroute, kimchi, pickles, légumes fermentés + guides pas-à-pas (excellent site français).
 - [**Low Tech Journal – Conserver sans frigo**](https://www.lowtechjournal.fr/) — Techniques low-tech de séchage solaire, salaison, fumage et lacto-fermentation.
@@ -50,6 +46,10 @@
 
 ## 🍺 Bière, Vin, Cidre & Fabrication d'Alcool Maison
 
+- 11/08 — **[Comment faire de l'alcool, bière, cidre, vin…](blog/alcool.md)** — Produire de l'alcool : comment faire de la bière, du vin, du cidre, du vinaigre, récolter et malter l'orge, distiller, faire des liqueurs…
+
+### 🔗 Liens
+
 - [**Home Distiller Forum**](https://homedistiller.org/forum/) — Forum spécialisé en fermentation et distillation amateur (anglais, très technique et actif).
 - [**r/Homebrewing (Reddit)**](https://www.reddit.com/r/Homebrewing/) — Communauté énorme pour brassage de bière, vin, cidre et hydromel.
 - [**r/mead (Reddit)**](https://www.reddit.com/r/mead/) — Dédié à la fabrication d'hydromel et boissons fermentées.
@@ -58,12 +58,19 @@
 
 ## 🧀 Fromage, Yaourt & Produits Laitiers Maison
 
+### 🔗 Liens
+
 - [**Révolution Fermentation**](https://revolutionfermentation.com/) — Recettes de yaourts, fromages frais et affinés maison.
 - [**Low Tech Lab – Recettes fermentées (PDF gratuit)**](https://www.lowtechlab.org/) — Petit concentré de recettes fermentées à télécharger (yaourts, fromages végétaux, etc.).
 
 ---
 
 ## 📚 Ressources Générales & Guides Téléchargeables
+
+- 25/08 — **[Faites tout vous-même / Savoir revivre / Revivre à la campagne](blog/faites-vous-meme.md)** — Trois livres mythiques pour l'autonomie (encyclopédie 1975, Massacrier, Seymour).
+- 25/08 — **[Recettes végétalienne, Guide végétarien et végétalien, Alimentation vivante](blog/recettes-vegan.md)** — Végétarien, végétalien, crudivore, alimentation vivante… Pourquoi, comment, la nutrition, philosophie, les recettes…
+
+### 🔗 Liens
 
 - [**Low Tech Journal**](https://www.lowtechjournal.fr/) — Articles pratiques sur conservation low-tech (séchage, fumage, saumure…).
 - [**Permies.com**](https://permies.com/) — Forum international permaculture avec sections très riches sur food preservation et transformation (anglais).
