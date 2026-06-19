@@ -1,0 +1,50 @@
+# 🍞 Synergies & liens — Récolte, Transformation & Conservation des Produits
+
+> 🆕 **Mise à jour avril 2026**
+>
+> Techniques low-tech : pain au levain, fermentation, lacto-fermentation, séchage, fumage, salaison, conservation sans frigo, fabrication de bière/vin/alcool, fromages, yaourts, confitures, etc.
+
+---
+
+## 🥖 Pain, Levain & Boulangerie Autonome
+
+- [**Gerbeaud.com**](https://www.gerbeaud.com/) — Recettes de pain au levain, techniques de pétrissage et conservation du pain maison.
+- [**Révolution Fermentation**](https://revolutionfermentation.com/) — Guides détaillés sur le levain naturel, pain sans gluten et fermentation du pain (français, très clair).
+- [**r/Breadit (Reddit)**](https://www.reddit.com/r/Breadit/) — Communauté internationale très active pour pain, levain et troubleshooting (anglais).
+
+---
+
+## 🥬 Lacto-Fermentation & Conservation sans Énergie
+
+- [**Révolution Fermentation**](https://revolutionfermentation.com/) — Recettes détaillées de choucroute, kimchi, pickles, légumes fermentés + guides pas-à-pas (excellent site français).
+- [**Low Tech Journal – Conserver sans frigo**](https://www.lowtechjournal.fr/) — Techniques low-tech de séchage solaire, salaison, fumage et lacto-fermentation.
+- [**Forum Permaculture France**](https://forum.permaculture.fr/) — Section très active sur lacto-fermentation et conservation des récoltes.
+- [**r/fermentation (Reddit)**](https://www.reddit.com/r/fermentation/) — Grand forum international sur tous types de fermentation (lacto, alcoolique, etc.).
+
+---
+
+## 🍺 Bière, Vin, Cidre & Fabrication d'Alcool Maison
+
+- [**Home Distiller Forum**](https://homedistiller.org/forum/) — Forum spécialisé en fermentation et distillation amateur (anglais, très technique et actif).
+- [**r/Homebrewing (Reddit)**](https://www.reddit.com/r/Homebrewing/) — Communauté énorme pour brassage de bière, vin, cidre et hydromel.
+- [**r/mead (Reddit)**](https://www.reddit.com/r/mead/) — Dédié à la fabrication d'hydromel et boissons fermentées.
+
+---
+
+## 🧀 Fromage, Yaourt & Produits Laitiers Maison
+
+- [**Révolution Fermentation**](https://revolutionfermentation.com/) — Recettes de yaourts, fromages frais et affinés maison.
+- [**Low Tech Lab – Recettes fermentées (PDF gratuit)**](https://www.lowtechlab.org/) — Petit concentré de recettes fermentées à télécharger (yaourts, fromages végétaux, etc.).
+
+---
+
+## 📚 Ressources Générales & Guides Téléchargeables
+
+- [**Low Tech Journal**](https://www.lowtechjournal.fr/) — Articles pratiques sur conservation low-tech (séchage, fumage, saumure…).
+- [**Permies.com**](https://permies.com/) — Forum international permaculture avec sections très riches sur food preservation et transformation (anglais).
+- [**r/Canning (Reddit)**](https://www.reddit.com/r/Canning/) — Communauté dédiée à la mise en conserve, stérilisation et conservation longue durée.
+- [**r/preppers (Reddit)**](https://www.reddit.com/r/preppers/) — Discussions sur conservation alimentaire en autonomie (inclut fermentation, séchage, etc.).
+
+> **Note :** La lacto-fermentation et les techniques sans frigo (séchage solaire, salaison, fumage) sont idéales pour l'autonomie et la permaculture. Les forums et subreddits sont très vivants pour poser des questions concrètes et partager des retours d'expérience. **Attention :** la distillation d'alcool est réglementée dans de nombreux pays – renseignez-vous sur la législation locale.
+
+🌱 [Sommaire](Home.md) · [Production, transformation](production-transformation.md)

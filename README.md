@@ -1,67 +1,54 @@
-# 🌱 Ecoclash — Infokiosque & Base de Savoirs Libres (Remake Statique 2026)
+# 🌱 Ecoclash Wiki
 
-> **Partage de savoirs, Infokiosque, alternatives pratiques, autoconstruction, décroissance, permaculture, communautés autonomes, low-tech et résistance (ZAD).**
+> **Partage de savoirs, alternatives pratiques, autoconstruction, décroissance, permaculture, écovillages, communautés, écologie, anarchie, résistance, altermondialisme, freegan, squat, action directe.**
 
-Remake officiel, enrichi et modernisé de la plateforme [Ecoclash d'origine (Jimdo)](https://ecoclash.jimdofree.com/), spécialement repensé et architecturé pour un **hébergement durable, open-source et 100% statique sur GitHub Pages**.
+Ecoclash est un wiki collaboratif francophone de partage de savoirs, bâti autour de l'infokiosque / videokiosque et des alternatives concrètes : autoconstruction, permaculture, décroissance, écolieux, squat, modes de vie alternatifs, etc.
 
----
+Cette version est une réécriture en fichiers `.md` du site original [ecoclash.jimdofree.com](https://ecoclash.jimdofree.com/), restructurée pour fonctionner comme un wiki GitHub.
 
-## ⚡ 100% Pure Vanilla HTML / CSS / JS & 100% Statique
+## 📚 Contenu du wiki
 
-Conformément à la charte low-tech et de protection de la vie privée du projet, cette application a été développée en **pure Vanilla Web Technologies** :
-- **❌ Aucun framework lourd :** Pas de React, Vue, ou Angular.
-- **❌ Aucun outil de compilation :** Pas de Vite, Webpack, ou Node.js (NPM).
-- **❌ Aucun formulaire ni traçage (No user inputs) :** Suppression totale de tous les formulaires de contact simulés ou réels, des faux commentaires, des cookies et de toute collecte de données. L'infokiosque est un sanctuaire de lecture pure et de téléchargement direct.
-- **✔️ Simplicité et pérennité :** Les fichiers s'exécutent instantanément dans n'importe quel navigateur web de manière native. Il suffit d'ouvrir `index.html` !
+- **Médiathèque** — Infokiosque, bases de données, ressources PDF, dropbox collective
+- **Habitat, autoconstruction** — Yourte, tipi, dôme géodésique, terre/paille, habitats légers, urgence
+- **Cultiver, jardiner** — Permaculture, semis, compost, BRF, apiculture, spiruline, champignons
+- **Production, transformation** — Pain, bière/vin/cidre, recettes végétaliennes, alimentation vivante
+- **Artisanat** — Vannerie, bricolage low-tech, bushcraft, meubles open-source
+- **En vrac** — Affiches, sciences, revues, tracts
+- **Synergies / Liens** — Actus, écolieux, partage/troc, mobilité, agendas
+- **Blog** — Articles, tutoriels, reportages, lieux de vie
 
----
+## 🧭 Navigation
 
-## 🌟 Fonctionnalités Upgradées & Exhaustives
+👉 Voir le **[Sommaire du wiki](wiki/Home.md)** et la **[barre latérale](wiki/_Sidebar.md)**.
 
-### 1. 📚 Rapatriement Total de la Base Jimdo d'Origine (24 Articles + 20 Pages Signets)
-Nous avons aspiré et restructuré l'intégralité du sitemap d'origine :
-- **24 Guides & Savoirs :** Construction de yourtes mongoles, dômes géodésiques aplatissés, tipis cónicos, vannerie de papier journal, brassage de bière tout-grain, fabrication du pain au levain naturel en cocotte, ruches Warré et Top-Bar, culture des pleurotes et shiitake, et manuels de résistance ZAD NDDL.
-- **20 Rubriques Signets & Synergies :** Médiathèques libres (Dropbox Ecoclash, NoPanic, United Diversity), liens d'habitat alternatif, de réseaux de semences (Kokopelli), de mobilité nomade (Critical Mass, autostop, roulottes) et d'économies de don (SEL, JEU).
+## 🗂️ Structure du dépôt
 
-### 2. 📥 Liens de Téléchargement MediaFire, PDF et Archives 100% Fonctionnels
-Tous les liens morts ou pointant vers `/#` ont été remplacés par les véritables liens originaux extraits des pages Jimdo (`http://www.mediafire.com/...`, `https://archive.org/...`, Gallica BNF, etc.), accessibles en un clic directement depuis les fiches ou la vue modale.
+```
+ecoclash-wiki/
+├── README.md               ← ce fichier
+├── wiki/                   ← contenu du wiki (GitHub wiki-style)
+│   ├── Home.md
+│   ├── _Sidebar.md         ← navigation
+│   ├── _Footer.md
+│   ├── mediatheque.md
+│   ├── habitat-*.md
+│   ├── cultiver-*.md
+│   ├── production-*.md
+│   ├── artisanat-*.md
+│   ├── en-vrac.md
+│   ├── synergies*.md
+│   ├── contact.md
+│   └── blog/               ← articles par date
+└── images/                 ← images OG / featured
+```
 
-### 3. 🖼️ Véritables Images Originales
-Seules les illustrations authentiques hébergées sur `image.jimcdn.com` ont été préservées. Lorsqu'un article d'origine ne comportait aucune image, un magnifique encart typographique de repli est généré automatiquement (❌ aucune image stock aléatoire).
+## ✊ Citation
 
-### 4. 🌐 Multilingue Dynamique (Français / Anglais / Espagnol)
-Un dictionnaire interne géré par ES6 JavaScript (`app.js`) permet de traduire instantanément l'ensemble de l'interface, des titres, des résumés et des fiches d'articles.
+> *« On nous dit : Le bonheur c'est le progrès, faites un pas en avant. Et c'est le progrès… mais ce n'est jamais le bonheur. Alors si on faisait un pas de côté ! Si on essayait autre chose ! Si on faisait un pas de côté, on verrait ce qu'on ne voit jamais. »*
 
-### 5. 🌓 Switcher Mode Sombre / Mode Clair (Dark / Clear Mode)
-Design premium avec persistance des choix dans le `localStorage`.
+> *« Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique… et vous verrez lequel des deux empêche l'autre de dormir ! »* — Dalaï Lama
 
----
+## 📜 Licence / Origine
 
-## 🚀 Déploiement sur GitHub Pages (En 3 Clics)
-
-Ce projet est conçu pour être publié gratuitement et en quelques secondes sur **GitHub Pages**.
-
-1. **Créer un dépôt GitHub :**
-   Créez un nouveau repository sur GitHub et importez-y les 4 fichiers du projet :
-   - `index.html`
-   - `styles.css`
-   - `app.js`
-   - `README.md`
-
-2. **Activer GitHub Pages :**
-   - Allez dans les **Settings** (Paramètres) de votre repository.
-   - Cliquez sur la rubrique **Pages** dans le menu de gauche.
-   - Sous **Source**, sélectionnez la branche `main` (ou `master`) et le dossier `/ (root)`.
-   - Cliquez sur **Save**.
-
-3. **Consulter votre site en ligne :**
-   - Votre application sera en ligne à l'adresse : `https://<votre-nom-utilisateur>.github.io/<votre-repository>/`
-   - Déploiement 100% automatisé.
-
----
-
-## 📜 Philosophie & Licence
-
-- **Projet Original :** Conçu en 2014-2015 par les créateurs de la plateforme [Ecoclash](https://ecoclash.jimdofree.com/).
-- **Remake Statique 2026 :** Upgradé par Arena.ai Agent Mode.
-- **Licence :** Savoirs Libres pour un Monde Libre (Domaine Public / CC0). Toute rediffusion, modification ou impression sous forme de brochure papier ou fanzine est vivement encouragée.
+Site original : [ecoclash.jimdofree.com](https://ecoclash.jimdofree.com/) (Jimdo, Suisse / francophone).
+Cette réécriture est destinée à faciliter la diffusion libre et le fork collaboratif. Le contenu reste sous la responsabilité de ses auteur·ices originels ; merci de citer les sources.
