@@ -20,51 +20,35 @@ Le but de cet **infokiosque / médiathèque** est de réunir et partager des inf
 
 Certains documents sont des créations numériques, d'autres sont disponibles en version papier (livre) — vous pouvez vous les procurer pour soutenir les auteurs et leurs projets (liens dans l'article associé ou via moteur de recherche).
 
-> **Merci de participer** à l'infokiosque en envoyant vos liens, infos et documents au moyen des commentaires, du formulaire de contact et de la dropbox !
-
 > Imprimer, créer, diffuser, partager vos infokiosques — **que la culture libre circule !**
 
 ## 📚 Sections du wiki
 
-### 📖 Médiathèque
-
-L'infokiosque principal : dropbox collective, base de liens, brochures, magazines, catalogues.
+### 📖 Médiathèque : Infokiosque : 
 
 ➡️ [Médiathèque](mediatheque.md) · [Liste de médiathèques & ressources](mediatheque-liste.md)
 
-### 🏠 Habitat, autoconstruction
-
-Yourte, tipi, dôme géodésique, habitat léger, terre/paille, autoconstruction bioclimatique, low-tech…
+### 🏠 Habitat, autoconstruction Yourte, tipi, dôme géodésique, habitat léger, terre/paille, autoconstruction bioclimatique, low-tech…
 
 ➡️ [Habitat, autoconstruction](habitat-autoconstruction.md) · [Synergies & liens](habitat-autoconstruction-synergies.md)
 
-### 🌱 Cultiver, jardiner
-
-Permaculture, BRF, compost, purins, agroforesterie, apiculture, spiruline, champignons…
+### 🌱 Cultiver, jardiner : Permaculture, BRF, compost, purins, agroforesterie, apiculture, spiruline, champignons…
 
 ➡️ [Cultiver, jardiner](cultiver-jardiner.md) · [Synergies & liens](cultiver-jardiner-synergies.md)
 
-### 🍞 Production, transformation
-
-Pain au levain, bière/vin/cidre, recettes végétaliennes, plantes médicinales, lacto-fermentation…
+### 🍞 Production, transformation : Pain au levain, bière/vin/cidre, recettes végétaliennes, plantes médicinales, lacto-fermentation…
 
 ➡️ [Production, transformation](production-transformation.md) · [Synergies & liens](production-transformation-synergies.md)
 
-### 🔨 Artisanat
-
-Vannerie, bricolage low-tech, menuiserie, bushcraft, meubles open-source…
+### 🔨 Artisanat : Vannerie, bricolage low-tech, menuiserie, bushcraft, meubles open-source…
 
 ➡️ [Artisanat](artisanat.md) · [Synergies & liens](artisanat-synergies.md)
 
-### 🌀 En vrac
-
-Affiches, stickers, tracts, sciences, chimie, Crimethinc, revues…
+### 🌀 En vrac : Affiches, stickers, tracts, sciences, chimie, Crimethinc, revues…
 
 ➡️ [En vrac](en-vrac.md)
 
-### 📰 Blog
-
-Articles, tutoriels, reportages, présentations de lieux de vie, perles d'archives…
+### 📰 Blog : Articles, tutoriels, reportages, présentations de lieux de vie, perles d'archives…
 
 ➡️ [Tous les articles](tout-les-articles.md) · [Blog](blog/)
 
