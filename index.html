@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecoclash - Share Knowledge, Practical Alternatives</title>
+  <meta name="description" content="Knowledge sharing, infokiosque, videokiosque, practical alternatives, self-construction, permaculture, degrowth, ecovillage, community, ecology">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8faf8;
+      --bg-tertiary: #eef2ee;
+      --text-primary: #1a2e1a;
+      --text-secondary: #3d5c3d;
+      --text-muted: #5a7a5a;
+      --accent: #2d6a2d;
+      --accent-hover: #1f4d1f;
+      --accent-light: #4a8a4a;
+      --border: #c8dcc8;
+      --card-bg: #ffffff;
+      --card-shadow: 0 2px 8px rgba(45, 106, 45, 0.08);
+      --leaf-green: #3a7d3a;
+      --sun-yellow: #f4c430;
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #0d1a0d;
+      --bg-secondary: #142314;
+      --bg-tertiary: #1a2e1a;
+      --text-primary: #e8f0e8;
+      --text-secondary: #b8d4b8;
+      --text-muted: #7a9a7a;
+      --accent: #6ab86a;
+      --accent-hover: #8ad48a;
+      --accent-light: #4a9a4a;
+      --border: #2d4a2d;
+      --card-bg: #1a2e1a;
+      --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+      --leaf-green: #6ab86a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    .header-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+    }
+
+    .logo-text {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-tagline {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    /* Language Selector */
+    .lang-selector {
+      display: flex;
+      gap: 0.25rem;
+      background: var(--bg-tertiary);
+      padding: 0.25rem;
+      border-radius: 8px;
+    }
+
+    .lang-btn {
+      padding: 0.5rem 0.75rem;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+
+    .lang-btn:hover {
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+    }
+
+    .lang-btn.active {
+      background: var(--accent);
+      color: white;
+    }
+
+    /* Theme Toggle */
+    .theme-toggle {
+      width: 48px;
+      height: 48px;
+      border: none;
+      background: var(--bg-tertiary);
+      border-radius: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+
+    .theme-toggle:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    .theme-toggle svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--text-primary);
+      transition: fill 0.2s;
+    }
+
+    [data-theme="dark"] .theme-toggle svg {
+      fill: var(--text-primary);
+    }
+
+    /* Mobile Menu */
+    .mobile-menu-btn {
+      display: none;
+      width: 48px;
+      height: 48px;
+      border: none;
+      background: var(--bg-tertiary);
+      border-radius: 12px;
+      cursor: pointer;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .mobile-menu-btn span {
+      width: 20px;
+      height: 2px;
+      background: var(--text-primary);
+      border-radius: 2px;
+      transition: all 0.2s;
+    }
+
+    /* Nav */
+    nav {
+      background: var(--bg-tertiary);
+      padding: 0.75rem 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-content {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+      gap: 0.5rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .nav-list::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-link {
+      padding: 0.75rem 1.25rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      border-radius: 8px;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .nav-link:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    .nav-link.active {
+      background: var(--accent);
+      color: white;
+    }
+
+    /* Main Content */
+    main {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+      opacity: 0.1;
+      pointer-events: none;
+    }
+
+    .hero-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-quote {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background: var(--card-bg);
+      border-radius: 16px;
+      border-left: 4px solid var(--accent);
+      font-style: italic;
+      color: var(--text-secondary);
+      box-shadow: var(--card-shadow);
+    }
+
+    .hero-quote-author {
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-style: normal;
+    }
+
+    /* Category Grid */
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-title svg {
+      width: 28px;
+      height: 28px;
+      fill: var(--accent);
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .category-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(45, 106, 45, 0.15);
+      border-color: var(--accent);
+    }
+
+    .category-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--bg-tertiary);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .category-icon svg {
+      width: 32px;
+      height: 32px;
+      fill: var(--accent);
+    }
+
+    .category-card h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .category-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      flex-grow: 1;
+    }
+
+    .category-card .doc-count {
+      margin-top: 1rem;
+      padding: 0.5rem 0.75rem;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Articles Section */
+    .articles-section {
+      margin-bottom: 3rem;
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .article-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      transition: all 0.3s;
+    }
+
+    .article-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(45, 106, 45, 0.15);
+    }
+
+    .article-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: var(--bg-tertiary);
+    }
+
+    .article-content {
+      padding: 1.5rem;
+    }
+
+    .article-date {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .article-card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+      line-height: 1.4;
+    }
+
+    .article-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent);
+      font-weight: 500;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      color: var(--accent-hover);
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background: var(--bg-secondary);
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+
+    .contact-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-section p {
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--card-bg);
+      color: var(--text-primary);
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 1rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .submit-btn:hover {
+      background: var(--accent-hover);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    .footer-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .footer-quote {
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+      padding: 1.5rem;
+      background: var(--card-bg);
+      border-radius: 12px;
+      font-style: italic;
+      color: var(--text-secondary);
+      border-left: 3px solid var(--accent);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-copyright {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 2rem;
+      max-width: 600px;
+      width: 100%;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .modal-header h2 {
+      font-size: 1.5rem;
+    }
+
+    .modal-close {
+      width: 40px;
+      height: 40px;
+      border: none;
+      background: var(--bg-tertiary);
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: var(--text-primary);
+    }
+
+    .doc-list {
+      list-style: none;
+    }
+
+    .doc-item {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-item:last-child {
+      border-bottom: none;
+    }
+
+    .doc-item a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .doc-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header-content {
+        padding: 0;
+      }
+
+      .logo-tagline {
+        display: none;
+      }
+
+      .mobile-menu-btn {
+        display: flex;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .nav.open {
+        display: block;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: var(--bg-secondary);
+        padding: 1rem;
+        z-index: 99;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .nav-list {
+        flex-direction: column;
+      }
+
+      .lang-selector {
+        display: none;
+      }
+
+      .mobile-lang {
+        display: block;
+        width: 100%;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero-quote {
+        font-size: 0.95rem;
+        padding: 1rem;
+      }
+
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .articles-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .mobile-lang {
+        display: none;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    /* Scroll to top */
+    .scroll-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 50px;
+      height: 50px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(45, 106, 45, 0.3);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+    }
+
+    .scroll-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .scroll-top:hover {
+      transform: translateY(-4px);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <div class="logo-section">
+        <svg class="logo-icon" viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="45" fill="#2d6a2d"/>
+          <path d="M50 15 C30 30 25 55 50 85 C75 55 70 30 50 15" fill="#4a8a4a"/>
+          <path d="M50 25 C35 35 32 55 50 78 C68 55 65 35 50 25" fill="#6ab86a"/>
+          <circle cx="50" cy="50" r="8" fill="#2d6a2d"/>
+        </svg>
+        <div>
+          <a href="#" class="logo-text" data-i18n="siteName">Ecoclash</a>
+          <div class="logo-tagline" data-i18n="tagline">Share Knowledge, Practical Alternatives</div>
+        </div>
+      </div>
+
+      <div class="header-controls">
+        <div class="lang-selector">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24">
+            <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M2 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Language -->
+  <div class="mobile-lang" style="padding: 0.5rem 2rem; background: var(--bg-tertiary);">
+    <div class="lang-selector" style="justify-content: center;">
+      <button class="lang-btn active" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="es">ES</button>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="mainNav">
+    <div class="nav-content">
+      <ul class="nav-list">
+        <li><a href="#mediatheque" class="nav-link active" data-i18n="nav.mediatheque">Infokiosque</a></li>
+        <li><a href="#habitat" class="nav-link" data-i18n="nav.habitat">Housing & Construction</a></li>
+        <li><a href="#cultiver" class="nav-link" data-i18n="nav.cultiver">Growing & Gardening</a></li>
+        <li><a href="#production" class="nav-link" data-i18n="nav.production">Production & Processing</a></li>
+        <li><a href="#artisanat" class="nav-link" data-i18n="nav.artisanat">Craftsmanship</a></li>
+        <li><a href="#en-vrac" class="nav-link" data-i18n="nav.enVrac">Miscellaneous</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <svg class="hero-icon" viewBox="0 0 100 100" fill="none">
+        <circle cx="50" cy="50" r="45" fill="#2d6a2d"/>
+        <path d="M50 15 C30 30 25 55 50 85 C75 55 70 30 50 15" fill="#4a8a4a"/>
+        <path d="M50 25 C35 35 32 55 50 78 C68 55 65 35 50 25" fill="#6ab86a"/>
+        <circle cx="50" cy="50" r="8" fill="#2d6a2d"/>
+      </svg>
+      <h1 data-i18n="hero.title">Partage de savoirs,<br>Alternatives pratiques</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Knowledge sharing, practical alternatives, self-construction, permaculture, degrowth</p>
+      <div class="hero-quote">
+        <span data-i18n="hero.quote">"On nous dit: Le bonheur c'est le progrès faites un pas en avant. Et c'est le progrès... mais ce n'est jamais le bonheur. Alors si on faisait un pas de côté! Si on essayait autre chose!"</span>
+        <div class="hero-quote-author" data-i18n="hero.quoteAuthor">— Unknown</div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+      <h2 class="section-title">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <span data-i18n="categories.title">Explore Categories</span>
+      </h2>
+      <div class="category-grid">
+        <a href="#" class="category-card" data-category="mediatheque">
+          <div class="category-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 data-i18n="cat.mediatheque.title">Infokiosque / Mediatheque</h3>
+          <p data-i18n="cat.mediatheque.desc">Share practical information documents. Cultivate, build, craft tools, heal, produce energy...</p>
+          <span class="doc-count">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+            <span data-i18n="cat.documents">Documents available</span>
+          </span>
+        </a>
+
+        <a href="#" class="category-card" data-category="habitat">
+          <div class="category-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          </div>
+          <h3 data-i18n="cat.habitat.title">Housing & Self-Construction</h3>
+          <p data-i18n="cat.habitat.desc">Yurts, tipis, geodesic domes, emergency shelters, earth construction, adobe, cob...</p>
+          <span class="doc-count">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+            <span data-i18n="cat.documents">Documents available</span>
+          </span>
+        </a>
+
+        <a href="#" class="category-card" data-category="cultiver">
+          <div class="category-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22c4.97 0 9-2.69 9-6V8c0-4-2-6-5-6-1 0-3 .5-4 2-1.5-2-3-4-5-4-1 0-3 .5-4 2-1.5-2-3-4-5-4-1 0-3 .5-4 2-2 0-5 2-5 6v8c0 3.31 4.03 6 9 6z"/></svg>
+          </div>
+          <h3 data-i18n="cat.cultiver.title">Growing & Gardening</h3>
+          <p data-i18n="cat.cultiver.desc">Beekeeping, agroforestry, composting, mushroom cultivation, spirulina, permaculture...</p>
+          <span class="doc-count">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+            <span data-i18n="cat.documents">Documents available</span>
+          </span>
+        </a>
+
+        <a href="#" class="category-card" data-category="production">
+          <div class="category-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20"/></svg>
+          </div>
+          <h3 data-i18n="cat.production.title">Production & Processing</h3>
+          <p data-i18n="cat.production.desc">Medicinal plants, food, recipes, bread making, beer, wine, cider, distillation...</p>
+          <span class="doc-count">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+            <span data-i18n="cat.documents">Documents available</span>
+          </span>
+        </a>
+
+        <a href="#" class="category-card" data-category="artisanat">
+          <div class="category-icon">
+            <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3 data-i18n="cat.artisanat.title">Craftsmanship & DIY</h3>
+          <p data-i18n="cat.artisanat.desc">Wicker weaving, furniture making, wilderness skills, bushcraft, tools...</p>
+          <span class="doc-count">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+            <span data-i18n="cat.documents">Documents available</span>
+          </span>
+        </a>
+
+        <a href="#" class="category-card" data-category="synergies">
+          <div class="category-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 data-i18n="cat.synergies.title">Synergies & Links</h3>
+          <p data-i18n="cat.synergies.desc">News, global village, sharing & exchange, movement, mobility, travel...</p>
+          <span class="doc-count">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/></svg>
+            <span data-i18n="cat.externalLinks">External links</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles-section">
+      <h2 class="section-title">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        <span data-i18n="articles.title">Recent Articles</span>
+      </h2>
+      <div class="articles-grid">
+        <article class="article-card fade-in">
+          <div class="article-image" style="background: linear-gradient(135deg, #4a8a4a, #2d6a2d); display: flex; align-items: center; justify-content: center;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="white" opacity="0.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          </div>
+          <div class="article-content">
+            <div class="article-date" data-i18n="article.kiosque.date">September 14, 2014</div>
+            <h3 data-i18n="article.kiosque.title">The Autonomous Kiosks</h3>
+            <p data-i18n="article.kiosque.desc">An ecological and social kiosk, in the form of a large trailer (5m x 2.5m), pulled by a tractor running 100% on recycled cooking oil...</p>
+            <a href="#" class="read-more" data-i18n="readMore">Read more →</a>
+          </div>
+        </article>
+
+        <article class="article-card fade-in" style="animation-delay: 0.1s">
+          <div class="article-image" style="background: linear-gradient(135deg, #8ad48a, #4a9a4a); display: flex; align-items: center; justify-content: center;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="white" opacity="0.5"><path d="M12 22c4.97 0 9-2.69 9-6V8c0-4-2-6-5-6-1 0-3 .5-4 2-1.5-2-3-4-5-4-1 0-3 .5-4 2-2 0-5 2-5 6v8c0 3.31 4.03 6 9 6z"/></svg>
+          </div>
+          <div class="article-content">
+            <div class="article-date" data-i18n="article.yurte.date">August 17, 2015</div>
+            <h3 data-i18n="article.yurte.title">How to Build a Yurt</h3>
+            <p data-i18n="article.yurte.desc">Build, craft, assemble, sew a Yurt / Yurt / Ger. Info, plans and calculations for self-building...</p>
+            <a href="#" class="read-more" data-i18n="readMore">Read more →</a>
+          </div>
+        </article>
+
+        <article class="article-card fade-in" style="animation-delay: 0.2s">
+          <div class="article-image" style="background: linear-gradient(135deg, #6ab86a, #3a7d3a); display: flex; align-items: center; justify-content: center;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="white" opacity="0.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+          <div class="article-content">
+            <div class="article-date" data-i18n="article.apiculture.date">August 14, 2014</div>
+            <h3 data-i18n="article.apiculture.title">Beekeeping for All, Warre Hive</h3>
+            <p data-i18n="article.apiculture.desc">Build a hive, harvest honey, construct Warre and top bar hives, log hives, pollen harvest, swarming, propolis...</p>
+            <a href="#" class="read-more" data-i18n="readMore">Read more →</a>
+          </div>
+        </article>
+
+        <article class="article-card fade-in" style="animation-delay: 0.3s">
+          <div class="article-image" style="background: linear-gradient(135deg, #4a9a4a, #2d6a2d); display: flex; align-items: center; justify-content: center;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="white" opacity="0.5"><path d="M18 4H6C4.9 4 4 4.9 4 6v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/><path d="M12 8v8m-4-4h8"/></svg>
+          </div>
+          <div class="article-content">
+            <div class="article-date" data-i18n="article.spiruline.date">August 14, 2014</div>
+            <h3 data-i18n="article.spiruline.title">How to Cultivate Spirulina</h3>
+            <p data-i18n="article.spiruline.desc">Culture manuals, nutritional info, how and why to cultivate spirulina...</p>
+            <a href="#" class="read-more" data-i18n="readMore">Read more →</a>
+          </div>
+        </article>
+
+        <article class="article-card fade-in" style="animation-delay: 0.4s">
+          <div class="article-image" style="background: linear-gradient(135deg, #3a7d3a, #1f4d1f); display: flex; align-items: center; justify-content: center;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="white" opacity="0.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+          </div>
+          <div class="article-content">
+            <div class="article-date" data-i18n="article.champignons.date">August 10, 2014</div>
+            <h3 data-i18n="article.champignons.title">Mushroom Cultivation - Mycology</h3>
+            <p data-i18n="article.champignons.desc">Cultivate, produce and know edible, medicinal and psychoactive mushrooms...</p>
+            <a href="#" class="read-more" data-i18n="readMore">Read more →</a>
+          </div>
+        </article>
+
+        <article class="article-card fade-in" style="animation-delay: 0.5s">
+          <div class="article-image" style="background: linear-gradient(135deg, #6ab86a, #4a9a4a); display: flex; align-items: center; justify-content: center;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="white" opacity="0.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <div class="article-content">
+            <div class="article-date" data-i18n="article.vannerie.date">August 25, 2014</div>
+            <h3 data-i18n="article.vannerie.title">Weaving a Basket with Newspaper</h3>
+            <p data-i18n="article.vannerie.desc">Nothing is lost, nothing is created, everything is transformed. Learn wicker weaving, paper braiding...</p>
+            <a href="#" class="read-more" data-i18n="readMore">Read more →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2 data-i18n="contact.title">Contact Us</h2>
+      <p data-i18n="contact.desc">Share your documents, links, and information to enrich our infokiosque. Print, create, share your infokiosques!</p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name" data-i18n="form.name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email" data-i18n="form.email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message" data-i18n="form.message">Message</label>
+          <textarea id="message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn" data-i18n="form.submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-quote">
+        <span data-i18n="footer.quote">"If you feel like you're too small to make a difference, try sleeping with a mosquito... and see which one prevents the other from sleeping!"</span>
+        <div style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">— Dalai Lama</div>
+      </div>
+      <div class="footer-links">
+        <a href="#" data-i18n="footer.legal">Legal Notice</a>
+        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer.sitemap">Sitemap</a>
+      </div>
+      <div class="footer-copyright">
+        <span>© 2024 Ecoclash. </span>
+        <span data-i18n="footer.madeWith">Made with 🌱 for a free culture</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scrollTop">↑</button>
+
+  <script>
+    // Translations
+    const translations = {
+      fr: {
+        siteName: "Ecoclash",
+        tagline: "Partage de savoirs, Alternatives pratiques",
+        nav: {
+          mediatheque: "Infokiosque",
+          habitat: "Habitat & Construction",
+          cultiver: "Cultiver & Jardiner",
+          production: "Production & Transformation",
+          artisanat: "Artisanat",
+          enVrac: "En vrac",
+          contact: "Contact"
+        },
+        hero: {
+          title: "Partage de savoirs,<br>Alternatives pratiques",
+          subtitle: "Infokiosque, alternatives pratiques, autoconstruction, permaculture, décroissance",
+          quote: '"On nous dit: Le bonheur c\'est le progrès faites un pas en avant. Et c\'est le progrès... mais ce n\'est jamais le bonheur. Alors si on faisait un pas de côté! Si on essayait autre chose!"',
+          quoteAuthor: "— Inconnu"
+        },
+        categories: { title: "Explorer les catégories" },
+        cat: {
+          mediatheque: { title: "Infokiosque / Médiathèque", desc: "Partager des documents d'informations pratiques. Cultiver, construire, bricoler, se soigner, produire de l'énergie..." },
+          habitat: { title: "Habitat & Autoconstruction", desc: "Yourtes, tipis, dômes géodésiques, abris d'urgence, construction terre, adobe, torchis..." },
+          cultiver: { title: "Cultiver & Jardiner", desc: "Apiculture, agroforesterie, compostage, culture des champignons, spiruline, permaculture..." },
+          production: { title: "Production & Transformation", desc: "Plantes médicinales, alimentation, recettes, fabrication du pain, bière, vin, cidre, distillation..." },
+          artisanat: { title: "Artisanat & Bricolage", desc: "Vannerie, fabrication de meubles, compétences de survie, bushcraft, outils..." },
+          synergies: { title: "Synergies & Liens", desc: "Actualités, village global, partage & échange, mouvement, mobilité, voyage..." },
+          documents: "Documents disponibles",
+          externalLinks: "Liens externes"
+        },
+        articles: { title: "Articles récents" },
+        article: {
+          kiosque: { date: "14 septembre 2014", title: "Les Kiosques Autonomes", desc: "Un kiosque écologique et social, sous forme de grande remorque (5m x 2,5m), tirée par un tracteur fonctionnant 100% à l'huile de friture recyclée..." },
+          yurte: { date: "17 août 2015", title: "Comment construire une yourte", desc: "Construire, fabriquer, monter, coudre une Yourte / Yurt / Ger. Infos, plans et calculs pour l'autoconstruction..." },
+          apiculture: { date: "14 août 2014", title: "Apiculture pour tous, Ruche Warre", desc: "Construire une ruche, récolter du miel, construction de ruches Warre et top bar, ruches tronc, récolte du pollen..." },
+          spiruline: { date: "14 août 2014", title: "Comment cultiver la spiruline", desc: "Manuels de culture, infos nutrition, comment et pourquoi cultiver la spiruline..." },
+          champignons: { date: "10 août 2014", title: "Culture des champignons - Mycologie", desc: "Cultiver, produire et connaître les champignons comestibles, médicinaux et psychoactifs..." },
+          vannerie: { date: "25 août 2014", title: "Tresser un panier avec du papier journal", desc: "Rien ne se perd, rien ne se crée, tout se transforme. Apprendre la vannerie, le tressage du papier..." }
+        },
+        readMore: "Lire la suite →",
+        contact: {
+          title: "Contactez-nous",
+          desc: "Partagez vos documents, liens et informations pour enrichir notre infokiosque. Imprimer, créer, diffuser vos infokiosques!"
+        },
+        form: { name: "Nom", email: "Email", message: "Message", submit: "Envoyer le message" },
+        footer: { quote: '"Si vous avez l\'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique... et vous verrez lequel des deux empêche l\'autre de dormir!"', legal: "Mentions légales", privacy: "Politique de confidentialité", sitemap: "Plan du site", madeWith: "Fait avec 🌱 pour une culture libre" }
+      },
+      en: {
+        siteName: "Ecoclash",
+        tagline: "Share Knowledge, Practical Alternatives",
+        nav: {
+          mediatheque: "Infokiosque",
+          habitat: "Housing & Construction",
+          cultiver: "Growing & Gardening",
+          production: "Production & Processing",
+          artisanat: "Craftsmanship",
+          enVrac: "Miscellaneous",
+          contact: "Contact"
+        },
+        hero: {
+          title: "Share Knowledge,<br>Practical Alternatives",
+          subtitle: "Knowledge sharing, infokiosque, practical alternatives, self-construction, permaculture, degrowth",
+          quote: '"We are told: Happiness is progress, take a step forward. And it is progress... but it is never happiness. So what if we took a step sideways! What if we tried something else!"',
+          quoteAuthor: "— Unknown"
+        },
+        categories: { title: "Explore Categories" },
+        cat: {
+          mediatheque: { title: "Infokiosque / Mediatheque", desc: "Share practical information documents. Cultivate, build, craft tools, heal, produce energy..." },
+          habitat: { title: "Housing & Self-Construction", desc: "Yurts, tipis, geodesic domes, emergency shelters, earth construction, adobe, cob..." },
+          cultiver: { title: "Growing & Gardening", desc: "Beekeeping, agroforestry, composting, mushroom cultivation, spirulina, permaculture..." },
+          production: { title: "Production & Processing", desc: "Medicinal plants, food, recipes, bread making, beer, wine, cider, distillation..." },
+          artisanat: { title: "Craftsmanship & DIY", desc: "Wicker weaving, furniture making, wilderness skills, bushcraft, tools..." },
+          synergies: { title: "Synergies & Links", desc: "News, global village, sharing & exchange, movement, mobility, travel..." },
+          documents: "Documents available",
+          externalLinks: "External links"
+        },
+        articles: { title: "Recent Articles" },
+        article: {
+          kiosque: { date: "September 14, 2014", title: "The Autonomous Kiosks", desc: "An ecological and social kiosk, in the form of a large trailer (5m x 2.5m), pulled by a tractor running 100% on recycled cooking oil..." },
+          yurte: { date: "August 17, 2015", title: "How to Build a Yurt", desc: "Build, craft, assemble, sew a Yurt / Yurt / Ger. Info, plans and calculations for self-building..." },
+          apiculture: { date: "August 14, 2014", title: "Beekeeping for All, Warre Hive", desc: "Build a hive, harvest honey, construct Warre and top bar hives, log hives, pollen harvest..." },
+          spiruline: { date: "August 14, 2014", title: "How to Cultivate Spirulina", desc: "Culture manuals, nutritional info, how and why to cultivate spirulina..." },
+          champignons: { date: "August 10, 2014", title: "Mushroom Cultivation - Mycology", desc: "Cultivate, produce and know edible, medicinal and psychoactive mushrooms..." },
+          vannerie: { date: "August 25, 2014", title: "Weaving a Basket with Newspaper", desc: "Nothing is lost, nothing is created, everything is transformed. Learn wicker weaving, paper braiding..." }
+        },
+        readMore: "Read more →",
+        contact: {
+          title: "Contact Us",
+          desc: "Share your documents, links, and information to enrich our infokiosque. Print, create, share your infokiosques!"
+        },
+        form: { name: "Name", email: "Email", message: "Message", submit: "Send Message" },
+        footer: { quote: '"If you feel like you\'re too small to make a difference, try sleeping with a mosquito... and see which one prevents the other from sleeping!"', legal: "Legal Notice", privacy: "Privacy Policy", sitemap: "Sitemap", madeWith: "Made with 🌱 for a free culture" }
+      },
+      es: {
+        siteName: "Ecoclash",
+        tagline: "Compartir conocimientos, Alternativas prácticas",
+        nav: {
+          mediatheque: "Infokiosque",
+          habitat: "Vivienda & Construcción",
+          cultiver: "Cultivar & Jardinear",
+          production: "Producción & Transformación",
+          artisanat: "Artesanía",
+          enVrac: "Vario",
+          contact: "Contacto"
+        },
+        hero: {
+          title: "Compartir conocimientos,<br>Alternativas prácticas",
+          subtitle: "Compartir saberes, infokiosque, alternativas prácticas, autoconstrucción, permacultura, decrecimiento",
+          quote: '"Nos dicen: La felicidad es el progreso, da un paso adelante. Y es progreso... pero nunca es felicidad. ¿Y si dimos un paso al lado! ¿Y si probamos algo diferente!"',
+          quoteAuthor: "— Desconocido"
+        },
+        categories: { title: "Explorar categorías" },
+        cat: {
+          mediatheque: { title: "Infokiosque / Mediateca", desc: "Compartir documentos de información práctica. Cultivar, construir, bricolage, sanar, producir energía..." },
+          habitat: { title: "Vivienda & Autoconstrucción", desc: "Yurtas, tipis, domos geodésicos, refugios de emergencia, construcción en tierra, adobe, superadobe..." },
+          cultiver: { title: "Cultivar & Jardinear", desc: "Apicultura, agroforestería, compostaje, cultivo de hongos, spirulina, permacultura..." },
+          production: { title: "Producción & Transformación", desc: "Plantas medicinales, alimentación, recetas, fabricación de pan, cerveza, vino, sidra, destilación..." },
+          artisanat: { title: "Artesanía & Bricolaje", desc: "Cestería, fabricación de muebles, habilidades de supervivencia, bushcraft, herramientas..." },
+          synergies: { title: "Sinergias & Enlaces", desc: "Noticias, aldea global, compartir e intercambio, movimiento, movilidad, viaje..." },
+          documents: "Documentos disponibles",
+          externalLinks: "Enlaces externos"
+        },
+        articles: { title: "Artículos recientes" },
+        article: {
+          kiosque: { date: "14 de septiembre de 2014", title: "Los Quioscos Autônomos", desc: "Un quiosco ecológico y social, en forma de remolque grande (5m x 2,5m), arrastrado por un tractor funcionando 100% con aceite de cocina reciclado..." },
+          yurte: { date: "17 de agosto de 2015", title: "Cómo construir una yurta", desc: "Construir, fabricar, montar, coser una Yurta / Yurt / Ger. Info, planos y cálculos para auto-construcción..." },
+          apiculture: { date: "14 de agosto de 2014", title: "Apicultura para todos, Colmena Warre", desc: "Construir una colmena, cosechar miel, construir colmenas Warre y top bar, colmenas tronco, cosecha de polen..." },
+          spiruline: { date: "14 de agosto de 2014", title: "Cómo cultivar spirulina", desc: "Manuales de cultivo, información nutricional, cómo y por qué cultivar spirulina..." },
+          champignons: { date: "10 de agosto de 2014", title: "Cultivo de hongos - Micológica", desc: "Cultivar, producir y conocer hongos comestibles, medicinales y psicoactivos..." },
+          vannerie: { date: "25 de agosto de 2014", title: "Tejer una cesta con papel periódico", desc: "Nada se pierde, nada se crea, todo se transforma. Aprender cestería, trenzado de papel..." }
+        },
+        readMore: "Leer más →",
+        contact: {
+          title: "Contáctenos",
+          desc: "Comparta sus documentos, enlaces e información para enriquecer nuestro infokiosque. ¡Imprimir, crear, difundir sus infokiosques!"
+        },
+        form: { name: "Nombre", email: "Correo electrónico", message: "Mensaje", submit: "Enviar mensaje" },
+        footer: { quote: '"Si sientes que eres demasiado pequeño para marcar la diferencia, intenta dormir con un mosquito... y verás cuál de los dos impide al otro dormir!"', legal: "Aviso legal", privacy: "Política de privacidad", sitemap: "Mapa del sitio", madeWith: "Hecho con 🌱 para una cultura libre" }
+      }
+    };
+
+    // Current language
+    let currentLang = 'fr';
+
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+
+    function updateThemeIcon(theme) {
+      const sunIcon = `<svg viewBox="0 0 24 24"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M2 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>`;
+      const moonIcon = `<svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
+      themeToggle.innerHTML = theme === 'dark' ? moonIcon : sunIcon;
+    }
+
+    // Language switching
+    const langBtns = document.querySelectorAll('.lang-btn');
+
+    langBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.dataset.lang;
+        currentLang = lang;
+        
+        // Update active button
+        langBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Translate page
+        translatePage(lang);
+        
+        // Save language preference
+        localStorage.setItem('language', lang);
+      });
+    });
+
+    // Check for saved language preference
+    const savedLang = localStorage.getItem('language');
+    if (savedLang && translations[savedLang]) {
+      currentLang = savedLang;
+      langBtns.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === savedLang);
+      });
+      translatePage(savedLang);
+    }
+
+    function translatePage(lang) {
+      const t = translations[lang];
+      
+      // Update all elements with data-i18n
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        const keys = key.split('.');
+        let value = t;
+        
+        for (const k of keys) {
+          value = value?.[k];
+        }
+        
+        if (typeof value === 'string') {
+          el.innerHTML = value;
+        }
+      });
+
+      // Update HTML lang attribute
+      document.documentElement.lang = lang;
+    }
+
+    // Mobile menu
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mainNav = document.getElementById('mainNav');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
+    });
+
+    // Close mobile menu when clicking a link
+    mainNav.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+      });
+    });
+
+    // Scroll to top button
+    const scrollTopBtn = document.getElementById('scrollTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Contact form handling
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const t = translations[currentLang];
+      alert(t.contact ? 'Message sent!' : 'Message envoyé!');
+      contactForm.reset();
+    });
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href !== '#') {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+
+    // Intersection Observer for fade-in animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.category-card, .article-card').forEach(el => {
+      el.style.opacity = '0';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
