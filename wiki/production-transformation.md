@@ -1,5 +1,6 @@
 # 🍞 Récolte, Production, Transformation & Conservation des Produits
 Techniques low-tech : pain au levain, fermentation, lacto-fermentation, séchage, fumage, salaison, conservation sans frigo, fabrication de bière/vin/alcool, fromages, yaourts, confitures, etc.
+
 ---
 
 ## 📂 Documents
@@ -9,10 +10,6 @@ Techniques low-tech : pain au levain, fermentation, lacto-fermentation, séchage
   - **Manger, boire, recettes, cuisine…** → [@A / (#D)]
  
 > **Légende :** `(#D)` Les docs · `@A` Article associé
-
----
-
-> 🆕 **Mise à jour avril 2026**
 
 ---
 
