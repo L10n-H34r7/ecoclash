@@ -1,5 +1,6 @@
 /* ==========================================================================
-   ECOCLASH — COMPLETE VANILLA JAVASCRIPT APPLICATION (FR/EN/ES)
+   ECOCLASH — COMPLETE STATIC VANILLA JAVASCRIPT APPLICATION (REMAKE 2026)
+   100% Pure Vanilla HTML/CSS/JS — No Fake Comments — No User Inputs
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -7,28 +8,19 @@ document.addEventListener('DOMContentLoaded', () => {
     /* --- 1. MULTILINGUAL TRANSLATION DICTIONARY --- */
     const i18n = {
         fr: {
-            // Navbar & Global
             skipLink: "Aller au contenu principal",
-            navArticles: "Articles & Guides",
-            navManifesto: "Infokiosque",
-            navSynergies: "Synergies & Liens",
-            navParticipate: "Participer",
+            navArticles: "Articles & Tutoriels (24)",
+            navBookmarks: "Signets & Liens (Sitemap)",
+            navManifesto: "Notre Démarche",
             themeToggleTitle: "Mode sombre / Mode clair",
-            nextQuoteTitle: "Citation suivante",
-            
-            // Hero
             heroTitle: "Autonomie, Écologie & <span class='gradient-text'>Résistance Pratique</span>",
-            heroSubtitle: "Partage de savoirs, Infokiosque, alternatives pratiques, autoconstruction, décroissance, permaculture, communautés autonomes et action directe.",
-            heroBtnExplore: "Explorer la Médiathèque",
-            heroBtnManifesto: "Notre Démarche",
-
-            // Articles Section
+            heroSubtitle: "Partage de savoirs, Infokiosque, alternatives pratiques, autoconstruction, décroissance, permaculture, communautés autonomes, low-tech et action directe.",
+            heroBtnExplore: "Explorer les 24 Guides",
+            heroBtnBookmarks: "Consulter les Signets",
             sectionArticlesTitle: "Savoirs & Guides Pratiques",
-            sectionArticlesDesc: "Une base de connaissances libre et accessible pour expérimenter, construire et s'émanciper.",
-            searchPlaceholder: "Rechercher un tutoriel, yourte, pain, dôme...",
-            loading: "Chargement des savoirs...",
-            
-            // Categories
+            sectionArticlesDesc: "Une base de connaissances libre et accessible avec liens de téléchargement MediaFire & PDF directs.",
+            searchPlaceholder: "Rechercher un tutoriel, yourte, pain, dôme, MediaFire...",
+            loading: "Chargement de la base de savoirs...",
             catAll: "Tout les articles",
             catHabitat: "Habitat & Autoconstruction",
             catPermaculture: "Cultiver & Jardiner",
@@ -36,17 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
             catArtisanat: "Artisanat & Récup'",
             catMediatheque: "Médiathèque & Archives",
             catAction: "Action & Luttes (ZAD)",
-
-            // No Results
             noResultsTitle: "Aucun article ne correspond à votre recherche",
             noResultsDesc: "Essayez d'autres mots-clés ou sélectionnez une autre catégorie.",
             btnResetFilters: "Réinitialiser les filtres",
-
-            // Card Elements
-            readMoreBtn: "Lire la suite",
+            readMoreBtn: "Lire le guide",
             readingTime: "min de lecture",
-
-            // Manifesto Section
+            downloadPrefix: "Télécharger",
+            noImageFallback: "Guide de Savoirs Pratiques",
+            bookmarksTitle: "Signets, Synergies & Plan du Site",
+            bookmarksSubtitle: "L'intégralité des réseaux, banques de données et pages annexes de l'infokiosque.",
+            visitLinkBtn: "Visiter le site",
             manifestoTitle: "Pourquoi Ecoclash ?",
             manifestoSubtitle: "Un pas de côté pour retrouver la puissance d'agir.",
             manifestoCard1Title: "Partage Libre et Gratuit",
@@ -57,76 +48,32 @@ document.addEventListener('DOMContentLoaded', () => {
             manifestoCard3Text: "La théorie ne suffit pas. Nous soutenons activement les zones à défendre (ZAD), les squats autogérés, les écolieux collectifs et toutes les formes d'actions directes visant à stopper la destruction du vivant.",
             dalaiTitle: "Trop petit ?!",
             dalaiQuote: "\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique... et vous verrez lequel des deux empêche l'autre de dormir !\"",
-
-            // Synergies Section
-            synergiesTitle: "Synergies & Liens Amis",
-            synergiesSubtitle: "Réseaux, collectifs et plateformes qui partagent notre horizon.",
-            synergyVisitBtn: "Visiter le site",
-
-            // Participate / Contact
-            participateTitle: "Contribuer & Participer",
-            participateSubtitle: "Ce site est un outil collectif. Partagez vos propres tutoriels, livres ou retours d'expérience.",
-            contactInfoTitle: "Faites tourner les savoirs !",
-            contactInfoText1: "Vous avez construit un habitat atypique, rédigé une brochure, ou découvert une pépite dans les archives libres ?",
-            contactInfoText2: "Écrivez-nous via ce formulaire sécurisé pour que nous puissions l'ajouter à l'infokiosque.",
-            perk1: "100% Anonyme si souhaité",
-            perk2: "Open-Source & Sans droits commerciaux",
-            perk3: "Hébergé durablement sur GitHub Pages",
-            formNameLabel: "Votre pseudo / nom :",
-            formNamePlaceholder: "Ex: Louise Michel",
-            formEmailLabel: "Adresse e-mail (optionnel) :",
-            formEmailPlaceholder: "pour vous répondre...",
-            formSubjectLabel: "Sujet de votre contribution :",
-            formSubOption1: "Proposer un tutoriel ou guide PDF",
-            formSubOption2: "Suggérer un site ami (Synergies)",
-            formSubOption3: "Signaler un lien mort ou une correction",
-            formSubOption4: "Petit mot d'encouragement ou contact",
-            formMessageLabel: "Votre message ou lien de téléchargement :",
-            formMessagePlaceholder: "Partagez vos liens (Framadrop, Archive.org, Mediafire, etc.) ou décrivez votre projet ici...",
-            formSubmitBtn: "Envoyer la contribution",
-            formSuccessMsg: "Merci ! Votre message a été transmis avec succès. À bientôt !",
-
-            // Modal & Comments
-            modalResourcesTitle: "Documents & Téléchargements Libres :",
+            staticContactTitle: "Mentions & Infokiosque Statique",
+            staticContactText: "Cette version de la base de connaissances (Remake 2026) est un infokiosque web entièrement statique hébergé sur GitHub Pages. Conformément à notre charte de protection du vivant et de la vie privée, ce site ne comporte aucun formulaire, aucun script de traçage, aucun cookie et aucune collecte d'entrées utilisateur (No user inputs). Pour échanger des savoirs ou proposer de nouveaux PDF, rejoignez directement les réseaux collectifs de terrain et les zones autonomes.",
+            modalResourcesTitle: "Documents, PDF & Liens de Téléchargement Libres :",
             shareArticle: "Partager ce savoir :",
             copyLinkBtn: "Copier le lien",
             copiedLinkBtn: "Lien copié !",
-            reactionLabel: "Inspirant",
-            commentsHeader: "Discussions & Retours",
-            quickCommentAuthor: "Votre pseudo...",
-            quickCommentText: "Ajouter une question, une astuce ou un retour d'expérience...",
-            quickCommentSubmit: "Publier le commentaire",
-
-            // Footer
-            footerBio: "Version améliorée, modernisée et mise à jour (Remake 2026). Partage de savoirs d'autonomie, d'autoconstruction et d'écologie de lutte. Conçu en pure Vanilla HTML / CSS / JS pour GitHub Pages.",
+            footerBio: "Version améliorée, modernisée et mise à jour (Remake 2026). Partage de savoirs d'autonomie, d'autoconstruction et d'écologie de lutte. Conçu en pure Vanilla HTML / CSS / JS pour GitHub Pages. Version 100% statique sans formulaires ni traceurs.",
             footerOpenSource: "Savoirs Libres pour un Monde Libre",
             footerNavTitle: "Navigation",
             footerTechTitle: "Spécifications Techniques",
             footerReadmeLink: "📖 Consulter le README.md"
         },
         en: {
-            // Navbar & Global
             skipLink: "Skip to main content",
-            navArticles: "Articles & Guides",
-            navManifesto: "Infokiosk",
-            navSynergies: "Synergies & Links",
-            navParticipate: "Participate",
+            navArticles: "Articles & Tutorials (24)",
+            navBookmarks: "Bookmarks & Links (Sitemap)",
+            navManifesto: "Our Approach",
             themeToggleTitle: "Dark mode / Light mode",
-            nextQuoteTitle: "Next quote",
-            
-            // Hero
             heroTitle: "Autonomy, Ecology & <span class='gradient-text'>Practical Resistance</span>",
             heroSubtitle: "Knowledge sharing, Infokiosk, practical DIY alternatives, degrowth, permaculture, autonomous eco-communities, and direct action.",
-            heroBtnExplore: "Explore Media Library",
-            heroBtnManifesto: "Our Approach",
-
-            // Articles Section
+            heroBtnExplore: "Explore all 24 Guides",
+            heroBtnBookmarks: "View Bookmarks Map",
             sectionArticlesTitle: "Knowledge & Practical Guides",
-            sectionArticlesDesc: "An open and accessible knowledge base to experiment, build, and achieve self-reliance.",
-            searchPlaceholder: "Search for a tutorial, yurt, bread, dome...",
-            loading: "Loading knowledge base...",
-            
-            // Categories
+            sectionArticlesDesc: "An open and accessible knowledge base featuring working MediaFire & direct PDF downloads.",
+            searchPlaceholder: "Search for a tutorial, yurt, bread, dome, MediaFire...",
+            loading: "Loading knowledge database...",
             catAll: "All articles",
             catHabitat: "Habitat & Self-Building",
             catPermaculture: "Gardening & Permaculture",
@@ -134,17 +81,16 @@ document.addEventListener('DOMContentLoaded', () => {
             catArtisanat: "Crafts & Upcycling",
             catMediatheque: "Media Library & Archives",
             catAction: "Action & Struggles (ZAD)",
-
-            // No Results
             noResultsTitle: "No articles match your search",
             noResultsDesc: "Try searching with different keywords or selecting another category.",
             btnResetFilters: "Reset filters",
-
-            // Card Elements
-            readMoreBtn: "Read more",
+            readMoreBtn: "Read guide",
             readingTime: "min read",
-
-            // Manifesto Section
+            downloadPrefix: "Download",
+            noImageFallback: "Practical Knowledge Manual",
+            bookmarksTitle: "Bookmarks, Synergies & Sitemap",
+            bookmarksSubtitle: "The complete directory of decentralized networks, databases, and subpages.",
+            visitLinkBtn: "Visit website",
             manifestoTitle: "Why Ecoclash?",
             manifestoSubtitle: "A step sideways to regain our power to act.",
             manifestoCard1Title: "Free & Open Sharing",
@@ -155,76 +101,32 @@ document.addEventListener('DOMContentLoaded', () => {
             manifestoCard3Text: "Theory is not enough. We actively support autonomous defense zones (ZADs), self-managed squats, collective eco-villages, and all forms of direct action aimed at halting the destruction of the living world.",
             dalaiTitle: "Too small?!",
             dalaiQuote: "\"If you think you are too small to make a difference, try sleeping in a closed room with a mosquito... and you will see which one keeps the other from sleeping!\"",
-
-            // Synergies Section
-            synergiesTitle: "Synergies & Friendly Links",
-            synergiesSubtitle: "Networks, collectives, and platforms sharing our horizon.",
-            synergyVisitBtn: "Visit website",
-
-            // Participate / Contact
-            participateTitle: "Contribute & Participate",
-            participateSubtitle: "This website is a collective tool. Share your own tutorials, open books, or practical experiences.",
-            contactInfoTitle: "Keep the knowledge circulating!",
-            contactInfoText1: "Have you built an unconventional dwelling, written a zine, or discovered a rare technical gem in open archives?",
-            contactInfoText2: "Write to us via this secure form so we can add it to the infokiosk.",
-            perk1: "100% Anonymous if desired",
-            perk2: "Open-Source & No commercial rights",
-            perk3: "Sustainably hosted on GitHub Pages",
-            formNameLabel: "Your alias / name:",
-            formNamePlaceholder: "Ex: Henry David Thoreau",
-            formEmailLabel: "Email address (optional):",
-            formEmailPlaceholder: "if you'd like a reply...",
-            formSubjectLabel: "Subject of your contribution:",
-            formSubOption1: "Submit a tutorial or PDF guide",
-            formSubOption2: "Suggest a friendly website (Synergies)",
-            formSubOption3: "Report a broken link or correction",
-            formSubOption4: "A word of encouragement or contact",
-            formMessageLabel: "Your message or download link:",
-            formMessagePlaceholder: "Share your download links (Archive.org, Framadrop, etc.) or describe your DIY project here...",
-            formSubmitBtn: "Send Contribution",
-            formSuccessMsg: "Thank you! Your message has been successfully transmitted.",
-
-            // Modal & Comments
-            modalResourcesTitle: "Free Documents & Downloads:",
+            staticContactTitle: "Legal & Static Infokiosk Mission",
+            staticContactText: "This upgraded repository (Remake 2026) is a 100% static web infokiosk sustainably hosted on GitHub Pages. In strict accordance with our ethics of digital decentralization and personal privacy, this website contains absolutely no interactive data collection forms, no analytics trackers, no cookies, and no simulated user inputs. To circulate new technical PDF manuals or participate in grassroots actions, connect directly with localized decentralized defense collectives.",
+            modalResourcesTitle: "Working Open PDF Documents & MediaFire Downloads:",
             shareArticle: "Share this knowledge:",
             copyLinkBtn: "Copy link",
             copiedLinkBtn: "Link copied!",
-            reactionLabel: "Inspiring",
-            commentsHeader: "Discussions & Feedback",
-            quickCommentAuthor: "Your alias...",
-            quickCommentText: "Add a question, DIY tip, or feedback...",
-            quickCommentSubmit: "Post comment",
-
-            // Footer
-            footerBio: "Upgraded, modernized, and updated version (Remake 2026). Sharing practical self-reliance, self-building, and ecological resistance wisdom. Built in pure Vanilla HTML / CSS / JS for GitHub Pages.",
+            footerBio: "Upgraded, modernized, and updated repository (Remake 2026). Sharing practical self-reliance, self-building, and ecological resistance wisdom. Built in pure Vanilla HTML / CSS / JS for GitHub Pages. Completely static design without trackers or user input forms.",
             footerOpenSource: "Free Knowledge for a Free World",
             footerNavTitle: "Navigation",
             footerTechTitle: "Technical Specifications",
             footerReadmeLink: "📖 View README.md"
         },
         es: {
-            // Navbar & Global
             skipLink: "Saltar al contenido principal",
-            navArticles: "Artículos y Guías",
-            navManifesto: "Infokiosco",
-            navSynergies: "Sinergias y Enlaces",
-            navParticipate: "Participar",
+            navArticles: "Artículos y Tutoriales (24)",
+            navBookmarks: "Signets y Enlaces (Sitemap)",
+            navManifesto: "Nuestro Enfoque",
             themeToggleTitle: "Modo oscuro / Modo claro",
-            nextQuoteTitle: "Siguiente frase",
-            
-            // Hero
             heroTitle: "Autonomía, Ecología y <span class='gradient-text'>Resistencia Práctica</span>",
-            heroSubtitle: "Intercambio de saberes, Infokiosco, alternativas prácticas de bricolaje, decrecimiento, permacultura, comunidades autónomas y acción directa.",
-            heroBtnExplore: "Explorar Mediateca",
-            heroBtnManifesto: "Nuestro Enfoque",
-
-            // Articles Section
+            heroSubtitle: "Intercambio de saberes, Infokiosco, alternativas prácticas de bricolaje, decrecimiento, permacultura, comunidades autónomas, low-tech y acción directa.",
+            heroBtnExplore: "Explorar las 24 Guías",
+            heroBtnBookmarks: "Consultar Enlaces",
             sectionArticlesTitle: "Saberes y Guías Prácticas",
-            sectionArticlesDesc: "Una base de conocimientos libre y accesible para experimentar, construir y emanciparse.",
-            searchPlaceholder: "Buscar un tutorial, yurt, pan, domo...",
-            loading: "Cargando el conocimiento...",
-            
-            // Categories
+            sectionArticlesDesc: "Una base de conocimientos libre y accesible con enlaces de descarga directa de MediaFire y PDF.",
+            searchPlaceholder: "Buscar un tutorial, yurt, pan, domo, MediaFire...",
+            loading: "Cargando la base de saberes...",
             catAll: "Todos los artículos",
             catHabitat: "Hábitat y Autoconstrucción",
             catPermaculture: "Cultivo y Jardinería",
@@ -232,17 +134,16 @@ document.addEventListener('DOMContentLoaded', () => {
             catArtisanat: "Artesanía y Reciclaje",
             catMediatheque: "Mediateca y Archivos",
             catAction: "Acción y Luchas (ZAD)",
-
-            // No Results
             noResultsTitle: "Ningún artículo coincide con tu búsqueda",
             noResultsDesc: "Intenta buscar con otras palabras clave o selecciona otra categoría.",
-            btnResetFilters: "Restablecer filtros",
-
-            // Card Elements
-            readMoreBtn: "Leer más",
+            btnResetFilters: "Restablecer filters",
+            readMoreBtn: "Leer guía",
             readingTime: "min de lectura",
-
-            // Manifesto Section
+            downloadPrefix: "Descargar",
+            noImageFallback: "Manual de Saberes Prácticos",
+            bookmarksTitle: "Sinergias, Enlaces y Mapa del Sitio",
+            bookmarksSubtitle: "Todo el directorio de redes descentralizadas, bases de datos y subpáginas amigas.",
+            visitLinkBtn: "Visitar web",
             manifestoTitle: "¿Por qué Ecoclash?",
             manifestoSubtitle: "Un paso a un lado para recuperar el poder de actuar.",
             manifestoCard1Title: "Intercambio Libre y Gratuito",
@@ -253,48 +154,13 @@ document.addEventListener('DOMContentLoaded', () => {
             manifestoCard3Text: "La teoría no es suficiente. Apoyamos activamente las zonas a defender (ZAD), los centros sociales ocupados y autogestionados, las eco-aldeas y todas las formas de acción directa orientadas a detener la destrucción de la tierra.",
             dalaiTitle: "¡¿Demasiado pequeño?!",
             dalaiQuote: "\"Si crees que eres demasiado pequeño para marcar la diferencia, intenta dormir en una habitación cerrada con un mosquito... ¡y verás cuál de los dos impide que el otro duerma!\"",
-
-            // Synergies Section
-            synergiesTitle: "Sinergias y Enlaces Amigos",
-            synergiesSubtitle: "Redes, colectivos y plataformas que comparten nuestro horizonte.",
-            synergyVisitBtn: "Visitar sitio web",
-
-            // Participate / Contact
-            participateTitle: "Contribuir y Participar",
-            participateSubtitle: "Este sitio es una herramienta colectiva. Comparte tus propios tutoriales, libros libres o experiencias prácticas.",
-            contactInfoTitle: "¡Haz circular los saberes!",
-            contactInfoText1: "¿Has construido una vivienda alternativa, escrito un fanzine o descubierto una joya técnica en archivos libres?",
-            contactInfoText2: "Escríbenos a través de este formulario seguro para que podamos sumarlo al infokiosco.",
-            perk1: "100% Anónimo si lo prefieres",
-            perk2: "Open-Source y Sin derechos comerciales",
-            perk3: "Alojado de forma duradera en GitHub Pages",
-            formNameLabel: "Tu alias / nombre:",
-            formNamePlaceholder: "Ej: Emiliano Zapata",
-            formEmailLabel: "Correo electrónico (opcional):",
-            formEmailPlaceholder: "para responderte...",
-            formSubjectLabel: "Tema de tu contribución:",
-            formSubOption1: "Proponer un tutorial o guía PDF",
-            formSubOption2: "Sugerir un sitio amigo (Sinergias)",
-            formSubOption3: "Reportar un enlace roto o corrección",
-            formSubOption4: "Un mensaje de aliento o contacto",
-            formMessageLabel: "Tu mensaje o enlace de descarga:",
-            formMessagePlaceholder: "Comparte tus enlaces de descarga (Archive.org, Framadrop, etc.) o describe tu proyecto aquí...",
-            formSubmitBtn: "Enviar Contribución",
-            formSuccessMsg: "¡Gracias! Tu mensaje se ha transmitido correctamente.",
-
-            // Modal & Comments
-            modalResourcesTitle: "Documentos y Descargas Libres:",
+            staticContactTitle: "Misión y Privacidad del Infokiosco",
+            staticContactText: "Este repositorio actualizado (Remake 2026) es un infokiosco web 100% estático y libre alojado de forma duradera en GitHub Pages. En estricto cumplimiento con nuestros principios de defensa de la privacidad, este sitio no contiene ningún formulario de recolección de datos, ningún script de rastreo, ningún archivo cookie y ninguna entrada de usuario simulada (Sin user inputs). Para compartir nuevos manuales en PDF o participar en acciones colectivas, intégrate directamente en las redes comunitarias de resistencia en tu territorio.",
+            modalResourcesTitle: "Documentos, PDF y Descargas de MediaFire Libres:",
             shareArticle: "Compartir este saber:",
             copyLinkBtn: "Copiar enlace",
             copiedLinkBtn: "¡Enlace copiado!",
-            reactionLabel: "Inspirador",
-            commentsHeader: "Discusiones y Comentarios",
-            quickCommentAuthor: "Tu alias...",
-            quickCommentText: "Añade una pregunta, un truco o experiencia...",
-            quickCommentSubmit: "Publicar comentario",
-
-            // Footer
-            footerBio: "Versión mejorada, modernizada y actualizada (Remake 2026). Intercambio de saberes de autonomía, autoconstrucción y resistencia ecológica. Creado en puro Vanilla HTML / CSS / JS para GitHub Pages.",
+            footerBio: "Versión mejorada, modernizada y actualizada (Remake 2026). Intercambio de saberes de autonomía, autoconstrucción y resistencia ecológica. Creado en puro Vanilla HTML / CSS / JS para GitHub Pages. Plataforma 100% estática sin rastreadores ni entradas de usuario.",
             footerOpenSource: "Saberes Libres para un Mundo Libre",
             footerNavTitle: "Navegación",
             footerTechTitle: "Especificaciones Técnicas",
@@ -302,1026 +168,3776 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    /* --- 2. QUOTES DATABASE --- */
-    const quotes = [
-        {
-            fr: { text: "On nous dit: Le bonheur c'est le progrès faites un pas en avant. Et c'est le progrès... mais ce n'est jamais le bonheur. Alors si on faisait un pas de côté! Si on essayait autre chose!", author: "Ecoclash" },
-            en: { text: "They tell us: Happiness is progress, take a step forward. And it's progress... but it's never happiness. So what if we took a step sideways! What if we tried something else!", author: "Ecoclash" },
-            es: { text: "Nos dicen: La felicidad es el progreso, da un paso adelante. Y es progreso... pero nunca es felicidad. ¡Entonces, ¿qué tal si damos un paso a un lado! ¿Y si intentamos otra cosa!", author: "Ecoclash" }
-        },
-        {
-            fr: { text: "La liberté ne se mendie pas, elle se prend.", author: "Louise Michel" },
-            en: { text: "Freedom is not begged for, it is taken.", author: "Louise Michel" },
-            es: { text: "La libertad no se mendiga, se toma.", author: "Louise Michel" }
-        },
-        {
-            fr: { text: "La croissance infinie dans un monde fini est une absurdité que seuls les fous ou les économistes peuvent croire.", author: "Kenneth Boulding" },
-            en: { text: "Anyone who believes exponential growth can go on forever in a finite world is either a madman or an economist.", author: "Kenneth Boulding" },
-            es: { text: "Cualquiera que crea que el crecimiento exponencial puede continuar indefinidamente en un mundo finito es un loco o un economista.", author: "Kenneth Boulding" }
-        },
-        {
-            fr: { text: "La terre n'est pas un don de nos parents, ce sont nos enfants qui nous la prêtent.", author: "Proverbe Amérindien" },
-            en: { text: "We do not inherit the Earth from our ancestors, we borrow it from our children.", author: "Native American Proverb" },
-            es: { text: "La tierra no es un legado de nuestros padres, sino un préstamo de nuestros hijos.", author: "Proverbio Indígena" }
-        },
-        {
-            fr: { text: "Produire ses propres aliments, c'est imprimer sa propre monnaie.", author: "Ron Finley" },
-            en: { text: "Growing your own food is like printing your own money.", author: "Ron Finley" },
-            es: { text: "Cultivar tus propios alimentos es como imprimir tu propio dinero.", author: "Ron Finley" }
-        }
-    ];
+    /* --- 2. QUOTE ROTATOR --- */
+    const quoteData = {
+        fr: "On nous dit: Le bonheur c'est le progrès faites un pas en avant. Et c'est le progrès... mais ce n'est jamais le bonheur. Alors si on faisait un pas de côté! Si on essayait autre chose! Si on faisait un pas de côté, on verrait ce qu'on ne voit jamais.",
+        en: "They tell us: Happiness is progress, take a step forward. And it's progress... but it's never happiness. So what if we took a step sideways! What if we tried something else! If we took a step sideways, we would see what we never otherwise see.",
+        es: "Nos dicen: La felicidad es el progreso, da un paso adelante. Y es progreso... pero nunca es felicidad. ¡Entonces, ¿qué tal si damos un paso a un lado! ¿Y si intentamos otra cosa! Si diéramos un paso a un lado, veríamos lo que nunca vemos."
+    };
 
-    /* --- 3. SYNERGIES DATABASE --- */
-    const synergies = [
-        {
-            title: "ZAD de Notre-Dame-des-Landes",
-            url: "http://zad.nadir.org/",
-            icon: "✊",
-            desc: {
-                fr: "Collectif de résistance ayant victorieusement protégé le bocage contre un projet d'aéroport inutile. Infokiosque, radio locale, écolieux autogérés.",
-                en: "Legendary autonomous zone that successfully defended wetlands against a destructive mega-airport project. Direct democracy, bio-farming, radio.",
-                es: "Zona autónoma que defendió con éxito los humedales contra un mega-aeropuerto destructivo. Democracia directa, eco-agricultura, radio local."
-            }
-        },
-        {
-            title: "Alphazomes & Special Vroutsch",
-            url: "http://alphazomes.org/",
-            icon: "🔮",
-            desc: {
-                fr: "Le portail mythique consacré aux zomes, architectures géodésiques, calculs d'angles et géométrie sacrée d'autoconstruction.",
-                en: "The legendary portal dedicated to zoomes, geodesic architectural geometry, structural engineering, and self-built counter-culture habitats.",
-                es: "Portal legendario dedicado a zomes, geometría arquitectónica geodésica, ingeniería estructural y viviendas alternativas de autoconstrucción."
-            }
-        },
-        {
-            title: "Internet Archive (Open Library)",
-            url: "https://archive.org/",
-            icon: "📚",
-            desc: {
-                fr: "La bibliothèque universelle libre. Retrouvez-y tous les vieux traités de Gardner Dexter Hiscox sur la mécanique, les moteurs à air et les formules d'atelier.",
-                en: "The free universal library. Access open technical archives, workshop formulas by Gardner Dexter Hiscox, and historic self-reliance books.",
-                es: "La biblioteca universal libre. Accede a archivos técnicos abiertos, fórmulas de taller de Gardner Dexter Hiscox y libros históricos de autosuficiencia."
-            }
-        },
-        {
-            title: "Infokiosques.net",
-            url: "https://infokiosques.net/",
-            icon: "📜",
-            desc: {
-                fr: "Brochures, textes, fanzines et journaux anarchistes, anticapitalistes et féministes à télécharger, imprimer et diffuser librement.",
-                en: "Brochures, zines, and radical decentralized texts to download, print, and distribute freely in self-managed social centers.",
-                es: "Folletos, fanzines y textos radicales descentralizados para descargar, imprimir y distribuir libremente en centros sociales autogestionados."
-            }
-        },
-        {
-            title: "Low-Tech Lab",
-            url: "https://lowtechlab.org/",
-            icon: "🔧",
-            desc: {
-                fr: "Découvrir, concevoir et documenter des technologies utiles, accessibles et durables (fours solaires, éoliennes Piggott, chauffe-eau compost).",
-                en: "Discover, make, and document useful, accessible, and sustainable Low-Tech solutions (solar ovens, Piggott wind turbines, compost heaters).",
-                es: "Descubrir, crear y documentar tecnologías útiles, accesibles y sostenibles (hornos solares, aerogeneradores Piggott, calentadores de compost)."
-            }
-        },
-        {
-            title: "Permaculture & Réseau Semences Libres",
-            url: "https://www.kokopelli-semences.fr/",
-            icon: "🌻",
-            desc: {
-                fr: "Préservation de la biodiversité semencière et potagère. Graines reproductibles, anciennes et biologiques pour l'autonomie alimentaire.",
-                en: "Preserving heirloom and organic heirloom seed biodiversity. Reproducible open-pollinated seeds for genuine community food autonomy.",
-                es: "Preservación de la biodiversidad de semillas orgánicas tradicionales. Semillas reproducibles para una verdadera autonomía alimentaria comunitaria."
-            }
-        }
-    ];
-
-    /* --- 4. FULL ARTICLE DATABASE (UPGRADED & EXPANDED ECOCLASH DATABASE) --- */
+    /* --- 3. FULL ARTICLE DATABASE (24 Pristine Articles with OG Images and Working MediaFire links) --- */
     const articles = [
-        {
-            id: "panier-papier",
-            category: "artisanat",
-            date: "17 août 2015",
-            readingTime: 6,
-            reactions: 42,
-            image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
-            tags: ["Vannerie", "Recyclage", "Papier Journal", "DIY"],
-            title: {
-                fr: "Comment tresser un panier avec du papier journal (Vannerie de Papier)",
-                en: "How to Weave a Basket with Newspaper (Paper Basketry)",
-                es: "Cómo tejer una canasta con papel de periódico (Cestería de Papel)"
-            },
-            desc: {
-                fr: "Rien ne se perd, rien ne se crée, tout se transforme. Apprenez la vannerie et le tressage à partir de simples journaux de récupération.",
-                en: "Nothing is lost, nothing is created, everything is transformed. Learn practical basket weaving using everyday upcycled newspapers.",
-                es: "Nada se pierde, nada se crea, todo se transforma. Aprende el arte de la cestería utilizando simples periódicos reciclados."
-            },
-            content: {
-                fr: `
-                    <p>La vannerie est l'un des artisanats les plus anciens de l'humanité. Mais saviez-vous que vous n'avez pas besoin d'osier ou de rotin pour commencer ? Le papier journal, une fois roulé en fines baguettes, offre une résistance surprenante et permet de créer de magnifiques corbeilles, paniers à linge ou boîtes de rangement.</p>
-                    <h2>1. Matériel Nécessaire</h2>
-                    <ul>
-                        <li>Un vieux journal ou des prospectus publicitaires</li>
-                        <li>Une fine brochette en bois (ou une aiguille à tricoter de 2-3mm)</li>
-                        <li>De la colle blanche (colle à bois ou colle d'amidon maison)</li>
-                        <li>Du vernis à l'eau ou de l'huile de lin pour imperméabiliser le panier final</li>
-                    </ul>
-                    <h2>2. Préparation des Tubes (Les "Brins")</h2>
-                    <p>Coupez vos feuilles de journal en bandes d'environ 7 à 10 cm de large. Placez la brochette en bois dans un angle de la bande, avec un angle d'environ 45°. Roulez le papier en serrant bien la fibre autour de la brochette. Avant d'arriver à la pointe finale, déposez une petite goutte de colle blanche, puis retirez délicatement la brochette.</p>
-                    <blockquote>Astuce d'artisan : L'un des bouts du tube sera légèrement plus large que l'autre. C'est parfait ! Cela permet d'emboîter les brins les uns dans les autres pour obtenir une longueur infinie lors du tressage.</blockquote>
-                    <h2>3. Le Tressage du Fond</h2>
-                    <p>Croisez 4 brins horizontaux et 4 brins verticaux en leur centre. Prenez un brin très long (le brin "clôture"), pliez-le en deux et commencez à enlacer chaque groupe de brins en technique de "superposition" ou de "croisée". Une fois le fond assez grand, relevez les montants verticaux et attachez-les temporairement en haut avec une pince à linge.</p>
-                    <h2>4. Finitions et Protection</h2>
-                    <p>Continuez à tresser les parois à la hauteur souhaitée. Pour clore le panier, repliez les montants verticaux vers l'intérieur en les glissant sous le rang précédent avec un poinçon. Badigeonnez l'ensemble avec un mélange à parts égales de colle blanche et d'eau. En séchant, le panier deviendra dur comme du bois !</p>
-                `,
-                en: `
-                    <p>Basketry is one of humanity's most ancient crafts. But did you know you don't need expensive willow or rattan to start? Newspaper, once rolled into tight straws, offers surprising durability and structural strength, allowing you to create stunning storage baskets and laundry hampers entirely for free.</p>
-                    <h2>1. Required Materials</h2>
-                    <ul>
-                        <li>Old newspapers or paper advertising flyers</li>
-                        <li>A thin wooden skewer or 2-3mm knitting needle</li>
-                        <li>PVA white glue or homemade flour-based starch glue</li>
-                        <li>Water-based varnish or raw linseed oil to seal and waterproof</li>
-                    </ul>
-                    <h2>2. Rolling the Paper Tubes</h2>
-                    <p>Cut your newspaper sheets into strips roughly 7 to 10 cm wide. Place the wooden skewer across one corner of the strip at an approximate 45° angle. Roll the paper tightly around the skewer. Before rolling up the final corner tip, apply a dab of glue, press securely, and gently slide the wooden skewer out.</p>
-                    <blockquote>Craft Tip: One end of your finished paper straw will naturally be slightly wider than the other. This is ideal as it allows you to effortlessly slot tubes together to create continuous weaving strands.</blockquote>
-                    <h2>3. Weaving the Base</h2>
-                    <p>Arrange 4 horizontal and 4 vertical straws in a central cross pattern. Take a very long working straw, fold it in half, and begin pairing around each strand. Once your circular base reaches the desired diameter, gently bend the upright framework poles upward and secure them with clothespins to establish your vertical walls.</p>
-                    <h2>4. Sealing and Longevity</h2>
-                    <p>Weave up to your preferred wall height. Tuck the remaining upright tips down into the existing weave. Finally, coat the entire completed basket with a 50/50 mixture of white glue and warm water. Once fully cured, your paper basket will become as rigid and sturdy as solid wood!</p>
-                `,
-                es: `
-                    <p>La cestería es una de las artesanías más antiguas de la humanidad. ¿Pero sabías que no necesitas mimbre o ratán caro para empezar? El papel de periódico, una vez enrollado en tubos finos y apretados, ofrece una resistencia sorprendente y permite crear hermosas canastas de almacenamiento de forma totalmente gratuita.</p>
-                    <h2>1. Materiales Necesarios</h2>
-                    <ul>
-                        <li>Periódicos viejos o folletos publicitarios</li>
-                        <li>Un palillo de madera fino o una aguja de tejer de 2-3 mm</li>
-                        <li>Cola blanca (cola de carpintero o engrudo casero de harina)</li>
-                        <li>Barniz al agua o aceite de linaza para impermeabilizar</li>
-                    </ul>
-                    <h2>2. Preparación de los Tubos</h2>
-                    <p>Corta las hojas de periódico en tiras de unos 7 a 10 cm de ancho. Coloca el palillo de madera en una esquina de la tira con un ángulo aproximado de 45°. Enrolla el papel apretándolo bien. Antes de llegar a la punta final, pon una gota de cola y retira suavemente el palillo de madera.</p>
-                    <blockquote>Consejo de artesano: Uno de los extremos del tubo será ligeramente más ancho que el otro. ¡Esto es perfecto! Permite encajar un tubo dentro de otro para extender la longitud al infinito mientras tejes.</blockquote>
-                    <h2>3. Tejiendo la Base</h2>
-                    <p>Cruza 4 tubos horizontales y 4 verticales en el centro. Toma un tubo largo, dóblalo por la mitad y comienza a entrelazar cada grupo. Una vez que la base alcance el tamaño deseado, dobla los postes verticales hacia arriba y sujétalos temporalmente con pinzas para ropa para formar las paredes.</p>
-                    <h2>4. Acabados y Protección</h2>
-                    <p>Sigue tejiendo las paredes hasta la altura deseada. Remata doblando los postes hacia adentro y deslizándolos bajo el tejido anterior. Pinta toda la canasta con una mezcla a partes iguales de cola blanca y agua. Al secarse, ¡quedará tan dura como la madera maciza!</p>
-                `
-            },
-            resources: [
-                { name: "📥 Guide Complet Vannerie Papier (PDF 14p)", url: "#" },
-                { name: "🎬 Tutoriel Vidéo Tressage (Web Archive)", url: "#" }
-            ],
-            comments: [
-                { author: "VannierBio", date: "20 août 2015", text: "Génial ! J'ai fabriqué 3 corbeilles pour ma cuisine. Le conseil de l'huile de lin fonctionne à merveille pour l'humidité." },
-                { author: "ZAD_Rennes", date: "2 septembre 2015", text: "Merci pour ce savoir libre ! On utilise ça sur le camp pour trier les semences." }
-            ]
+    {
+        "id": "lieux-de-vie-collectifs-fermes-squat-ecolieu",
+        "category": "habitat",
+        "date": "2015/11/25",
+        "readingTime": 15,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=109x1024:format=jpg/path/s6b5d09a755d07b57/image/i53a05fffa69e0e5a/version/1448447311/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Lieux de vie, collectifs, fermes, squat, ecolieu",
+            "en": "Collective Living Spaces, Reclaimed Farms & Autonomous Squats",
+            "es": "Espacios de Vida Colectivos, Granjas Recuperadas y Centros Ocupados"
         },
-        {
-            id: "construire-yourte",
-            category: "habitat",
-            date: "10 août 2014",
-            readingTime: 12,
-            reactions: 88,
-            image: "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=800&q=80",
-            tags: ["Yourte", "Autoconstruction", "Bois Local", "Habitat Léger"],
-            title: {
-                fr: "Pratique — Comment construire une yourte (Yurt / Ger)",
-                en: "Practical — How to Build a Yurt (Yurt / Ger)",
-                es: "Práctico — Cómo construir una Yurt (Yurt / Ger)"
-            },
-            desc: {
-                fr: "Infos, plans, géométrie et calculs pour l'autoconstruction complète d'une yourte traditionnelle mongole ou contemporaine en bois local.",
-                en: "Engineering blueprints, calculations, and comprehensive instructions for building a DIY Mongolian or modern yurt using local timber.",
-                es: "Planos, cálculos y guía práctica completa para la autoconstrucción de una yurt tradicional mongola o moderna con madera local."
-            },
-            content: {
-                fr: `
-                    <p>La yourte (ou <em>Ger</em> en mongol) est sans doute l'habitat léger nomade le plus abouti de l'histoire. Bioclimatique, aérodynamique, résistante aux tempêtes et facile à chauffer, elle constitue une solution d'émancipation foncière exceptionnelle pour ceux qui veulent vivre près de la nature.</p>
-                    <h2>1. Structure et Nomenclatures</h2>
-                    <p>Une yourte classique se compose de 4 éléments de menuiserie principaux :</p>
-                    <ul>
-                        <li><strong>Le Toono (La Couronne) :</strong> L'anneau central en haut du toit qui maintient l'ensemble en compression et permet l'aération et la sortie du poêle.</li>
-                        <li><strong>Les Khanas (Les Murs) :</strong> Des treillis de lattes de bois croisées et liées par des lanières de cuir ou de la cordelette. Ils se replient comme un accordéon.</li>
-                        <li><strong>Les Perches (Les Chevrons) :</strong> Les barres de bois qui s'emboîtent entre le haut des khanas et le toono.</li>
-                        <li><strong>Les Baganas (Les Piliers) :</strong> Deux poteaux centraux qui soutiennent le toono pendant le montage et en cas de fortes chutes de neige.</li>
-                    </ul>
-                    <h2>2. Choix du Bois et Calcul des Perches</h2>
-                    <p>Pour une yourte d'environ 5 mètres de diamètre (20 m²), le bois local idéal est le frêne, le châtaignier ou le noisetier droit pour les treillis. Le calcul de la circonférence et de la pente du toit (généralement 30° à 35°) est crucial. Si vos murs font 1m50 de haut, prévoyez des perches d'environ 2m60.</p>
-                    <h2>3. Couture de la Toile et Isolation</h2>
-                    <p>L'enveloppe extérieure se compose généralement de 3 couches :</p>
-                    <ol>
-                        <li>Une toile intérieure en coton blanc pour refléter la lumière.</li>
-                        <li>Une couche d'isolant (feutre de laine de mouton pur de 10 à 20mm, ou isolant métisse en chanvre/coton recyclé).</li>
-                        <li>Une toile extérieure imperméable et respirante (toile acrylique marine ou toile de tente lourde traitée anti-UV).</li>
-                    </ol>
-                    <blockquote>Important : Lors de l'installation, entourez le sommet des murs (l'intersection treillis/perches) avec un câble d'acier ou une sangle à cliquet ultra-robuste (la "sangle de tension"). C'est cette sangle qui encaisse la poussée du toit !</blockquote>
-                `,
-                en: `
-                    <p>The yurt (or <em>Ger</em> in Mongolian) is arguably the greatest portable nomadic dwelling in human history. Bioclimatic, highly wind-resistant, structurally elegant, and effortless to heat, it represents a profound pathway to true housing autonomy.</p>
-                    <h2>1. Anatomy of a Yurt</h2>
-                    <p>A traditional wooden yurt breaks down into four essential structural subsystems:</p>
-                    <ul>
-                        <li><strong>The Toono (Compression Ring / Crown):</strong> The central circular wooden skylight ring that anchors the roof rafters and houses the woodstove stovepipe.</li>
-                        <li><strong>The Khana (Lattice Walls):</strong> Expandable crisscrossed wooden slats joined by raw hide thongs or durable cordage. They fold like an accordion for transport.</li>
-                        <li><strong>The Rafter Poles:</strong> Straight wooden spars spanning under tension between the top of the wall lattice and the central crown.</li>
-                        <li><strong>The Bagana (Central Supports):</strong> Two internal upright columns supporting the heavy crown ring during assembly and heavy winter snow loads.</li>
-                    </ul>
-                    <h2>2. Timber Selection & Math</h2>
-                    <p>For a standard 5-meter diameter yurt (approx. 20 square meters of living space), optimal local timbers include flexible straight ash, durable sweet chestnut, or hazel. Rafter calculation is precise: for 1.5m tall lattice walls and a standard 33° roof pitch, rafters should measure exactly 2.60m.</p>
-                    <h2>3. Custom Canvas Sewing & Insulation</h2>
-                    <p>The external protective membrane relies on a breathable 3-layer sandwich:</p>
-                    <ol>
-                        <li>A lightweight breathable interior cotton lining to illuminate the interior space.</li>
-                        <li>A robust insulating core layer (10mm to 20mm of dense pure sheep’s wool felt or upcycled hemp/cotton batting).</li>
-                        <li>An ultra-durable heavy-duty outer canvas treated for UV resistance, mildew protection, and waterproofing.</li>
-                    </ol>
-                    <blockquote>Engineering Warning: You must wrap an incredibly strong tension cable or heavy-duty heavy ratchet strap around the perimeter of the top wall lattice. This primary tension band prevents the outward downward thrust of the roof rafters from flattening the walls!</blockquote>
-                `,
-                es: `
-                    <p>La yurt (o <em>Ger</em> en mongol) es posiblemente la vivienda portátil nómada más perfecta de la historia. Bioclimática, altamente resistente a los vientos, estructuralmente brillante y muy fácil de calentar, representa una excelente vía hacia la libertad residencial.</p>
-                    <h2>1. Anatomía de la Estructura</h2>
-                    <p>Una yurt tradicional de madera se divide en cuatro componentes de carpintería principales:</p>
-                    <ul>
-                        <li><strong>El Toono (Anillo o Corona Central):</strong> La rueda superior del techo que mantiene toda la estructura en compresión y sirve de tragaluz y salida de la chimenea.</li>
-                        <li><strong>Las Khanas (Paredes de Celosía):</strong> Rejillas de listones de madera cruzados unidos por tiras de cuero o cuerda. Se pliegan como un acordeón.</li>
-                        <li><strong>Las Pértigas (Vigas del Techo):</strong> Postes de madera que se encajan entre la parte superior de las paredes y el anillo central.</li>
-                        <li><strong>Los Baganas (Pilares Centrales):</strong> Dos columnas que sostienen el anillo central durante el montaje y ante fuertes nevadas.</li>
-                    </ul>
-                    <h2>2. Selección de Madera y Cálculos</h2>
-                    <p>Para una yurt de 5 metros de diámetro (unos 20 m² de superficie), la madera ideal es el fresno, el castaño o el avellano recto. El cálculo de los ángulos es exacto: para paredes de 1.5m de altura y una inclinación de techo de 33°, las pértigas deben medir 2.60m.</p>
-                    <h2>3. Costura de Lonas y Aislamiento</h2>
-                    <p>El revestimiento exterior consta de 3 capas superpuestas:</p>
-                    <ol>
-                        <li>Una tela interior de algodón blanco claro para reflejar la luz interior.</li>
-                        <li>Una capa aislante gruesa (fieltro de lana de oveja 100% natural de 10-20 mm o fieltro de cáñamo).</li>
-                        <li>Una lona exterior marina pesada, impermeable y con tratamiento anti-rayos UV.</li>
-                    </ol>
-                    <blockquote>Aviso Estructural: Es imprescindible rodear todo el perímetro superior de las paredes con un cable de acero o una eslinga tensora muy fuerte. ¡Este cinturón de tensión es el que absorbe el empuje lateral del techo y evita que las paredes se abran!</blockquote>
-                `
-            },
-            resources: [
-                { name: "📐 Plans de Coupe et Calculateur Excel Yourte", url: "#" },
-                { name: "📖 Manuel de Couture des Lonas (PDF 30p)", url: "#" }
-            ],
-            comments: [
-                { author: "EcoLieu_Jura", date: "15 septembre 2014", text: "Nous vivons dans une yourte autoconstruite de 6m depuis 3 ans. Le bonheur absolu ! Prévoyez un bon plancher surélevé pour le froid par en dessous." }
-            ]
+        "desc": {
+            "fr": "🌐 Réseaux, Associations & Annuaires de Lieux (mise à jour avril 2026) ReclaimTheFields.org — Constellation européenne de paysan·nes, sans‑terre et collectifs reprenant la main sur la terre et la\n        production alime...",
+            "en": "Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.",
+            "es": "Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas."
         },
-        {
-            id: "perles-archives-vol1",
-            category: "mediatheque",
-            date: "15 août 2015",
-            readingTime: 8,
-            reactions: 104,
-            image: "https://images.unsplash.com/photo-1507842229456-3a097aae189f?auto=format&fit=crop&w=800&q=80",
-            tags: ["Archives", "Low-Tech", "Recettes", "Mécanique", "Open-Source"],
-            title: {
-                fr: "Les Perles des Archives / Vol. 1 (Livres et Formules Rares)",
-                en: "Gems of the Archives / Vol. 1 (Rare Books & Workshop Formulas)",
-                es: "Joyas de los Archivos / Vol. 1 (Libros y Fórmulas Raras)"
-            },
-            desc: {
-                fr: "Une sélection précieuse d'ouvrages libres : 10 000 formules d'atelier, 507 mouvements mécaniques, encyclopédies de recettes d'autonomie.",
-                en: "A golden collection of public domain open manual PDFs: 10,000 workshop formulas, 507 mechanical movements, and lost domestic wisdom.",
-                es: "Una valiosa selección de libros de dominio público: 10,000 fórmulas de taller, 507 movimientos mecánicos y enciclopedias de autosuficiencia."
-            },
-            content: {
-                fr: `
-                    <p>Internet Archive est une mine d'or oubliée. À la fin du XIXe et au début du XXe siècle, des ingénieurs et vulgarisateurs de génie ont documenté de manière exhaustive l'ensemble des savoir-faire techniques, chimiques et mécaniques de l'humanité, bien avant l'obsolescence programmée. Nous avons réuni ici les liens directs vers ces chefs-d'œuvre du domaine public.</p>
-                    <h2>Ouvrages Majeurs à Télécharger :</h2>
-                    <ul>
-                        <li><strong>Henley's Twentieth Century Formulas, Recipes and Processes :</strong> Plus de 10 000 formules d'atelier et de maison. Savons, encres, vernis, alliages, conservation des aliments, teintures végétales, colles, lubrifiants. Une véritable bible de l'autonomie.</li>
-                        <li><strong>Hiscox Mechanical Movements, Powers and Devices :</strong> Tous les livres de Gardner Dexter Hiscox sur la cinématique. Comment transformer un mouvement rotatif en mouvement alternatif, les pompes à eau manuelles, les régulateurs à boules, les horlogeries mécaniques.</li>
-                        <li><strong>The Dangerous Book for Boys :</strong> Compétences intemporelles, construction de cabanes dans les arbres, nœuds marins, orientation aux étoiles, fabrication de frondes et d'arcs.</li>
-                        <li><strong>Backyard Ballistics :</strong> Guide pas-à-pas pour construire 16 appareils balistiques (catapultes, canons à patates à air comprimé) avec de simples tuyaux de quincaillerie.</li>
-                        <li><strong>Encyclopedia of Practical Receipts and Processes (1872) :</strong> Par William B. Dick. Plus de 6400 recettes pratiques pour l'industrie artisanale et la vie domestique.</li>
-                    </ul>
-                `,
-                en: `
-                    <p>The Internet Archive is a forgotten treasure trove. In the late 19th and early 20th centuries, master engineers and educators exhaustively documented the sum of human domestic, chemical, and mechanical engineering—long before the era of planned obsolescence and closed digital microchips. Here are direct links to these public domain masterworks.</p>
-                    <h2>Curated Open Archive Downloads:</h2>
-                    <ul>
-                        <li><strong>Henley's Twentieth Century Formulas, Recipes and Processes:</strong> Over 10,000 practical household and workshop formulas. How to make natural soaps, permanent inks, varnishes, wood glues, non-toxic preservatives, herbal dyes, and metal alloys.</li>
-                        <li><strong>Hiscox Mechanical Movements, Powers and Devices:</strong> The complete technical masterworks of Gardner Dexter Hiscox. Demonstrates hundreds of ways to convert rotary motion to reciprocating motion, build mechanical wind pumps, and design governors.</li>
-                        <li><strong>Five Hundred and Seven Mechanical Movements (by Henry T. Brown):</strong> Clear engineering schematics of pneumatics, steam linkages, and gearing systems.</li>
-                        <li><strong>Backyard Ballistics:</strong> Step-by-step DIY manual illustrating how to build 16 entertaining ballistic engines, potato cannons, and trebuchets out of hardware store piping.</li>
-                        <li><strong>Encyclopedia of Practical Receipts and Processes (1872):</strong> By William B. Dick. Over 6,400 plain-language recipes for self-sufficient homesteading.</li>
-                    </ul>
-                `,
-                es: `
-                    <p>Internet Archive es una mina de oro olvidada. A finales del siglo XIX y principios del XX, brillantes ingenieros documentaron exhaustivamente todas las técnicas químicas, mecánicas y de construcción de la humanidad, mucho antes de la obsolescencia programada. Presentamos aquí los enlaces directos a estas joyas del dominio público.</p>
-                    <h2>Libros Esenciales para Descargar:</h2>
-                    <ul>
-                        <li><strong>Henley's Twentieth Century Formulas, Recipes and Processes:</strong> Más de 10,000 fórmulas de taller y hogar. Elaboración de jabones naturales, tintas, barnices, aleaciones, métodos de conservación, tintes vegetales y pegamentos. La biblia de la autosuficiencia.</li>
-                        <li><strong>Hiscox Mechanical Movements, Powers and Devices:</strong> La obra cumbre de Gardner Dexter Hiscox sobre cinemática. Enseña a transformar movimientos rotativos en alternativos, construir bombas de agua manuales y mecanismos de relojería.</li>
-                        <li><strong>Five Hundred and Seven Mechanical Movements (Henry T. Brown):</strong> Mecanismos clave de dinámica, hidráulica y neumática ilustrados con absoluta claridad.</li>
-                        <li><strong>Backyard Ballistics:</strong> Manual de bricolaje paso a paso para construir 16 dispositivos de aire comprimido y catapultas utilizando simples tubos de ferretería.</li>
-                        <li><strong>Encyclopedia of Practical Receipts and Processes (1872):</strong> 6,400 recetas de William B. Dick para la vida campesina y la autosuficiencia en el hogar.</li>
-                    </ul>
-                `
-            },
-            resources: [
-                { name: "🔗 Télécharger Henley's Formulas (Archive.org PDF)", url: "https://archive.org/details/henleystwentieth00hiscrich" },
-                { name: "🔗 Télécharger Mechanical Movements (Archive.org PDF)", url: "https://archive.org/details/mechanicalmovem04hiscgoog" },
-                { name: "🔗 507 Mechanical Movements (Site Animé & PDF)", url: "https://archive.org/details/fivehundredseven02brow" }
-            ],
-            comments: [
-                { author: "Archiviste_Curieux", date: "16 août 2015", text: "Le Henley's est incroyable. J'ai fabriqué ma propre encre ferrogallique et de la colle à reliure grâce à leurs formules." }
-            ]
+        "content": {
+            "fr": "<p>🌐 Réseaux, Associations & Annuaires de Lieux (mise à jour avril 2026)</p><p>ReclaimTheFields.org — Constellation européenne de paysan·nes, sans‑terre et collectifs reprenant la main sur la terre et la\n        production alimentaire. Camps, actions, rencontres. (Actif)</p><p>Wwolfing.wordpress.com — « Wwoofing with teeth » : blog issu de Reclaim the Fields sur le wwoofing militant (ZAD, fermes\n        autogérées, etc.). Plus mis à jour mais toujours consultable. (Actif, contenu ancien)</p><p>GEN‑Europe.org — Global Ecovillage Network – branche européenne : carte interactive, annuaire d’écovillages, projets, formations,\n        événements. (Actif)</p><p>GEN – Global Ecovillage Network (gen.ecovillage.org) — Réseau international des écovillages, avec carte mondiale et nombreuses\n        ressources. (Actif)</p><p>Eurotopia.de — Annuaire/guide de communautés intentionnelles et écovillages en Europe, version anglaise du site Eurotopia.\n        (Actif)</p><p>EYFA.org — European Youth For Action : réseau de jeunesse écolo‑radicale, rencontres (Ecotopia, camps, caravanes à vélo…). (Actif)</p><p>Habiter-Autrement.org – Écolieux / Écovillages — Dossier très riche (en français) sur les écovillages,\n        écolieux, écohameaux, avec de nombreux liens complémentaires. (Actif)</p><p>Passerelle Éco — Revue & réseau d’écovillages, habitats groupés, écolieux en France. Annonces, petites annonces, fiches de\n        lieux. (Actif)</p><p>HALEM France — Habitant·es de Logements Éphémères ou Mobiles : défense des modes de vie mobiles/légers (yourtes, caravanes, camions,\n        cabanes, etc.). (Actif, très vivant)</p><p>TerreDeLiens.org — Mouvement qui achète des terres agricoles pour les soustraire à la spéculation et installer des paysan·nes en\n        bio, souvent en collectif. (Actif)</p><p>Colibris – Mouvement pour la Terre et l’Humanisme — Mouvement fondé autour de Pierre Rabhi, soutenant la transition\n        (écologie, éducation, habitat participatif). Carte d’initiatives, outils, MOOC. (Actif)</p><p>Écolieux‑de‑France (ecolieuxdefrance.free.fr) — Ancien mais toujours consultable : gros répertoire d’écolieux, concepts,\n        textes. (Actif comme archive web)</p><p>TerraVie.org — Fonds foncier communautaire au Québec : préserve des terres à perpétuité et les transforme en aires protégées et lieux\n        de vie collectifs. (Actif)</p><p>PermacultureGlobal.com (PermacultureGlobal.org) — Carte et base de données mondiale de projets et praticiens de permaculture.\n        (Actif)</p><p>Wikipedia – Category:Intentional communities — Catégorie Wikipédia listant de nombreuses\n        communautés intentionnelles dans le monde. (Actif, mis à jour)</p><p>IC.org — Foundation for Intentional Community (ex‑FIC) : base de données mondiale de communautés, ressources, livres, formations.\n        (Actif)</p><p>Ecovillage Wiki (Fandom) — Petit wiki collaboratif anglophone sur les écovillages. (Actif, contenu modeste)</p><p>SustainableCommunitiesAroundTheWorld.blogspot.com — Blog en anglais sur des communautés durables et\n        wwoofing, peu mis à jour mais toujours accessible. (Actif comme archive)</p><p>PlanetFriendly.net/community — Page anglophone listant de nombreuses communautés intentionnelles et écovillages\n        (Canada & international), au sein du portail People & Planet. (Actif)</p><p>LivingInTheFuture.org — Série de +60 courts métrages et films documentaires sur des écovillages et communautés (Lammas,\n        Findhorn, etc.). (Actif)</p><p>Groupe Dailymotion « Ecovillage » — Ancien groupe vidéo Dailymotion rassemblant des vidéos sur les écovillages et\n        alternatives. (Actif mais plus vraiment alimenté)</p><p>Planetfriendly – Intentional Communities & Ecovillages — Guide/portail de liens et ressources (principalement\n        Amérique du Nord). (Actif)</p><p>⚠️ Sites en veille, projets historiques ou archives consultables</p><p>Sharewiki – « Lieu de vie ouvert » — Page d’un ancien wiki collaboratif sur les lieux de vie ouverts, communautés,\n        projets collectifs. Le site Sharewiki est signalé comme « dormant » ; accès aléatoire. (En veille / archive)</p><p>Carte Google « Lieux de vie, bases nomades, collectifs, squats, écolieux » — Carte MyMaps collaborative recensant lieux de vie, squats, fermes, écolieux, bases nomades en\n        Europe. (Toujours en ligne, mises à jour variables)</p><p>Voyageurs.en-transition.fr — Blog & carte des alternatives (voyageurs en transition). Contenu surtout 2000–2010, souvent\n        cité comme ressource ; le site répond mal depuis 2024. (En veille / difficile d’accès)</p><p>Réseau des ÉcoHameaux & ÉcoVillages du Québec (REEQ) — Ancien site hébergé sur Tripod pour le REEQ, très souvent cité\n        dans la littérature. L’hébergeur Tripod est en grande partie hors‑service. (Archive web, généralement hors‑ligne)</p><p>Communauté en fête (Canada) — Site « Celebrating Community / Communauté en fête » présentant des communautés,\n        cohabitats, écovillages au Canada (fr/en). Toujours consultable, mais plutôt figé. (Active comme archive historique)</p><p>LaPlumeDeFeu.com – Revue Aube (Québec) — Site des éditions La Plume de Feu et de la revue Aube sur les écovillages &\n        alternatives au Québec. Domaine très difficile à atteindre aujourd’hui ; une partie des contenus subsiste via le sous‑domaine aube.laplumedefeu.com et des archives. (En\n        grande veille / à chercher via archives)</p><p>Sharewiki – List of ecovillages — Ancienne liste collaborative d’écovillages sur Sharewiki. (En veille, site peu\n        maintenu)</p><p>Sustainable Communities Around the World — Blog d’histoires d’écovillages et de wwoofing,\n        principalement années 2000–2010. (En veille, toujours lisible)</p><p>Anarchopedia – Communautarisme de lieu de vie — Article théorique sur les communautés de lieux de vie.\n        (Wiki très irrégulier, à considérer comme archive)</p><p>🔴 Liens cassés, domaines réutilisés ou chemins obsolètes</p><p>Ancienne liste GEN Europe (php.ecovillage.org) — Ancien script de liste\n        d’écovillages membres. Remplacé par l’annuaire sur GEN‑Europe.org. (Lien obsolète)</p><p>http://www.gen-europe.org/ — Lien encore valide mais redirigé ; il faut désormais utiliser https://gen-europe.org/. (Chemin ancien, redirigé)</p><p>PasserelleEco.info/index.php3 — Ancienne URL spécifique ; le site fonctionne désormais directement sur https://www.passerelleco.info/. (Chemin obsolète, domaine actif)</p><p>Macabane.info — Ancien site du « Mouvement autogéré des chercheurs en habitat autonome novateur et écologique ». Le domaine ne répond\n        plus correctement. D’autres structures portent aujourd’hui le nom « Ma Cabane » (centre de jour, matériaux naturels) mais ce ne sont pas forcément les mêmes projets. (Site d’origine\n        hors‑ligne)</p><p>Katipik.free.fr — Collectif de lutte contre les expulsions de cabanes en Ariège (France), hébergé sur Free. L’URL ne répond plus, même si\n        le contact mail [email protected] apparaît encore dans certains guides. (Lien cassé)</p><p>Permisdevivre.org — Réseau « Permis de vivre » pour la reconnaissance des habitats alternatifs (yourtes, tipis, cabanes…). Le domaine\n        est aujourd’hui injoignable ; attention à ne pas confondre avec d’autres projets récents nommés « Permis de vivre » n’ayant pas le même objet. (Site hors‑ligne)</p><p>Etyc.org/paradigmes — Ancien lien « Paradigmes » d’aide à la création de lieux de vie alternatifs. Le domaine\n        etyc.org ne semble plus pointer vers ce projet (ETYC désigne aujourd’hui d’autres structures). (Lien cassé / réutilisé)</p><p>Archiutop.com – L’Archipel des Utopies — Cette ancienne URL ne répond plus. L’association existe toujours sous le nom\n        Archipel des Utopies sur un nouveau site : archipel-utopies.com. (Lien obsolète, nouveau domaine actif)</p><p>GaiaDir – annuaire d’écovillages (fr.gaiadir.com) — Le domaine est désormais une page de parking/vente et ne remplit plus son\n        rôle d’annuaire. (Domaine repris)</p><p>LaPlumeDeFeu.com — Très difficile à joindre, parfois totalement inaccessible ; une bonne partie des contenus ne sont plus\n        consultables directement. (Pratiquement hors‑ligne)</p><p>http://gen.ecovillage.org/ — URL générique parfois bloquée par des protections techniques ; pour accéder au réseau global, utiliser\n        plutôt https://ecovillage.org/. (Chemin problématique, domaine actif)</p><p>Nomadbase.org — Ancien blog/réseau de « nomadbases » (maisons ouvertes aux nomades). Nomadwiki indique le projet comme inactif et le\n        domaine semble non enregistré. (Projet et domaine inactifs)</p><p>ICDB.org — Ne pointe plus vers une base de données de communautés intentionnelles mais vers un site d’actualités généraliste. (Domaine\n        réutilisé, plus lié aux communautés)</p><p>Ancien lien Ekopedia (fr.ekopedia.org) — Remplacé par https://www.ekopedia.fr/wiki/Comment_monter_un_projet_d%27%C3%A9colieu. (URL obsolète, article\n        toujours disponible sur Ekopedia.fr)</p><p>Spirale.Attac – L’écohabitat, l’habitat groupé — Les anciens liens Spirale d’Attac semblent\n        avoir été déplacés ou supprimés ; ces URL ne répondent plus. (Liens cassés)</p><p>Spirale.Attac – Vie communautaire ou collective — Même situation que ci‑dessus : ancien\n        article aujourd’hui introuvable via cette URL. (Lien cassé)</p><p>Radio‑Canada – « Génération hippie » — Lien vers une ancienne URL des archives.\n        Les archives existent toujours mais la structure des liens a changé ; à rechercher directement sur le site de Radio‑Canada. (Permalien obsolète)</p><p>🌈 Rainbow Family & Communautés associées (mise à jour avril 2026)</p><p>✅ Liens Rainbow actifs</p><p>Rainbow Family France — Blog/site de la famille Rainbow en France : infos, appels à rassemblements, récits, chants…\n        (Actif)</p><p>WelcomeHome.org – Rainbow Family — Page historique « non officielle » de la Rainbow Family of Living Light, infos\n        internationales, anciens calendriers de gatherings, textes de référence. (Actif, plutôt archivistique)</p><p>GlobalNatives.org — Club mondial de familles et « famillages » (familles élargies), échanges éducatifs & séjours, dans un\n        esprit de communauté globale. (Actif)</p><p>Rainbow Guide Online (Bliss‑Fire) — Ancien « Rainbow Guide » en ligne (listes de contacts, infos pratiques). Le\n        site existe encore mais derrière un système de protection (chargement parfois lent). (Actif mais accès parfois difficile)</p><p>⚠️ Sites en veille ou archives encore accessibles</p><p>SomewhereUnderTheRainbow.org — Ancien site non officiel expliquant les Rainbow Gatherings avec un calendrier mondial.\n        Souvent cité, mais difficile ou impossible à atteindre depuis 2025 ; à considérer comme archive. (En veille / potentiellement hors‑ligne)</p><p>RainbowInfo.ch — Ancien site d’infos Rainbow Europe (guides, FAQ, rassemblements). Quelques pages semblent avoir disparu\n        (/info.htm renvoie en erreur) et l’accès est très incertain. (Archive, non maintenu)</p><p>BeneficioFamily.com — Ancien forum et site de la communauté de Beneficio (Orgiva, Espagne), souvent décrite comme un\n        « Rainbow permanent ». Le domaine ne répond plus correctement. Pour des infos actuelles, voir par ex. la fiche NuMundo : Beneficio – NuMundo. (Site en panne / communauté toujours existante)</p><p>Shanti Terrian Project (AudeCulture) — Projet de lieu simple, yourtes, arc‑en‑ciel à Rennes‑les‑Bains (Aude). L’association a\n        existé, mais le site n’est plus joignable. (Projet historique, site hors‑ligne)</p><p>SpiritOfNature.ch — Ancien site « Spirit of Nature & Nature of Spirit », style Rainbow/New Age (CH/NZ). Le domaine\n        semble injoignable aujourd’hui. (Archive disparaissant)</p><p>Rainbow Gathering Guide (rainbowinfo.ch/info.htm) — Ancienne page de guide Rainbow, souvent citée (podcasts, wikis). Retourne\n        maintenant une erreur 404. (Lien spécifique obsolète)</p><p>🔴 Liens cassés / domaines repris</p><p>CNR.ch – Center New Reality (Suisse) — Ancien centre Rainbow/« New Reality » à Eriz. Le domaine est désormais garé chez un revendeur (Nameshift)\n        et n’a plus de lien avec le projet. (Domaine repris, site d’origine disparu)</p><p>Pelerins.populus.org — « Pèlerins de l’arc‑en‑ciel », projet de lieu Rainbow en France, hébergé sur Populus (plateforme gratuite\n        aujourd’hui quasi disparue). (Lien cassé)</p><p>WeLoveYouFilm.com — Site du documentaire « We Love You » sur les Rainbow Gatherings. Le domaine renvoie aujourd’hui des\n        erreurs serveur. Le film est encore trouvable via Vimeo ou d’autres plateformes.\n        (Domaine hors‑service)</p><p>🏘️ Lieux de Vie, Collectifs, Micro-Sociétés, Squats & Communautés Intentionnelles (mise à jour avril 2026)\n    Lieux ouverts à l'accueil, au partage, à l'échange, à la vie collective et aux expérimentations (écovillages, ZAD, habitats alternatifs, projets autogérés…).</p><p>✅ LIEUX & PROJETS ACTIFS</p><p>ZAD Notre-Dame-des-Landes — Zone À Défendre historique en Loire-Atlantique (1 650 ha). Le projet d'aéroport abandonné en 2018, le lieu\n        poursuit la vie collective, l'agriculture paysanne et l'accueil de luttes. (✅ Actif)</p><p>Village Troglobal — Collectif autogéré installé depuis 1997 dans d'anciennes caves troglodytiques à Grézillé (Maine-et-Loire).\n        Artisans, artistes et nomades partagent un mode de vie communautaire. (✅ Actif — blog WordPress en ligne)</p><p>La Vieille Valette — Collectif de la Valette : lieu de création pour des projets alternatifs d'autonomie\n        libertaire dans une vallée escarpée des Cévennes (Gard). Le lieu est toujours habité, avec une quinzaine de personnes sur place. Activités : ferme, vie\n        collective festive, théâtre, musique, yoga et autoconstruction. Site web Free « provisoirement à l'abandon » mais le lieu est actif depuis 1991. (✅ Lieu actif — site web\n        ancien)\n          ↳ Voir aussi : Fiche Passerelle Éco | Fiche Radar Squat</p><p>Longo Maï — La Cabrery — Réseau de coopératives autogérées fondé en 1973, regroupant plus de 250 personnes sur une dizaine\n        de sites (France, Suisse, Autriche, Allemagne, Ukraine, Costa Rica). Agriculture, élevage, artisanat, Radio Zinzine. (✅ Actif)\n          ↳ Pro Longo Maï (Suisse) — Association de soutien. (✅ Actif)</p><p>Cravirola — La Commune du Maquis — SCOP (ferme coopérative autogérée) à Minerve (Hérault), 265 ha. Agriculture paysanne bio, camping\n        participatif, résidences d'artistes. Fait partie de Terres Communes. (✅ Actif — site en refonte, contact : [email protected])</p><p>Caracoles de Suc — Ferme où production agricole cohabite avec engagement social et militant, \n        située à St-Fortunat (Ardèche). Membre du réseau Terres Communes avec Cravirola et la FAR. Petite dizaine de personnes, réhabilitation\n        d'un hameau en ruine avec activité agricole. (✅ Actif — site web basique en ligne)</p><p>Collectif FAR (Ferme Autogérée de la Roya) — Perchée au fond de la vallée de la Roya, à 1200 mètres d'altitude,\n        la FAR est un lieu de vie porté par des valeurs paysannes. Projet de vie collectif et paysan avec activités agricoles et vivrières en autogestion, sur la commune de La\n        Brigue (06). Élevage de brebis, fromages, camping autogéré. (✅ Actif — association enregistrée, site web peut être intermittent)</p><p>Écolonie (nouveau site : ecolonie.eu) — Communauté néerlandaise située dans les Basses-Vosges, lieu inspirant depuis\n        1989 où les gens peuvent se redécouvrir. Environ 17 résidents permanents, ~150 volontaires/an, ~2 500 visiteurs/an. Camping, chambres d'hôtes, jardins bio, ateliers. (✅\n        Actif — nouveau domaine : ecolonie.eu)\n          ↳ Facebook Écolonie | Fiche GEN</p><p>Écovillage du Viel Audon (nouveau site : levielaudon.org) — Hameau au flanc d'une falaise des Gorges de l'Ardèche,\n        près de Balazuc, inaccessible en voiture, abandonné pendant des décennies, aujourd'hui lieu riche d'activités, de partage et de solidarité. Créé en 1972, 13 salarié·es, 60\n        hectares, 12 000 bénévoles passé·es sur le lieu. Association Le Mat Ardèche : accueil, éducation à l'environnement, écotourisme, chantiers bénévoles. (✅ Actif — nouveau site : levielaudon.org)\n          ↳ Fiche Coopérative Oasis</p><p>Folleterre — Communauté queer (Radical Faeries) en Bourgogne. Vie tribale, durabilité et harmonie avec la nature. (✅ Actif via\n        réseau GEN)</p><p>Baluet (via Passerelle Éco) — Lieu de vie collectif référencé sur Passerelle Éco. (✅ Lien\n        Passerelle Éco actif)</p><p>Carapa (via Passerelle Éco) — Lieu de vie alternatif, articles et témoignages. (✅ Lien Passerelle\n        Éco actif)</p><p>Sunseed Desert Technology — Développe et démontre des méthodes low-tech de durabilité en milieu semi-aride, Andalousie. (✅\n        Actif)</p><p>Can Masdeu — Centre social autogéré et squat légalisé à Barcelone. Jardins communautaires, ateliers, événements. (✅ Actif)</p><p>Ecoforest — Communauté écologique et raw food en Andalousie. Permaculture, volontariat, retraites. Le projet existe depuis les années\n        1990 et continue d'accueillir des volontaires. (✅ Actif)</p><p>Torri Superiore Ecovillage — Village médiéval restauré écologiquement près de Vintimille (Ligurie). ~20 membres permanents,\n        éco-tourisme, permaculture, volontariat. Membre du GEN et du réseau RIVE. (✅ Actif)</p><p>Alcatraz — Centre culturel, agritourisme et « université de l'irréel » fondé par Jacopo Fo en Ombrie. (✅ Actif)</p><p>EcoDoubs — Les Fermes Communautaires Libres dans le Doubs suisse. Projet de vie communautaire autour de l'agriculture et l'autonomie.\n        (✅ Probablement actif — petit projet communautaire)</p><p>Bosque Village — Lieu ouvert au Mexique : WWOOF, camping, volontariat, communauté. (✅ Probablement actif)</p><p>🟡 PROJETS EN VEILLE / HISTORIQUES (sites parfois en ligne mais projets dormants)</p><p>Village Vegan — Projet de village vegan en Ardèche. (🟡 En veille)</p><p>Cyclane / Village sans voiture — Projet de village sans voiture lié à la décroissance. (🟡 En\n        veille)</p><p>Amopie — Projet communautaire. (🟡 En veille)</p><p>Causse de l'Isle — Projet d'achat d'un ancien camp militaire. (🟡 En veille depuis 2004)</p><p>Écohameaux (Lorraine) — Projet d'écohameau en Lorraine. (🟡 En veille)</p><p>Nalou — Projet à Beaulieu-sous-la-Roche. (🟡 En veille depuis 2008)</p><p>Habitat groupé dans le Cher — Projet d'habitat groupé (via Passerelle Éco, 2007). (🟡 En veille)</p><p>Phenomenum — Projet écolieu au Mont Bugarach, alternative jeune. (🟡 En veille)</p><p>Égaliville — Projet de village sans argent, forum d'échange d'idées. (🟡 En veille)</p><p>Sens et Autonomie — Projet éducatif : ateliers, formations autour de l'autonomie. (🟡 Blog WordPress — probablement en\n        veille)</p><p>Écovillage urbain / écoquartier lémanique — Projet d'écoquartier dans le bassin lémanique (via\n        Passerelle Éco). (🟡 En veille)</p><p>Ecosalvia — Projet dans les Pyrénées espagnoles. (🟡 En veille — ancien portail ecoaldea.com)</p><p>⚠️ SITES INACTIFS (contenu ancien, plus de mise à jour, mais lien encore accessible)</p><p>Écolieu Durantis — Volontariat et ateliers en Cévennes. Site probablement obsolète, pas de mises à jour récentes. (⚠️\n        Inactif)</p><p>Objectif Gaïa / Tiocan — Projet communautaire entre Suisse et France. (⚠️ Inactif)</p><p>Goldschopf — Projet communautaire en Suisse alémanique. (⚠️ Inactif)</p><p>Lieu de vie à Genève — Village de roulottes près de la STEP d'Aïre, une trentaine de familles. (⚠️ Inactif —\n        contenu ancien)</p><p>Écovillage de la Clède — Projet d'écovillage en Cévennes, annuaire GaiaDir. (⚠️ Inactif — annuaire GaiaDir\n        probablement hors ligne)</p><p>Finca El Majolillo — Projet écologique près de Malaga, Espagne. (⚠️ Inactif)</p><p>ItalyEcovillage.com — Ancien portail d'écovillages italiens. (⚠️ Inactif — voir plutôt GEN Europe ou Rete RIVE)</p><p>Permalot — Lieu de permaculture troglodyte en Tchéquie. (⚠️ Inactif)</p><p>Communa (Israël) — Communauté de type kibboutz urbain. (⚠️ Inactif — format .shtml très ancien)</p><p>Die Werkstatt — Lieu de vie alternatif en Bulgarie. (⚠️ Inactif)</p><p>Solaria (via Passerelle Éco) — Écovillage italien. (⚠️ Ancien contenu Passerelle Éco)</p><p>🔴 ARCHIVES — Liens cassés / Sites définitivement hors ligne</p><p>Ces liens sont conservés à titre d'archives historiques. Les domaines sont expirés, les hébergeurs fermés, ou les pages supprimées.</p><p>🔴 Troglobal — Archives Web-Utopia — Ancienne page du village Troglobal. (Domaine mort)</p><p>🔴 Forum Troglobal — Ancien forum FRBB du collectif. (Hébergeur forum fermé)</p><p>🔴 Longo Maï sur Habiter-Autrement — Page d'archives. (Lien profond mort)</p><p>🔴 Présentation audio Longo Maï (Le Montois) — (Lien SPIP mort)</p><p>🔴 La Picharlerie — Infos Cévennes. (Domaine internetdown.org mort)</p><p>🔴 Le Cantoyourte (Yurtao) — Blog sur la vie en yourte. (Canalblog — article de 2008, lien\n    potentiellement mort)</p><p>🔴 Association Autrement (Beuzec) — Lieu d'accueil, partage, projets écoresponsables. (Site Free mort)</p><p>🔴 Comunidad Cruda — Communauté crudivore en Espagne. (Domaine mort)</p><p>🔴 Matavenero — Village reconstruit dans le nord de l'Espagne. (Hébergeur Lineone fermé)</p><p>🔴 Can Pasqual — Ancien squat à Barcelone. (Domaine mort)</p><p>🔴 Los Arenalejos — Projet communautaire Espagne. (Geocities fermé depuis 2009)</p><p>🔴 Finca Los Albaricoqueros — Free School — Projet de free school. (Webs.com probablement mort)</p><p>🔴 Casa Cares — Ancien lieu de retraite en Italie. (Domaine mort)</p><p>🔴 Ecopueblo — Blog d'un projet d'éco-hameau en Italie. (Blog abandonné)</p><p>🔴 La Valle degli Elfi — Communauté alternative Apennins toscans. (Lien ancien cassé)</p><p>🔴 Center New Reality (Berne/Eriz) — Rainbow Family, Suisse. (Domaine mort)</p><p>🔴 Strawd'la Balle (Lausanne) — Autoconstruction paille. Maison détruite par incendie criminel. (Blog\n    Over-blog abandonné)</p><p>🔴 BeauChamp Visitors — Ancien lieu d'accueil. (Domaine mort)</p><p>🔴 Écologite — Habitat écologique. (Site Free mort)</p><p>🔴 La Lune Nette — Archives 2001, projet abandonné. (Domaine mort)</p><p>🔴 Fazenda Abracadabra (Brésil) — Lieu de vie Rainbow au Brésil. (Blog Over-blog abandonné)</p><p>🔴 vielaudon.free.fr — Ancien site du Viel Audon. (Remplacé par levielaudon.org)</p><p>🔴 ecolonie.org — Ancien domaine d'Écolonie. (Remplacé par ecolonie.eu)</p><p>🔗 Ressources & Annuaires utiles (tous actifs)</p><p>Passerelle Éco — Revue et réseau pour les écovillages, habitats groupés et alternatives en France.</p><p>Global Ecovillage Network (GEN) — Réseau mondial des écovillages. Annuaire, formations, événements.</p><p>Écovillage Global — Annuaire francophone des écovillages et écolieux (par Passerelle Éco).</p><p>Coopérative Oasis — Réseau d'écolieux et habitats participatifs en France (Colibris).</p><p>Habiter Autrement — Portail de ressources sur l'habitat alternatif et les écovillages.</p><p>Colibris — Mouvement citoyen : carte des alternatives, outils collaboratifs.</p><p>WWOOF France — Réseau de fermes biologiques accueillant des volontaires.</p><p>Rete RIVE (Italie) — Réseau italien des écovillages et communautés intentionnelles.</p><p>Radar Squat — Annuaire international des squats, centres autonomes et lieux alternatifs.</p><p>Dernière mise à jour : avril 2026.\n    Légende : ✅ Actif | 🟡 En veille | ⚠️ Inactif (en ligne mais obsolète) | 🔴 Lien cassé / hors ligne\n    N'hésitez pas à signaler tout lien mort ou toute mise à jour à effectuer.</p><p>Réseaux, associations, liste de lieux, :</p><p>- Lieux de vie\n    ouvert  (Sharewiki) :</p><p>- La Carte ... :  Lieux de vie, bases nomade, collectifs, squat, ecolieux : Récentes mises à jour, ajouts des diverses cartes des alternatives, luttes, lieux de vie... Vous pouvez participer à la mise à jour de la carte en faisant la demande sur la\n    carte</p><p>- http://www.reclaimthefields.org/fr : Réseau européen\n    Reclaim the fields.</p><p>- http://wwolfing.wordpress.com : Du wwoof avec des dents !\n    Issu de RTF</p><p>- Gen-europe.org : Global ecovillage network, réseau\n    Europe. Liste des\n    membres\n    - Eurotopia.de : Liste de liens de communauté\n    intentionnelle en Europe\n    - Eyfa.org : European youth for action, rencontre ecotopia, caravane\n    à vélo...\n    - Ecolieux - Ecovillages : Liste\n    de liens sur habiter-autrement.org</p><p>France \n    - Passerelle Eco :  Pratiques et contacts\n    pour vivre ensemble sur une même planète. Un réseau d'ecovillages, ecolieux actifs en France.  Une revue, des infos, des liens...\n    - Voyageurs.en-transition.fr : projets, lieux,\n    carte...\n    - Écolieux-de-France : Répertoire des écolieux et divers\n    infos..\n    - Halemfrance.org : Association des HAbitants de Logements\n    Ephémères ou Mobiles\n    - Macabane.info :  Mouvement autogéré des\n    chercheurs(cheuses) en habit autonome novateur et écologique...\n    - Katipik.free.fr  : collectif de lutte contre les expulsions des\n    cabanes en Ariège\n    - Permisdevivre.org : Réseau Permis de vivre, regroupement de\n    divers collectifs et association pour une reconnaissance des modes de vie simple, des habitats alternatifs, yourtes, tipis, cabanes...\n    - Terredeliens.org : propose de changer le rapport à la\n    terre, à l’agriculture, à l’alimentation et à la nature, en faisant évoluer le rapport à la propriété foncière. Valorisant les dimensions collectives et solidaires pour l’accès à la terre et sa\n    gestion...\n    - Paradigmes : Aide à la création de lieu de vie\n    alternatif...\n    - Archiutop.com : L'Archipel des utopies,\n    mécénat social ou psychologique\n    - Colibris-lemouvement.org : Le mouvement\n    pour la terre et l'humanisme (Pierre Rabhi) \n    - http://fr.gaiadir.com/ecovillage : Liste d'ecolieu,\n    carte, liens\n    - Info le Réseau Français des ecovillage (RFEV) n'est plus -> voir Passerelle Eco\n    \n    Québec, Canada \n    - Réseau des ÉcoHameaux et ÉcoVillages du\n    Québec / Communauté en fête : Page\n    de liens ecovillage\n    - Terravie.org : fonds foncier communautaire, est un OSBL de\n    bienfaisance et de conservation qui préserve des terres à perpétuité au Québec afin de les transformer en aires protégées...\n    - La plume de feu.com : La revue Aube, revue du Québec\n    sur les écovillages et les alternatives de vie.\n    \n    International\n    - Permacultureglobal.com (Eng): Permaculture projects\n    and practitioners worldwide (Carte, liste de lieux et projets)\n    - Gen.ecovillage.org (Eng): GEN (Global ecovillage network)\n    Réseau international d'ecolieux et projets divers...\n    - Nomadbase.org : Réseau de nomade et de bases, plateforme pour\n    activist, nomad, couchsurfer\n    - Category:Intentional_communities (Wikiped)(Eng): Les communauté intentionelles\n    - Ic.org / Icdb.org (Eng): Intentional Community database, ecovillages, cohousing, communes, student co-ops, urban housing\n    cooperatives...\n    - List of ecovillages (Sharewiki -\n    eng) \n    \n    Divers articles et infos :\n    - Planetfriendly.net/community (Eng): Info,\n    liste, liens communautés intentionnelles, ecovillage...\n    - Comment monter un projet\n    d'écolieu : (Ekopedia) Infos, liens, lieux...\n    - Communautarisme de lieu de\n    vie : (Anarchopedia)\n    - Wiki Ecovillage : Ecovillage guide that\n    anyone can edit...\n    - Sustainablecommunitiesaroundtheworld.blogspot.com : wwoof, ecolieux... (Eng)\n    - L'écohabitat, l'habitat\n    groupé et Vie\n    communautaire ou collective : article spirale.attac\n    - Audio : Archive\n    vie et société - La génération hallucinée (rep. sur communauté hippies...)\n    - Video : Livinginthefuture.org : Série de reportage\n    video d'habitat simple, d'ecovillage...\n    - Video : Groupe ecovillage sur dailymotion,\n    partage de video sur les alternatives</p><p>Lieux de vie, collectifs, micro-société, squat, communautés intentionnelles, ecovillages, ecolieux... : Lieux ouvert à\n    l'accueil, au partage, à l'échange...</p><p>Quelques Lieux en France</p><p>- ZAD : Notre Dame des Landes : https://zad.nadir.org/ :</p><p>- Troglobal : Troglobal.wordpress.com / Archives :Troglobal - Forum /</p><p>- La Vielle Valette : Collectif de la Valette :</p><p>- Longo Maï : Longo\n    maï : Présentation audio longo mai et\n    article sur le Montois (Suisse)</p><p>- Cravirola : Le Maquis</p><p>- Caracolesdesuc.org  : ferme collective autogérée en\n    Ardèche.</p><p>- Collectif-far.org :\n    - Lapicharlerie.internetdown.org : Info cévennes /</p><p>- Le Cantoyourte  (Yurtao)\n     /\n    - Folleterre.org : Lieux de vie.We are queer people\n    exploring tribal life, sustainability and harmony whith nature..\n    - Fermautrement.free.fr : Association Autrement de beuzec\n    L'association Autrement a pour objectif de développer un lieu autour duquel pourraient être mis en place des projets et des activités allant dans une démarche de respect de l'environnement et de\n    développement des relations entre humains. Accueil, partage, apprentissage...\n    - Sens et autonomie : Projet educatif, ateliers,\n    formation...(fr)  /\n    - Ecolieu.durantis.eu : Volontariat, ateliers (Cévennes -\n    FR)</p><p>- Ecolonie / Ecovillage du vieil Audon / BeauChamp Visitors / Ecologite  /</p><p>- Carapa / La Lune Nette : Archives, changement de projet,\n    abandon .</p><p>Quelques projets en ...</p><p>- Villagevegan : Projet vegan en Ardèche - en veille</p><p>- Cyclane.decroissance.info :\n    Projet de village sans voiture - en veille</p><p>- Amopie.free.fr : - en veille</p><p>- Causse de l'Isle : Projet d'achat d'un ancien camp\n    militaire (maj 2004!) /</p><p>- Ecovillage de la Clède  (Cévennes)  /</p><p>- Ecohameaux  (Lorraine) - en veille /</p><p>- Nalou  (Beaulieu sous la Roche) - maj 2008\n    / \n    - Projet habitat groupé dans le\n    cher (Passerelleeco 2007)\n    - Phenomenehomme.eklablog.com : projet ecolieu mt\n    bougarache, alternative jeune..\n    - Egaliville.fr : Projet de village sans argent,\n    forum, infos, liens\n      \n    Espagne\n    Ecoforest.org : raw community (andalousie) /  Comunidadcruda.com  /   Sunseed.org : develop, demonstrate and communicate accessible, low-tech\n    methods of sustainability in a semi-arid environment (andalousie)  /   Matavenero  (nord) /   Can Pasqual : Squat  ( Barcelone) /  Los Arenalejos : En Projet  /  Canmasdeu.net : Squat, centre autogéré (Barcelone)  / Finca el Majolillo : Projecto ecologico (Malaga) / Finca Los Albaricoqueros : Free school project /\n    - Ecosalvia : projet  pyrénées\n    \n    Italie\n    - Torri-superiore.org  / Solaria  /  Casa Cares  /  Ecopueblo  /  Alcatraz  / La valle degli Elfi / Italyecovillage.com /\n    \n    Suisse\n    - Berne / Eriz : Cnr.ch : Center new reality : Rainbow\n    familly</p><p>- Ecodoubs.ch : Les Fermes Communautaires\n    Libres  /</p><p>- Objectifgaia.info  /  Tiocan (France)</p><p>- Ecovillage urbain ou\n    écoquartier dans le bassin lémanique  /\n    - Goldschopf.ch :  Projet communautaire en Suisse\n    Allemande\n    - Autoconstruction-en-paille.over-blog.com : Asso lausannoise Strawd'la balle. Construction d'une maison en paille dans un jardin\n    public de Lausanne. Maison détruite par un incendie criminel....!  \n    - Lieu de vie à Genève A côté de la STEP\n    d’Aïre, presque au bout de la ligne n°51, sur un bout de terrain herbeux en friche, périmètre de l’ancienne usine Haro & Co, un village de roulottes s’est installé il y a bientôt 4 ans. Une\n    trentaine de de familles y vivent.  /\n    \n    Autres\n    - Fazenda.abracadabra.over-blog.com : lieux de\n    vie inspiration rainbow au brésil</p><p>- Communa.org.il : Communauté kibboutz...\n    (Israël)\n    - Diewerkstatt.co.uk : Lieu de vie en Bulgarie</p><p>- Permalot.org : Lieu permaculture en tchéquie.Troglo\n     /\n    - Bosquevillage.com : Lieu ouvert au mexique, wwoof, camping</p><p>- https://rainbowfamilyfrance.wordpress.com/ : Le site de la\n    famille française</p><p>- http://somewhereundertherainbow.org/ : Infos, photos, videos, book...</p><p>- http://www.welcomehome.org/rainbow/index.html :\n    International</p><p>- Cnr.ch : Center new reality and Rainbow tribe suisse. - Rainbowinfo.ch  : Alternative network \n    - Pelerins.populus.org : Pélerins de l'arc en ciel, Projet de\n    lieu (France)</p><p>- Shanti terrian project : Simplicité, arc en ciel,\n    yourte...\n    - Beneficiofamily.com : Welcome home, site de beneficio, chat,\n    forum, liens rassemblement...\n    - Spiritofnature.ch : Spirit of Nature & Nature\n    of Spirit, Promoting a meaningful lifestyle /CH, NZ/ - Globalnative.org :</p><p>- Weloveyoufilm.com : film rainbow</p><p>- http://www.bliss-fire.com/RainbowGuideOnLine.php :\n    Rainbow guide</p><p>Renversé.co\n        \n            La principale plateforme collaborative romande d'information pour les luttes sociales, anticapitalistes, antifascistes et écologistes. Un passage obligé pour trouver des événements et\n            d'autres collectifs.</p><p>La principale plateforme collaborative romande d'information pour les luttes sociales, anticapitalistes, antifascistes et écologistes. Un passage obligé pour trouver des événements et\n            d'autres collectifs.</p><p>Le Silure (Genève)\n        \n            Espace de luttes autonomes et anticapitalistes à Genève (Carouge). Il abrite une cantine, une bibliothèque militante, un infokiosque et organise des réunions politiques (Soulèvements de\n            la terre, etc.).</p><p>Espace de luttes autonomes et anticapitalistes à Genève (Carouge). Il abrite une cantine, une bibliothèque militante, un infokiosque et organise des réunions politiques (Soulèvements de\n            la terre, etc.).</p><p>Espace Noir (Saint-Imier)\n        \n            Centre culturel libertaire et coopératif historique, situé dans le Jura bernois, berceau mondial historique de la mouvance anarchiste (Congrès de l'Internationale anti-autoritaire en\n            1872).</p><p>Centre culturel libertaire et coopératif historique, situé dans le Jura bernois, berceau mondial historique de la mouvance anarchiste (Congrès de l'Internationale anti-autoritaire en\n            1872).</p><p>CIRA (Lausanne)\n        \n            Centre International de Recherches sur l'Anarchisme, la plus grande bibliothèque d'Europe dédiée aux archives et ouvrages anarchistes.</p><p>Centre International de Recherches sur l'Anarchisme, la plus grande bibliothèque d'Europe dédiée aux archives et ouvrages anarchistes.</p><p>Réseau Squat!net Suisse\n        \n            Portail d'informations, d'appels à soutien et d'actualités sur le mouvement des squats, ZAD (Zones à Défendre) et occupations de lieux en Suisse.</p><p>Portail d'informations, d'appels à soutien et d'actualités sur le mouvement des squats, ZAD (Zones à Défendre) et occupations de lieux en Suisse.</p><p>L'Espace Autogéré (Lausanne)\n        \n            Lieu emblématique d'organisation militante. Accueille des assemblées générales, des collectifs anti-répression, des soirées de soutien et une cantine à prix libre.</p><p>Lieu emblématique d'organisation militante. Accueille des assemblées générales, des collectifs anti-répression, des soirées de soutien et une cantine à prix libre.</p><p>L'Usine (Genève)\n        \n            Historiquement issue des mouvements alternatifs, ce centre culturel autogéré abrite de multiples associations (cinéma, concerts, ateliers) fonctionnant de façon horizontale.</p><p>Historiquement issue des mouvements alternatifs, ce centre culturel autogéré abrite de multiples associations (cinéma, concerts, ateliers) fonctionnant de façon horizontale.</p><p>La Ciguë (Genève)\n        \n            Coopérative de logement étudiant issue du mouvement squat des années 80. Elle propose des colocations bon marché hors de la spéculation immobilière, avec un fonctionnement participatif.</p><p>Coopérative de logement étudiant issue du mouvement squat des années 80. Elle propose des colocations bon marché hors de la spéculation immobilière, avec un fonctionnement participatif.</p><p>CoDHA - Coopérative de l'Habitat Associatif\n        \n            Pionnière en Suisse romande de la construction d'écoquartiers participatifs. La propriété appartient à la coopérative, l'usufruit aux habitants.</p><p>Pionnière en Suisse romande de la construction d'écoquartiers participatifs. La propriété appartient à la coopérative, l'usufruit aux habitants.</p><p>Mehr als Wohnen (Zurich)\n        \n            \"Plus que du logement\". Métacoopérative emblématique qui construit et gère de manière autogérée de vastes quartiers à loyer modéré, conçus pour la vie en communauté et l'écologie.</p><p>\"Plus que du logement\". Métacoopérative emblématique qui construit et gère de manière autogérée de vastes quartiers à loyer modéré, conçus pour la vie en communauté et l'écologie.</p><p>Keepinuse.ch (Toute la Suisse romande)\n        \n            Le grand portail anti-consumériste de Suisse romande pour les dons et la récupération d'objets, qui recense aussi de nombreuses alternatives de gratuité.</p><p>Le grand portail anti-consumériste de Suisse romande pour les dons et la récupération d'objets, qui recense aussi de nombreuses alternatives de gratuité.</p><p>Magasin Gratuit de Bellevaux (Lausanne)\n        \n            Lieu physique basé sur la décroissance et la solidarité : on y dépose ce dont on ne se sert plus, on prend ce dont on a besoin, le tout 100% sans argent.</p><p>Lieu physique basé sur la décroissance et la solidarité : on y dépose ce dont on ne se sert plus, on prend ce dont on a besoin, le tout 100% sans argent.</p><p>Gratiferia (Genève / Romandie)\n        \n            Réseau organisant des \"Foires gratuites\". Le principe : chacun amène des objets et/ou repart avec ce qui lui plaît, sans nécessité d'échange (ex: organisées à la Villa Freundler ou à\n            l'Îlot 13).</p><p>Réseau organisant des \"Foires gratuites\". Le principe : chacun amène des objets et/ou repart avec ce qui lui plaît, sans nécessité d'échange (ex: organisées à la Villa Freundler ou à\n            l'Îlot 13).</p><p>WWOOF Suisse\n        \n            Réseau officiel permettant de vivre et travailler dans des fermes biologiques, paysannes et souvent alternatives en Suisse. Un échange de bras et de connaissances contre gîte et couvert\n            (zéro flux financier).</p><p>Réseau officiel permettant de vivre et travailler dans des fermes biologiques, paysannes et souvent alternatives en Suisse. Un échange de bras et de connaissances contre gîte et couvert\n            (zéro flux financier).</p><p>GEN Suisse (Réseau des Écovillages)\n        \n            Le \"Global Ecovillage Network\" pour la Suisse. Permet de trouver des projets de lieux de vie collectifs, comme l'écovillage de Sennrüti ou des habitats en permaculture.</p><p>Le \"Global Ecovillage Network\" pour la Suisse. Permet de trouver des projets de lieux de vie collectifs, comme l'écovillage de Sennrüti ou des habitats en permaculture.</p><p>Le Réseau Mutu\n        \n            Réseau francophone de collectifs anticapitalistes (dont Renversé). C'est le point de départ en ligne pour trouver les canaux de diffusion.</p><p>Réseau francophone de collectifs anticapitalistes (dont Renversé). C'est le point de départ en ligne pour trouver les canaux de diffusion.</p><p>Telegram: Grève du Climat (Klimastreik CH)\n        \n            Canal public de diffusion Telegram de la Grève pour le Climat en Suisse, qui relaye souvent des actions d'écologie décoloniale et anticapitaliste.</p><p>Canal public de diffusion Telegram de la Grève pour le Climat en Suisse, qui relaye souvent des actions d'écologie décoloniale et anticapitaliste.</p><p>Trouver les QR Codes / Liens Signal : Les Infokiosques\n        \n            Pour rejoindre les groupes de discussion cryptés (Signal/Telegram) des collectifs comme Action Antifasciste ou Street Medics, rendez-vous physiquement aux événements du\n            Silure (Genève) ou de L'Espace Autogéré (Lausanne) où des flyers avec QR codes \"lien d'invitation\" sont mis à la disposition des militants de confiance.</p><p>Pour rejoindre les groupes de discussion cryptés (Signal/Telegram) des collectifs comme Action Antifasciste ou Street Medics, rendez-vous physiquement aux événements du\n            Silure (Genève) ou de L'Espace Autogéré (Lausanne) où des flyers avec QR codes \"lien d'invitation\" sont mis à la disposition des militants de confiance.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Collective Living Spaces, Reclaimed Farms & Autonomous Squats: Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.</p><p>🌐 Réseaux, Associations & Annuaires de Lieux (mise à jour avril 2026)</p><p>ReclaimTheFields.org — Constellation européenne de paysan·nes, sans‑terre et collectifs reprenant la main sur la terre et la\n        production alimentaire. Camps, actions, rencontres. (Actif)</p><p>Wwolfing.wordpress.com — « Wwoofing with teeth » : blog issu de Reclaim the Fields sur le wwoofing militant (ZAD, fermes\n        autogérées, etc.). Plus mis à jour mais toujours consultable. (Actif, contenu ancien)</p><p>GEN‑Europe.org — Global Ecovillage Network – branche européenne : carte interactive, annuaire d’écovillages, projets, formations,\n        événements. (Actif)</p><p>GEN – Global Ecovillage Network (gen.ecovillage.org) — Réseau international des écovillages, avec carte mondiale et nombreuses\n        ressources. (Actif)</p><p>Eurotopia.de — Annuaire/guide de communautés intentionnelles et écovillages en Europe, version anglaise du site Eurotopia.\n        (Actif)</p><p>EYFA.org — European Youth For Action : réseau de jeunesse écolo‑radicale, rencontres (Ecotopia, camps, caravanes à vélo…). (Actif)</p><p>Habiter-Autrement.org – Écolieux / Écovillages — Dossier très riche (en français) sur les écovillages,\n        écolieux, écohameaux, avec de nombreux liens complémentaires. (Actif)</p><p>Passerelle Éco — Revue & réseau d’écovillages, habitats groupés, écolieux en France. Annonces, petites annonces, fiches de\n        lieux. (Actif)</p><p>HALEM France — Habitant·es de Logements Éphémères ou Mobiles : défense des modes de vie mobiles/légers (yourtes, caravanes, camions,\n        cabanes, etc.). (Actif, très vivant)</p><p>TerreDeLiens.org — Mouvement qui achète des terres agricoles pour les soustraire à la spéculation et installer des paysan·nes en\n        bio, souvent en collectif. (Actif)</p><p>Colibris – Mouvement pour la Terre et l’Humanisme — Mouvement fondé autour de Pierre Rabhi, soutenant la transition\n        (écologie, éducation, habitat participatif). Carte d’initiatives, outils, MOOC. (Actif)</p><p>Écolieux‑de‑France (ecolieuxdefrance.free.fr) — Ancien mais toujours consultable : gros répertoire d’écolieux, concepts,\n        textes. (Actif comme archive web)</p><p>TerraVie.org — Fonds foncier communautaire au Québec : préserve des terres à perpétuité et les transforme en aires protégées et lieux\n        de vie collectifs. (Actif)</p><p>PermacultureGlobal.com (PermacultureGlobal.org) — Carte et base de données mondiale de projets et praticiens de permaculture.\n        (Actif)</p><p>Wikipedia – Category:Intentional communities — Catégorie Wikipédia listant de nombreuses\n        communautés intentionnelles dans le monde. (Actif, mis à jour)</p><p>IC.org — Foundation for Intentional Community (ex‑FIC) : base de données mondiale de communautés, ressources, livres, formations.\n        (Actif)</p><p>Ecovillage Wiki (Fandom) — Petit wiki collaboratif anglophone sur les écovillages. (Actif, contenu modeste)</p><p>SustainableCommunitiesAroundTheWorld.blogspot.com — Blog en anglais sur des communautés durables et\n        wwoofing, peu mis à jour mais toujours accessible. (Actif comme archive)</p><p>PlanetFriendly.net/community — Page anglophone listant de nombreuses communautés intentionnelles et écovillages\n        (Canada & international), au sein du portail People & Planet. (Actif)</p><p>LivingInTheFuture.org — Série de +60 courts métrages et films documentaires sur des écovillages et communautés (Lammas,\n        Findhorn, etc.). (Actif)</p><p>Groupe Dailymotion « Ecovillage » — Ancien groupe vidéo Dailymotion rassemblant des vidéos sur les écovillages et\n        alternatives. (Actif mais plus vraiment alimenté)</p><p>Planetfriendly – Intentional Communities & Ecovillages — Guide/portail de liens et ressources (principalement\n        Amérique du Nord). (Actif)</p><p>⚠️ Sites en veille, projets historiques ou archives consultables</p><p>Sharewiki – « Lieu de vie ouvert » — Page d’un ancien wiki collaboratif sur les lieux de vie ouverts, communautés,\n        projets collectifs. Le site Sharewiki est signalé comme « dormant » ; accès aléatoire. (En veille / archive)</p><p>Carte Google « Lieux de vie, bases nomades, collectifs, squats, écolieux » — Carte MyMaps collaborative recensant lieux de vie, squats, fermes, écolieux, bases nomades en\n        Europe. (Toujours en ligne, mises à jour variables)</p><p>Voyageurs.en-transition.fr — Blog & carte des alternatives (voyageurs en transition). Contenu surtout 2000–2010, souvent\n        cité comme ressource ; le site répond mal depuis 2024. (En veille / difficile d’accès)</p><p>Réseau des ÉcoHameaux & ÉcoVillages du Québec (REEQ) — Ancien site hébergé sur Tripod pour le REEQ, très souvent cité\n        dans la littérature. L’hébergeur Tripod est en grande partie hors‑service. (Archive web, généralement hors‑ligne)</p><p>Communauté en fête (Canada) — Site « Celebrating Community / Communauté en fête » présentant des communautés,\n        cohabitats, écovillages au Canada (fr/en). Toujours consultable, mais plutôt figé. (Active comme archive historique)</p><p>LaPlumeDeFeu.com – Revue Aube (Québec) — Site des éditions La Plume de Feu et de la revue Aube sur les écovillages &\n        alternatives au Québec. Domaine très difficile à atteindre aujourd’hui ; une partie des contenus subsiste via le sous‑domaine aube.laplumedefeu.com et des archives. (En\n        grande veille / à chercher via archives)</p><p>Sharewiki – List of ecovillages — Ancienne liste collaborative d’écovillages sur Sharewiki. (En veille, site peu\n        maintenu)</p><p>Sustainable Communities Around the World — Blog d’histoires d’écovillages et de wwoofing,\n        principalement années 2000–2010. (En veille, toujours lisible)</p><p>Anarchopedia – Communautarisme de lieu de vie — Article théorique sur les communautés de lieux de vie.\n        (Wiki très irrégulier, à considérer comme archive)</p><p>🔴 Liens cassés, domaines réutilisés ou chemins obsolètes</p><p>Ancienne liste GEN Europe (php.ecovillage.org) — Ancien script de liste\n        d’écovillages membres. Remplacé par l’annuaire sur GEN‑Europe.org. (Lien obsolète)</p><p>http://www.gen-europe.org/ — Lien encore valide mais redirigé ; il faut désormais utiliser https://gen-europe.org/. (Chemin ancien, redirigé)</p><p>PasserelleEco.info/index.php3 — Ancienne URL spécifique ; le site fonctionne désormais directement sur https://www.passerelleco.info/. (Chemin obsolète, domaine actif)</p><p>Macabane.info — Ancien site du « Mouvement autogéré des chercheurs en habitat autonome novateur et écologique ». Le domaine ne répond\n        plus correctement. D’autres structures portent aujourd’hui le nom « Ma Cabane » (centre de jour, matériaux naturels) mais ce ne sont pas forcément les mêmes projets. (Site d’origine\n        hors‑ligne)</p><p>Katipik.free.fr — Collectif de lutte contre les expulsions de cabanes en Ariège (France), hébergé sur Free. L’URL ne répond plus, même si\n        le contact mail [email protected] apparaît encore dans certains guides. (Lien cassé)</p><p>Permisdevivre.org — Réseau « Permis de vivre » pour la reconnaissance des habitats alternatifs (yourtes, tipis, cabanes…). Le domaine\n        est aujourd’hui injoignable ; attention à ne pas confondre avec d’autres projets récents nommés « Permis de vivre » n’ayant pas le même objet. (Site hors‑ligne)</p><p>Etyc.org/paradigmes — Ancien lien « Paradigmes » d’aide à la création de lieux de vie alternatifs. Le domaine\n        etyc.org ne semble plus pointer vers ce projet (ETYC désigne aujourd’hui d’autres structures). (Lien cassé / réutilisé)</p><p>Archiutop.com – L’Archipel des Utopies — Cette ancienne URL ne répond plus. L’association existe toujours sous le nom\n        Archipel des Utopies sur un nouveau site : archipel-utopies.com. (Lien obsolète, nouveau domaine actif)</p><p>GaiaDir – annuaire d’écovillages (fr.gaiadir.com) — Le domaine est désormais une page de parking/vente et ne remplit plus son\n        rôle d’annuaire. (Domaine repris)</p><p>LaPlumeDeFeu.com — Très difficile à joindre, parfois totalement inaccessible ; une bonne partie des contenus ne sont plus\n        consultables directement. (Pratiquement hors‑ligne)</p><p>http://gen.ecovillage.org/ — URL générique parfois bloquée par des protections techniques ; pour accéder au réseau global, utiliser\n        plutôt https://ecovillage.org/. (Chemin problématique, domaine actif)</p><p>Nomadbase.org — Ancien blog/réseau de « nomadbases » (maisons ouvertes aux nomades). Nomadwiki indique le projet comme inactif et le\n        domaine semble non enregistré. (Projet et domaine inactifs)</p><p>ICDB.org — Ne pointe plus vers une base de données de communautés intentionnelles mais vers un site d’actualités généraliste. (Domaine\n        réutilisé, plus lié aux communautés)</p><p>Ancien lien Ekopedia (fr.ekopedia.org) — Remplacé par https://www.ekopedia.fr/wiki/Comment_monter_un_projet_d%27%C3%A9colieu. (URL obsolète, article\n        toujours disponible sur Ekopedia.fr)</p><p>Spirale.Attac – L’écohabitat, l’habitat groupé — Les anciens liens Spirale d’Attac semblent\n        avoir été déplacés ou supprimés ; ces URL ne répondent plus. (Liens cassés)</p><p>Spirale.Attac – Vie communautaire ou collective — Même situation que ci‑dessus : ancien\n        article aujourd’hui introuvable via cette URL. (Lien cassé)</p><p>Radio‑Canada – « Génération hippie » — Lien vers une ancienne URL des archives.\n        Les archives existent toujours mais la structure des liens a changé ; à rechercher directement sur le site de Radio‑Canada. (Permalien obsolète)</p><p>🌈 Rainbow Family & Communautés associées (mise à jour avril 2026)</p><p>✅ Liens Rainbow actifs</p><p>Rainbow Family France — Blog/site de la famille Rainbow en France : infos, appels à rassemblements, récits, chants…\n        (Actif)</p><p>WelcomeHome.org – Rainbow Family — Page historique « non officielle » de la Rainbow Family of Living Light, infos\n        internationales, anciens calendriers de gatherings, textes de référence. (Actif, plutôt archivistique)</p><p>GlobalNatives.org — Club mondial de familles et « famillages » (familles élargies), échanges éducatifs & séjours, dans un\n        esprit de communauté globale. (Actif)</p><p>Rainbow Guide Online (Bliss‑Fire) — Ancien « Rainbow Guide » en ligne (listes de contacts, infos pratiques). Le\n        site existe encore mais derrière un système de protection (chargement parfois lent). (Actif mais accès parfois difficile)</p><p>⚠️ Sites en veille ou archives encore accessibles</p><p>SomewhereUnderTheRainbow.org — Ancien site non officiel expliquant les Rainbow Gatherings avec un calendrier mondial.\n        Souvent cité, mais difficile ou impossible à atteindre depuis 2025 ; à considérer comme archive. (En veille / potentiellement hors‑ligne)</p><p>RainbowInfo.ch — Ancien site d’infos Rainbow Europe (guides, FAQ, rassemblements). Quelques pages semblent avoir disparu\n        (/info.htm renvoie en erreur) et l’accès est très incertain. (Archive, non maintenu)</p><p>BeneficioFamily.com — Ancien forum et site de la communauté de Beneficio (Orgiva, Espagne), souvent décrite comme un\n        « Rainbow permanent ». Le domaine ne répond plus correctement. Pour des infos actuelles, voir par ex. la fiche NuMundo : Beneficio – NuMundo. (Site en panne / communauté toujours existante)</p><p>Shanti Terrian Project (AudeCulture) — Projet de lieu simple, yourtes, arc‑en‑ciel à Rennes‑les‑Bains (Aude). L’association a\n        existé, mais le site n’est plus joignable. (Projet historique, site hors‑ligne)</p><p>SpiritOfNature.ch — Ancien site « Spirit of Nature & Nature of Spirit », style Rainbow/New Age (CH/NZ). Le domaine\n        semble injoignable aujourd’hui. (Archive disparaissant)</p><p>Rainbow Gathering Guide (rainbowinfo.ch/info.htm) — Ancienne page de guide Rainbow, souvent citée (podcasts, wikis). Retourne\n        maintenant une erreur 404. (Lien spécifique obsolète)</p><p>🔴 Liens cassés / domaines repris</p><p>CNR.ch – Center New Reality (Suisse) — Ancien centre Rainbow/« New Reality » à Eriz. Le domaine est désormais garé chez un revendeur (Nameshift)\n        et n’a plus de lien avec le projet. (Domaine repris, site d’origine disparu)</p><p>Pelerins.populus.org — « Pèlerins de l’arc‑en‑ciel », projet de lieu Rainbow en France, hébergé sur Populus (plateforme gratuite\n        aujourd’hui quasi disparue). (Lien cassé)</p><p>WeLoveYouFilm.com — Site du documentaire « We Love You » sur les Rainbow Gatherings. Le domaine renvoie aujourd’hui des\n        erreurs serveur. Le film est encore trouvable via Vimeo ou d’autres plateformes.\n        (Domaine hors‑service)</p><p>🏘️ Lieux de Vie, Collectifs, Micro-Sociétés, Squats & Communautés Intentionnelles (mise à jour avril 2026)\n    Lieux ouverts à l'accueil, au partage, à l'échange, à la vie collective et aux expérimentations (écovillages, ZAD, habitats alternatifs, projets autogérés…).</p><p>✅ LIEUX & PROJETS ACTIFS</p><p>ZAD Notre-Dame-des-Landes — Zone À Défendre historique en Loire-Atlantique (1 650 ha). Le projet d'aéroport abandonné en 2018, le lieu\n        poursuit la vie collective, l'agriculture paysanne et l'accueil de luttes. (✅ Actif)</p><p>Village Troglobal — Collectif autogéré installé depuis 1997 dans d'anciennes caves troglodytiques à Grézillé (Maine-et-Loire).\n        Artisans, artistes et nomades partagent un mode de vie communautaire. (✅ Actif — blog WordPress en ligne)</p><p>La Vieille Valette — Collectif de la Valette : lieu de création pour des projets alternatifs d'autonomie\n        libertaire dans une vallée escarpée des Cévennes (Gard). Le lieu est toujours habité, avec une quinzaine de personnes sur place. Activités : ferme, vie\n        collective festive, théâtre, musique, yoga et autoconstruction. Site web Free « provisoirement à l'abandon » mais le lieu est actif depuis 1991. (✅ Lieu actif — site web\n        ancien)\n          ↳ Voir aussi : Fiche Passerelle Éco | Fiche Radar Squat</p><p>Longo Maï — La Cabrery — Réseau de coopératives autogérées fondé en 1973, regroupant plus de 250 personnes sur une dizaine\n        de sites (France, Suisse, Autriche, Allemagne, Ukraine, Costa Rica). Agriculture, élevage, artisanat, Radio Zinzine. (✅ Actif)\n          ↳ Pro Longo Maï (Suisse) — Association de soutien. (✅ Actif)</p><p>Cravirola — La Commune du Maquis — SCOP (ferme coopérative autogérée) à Minerve (Hérault), 265 ha. Agriculture paysanne bio, camping\n        participatif, résidences d'artistes. Fait partie de Terres Communes. (✅ Actif — site en refonte, contact : [email protected])</p><p>Caracoles de Suc — Ferme où production agricole cohabite avec engagement social et militant, \n        située à St-Fortunat (Ardèche). Membre du réseau Terres Communes avec Cravirola et la FAR. Petite dizaine de personnes, réhabilitation\n        d'un hameau en ruine avec activité agricole. (✅ Actif — site web basique en ligne)</p><p>Collectif FAR (Ferme Autogérée de la Roya) — Perchée au fond de la vallée de la Roya, à 1200 mètres d'altitude,\n        la FAR est un lieu de vie porté par des valeurs paysannes. Projet de vie collectif et paysan avec activités agricoles et vivrières en autogestion, sur la commune de La\n        Brigue (06). Élevage de brebis, fromages, camping autogéré. (✅ Actif — association enregistrée, site web peut être intermittent)</p><p>Écolonie (nouveau site : ecolonie.eu) — Communauté néerlandaise située dans les Basses-Vosges, lieu inspirant depuis\n        1989 où les gens peuvent se redécouvrir. Environ 17 résidents permanents, ~150 volontaires/an, ~2 500 visiteurs/an. Camping, chambres d'hôtes, jardins bio, ateliers. (✅\n        Actif — nouveau domaine : ecolonie.eu)\n          ↳ Facebook Écolonie | Fiche GEN</p><p>Écovillage du Viel Audon (nouveau site : levielaudon.org) — Hameau au flanc d'une falaise des Gorges de l'Ardèche,\n        près de Balazuc, inaccessible en voiture, abandonné pendant des décennies, aujourd'hui lieu riche d'activités, de partage et de solidarité. Créé en 1972, 13 salarié·es, 60\n        hectares, 12 000 bénévoles passé·es sur le lieu. Association Le Mat Ardèche : accueil, éducation à l'environnement, écotourisme, chantiers bénévoles. (✅ Actif — nouveau site : levielaudon.org)\n          ↳ Fiche Coopérative Oasis</p><p>Folleterre — Communauté queer (Radical Faeries) en Bourgogne. Vie tribale, durabilité et harmonie avec la nature. (✅ Actif via\n        réseau GEN)</p><p>Baluet (via Passerelle Éco) — Lieu de vie collectif référencé sur Passerelle Éco. (✅ Lien\n        Passerelle Éco actif)</p><p>Carapa (via Passerelle Éco) — Lieu de vie alternatif, articles et témoignages. (✅ Lien Passerelle\n        Éco actif)</p><p>Sunseed Desert Technology — Développe et démontre des méthodes low-tech de durabilité en milieu semi-aride, Andalousie. (✅\n        Actif)</p><p>Can Masdeu — Centre social autogéré et squat légalisé à Barcelone. Jardins communautaires, ateliers, événements. (✅ Actif)</p><p>Ecoforest — Communauté écologique et raw food en Andalousie. Permaculture, volontariat, retraites. Le projet existe depuis les années\n        1990 et continue d'accueillir des volontaires. (✅ Actif)</p><p>Torri Superiore Ecovillage — Village médiéval restauré écologiquement près de Vintimille (Ligurie). ~20 membres permanents,\n        éco-tourisme, permaculture, volontariat. Membre du GEN et du réseau RIVE. (✅ Actif)</p><p>Alcatraz — Centre culturel, agritourisme et « université de l'irréel » fondé par Jacopo Fo en Ombrie. (✅ Actif)</p><p>EcoDoubs — Les Fermes Communautaires Libres dans le Doubs suisse. Projet de vie communautaire autour de l'agriculture et l'autonomie.\n        (✅ Probablement actif — petit projet communautaire)</p><p>Bosque Village — Lieu ouvert au Mexique : WWOOF, camping, volontariat, communauté. (✅ Probablement actif)</p><p>🟡 PROJETS EN VEILLE / HISTORIQUES (sites parfois en ligne mais projets dormants)</p><p>Village Vegan — Projet de village vegan en Ardèche. (🟡 En veille)</p><p>Cyclane / Village sans voiture — Projet de village sans voiture lié à la décroissance. (🟡 En\n        veille)</p><p>Amopie — Projet communautaire. (🟡 En veille)</p><p>Causse de l'Isle — Projet d'achat d'un ancien camp militaire. (🟡 En veille depuis 2004)</p><p>Écohameaux (Lorraine) — Projet d'écohameau en Lorraine. (🟡 En veille)</p><p>Nalou — Projet à Beaulieu-sous-la-Roche. (🟡 En veille depuis 2008)</p><p>Habitat groupé dans le Cher — Projet d'habitat groupé (via Passerelle Éco, 2007). (🟡 En veille)</p><p>Phenomenum — Projet écolieu au Mont Bugarach, alternative jeune. (🟡 En veille)</p><p>Égaliville — Projet de village sans argent, forum d'échange d'idées. (🟡 En veille)</p><p>Sens et Autonomie — Projet éducatif : ateliers, formations autour de l'autonomie. (🟡 Blog WordPress — probablement en\n        veille)</p><p>Écovillage urbain / écoquartier lémanique — Projet d'écoquartier dans le bassin lémanique (via\n        Passerelle Éco). (🟡 En veille)</p><p>Ecosalvia — Projet dans les Pyrénées espagnoles. (🟡 En veille — ancien portail ecoaldea.com)</p><p>⚠️ SITES INACTIFS (contenu ancien, plus de mise à jour, mais lien encore accessible)</p><p>Écolieu Durantis — Volontariat et ateliers en Cévennes. Site probablement obsolète, pas de mises à jour récentes. (⚠️\n        Inactif)</p><p>Objectif Gaïa / Tiocan — Projet communautaire entre Suisse et France. (⚠️ Inactif)</p><p>Goldschopf — Projet communautaire en Suisse alémanique. (⚠️ Inactif)</p><p>Lieu de vie à Genève — Village de roulottes près de la STEP d'Aïre, une trentaine de familles. (⚠️ Inactif —\n        contenu ancien)</p><p>Écovillage de la Clède — Projet d'écovillage en Cévennes, annuaire GaiaDir. (⚠️ Inactif — annuaire GaiaDir\n        probablement hors ligne)</p><p>Finca El Majolillo — Projet écologique près de Malaga, Espagne. (⚠️ Inactif)</p><p>ItalyEcovillage.com — Ancien portail d'écovillages italiens. (⚠️ Inactif — voir plutôt GEN Europe ou Rete RIVE)</p><p>Permalot — Lieu de permaculture troglodyte en Tchéquie. (⚠️ Inactif)</p><p>Communa (Israël) — Communauté de type kibboutz urbain. (⚠️ Inactif — format .shtml très ancien)</p><p>Die Werkstatt — Lieu de vie alternatif en Bulgarie. (⚠️ Inactif)</p><p>Solaria (via Passerelle Éco) — Écovillage italien. (⚠️ Ancien contenu Passerelle Éco)</p><p>🔴 ARCHIVES — Liens cassés / Sites définitivement hors ligne</p><p>Ces liens sont conservés à titre d'archives historiques. Les domaines sont expirés, les hébergeurs fermés, ou les pages supprimées.</p><p>🔴 Troglobal — Archives Web-Utopia — Ancienne page du village Troglobal. (Domaine mort)</p><p>🔴 Forum Troglobal — Ancien forum FRBB du collectif. (Hébergeur forum fermé)</p><p>🔴 Longo Maï sur Habiter-Autrement — Page d'archives. (Lien profond mort)</p><p>🔴 Présentation audio Longo Maï (Le Montois) — (Lien SPIP mort)</p><p>🔴 La Picharlerie — Infos Cévennes. (Domaine internetdown.org mort)</p><p>🔴 Le Cantoyourte (Yurtao) — Blog sur la vie en yourte. (Canalblog — article de 2008, lien\n    potentiellement mort)</p><p>🔴 Association Autrement (Beuzec) — Lieu d'accueil, partage, projets écoresponsables. (Site Free mort)</p><p>🔴 Comunidad Cruda — Communauté crudivore en Espagne. (Domaine mort)</p><p>🔴 Matavenero — Village reconstruit dans le nord de l'Espagne. (Hébergeur Lineone fermé)</p><p>🔴 Can Pasqual — Ancien squat à Barcelone. (Domaine mort)</p><p>🔴 Los Arenalejos — Projet communautaire Espagne. (Geocities fermé depuis 2009)</p><p>🔴 Finca Los Albaricoqueros — Free School — Projet de free school. (Webs.com probablement mort)</p><p>🔴 Casa Cares — Ancien lieu de retraite en Italie. (Domaine mort)</p><p>🔴 Ecopueblo — Blog d'un projet d'éco-hameau en Italie. (Blog abandonné)</p><p>🔴 La Valle degli Elfi — Communauté alternative Apennins toscans. (Lien ancien cassé)</p><p>🔴 Center New Reality (Berne/Eriz) — Rainbow Family, Suisse. (Domaine mort)</p><p>🔴 Strawd'la Balle (Lausanne) — Autoconstruction paille. Maison détruite par incendie criminel. (Blog\n    Over-blog abandonné)</p><p>🔴 BeauChamp Visitors — Ancien lieu d'accueil. (Domaine mort)</p><p>🔴 Écologite — Habitat écologique. (Site Free mort)</p><p>🔴 La Lune Nette — Archives 2001, projet abandonné. (Domaine mort)</p><p>🔴 Fazenda Abracadabra (Brésil) — Lieu de vie Rainbow au Brésil. (Blog Over-blog abandonné)</p><p>🔴 vielaudon.free.fr — Ancien site du Viel Audon. (Remplacé par levielaudon.org)</p><p>🔴 ecolonie.org — Ancien domaine d'Écolonie. (Remplacé par ecolonie.eu)</p><p>🔗 Ressources & Annuaires utiles (tous actifs)</p><p>Passerelle Éco — Revue et réseau pour les écovillages, habitats groupés et alternatives en France.</p><p>Global Ecovillage Network (GEN) — Réseau mondial des écovillages. Annuaire, formations, événements.</p><p>Écovillage Global — Annuaire francophone des écovillages et écolieux (par Passerelle Éco).</p><p>Coopérative Oasis — Réseau d'écolieux et habitats participatifs en France (Colibris).</p><p>Habiter Autrement — Portail de ressources sur l'habitat alternatif et les écovillages.</p><p>Colibris — Mouvement citoyen : carte des alternatives, outils collaboratifs.</p><p>WWOOF France — Réseau de fermes biologiques accueillant des volontaires.</p><p>Rete RIVE (Italie) — Réseau italien des écovillages et communautés intentionnelles.</p><p>Radar Squat — Annuaire international des squats, centres autonomes et lieux alternatifs.</p><p>Dernière mise à jour : avril 2026.\n    Légende : ✅ Actif | 🟡 En veille | ⚠️ Inactif (en ligne mais obsolète) | 🔴 Lien cassé / hors ligne\n    N'hésitez pas à signaler tout lien mort ou toute mise à jour à effectuer.</p><p>Réseaux, associations, liste de lieux, :</p><p>- Lieux de vie\n    ouvert  (Sharewiki) :</p><p>- La Carte ... :  Lieux de vie, bases nomade, collectifs, squat, ecolieux : Récentes mises à jour, ajouts des diverses cartes des alternatives, luttes, lieux de vie... Vous pouvez participer à la mise à jour de la carte en faisant la demande sur la\n    carte</p><p>- http://www.reclaimthefields.org/fr : Réseau européen\n    Reclaim the fields.</p><p>- http://wwolfing.wordpress.com : Du wwoof avec des dents !\n    Issu de RTF</p><p>- Gen-europe.org : Global ecovillage network, réseau\n    Europe. Liste des\n    membres\n    - Eurotopia.de : Liste de liens de communauté\n    intentionnelle en Europe\n    - Eyfa.org : European youth for action, rencontre ecotopia, caravane\n    à vélo...\n    - Ecolieux - Ecovillages : Liste\n    de liens sur habiter-autrement.org</p><p>France \n    - Passerelle Eco :  Pratiques et contacts\n    pour vivre ensemble sur une même planète. Un réseau d'ecovillages, ecolieux actifs en France.  Une revue, des infos, des liens...\n    - Voyageurs.en-transition.fr : projets, lieux,\n    carte...\n    - Écolieux-de-France : Répertoire des écolieux et divers\n    infos..\n    - Halemfrance.org : Association des HAbitants de Logements\n    Ephémères ou Mobiles\n    - Macabane.info :  Mouvement autogéré des\n    chercheurs(cheuses) en habit autonome novateur et écologique...\n    - Katipik.free.fr  : collectif de lutte contre les expulsions des\n    cabanes en Ariège\n    - Permisdevivre.org : Réseau Permis de vivre, regroupement de\n    divers collectifs et association pour une reconnaissance des modes de vie simple, des habitats alternatifs, yourtes, tipis, cabanes...\n    - Terredeliens.org : propose de changer le rapport à la\n    terre, à l’agriculture, à l’alimentation et à la nature, en faisant évoluer le rapport à la propriété foncière. Valorisant les dimensions collectives et solidaires pour l’accès à la terre et sa\n    gestion...\n    - Paradigmes : Aide à la création de lieu de vie\n    alternatif...\n    - Archiutop.com : L'Archipel des utopies,\n    mécénat social ou psychologique\n    - Colibris-lemouvement.org : Le mouvement\n    pour la terre et l'humanisme (Pierre Rabhi) \n    - http://fr.gaiadir.com/ecovillage : Liste d'ecolieu,\n    carte, liens\n    - Info le Réseau Français des ecovillage (RFEV) n'est plus -> voir Passerelle Eco\n    \n    Québec, Canada \n    - Réseau des ÉcoHameaux et ÉcoVillages du\n    Québec / Communauté en fête : Page\n    de liens ecovillage\n    - Terravie.org : fonds foncier communautaire, est un OSBL de\n    bienfaisance et de conservation qui préserve des terres à perpétuité au Québec afin de les transformer en aires protégées...\n    - La plume de feu.com : La revue Aube, revue du Québec\n    sur les écovillages et les alternatives de vie.\n    \n    International\n    - Permacultureglobal.com (Eng): Permaculture projects\n    and practitioners worldwide (Carte, liste de lieux et projets)\n    - Gen.ecovillage.org (Eng): GEN (Global ecovillage network)\n    Réseau international d'ecolieux et projets divers...\n    - Nomadbase.org : Réseau de nomade et de bases, plateforme pour\n    activist, nomad, couchsurfer\n    - Category:Intentional_communities (Wikiped)(Eng): Les communauté intentionelles\n    - Ic.org / Icdb.org (Eng): Intentional Community database, ecovillages, cohousing, communes, student co-ops, urban housing\n    cooperatives...\n    - List of ecovillages (Sharewiki -\n    eng) \n    \n    Divers articles et infos :\n    - Planetfriendly.net/community (Eng): Info,\n    liste, liens communautés intentionnelles, ecovillage...\n    - Comment monter un projet\n    d'écolieu : (Ekopedia) Infos, liens, lieux...\n    - Communautarisme de lieu de\n    vie : (Anarchopedia)\n    - Wiki Ecovillage : Ecovillage guide that\n    anyone can edit...\n    - Sustainablecommunitiesaroundtheworld.blogspot.com : wwoof, ecolieux... (Eng)\n    - L'écohabitat, l'habitat\n    groupé et Vie\n    communautaire ou collective : article spirale.attac\n    - Audio : Archive\n    vie et société - La génération hallucinée (rep. sur communauté hippies...)\n    - Video : Livinginthefuture.org : Série de reportage\n    video d'habitat simple, d'ecovillage...\n    - Video : Groupe ecovillage sur dailymotion,\n    partage de video sur les alternatives</p><p>Lieux de vie, collectifs, micro-société, squat, communautés intentionnelles, ecovillages, ecolieux... : Lieux ouvert à\n    l'accueil, au partage, à l'échange...</p><p>Quelques Lieux en France</p><p>- ZAD : Notre Dame des Landes : https://zad.nadir.org/ :</p><p>- Troglobal : Troglobal.wordpress.com / Archives :Troglobal - Forum /</p><p>- La Vielle Valette : Collectif de la Valette :</p><p>- Longo Maï : Longo\n    maï : Présentation audio longo mai et\n    article sur le Montois (Suisse)</p><p>- Cravirola : Le Maquis</p><p>- Caracolesdesuc.org  : ferme collective autogérée en\n    Ardèche.</p><p>- Collectif-far.org :\n    - Lapicharlerie.internetdown.org : Info cévennes /</p><p>- Le Cantoyourte  (Yurtao)\n     /\n    - Folleterre.org : Lieux de vie.We are queer people\n    exploring tribal life, sustainability and harmony whith nature..\n    - Fermautrement.free.fr : Association Autrement de beuzec\n    L'association Autrement a pour objectif de développer un lieu autour duquel pourraient être mis en place des projets et des activités allant dans une démarche de respect de l'environnement et de\n    développement des relations entre humains. Accueil, partage, apprentissage...\n    - Sens et autonomie : Projet educatif, ateliers,\n    formation...(fr)  /\n    - Ecolieu.durantis.eu : Volontariat, ateliers (Cévennes -\n    FR)</p><p>- Ecolonie / Ecovillage du vieil Audon / BeauChamp Visitors / Ecologite  /</p><p>- Carapa / La Lune Nette : Archives, changement de projet,\n    abandon .</p><p>Quelques projets en ...</p><p>- Villagevegan : Projet vegan en Ardèche - en veille</p><p>- Cyclane.decroissance.info :\n    Projet de village sans voiture - en veille</p><p>- Amopie.free.fr : - en veille</p><p>- Causse de l'Isle : Projet d'achat d'un ancien camp\n    militaire (maj 2004!) /</p><p>- Ecovillage de la Clède  (Cévennes)  /</p><p>- Ecohameaux  (Lorraine) - en veille /</p><p>- Nalou  (Beaulieu sous la Roche) - maj 2008\n    / \n    - Projet habitat groupé dans le\n    cher (Passerelleeco 2007)\n    - Phenomenehomme.eklablog.com : projet ecolieu mt\n    bougarache, alternative jeune..\n    - Egaliville.fr : Projet de village sans argent,\n    forum, infos, liens\n      \n    Espagne\n    Ecoforest.org : raw community (andalousie) /  Comunidadcruda.com  /   Sunseed.org : develop, demonstrate and communicate accessible, low-tech\n    methods of sustainability in a semi-arid environment (andalousie)  /   Matavenero  (nord) /   Can Pasqual : Squat  ( Barcelone) /  Los Arenalejos : En Projet  /  Canmasdeu.net : Squat, centre autogéré (Barcelone)  / Finca el Majolillo : Projecto ecologico (Malaga) / Finca Los Albaricoqueros : Free school project /\n    - Ecosalvia : projet  pyrénées\n    \n    Italie\n    - Torri-superiore.org  / Solaria  /  Casa Cares  /  Ecopueblo  /  Alcatraz  / La valle degli Elfi / Italyecovillage.com /\n    \n    Suisse\n    - Berne / Eriz : Cnr.ch : Center new reality : Rainbow\n    familly</p><p>- Ecodoubs.ch : Les Fermes Communautaires\n    Libres  /</p><p>- Objectifgaia.info  /  Tiocan (France)</p><p>- Ecovillage urbain ou\n    écoquartier dans le bassin lémanique  /\n    - Goldschopf.ch :  Projet communautaire en Suisse\n    Allemande\n    - Autoconstruction-en-paille.over-blog.com : Asso lausannoise Strawd'la balle. Construction d'une maison en paille dans un jardin\n    public de Lausanne. Maison détruite par un incendie criminel....!  \n    - Lieu de vie à Genève A côté de la STEP\n    d’Aïre, presque au bout de la ligne n°51, sur un bout de terrain herbeux en friche, périmètre de l’ancienne usine Haro & Co, un village de roulottes s’est installé il y a bientôt 4 ans. Une\n    trentaine de de familles y vivent.  /\n    \n    Autres\n    - Fazenda.abracadabra.over-blog.com : lieux de\n    vie inspiration rainbow au brésil</p><p>- Communa.org.il : Communauté kibboutz...\n    (Israël)\n    - Diewerkstatt.co.uk : Lieu de vie en Bulgarie</p><p>- Permalot.org : Lieu permaculture en tchéquie.Troglo\n     /\n    - Bosquevillage.com : Lieu ouvert au mexique, wwoof, camping</p><p>- https://rainbowfamilyfrance.wordpress.com/ : Le site de la\n    famille française</p><p>- http://somewhereundertherainbow.org/ : Infos, photos, videos, book...</p><p>- http://www.welcomehome.org/rainbow/index.html :\n    International</p><p>- Cnr.ch : Center new reality and Rainbow tribe suisse. - Rainbowinfo.ch  : Alternative network \n    - Pelerins.populus.org : Pélerins de l'arc en ciel, Projet de\n    lieu (France)</p><p>- Shanti terrian project : Simplicité, arc en ciel,\n    yourte...\n    - Beneficiofamily.com : Welcome home, site de beneficio, chat,\n    forum, liens rassemblement...\n    - Spiritofnature.ch : Spirit of Nature & Nature\n    of Spirit, Promoting a meaningful lifestyle /CH, NZ/ - Globalnative.org :</p><p>- Weloveyoufilm.com : film rainbow</p><p>- http://www.bliss-fire.com/RainbowGuideOnLine.php :\n    Rainbow guide</p><p>Renversé.co\n        \n            La principale plateforme collaborative romande d'information pour les luttes sociales, anticapitalistes, antifascistes et écologistes. Un passage obligé pour trouver des événements et\n            d'autres collectifs.</p><p>La principale plateforme collaborative romande d'information pour les luttes sociales, anticapitalistes, antifascistes et écologistes. Un passage obligé pour trouver des événements et\n            d'autres collectifs.</p><p>Le Silure (Genève)\n        \n            Espace de luttes autonomes et anticapitalistes à Genève (Carouge). Il abrite une cantine, une bibliothèque militante, un infokiosque et organise des réunions politiques (Soulèvements de\n            la terre, etc.).</p><p>Espace de luttes autonomes et anticapitalistes à Genève (Carouge). Il abrite une cantine, une bibliothèque militante, un infokiosque et organise des réunions politiques (Soulèvements de\n            la terre, etc.).</p><p>Espace Noir (Saint-Imier)\n        \n            Centre culturel libertaire et coopératif historique, situé dans le Jura bernois, berceau mondial historique de la mouvance anarchiste (Congrès de l'Internationale anti-autoritaire en\n            1872).</p><p>Centre culturel libertaire et coopératif historique, situé dans le Jura bernois, berceau mondial historique de la mouvance anarchiste (Congrès de l'Internationale anti-autoritaire en\n            1872).</p><p>CIRA (Lausanne)\n        \n            Centre International de Recherches sur l'Anarchisme, la plus grande bibliothèque d'Europe dédiée aux archives et ouvrages anarchistes.</p><p>Centre International de Recherches sur l'Anarchisme, la plus grande bibliothèque d'Europe dédiée aux archives et ouvrages anarchistes.</p><p>Réseau Squat!net Suisse\n        \n            Portail d'informations, d'appels à soutien et d'actualités sur le mouvement des squats, ZAD (Zones à Défendre) et occupations de lieux en Suisse.</p><p>Portail d'informations, d'appels à soutien et d'actualités sur le mouvement des squats, ZAD (Zones à Défendre) et occupations de lieux en Suisse.</p><p>L'Espace Autogéré (Lausanne)\n        \n            Lieu emblématique d'organisation militante. Accueille des assemblées générales, des collectifs anti-répression, des soirées de soutien et une cantine à prix libre.</p><p>Lieu emblématique d'organisation militante. Accueille des assemblées générales, des collectifs anti-répression, des soirées de soutien et une cantine à prix libre.</p><p>L'Usine (Genève)\n        \n            Historiquement issue des mouvements alternatifs, ce centre culturel autogéré abrite de multiples associations (cinéma, concerts, ateliers) fonctionnant de façon horizontale.</p><p>Historiquement issue des mouvements alternatifs, ce centre culturel autogéré abrite de multiples associations (cinéma, concerts, ateliers) fonctionnant de façon horizontale.</p><p>La Ciguë (Genève)\n        \n            Coopérative de logement étudiant issue du mouvement squat des années 80. Elle propose des colocations bon marché hors de la spéculation immobilière, avec un fonctionnement participatif.</p><p>Coopérative de logement étudiant issue du mouvement squat des années 80. Elle propose des colocations bon marché hors de la spéculation immobilière, avec un fonctionnement participatif.</p><p>CoDHA - Coopérative de l'Habitat Associatif\n        \n            Pionnière en Suisse romande de la construction d'écoquartiers participatifs. La propriété appartient à la coopérative, l'usufruit aux habitants.</p><p>Pionnière en Suisse romande de la construction d'écoquartiers participatifs. La propriété appartient à la coopérative, l'usufruit aux habitants.</p><p>Mehr als Wohnen (Zurich)\n        \n            \"Plus que du logement\". Métacoopérative emblématique qui construit et gère de manière autogérée de vastes quartiers à loyer modéré, conçus pour la vie en communauté et l'écologie.</p><p>\"Plus que du logement\". Métacoopérative emblématique qui construit et gère de manière autogérée de vastes quartiers à loyer modéré, conçus pour la vie en communauté et l'écologie.</p><p>Keepinuse.ch (Toute la Suisse romande)\n        \n            Le grand portail anti-consumériste de Suisse romande pour les dons et la récupération d'objets, qui recense aussi de nombreuses alternatives de gratuité.</p><p>Le grand portail anti-consumériste de Suisse romande pour les dons et la récupération d'objets, qui recense aussi de nombreuses alternatives de gratuité.</p><p>Magasin Gratuit de Bellevaux (Lausanne)\n        \n            Lieu physique basé sur la décroissance et la solidarité : on y dépose ce dont on ne se sert plus, on prend ce dont on a besoin, le tout 100% sans argent.</p><p>Lieu physique basé sur la décroissance et la solidarité : on y dépose ce dont on ne se sert plus, on prend ce dont on a besoin, le tout 100% sans argent.</p><p>Gratiferia (Genève / Romandie)\n        \n            Réseau organisant des \"Foires gratuites\". Le principe : chacun amène des objets et/ou repart avec ce qui lui plaît, sans nécessité d'échange (ex: organisées à la Villa Freundler ou à\n            l'Îlot 13).</p><p>Réseau organisant des \"Foires gratuites\". Le principe : chacun amène des objets et/ou repart avec ce qui lui plaît, sans nécessité d'échange (ex: organisées à la Villa Freundler ou à\n            l'Îlot 13).</p><p>WWOOF Suisse\n        \n            Réseau officiel permettant de vivre et travailler dans des fermes biologiques, paysannes et souvent alternatives en Suisse. Un échange de bras et de connaissances contre gîte et couvert\n            (zéro flux financier).</p><p>Réseau officiel permettant de vivre et travailler dans des fermes biologiques, paysannes et souvent alternatives en Suisse. Un échange de bras et de connaissances contre gîte et couvert\n            (zéro flux financier).</p><p>GEN Suisse (Réseau des Écovillages)\n        \n            Le \"Global Ecovillage Network\" pour la Suisse. Permet de trouver des projets de lieux de vie collectifs, comme l'écovillage de Sennrüti ou des habitats en permaculture.</p><p>Le \"Global Ecovillage Network\" pour la Suisse. Permet de trouver des projets de lieux de vie collectifs, comme l'écovillage de Sennrüti ou des habitats en permaculture.</p><p>Le Réseau Mutu\n        \n            Réseau francophone de collectifs anticapitalistes (dont Renversé). C'est le point de départ en ligne pour trouver les canaux de diffusion.</p><p>Réseau francophone de collectifs anticapitalistes (dont Renversé). C'est le point de départ en ligne pour trouver les canaux de diffusion.</p><p>Telegram: Grève du Climat (Klimastreik CH)\n        \n            Canal public de diffusion Telegram de la Grève pour le Climat en Suisse, qui relaye souvent des actions d'écologie décoloniale et anticapitaliste.</p><p>Canal public de diffusion Telegram de la Grève pour le Climat en Suisse, qui relaye souvent des actions d'écologie décoloniale et anticapitaliste.</p><p>Trouver les QR Codes / Liens Signal : Les Infokiosques\n        \n            Pour rejoindre les groupes de discussion cryptés (Signal/Telegram) des collectifs comme Action Antifasciste ou Street Medics, rendez-vous physiquement aux événements du\n            Silure (Genève) ou de L'Espace Autogéré (Lausanne) où des flyers avec QR codes \"lien d'invitation\" sont mis à la disposition des militants de confiance.</p><p>Pour rejoindre les groupes de discussion cryptés (Signal/Telegram) des collectifs comme Action Antifasciste ou Street Medics, rendez-vous physiquement aux événements du\n            Silure (Genève) ou de L'Espace Autogéré (Lausanne) où des flyers avec QR codes \"lien d'invitation\" sont mis à la disposition des militants de confiance.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Espacios de Vida Colectivos, Granjas Recuperadas y Centros Ocupados: Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas.</p><p>🌐 Réseaux, Associations & Annuaires de Lieux (mise à jour avril 2026)</p><p>ReclaimTheFields.org — Constellation européenne de paysan·nes, sans‑terre et collectifs reprenant la main sur la terre et la\n        production alimentaire. Camps, actions, rencontres. (Actif)</p><p>Wwolfing.wordpress.com — « Wwoofing with teeth » : blog issu de Reclaim the Fields sur le wwoofing militant (ZAD, fermes\n        autogérées, etc.). Plus mis à jour mais toujours consultable. (Actif, contenu ancien)</p><p>GEN‑Europe.org — Global Ecovillage Network – branche européenne : carte interactive, annuaire d’écovillages, projets, formations,\n        événements. (Actif)</p><p>GEN – Global Ecovillage Network (gen.ecovillage.org) — Réseau international des écovillages, avec carte mondiale et nombreuses\n        ressources. (Actif)</p><p>Eurotopia.de — Annuaire/guide de communautés intentionnelles et écovillages en Europe, version anglaise du site Eurotopia.\n        (Actif)</p><p>EYFA.org — European Youth For Action : réseau de jeunesse écolo‑radicale, rencontres (Ecotopia, camps, caravanes à vélo…). (Actif)</p><p>Habiter-Autrement.org – Écolieux / Écovillages — Dossier très riche (en français) sur les écovillages,\n        écolieux, écohameaux, avec de nombreux liens complémentaires. (Actif)</p><p>Passerelle Éco — Revue & réseau d’écovillages, habitats groupés, écolieux en France. Annonces, petites annonces, fiches de\n        lieux. (Actif)</p><p>HALEM France — Habitant·es de Logements Éphémères ou Mobiles : défense des modes de vie mobiles/légers (yourtes, caravanes, camions,\n        cabanes, etc.). (Actif, très vivant)</p><p>TerreDeLiens.org — Mouvement qui achète des terres agricoles pour les soustraire à la spéculation et installer des paysan·nes en\n        bio, souvent en collectif. (Actif)</p><p>Colibris – Mouvement pour la Terre et l’Humanisme — Mouvement fondé autour de Pierre Rabhi, soutenant la transition\n        (écologie, éducation, habitat participatif). Carte d’initiatives, outils, MOOC. (Actif)</p><p>Écolieux‑de‑France (ecolieuxdefrance.free.fr) — Ancien mais toujours consultable : gros répertoire d’écolieux, concepts,\n        textes. (Actif comme archive web)</p><p>TerraVie.org — Fonds foncier communautaire au Québec : préserve des terres à perpétuité et les transforme en aires protégées et lieux\n        de vie collectifs. (Actif)</p><p>PermacultureGlobal.com (PermacultureGlobal.org) — Carte et base de données mondiale de projets et praticiens de permaculture.\n        (Actif)</p><p>Wikipedia – Category:Intentional communities — Catégorie Wikipédia listant de nombreuses\n        communautés intentionnelles dans le monde. (Actif, mis à jour)</p><p>IC.org — Foundation for Intentional Community (ex‑FIC) : base de données mondiale de communautés, ressources, livres, formations.\n        (Actif)</p><p>Ecovillage Wiki (Fandom) — Petit wiki collaboratif anglophone sur les écovillages. (Actif, contenu modeste)</p><p>SustainableCommunitiesAroundTheWorld.blogspot.com — Blog en anglais sur des communautés durables et\n        wwoofing, peu mis à jour mais toujours accessible. (Actif comme archive)</p><p>PlanetFriendly.net/community — Page anglophone listant de nombreuses communautés intentionnelles et écovillages\n        (Canada & international), au sein du portail People & Planet. (Actif)</p><p>LivingInTheFuture.org — Série de +60 courts métrages et films documentaires sur des écovillages et communautés (Lammas,\n        Findhorn, etc.). (Actif)</p><p>Groupe Dailymotion « Ecovillage » — Ancien groupe vidéo Dailymotion rassemblant des vidéos sur les écovillages et\n        alternatives. (Actif mais plus vraiment alimenté)</p><p>Planetfriendly – Intentional Communities & Ecovillages — Guide/portail de liens et ressources (principalement\n        Amérique du Nord). (Actif)</p><p>⚠️ Sites en veille, projets historiques ou archives consultables</p><p>Sharewiki – « Lieu de vie ouvert » — Page d’un ancien wiki collaboratif sur les lieux de vie ouverts, communautés,\n        projets collectifs. Le site Sharewiki est signalé comme « dormant » ; accès aléatoire. (En veille / archive)</p><p>Carte Google « Lieux de vie, bases nomades, collectifs, squats, écolieux » — Carte MyMaps collaborative recensant lieux de vie, squats, fermes, écolieux, bases nomades en\n        Europe. (Toujours en ligne, mises à jour variables)</p><p>Voyageurs.en-transition.fr — Blog & carte des alternatives (voyageurs en transition). Contenu surtout 2000–2010, souvent\n        cité comme ressource ; le site répond mal depuis 2024. (En veille / difficile d’accès)</p><p>Réseau des ÉcoHameaux & ÉcoVillages du Québec (REEQ) — Ancien site hébergé sur Tripod pour le REEQ, très souvent cité\n        dans la littérature. L’hébergeur Tripod est en grande partie hors‑service. (Archive web, généralement hors‑ligne)</p><p>Communauté en fête (Canada) — Site « Celebrating Community / Communauté en fête » présentant des communautés,\n        cohabitats, écovillages au Canada (fr/en). Toujours consultable, mais plutôt figé. (Active comme archive historique)</p><p>LaPlumeDeFeu.com – Revue Aube (Québec) — Site des éditions La Plume de Feu et de la revue Aube sur les écovillages &\n        alternatives au Québec. Domaine très difficile à atteindre aujourd’hui ; une partie des contenus subsiste via le sous‑domaine aube.laplumedefeu.com et des archives. (En\n        grande veille / à chercher via archives)</p><p>Sharewiki – List of ecovillages — Ancienne liste collaborative d’écovillages sur Sharewiki. (En veille, site peu\n        maintenu)</p><p>Sustainable Communities Around the World — Blog d’histoires d’écovillages et de wwoofing,\n        principalement années 2000–2010. (En veille, toujours lisible)</p><p>Anarchopedia – Communautarisme de lieu de vie — Article théorique sur les communautés de lieux de vie.\n        (Wiki très irrégulier, à considérer comme archive)</p><p>🔴 Liens cassés, domaines réutilisés ou chemins obsolètes</p><p>Ancienne liste GEN Europe (php.ecovillage.org) — Ancien script de liste\n        d’écovillages membres. Remplacé par l’annuaire sur GEN‑Europe.org. (Lien obsolète)</p><p>http://www.gen-europe.org/ — Lien encore valide mais redirigé ; il faut désormais utiliser https://gen-europe.org/. (Chemin ancien, redirigé)</p><p>PasserelleEco.info/index.php3 — Ancienne URL spécifique ; le site fonctionne désormais directement sur https://www.passerelleco.info/. (Chemin obsolète, domaine actif)</p><p>Macabane.info — Ancien site du « Mouvement autogéré des chercheurs en habitat autonome novateur et écologique ». Le domaine ne répond\n        plus correctement. D’autres structures portent aujourd’hui le nom « Ma Cabane » (centre de jour, matériaux naturels) mais ce ne sont pas forcément les mêmes projets. (Site d’origine\n        hors‑ligne)</p><p>Katipik.free.fr — Collectif de lutte contre les expulsions de cabanes en Ariège (France), hébergé sur Free. L’URL ne répond plus, même si\n        le contact mail [email protected] apparaît encore dans certains guides. (Lien cassé)</p><p>Permisdevivre.org — Réseau « Permis de vivre » pour la reconnaissance des habitats alternatifs (yourtes, tipis, cabanes…). Le domaine\n        est aujourd’hui injoignable ; attention à ne pas confondre avec d’autres projets récents nommés « Permis de vivre » n’ayant pas le même objet. (Site hors‑ligne)</p><p>Etyc.org/paradigmes — Ancien lien « Paradigmes » d’aide à la création de lieux de vie alternatifs. Le domaine\n        etyc.org ne semble plus pointer vers ce projet (ETYC désigne aujourd’hui d’autres structures). (Lien cassé / réutilisé)</p><p>Archiutop.com – L’Archipel des Utopies — Cette ancienne URL ne répond plus. L’association existe toujours sous le nom\n        Archipel des Utopies sur un nouveau site : archipel-utopies.com. (Lien obsolète, nouveau domaine actif)</p><p>GaiaDir – annuaire d’écovillages (fr.gaiadir.com) — Le domaine est désormais une page de parking/vente et ne remplit plus son\n        rôle d’annuaire. (Domaine repris)</p><p>LaPlumeDeFeu.com — Très difficile à joindre, parfois totalement inaccessible ; une bonne partie des contenus ne sont plus\n        consultables directement. (Pratiquement hors‑ligne)</p><p>http://gen.ecovillage.org/ — URL générique parfois bloquée par des protections techniques ; pour accéder au réseau global, utiliser\n        plutôt https://ecovillage.org/. (Chemin problématique, domaine actif)</p><p>Nomadbase.org — Ancien blog/réseau de « nomadbases » (maisons ouvertes aux nomades). Nomadwiki indique le projet comme inactif et le\n        domaine semble non enregistré. (Projet et domaine inactifs)</p><p>ICDB.org — Ne pointe plus vers une base de données de communautés intentionnelles mais vers un site d’actualités généraliste. (Domaine\n        réutilisé, plus lié aux communautés)</p><p>Ancien lien Ekopedia (fr.ekopedia.org) — Remplacé par https://www.ekopedia.fr/wiki/Comment_monter_un_projet_d%27%C3%A9colieu. (URL obsolète, article\n        toujours disponible sur Ekopedia.fr)</p><p>Spirale.Attac – L’écohabitat, l’habitat groupé — Les anciens liens Spirale d’Attac semblent\n        avoir été déplacés ou supprimés ; ces URL ne répondent plus. (Liens cassés)</p><p>Spirale.Attac – Vie communautaire ou collective — Même situation que ci‑dessus : ancien\n        article aujourd’hui introuvable via cette URL. (Lien cassé)</p><p>Radio‑Canada – « Génération hippie » — Lien vers une ancienne URL des archives.\n        Les archives existent toujours mais la structure des liens a changé ; à rechercher directement sur le site de Radio‑Canada. (Permalien obsolète)</p><p>🌈 Rainbow Family & Communautés associées (mise à jour avril 2026)</p><p>✅ Liens Rainbow actifs</p><p>Rainbow Family France — Blog/site de la famille Rainbow en France : infos, appels à rassemblements, récits, chants…\n        (Actif)</p><p>WelcomeHome.org – Rainbow Family — Page historique « non officielle » de la Rainbow Family of Living Light, infos\n        internationales, anciens calendriers de gatherings, textes de référence. (Actif, plutôt archivistique)</p><p>GlobalNatives.org — Club mondial de familles et « famillages » (familles élargies), échanges éducatifs & séjours, dans un\n        esprit de communauté globale. (Actif)</p><p>Rainbow Guide Online (Bliss‑Fire) — Ancien « Rainbow Guide » en ligne (listes de contacts, infos pratiques). Le\n        site existe encore mais derrière un système de protection (chargement parfois lent). (Actif mais accès parfois difficile)</p><p>⚠️ Sites en veille ou archives encore accessibles</p><p>SomewhereUnderTheRainbow.org — Ancien site non officiel expliquant les Rainbow Gatherings avec un calendrier mondial.\n        Souvent cité, mais difficile ou impossible à atteindre depuis 2025 ; à considérer comme archive. (En veille / potentiellement hors‑ligne)</p><p>RainbowInfo.ch — Ancien site d’infos Rainbow Europe (guides, FAQ, rassemblements). Quelques pages semblent avoir disparu\n        (/info.htm renvoie en erreur) et l’accès est très incertain. (Archive, non maintenu)</p><p>BeneficioFamily.com — Ancien forum et site de la communauté de Beneficio (Orgiva, Espagne), souvent décrite comme un\n        « Rainbow permanent ». Le domaine ne répond plus correctement. Pour des infos actuelles, voir par ex. la fiche NuMundo : Beneficio – NuMundo. (Site en panne / communauté toujours existante)</p><p>Shanti Terrian Project (AudeCulture) — Projet de lieu simple, yourtes, arc‑en‑ciel à Rennes‑les‑Bains (Aude). L’association a\n        existé, mais le site n’est plus joignable. (Projet historique, site hors‑ligne)</p><p>SpiritOfNature.ch — Ancien site « Spirit of Nature & Nature of Spirit », style Rainbow/New Age (CH/NZ). Le domaine\n        semble injoignable aujourd’hui. (Archive disparaissant)</p><p>Rainbow Gathering Guide (rainbowinfo.ch/info.htm) — Ancienne page de guide Rainbow, souvent citée (podcasts, wikis). Retourne\n        maintenant une erreur 404. (Lien spécifique obsolète)</p><p>🔴 Liens cassés / domaines repris</p><p>CNR.ch – Center New Reality (Suisse) — Ancien centre Rainbow/« New Reality » à Eriz. Le domaine est désormais garé chez un revendeur (Nameshift)\n        et n’a plus de lien avec le projet. (Domaine repris, site d’origine disparu)</p><p>Pelerins.populus.org — « Pèlerins de l’arc‑en‑ciel », projet de lieu Rainbow en France, hébergé sur Populus (plateforme gratuite\n        aujourd’hui quasi disparue). (Lien cassé)</p><p>WeLoveYouFilm.com — Site du documentaire « We Love You » sur les Rainbow Gatherings. Le domaine renvoie aujourd’hui des\n        erreurs serveur. Le film est encore trouvable via Vimeo ou d’autres plateformes.\n        (Domaine hors‑service)</p><p>🏘️ Lieux de Vie, Collectifs, Micro-Sociétés, Squats & Communautés Intentionnelles (mise à jour avril 2026)\n    Lieux ouverts à l'accueil, au partage, à l'échange, à la vie collective et aux expérimentations (écovillages, ZAD, habitats alternatifs, projets autogérés…).</p><p>✅ LIEUX & PROJETS ACTIFS</p><p>ZAD Notre-Dame-des-Landes — Zone À Défendre historique en Loire-Atlantique (1 650 ha). Le projet d'aéroport abandonné en 2018, le lieu\n        poursuit la vie collective, l'agriculture paysanne et l'accueil de luttes. (✅ Actif)</p><p>Village Troglobal — Collectif autogéré installé depuis 1997 dans d'anciennes caves troglodytiques à Grézillé (Maine-et-Loire).\n        Artisans, artistes et nomades partagent un mode de vie communautaire. (✅ Actif — blog WordPress en ligne)</p><p>La Vieille Valette — Collectif de la Valette : lieu de création pour des projets alternatifs d'autonomie\n        libertaire dans une vallée escarpée des Cévennes (Gard). Le lieu est toujours habité, avec une quinzaine de personnes sur place. Activités : ferme, vie\n        collective festive, théâtre, musique, yoga et autoconstruction. Site web Free « provisoirement à l'abandon » mais le lieu est actif depuis 1991. (✅ Lieu actif — site web\n        ancien)\n          ↳ Voir aussi : Fiche Passerelle Éco | Fiche Radar Squat</p><p>Longo Maï — La Cabrery — Réseau de coopératives autogérées fondé en 1973, regroupant plus de 250 personnes sur une dizaine\n        de sites (France, Suisse, Autriche, Allemagne, Ukraine, Costa Rica). Agriculture, élevage, artisanat, Radio Zinzine. (✅ Actif)\n          ↳ Pro Longo Maï (Suisse) — Association de soutien. (✅ Actif)</p><p>Cravirola — La Commune du Maquis — SCOP (ferme coopérative autogérée) à Minerve (Hérault), 265 ha. Agriculture paysanne bio, camping\n        participatif, résidences d'artistes. Fait partie de Terres Communes. (✅ Actif — site en refonte, contact : [email protected])</p><p>Caracoles de Suc — Ferme où production agricole cohabite avec engagement social et militant, \n        située à St-Fortunat (Ardèche). Membre du réseau Terres Communes avec Cravirola et la FAR. Petite dizaine de personnes, réhabilitation\n        d'un hameau en ruine avec activité agricole. (✅ Actif — site web basique en ligne)</p><p>Collectif FAR (Ferme Autogérée de la Roya) — Perchée au fond de la vallée de la Roya, à 1200 mètres d'altitude,\n        la FAR est un lieu de vie porté par des valeurs paysannes. Projet de vie collectif et paysan avec activités agricoles et vivrières en autogestion, sur la commune de La\n        Brigue (06). Élevage de brebis, fromages, camping autogéré. (✅ Actif — association enregistrée, site web peut être intermittent)</p><p>Écolonie (nouveau site : ecolonie.eu) — Communauté néerlandaise située dans les Basses-Vosges, lieu inspirant depuis\n        1989 où les gens peuvent se redécouvrir. Environ 17 résidents permanents, ~150 volontaires/an, ~2 500 visiteurs/an. Camping, chambres d'hôtes, jardins bio, ateliers. (✅\n        Actif — nouveau domaine : ecolonie.eu)\n          ↳ Facebook Écolonie | Fiche GEN</p><p>Écovillage du Viel Audon (nouveau site : levielaudon.org) — Hameau au flanc d'une falaise des Gorges de l'Ardèche,\n        près de Balazuc, inaccessible en voiture, abandonné pendant des décennies, aujourd'hui lieu riche d'activités, de partage et de solidarité. Créé en 1972, 13 salarié·es, 60\n        hectares, 12 000 bénévoles passé·es sur le lieu. Association Le Mat Ardèche : accueil, éducation à l'environnement, écotourisme, chantiers bénévoles. (✅ Actif — nouveau site : levielaudon.org)\n          ↳ Fiche Coopérative Oasis</p><p>Folleterre — Communauté queer (Radical Faeries) en Bourgogne. Vie tribale, durabilité et harmonie avec la nature. (✅ Actif via\n        réseau GEN)</p><p>Baluet (via Passerelle Éco) — Lieu de vie collectif référencé sur Passerelle Éco. (✅ Lien\n        Passerelle Éco actif)</p><p>Carapa (via Passerelle Éco) — Lieu de vie alternatif, articles et témoignages. (✅ Lien Passerelle\n        Éco actif)</p><p>Sunseed Desert Technology — Développe et démontre des méthodes low-tech de durabilité en milieu semi-aride, Andalousie. (✅\n        Actif)</p><p>Can Masdeu — Centre social autogéré et squat légalisé à Barcelone. Jardins communautaires, ateliers, événements. (✅ Actif)</p><p>Ecoforest — Communauté écologique et raw food en Andalousie. Permaculture, volontariat, retraites. Le projet existe depuis les années\n        1990 et continue d'accueillir des volontaires. (✅ Actif)</p><p>Torri Superiore Ecovillage — Village médiéval restauré écologiquement près de Vintimille (Ligurie). ~20 membres permanents,\n        éco-tourisme, permaculture, volontariat. Membre du GEN et du réseau RIVE. (✅ Actif)</p><p>Alcatraz — Centre culturel, agritourisme et « université de l'irréel » fondé par Jacopo Fo en Ombrie. (✅ Actif)</p><p>EcoDoubs — Les Fermes Communautaires Libres dans le Doubs suisse. Projet de vie communautaire autour de l'agriculture et l'autonomie.\n        (✅ Probablement actif — petit projet communautaire)</p><p>Bosque Village — Lieu ouvert au Mexique : WWOOF, camping, volontariat, communauté. (✅ Probablement actif)</p><p>🟡 PROJETS EN VEILLE / HISTORIQUES (sites parfois en ligne mais projets dormants)</p><p>Village Vegan — Projet de village vegan en Ardèche. (🟡 En veille)</p><p>Cyclane / Village sans voiture — Projet de village sans voiture lié à la décroissance. (🟡 En\n        veille)</p><p>Amopie — Projet communautaire. (🟡 En veille)</p><p>Causse de l'Isle — Projet d'achat d'un ancien camp militaire. (🟡 En veille depuis 2004)</p><p>Écohameaux (Lorraine) — Projet d'écohameau en Lorraine. (🟡 En veille)</p><p>Nalou — Projet à Beaulieu-sous-la-Roche. (🟡 En veille depuis 2008)</p><p>Habitat groupé dans le Cher — Projet d'habitat groupé (via Passerelle Éco, 2007). (🟡 En veille)</p><p>Phenomenum — Projet écolieu au Mont Bugarach, alternative jeune. (🟡 En veille)</p><p>Égaliville — Projet de village sans argent, forum d'échange d'idées. (🟡 En veille)</p><p>Sens et Autonomie — Projet éducatif : ateliers, formations autour de l'autonomie. (🟡 Blog WordPress — probablement en\n        veille)</p><p>Écovillage urbain / écoquartier lémanique — Projet d'écoquartier dans le bassin lémanique (via\n        Passerelle Éco). (🟡 En veille)</p><p>Ecosalvia — Projet dans les Pyrénées espagnoles. (🟡 En veille — ancien portail ecoaldea.com)</p><p>⚠️ SITES INACTIFS (contenu ancien, plus de mise à jour, mais lien encore accessible)</p><p>Écolieu Durantis — Volontariat et ateliers en Cévennes. Site probablement obsolète, pas de mises à jour récentes. (⚠️\n        Inactif)</p><p>Objectif Gaïa / Tiocan — Projet communautaire entre Suisse et France. (⚠️ Inactif)</p><p>Goldschopf — Projet communautaire en Suisse alémanique. (⚠️ Inactif)</p><p>Lieu de vie à Genève — Village de roulottes près de la STEP d'Aïre, une trentaine de familles. (⚠️ Inactif —\n        contenu ancien)</p><p>Écovillage de la Clède — Projet d'écovillage en Cévennes, annuaire GaiaDir. (⚠️ Inactif — annuaire GaiaDir\n        probablement hors ligne)</p><p>Finca El Majolillo — Projet écologique près de Malaga, Espagne. (⚠️ Inactif)</p><p>ItalyEcovillage.com — Ancien portail d'écovillages italiens. (⚠️ Inactif — voir plutôt GEN Europe ou Rete RIVE)</p><p>Permalot — Lieu de permaculture troglodyte en Tchéquie. (⚠️ Inactif)</p><p>Communa (Israël) — Communauté de type kibboutz urbain. (⚠️ Inactif — format .shtml très ancien)</p><p>Die Werkstatt — Lieu de vie alternatif en Bulgarie. (⚠️ Inactif)</p><p>Solaria (via Passerelle Éco) — Écovillage italien. (⚠️ Ancien contenu Passerelle Éco)</p><p>🔴 ARCHIVES — Liens cassés / Sites définitivement hors ligne</p><p>Ces liens sont conservés à titre d'archives historiques. Les domaines sont expirés, les hébergeurs fermés, ou les pages supprimées.</p><p>🔴 Troglobal — Archives Web-Utopia — Ancienne page du village Troglobal. (Domaine mort)</p><p>🔴 Forum Troglobal — Ancien forum FRBB du collectif. (Hébergeur forum fermé)</p><p>🔴 Longo Maï sur Habiter-Autrement — Page d'archives. (Lien profond mort)</p><p>🔴 Présentation audio Longo Maï (Le Montois) — (Lien SPIP mort)</p><p>🔴 La Picharlerie — Infos Cévennes. (Domaine internetdown.org mort)</p><p>🔴 Le Cantoyourte (Yurtao) — Blog sur la vie en yourte. (Canalblog — article de 2008, lien\n    potentiellement mort)</p><p>🔴 Association Autrement (Beuzec) — Lieu d'accueil, partage, projets écoresponsables. (Site Free mort)</p><p>🔴 Comunidad Cruda — Communauté crudivore en Espagne. (Domaine mort)</p><p>🔴 Matavenero — Village reconstruit dans le nord de l'Espagne. (Hébergeur Lineone fermé)</p><p>🔴 Can Pasqual — Ancien squat à Barcelone. (Domaine mort)</p><p>🔴 Los Arenalejos — Projet communautaire Espagne. (Geocities fermé depuis 2009)</p><p>🔴 Finca Los Albaricoqueros — Free School — Projet de free school. (Webs.com probablement mort)</p><p>🔴 Casa Cares — Ancien lieu de retraite en Italie. (Domaine mort)</p><p>🔴 Ecopueblo — Blog d'un projet d'éco-hameau en Italie. (Blog abandonné)</p><p>🔴 La Valle degli Elfi — Communauté alternative Apennins toscans. (Lien ancien cassé)</p><p>🔴 Center New Reality (Berne/Eriz) — Rainbow Family, Suisse. (Domaine mort)</p><p>🔴 Strawd'la Balle (Lausanne) — Autoconstruction paille. Maison détruite par incendie criminel. (Blog\n    Over-blog abandonné)</p><p>🔴 BeauChamp Visitors — Ancien lieu d'accueil. (Domaine mort)</p><p>🔴 Écologite — Habitat écologique. (Site Free mort)</p><p>🔴 La Lune Nette — Archives 2001, projet abandonné. (Domaine mort)</p><p>🔴 Fazenda Abracadabra (Brésil) — Lieu de vie Rainbow au Brésil. (Blog Over-blog abandonné)</p><p>🔴 vielaudon.free.fr — Ancien site du Viel Audon. (Remplacé par levielaudon.org)</p><p>🔴 ecolonie.org — Ancien domaine d'Écolonie. (Remplacé par ecolonie.eu)</p><p>🔗 Ressources & Annuaires utiles (tous actifs)</p><p>Passerelle Éco — Revue et réseau pour les écovillages, habitats groupés et alternatives en France.</p><p>Global Ecovillage Network (GEN) — Réseau mondial des écovillages. Annuaire, formations, événements.</p><p>Écovillage Global — Annuaire francophone des écovillages et écolieux (par Passerelle Éco).</p><p>Coopérative Oasis — Réseau d'écolieux et habitats participatifs en France (Colibris).</p><p>Habiter Autrement — Portail de ressources sur l'habitat alternatif et les écovillages.</p><p>Colibris — Mouvement citoyen : carte des alternatives, outils collaboratifs.</p><p>WWOOF France — Réseau de fermes biologiques accueillant des volontaires.</p><p>Rete RIVE (Italie) — Réseau italien des écovillages et communautés intentionnelles.</p><p>Radar Squat — Annuaire international des squats, centres autonomes et lieux alternatifs.</p><p>Dernière mise à jour : avril 2026.\n    Légende : ✅ Actif | 🟡 En veille | ⚠️ Inactif (en ligne mais obsolète) | 🔴 Lien cassé / hors ligne\n    N'hésitez pas à signaler tout lien mort ou toute mise à jour à effectuer.</p><p>Réseaux, associations, liste de lieux, :</p><p>- Lieux de vie\n    ouvert  (Sharewiki) :</p><p>- La Carte ... :  Lieux de vie, bases nomade, collectifs, squat, ecolieux : Récentes mises à jour, ajouts des diverses cartes des alternatives, luttes, lieux de vie... Vous pouvez participer à la mise à jour de la carte en faisant la demande sur la\n    carte</p><p>- http://www.reclaimthefields.org/fr : Réseau européen\n    Reclaim the fields.</p><p>- http://wwolfing.wordpress.com : Du wwoof avec des dents !\n    Issu de RTF</p><p>- Gen-europe.org : Global ecovillage network, réseau\n    Europe. Liste des\n    membres\n    - Eurotopia.de : Liste de liens de communauté\n    intentionnelle en Europe\n    - Eyfa.org : European youth for action, rencontre ecotopia, caravane\n    à vélo...\n    - Ecolieux - Ecovillages : Liste\n    de liens sur habiter-autrement.org</p><p>France \n    - Passerelle Eco :  Pratiques et contacts\n    pour vivre ensemble sur une même planète. Un réseau d'ecovillages, ecolieux actifs en France.  Une revue, des infos, des liens...\n    - Voyageurs.en-transition.fr : projets, lieux,\n    carte...\n    - Écolieux-de-France : Répertoire des écolieux et divers\n    infos..\n    - Halemfrance.org : Association des HAbitants de Logements\n    Ephémères ou Mobiles\n    - Macabane.info :  Mouvement autogéré des\n    chercheurs(cheuses) en habit autonome novateur et écologique...\n    - Katipik.free.fr  : collectif de lutte contre les expulsions des\n    cabanes en Ariège\n    - Permisdevivre.org : Réseau Permis de vivre, regroupement de\n    divers collectifs et association pour une reconnaissance des modes de vie simple, des habitats alternatifs, yourtes, tipis, cabanes...\n    - Terredeliens.org : propose de changer le rapport à la\n    terre, à l’agriculture, à l’alimentation et à la nature, en faisant évoluer le rapport à la propriété foncière. Valorisant les dimensions collectives et solidaires pour l’accès à la terre et sa\n    gestion...\n    - Paradigmes : Aide à la création de lieu de vie\n    alternatif...\n    - Archiutop.com : L'Archipel des utopies,\n    mécénat social ou psychologique\n    - Colibris-lemouvement.org : Le mouvement\n    pour la terre et l'humanisme (Pierre Rabhi) \n    - http://fr.gaiadir.com/ecovillage : Liste d'ecolieu,\n    carte, liens\n    - Info le Réseau Français des ecovillage (RFEV) n'est plus -> voir Passerelle Eco\n    \n    Québec, Canada \n    - Réseau des ÉcoHameaux et ÉcoVillages du\n    Québec / Communauté en fête : Page\n    de liens ecovillage\n    - Terravie.org : fonds foncier communautaire, est un OSBL de\n    bienfaisance et de conservation qui préserve des terres à perpétuité au Québec afin de les transformer en aires protégées...\n    - La plume de feu.com : La revue Aube, revue du Québec\n    sur les écovillages et les alternatives de vie.\n    \n    International\n    - Permacultureglobal.com (Eng): Permaculture projects\n    and practitioners worldwide (Carte, liste de lieux et projets)\n    - Gen.ecovillage.org (Eng): GEN (Global ecovillage network)\n    Réseau international d'ecolieux et projets divers...\n    - Nomadbase.org : Réseau de nomade et de bases, plateforme pour\n    activist, nomad, couchsurfer\n    - Category:Intentional_communities (Wikiped)(Eng): Les communauté intentionelles\n    - Ic.org / Icdb.org (Eng): Intentional Community database, ecovillages, cohousing, communes, student co-ops, urban housing\n    cooperatives...\n    - List of ecovillages (Sharewiki -\n    eng) \n    \n    Divers articles et infos :\n    - Planetfriendly.net/community (Eng): Info,\n    liste, liens communautés intentionnelles, ecovillage...\n    - Comment monter un projet\n    d'écolieu : (Ekopedia) Infos, liens, lieux...\n    - Communautarisme de lieu de\n    vie : (Anarchopedia)\n    - Wiki Ecovillage : Ecovillage guide that\n    anyone can edit...\n    - Sustainablecommunitiesaroundtheworld.blogspot.com : wwoof, ecolieux... (Eng)\n    - L'écohabitat, l'habitat\n    groupé et Vie\n    communautaire ou collective : article spirale.attac\n    - Audio : Archive\n    vie et société - La génération hallucinée (rep. sur communauté hippies...)\n    - Video : Livinginthefuture.org : Série de reportage\n    video d'habitat simple, d'ecovillage...\n    - Video : Groupe ecovillage sur dailymotion,\n    partage de video sur les alternatives</p><p>Lieux de vie, collectifs, micro-société, squat, communautés intentionnelles, ecovillages, ecolieux... : Lieux ouvert à\n    l'accueil, au partage, à l'échange...</p><p>Quelques Lieux en France</p><p>- ZAD : Notre Dame des Landes : https://zad.nadir.org/ :</p><p>- Troglobal : Troglobal.wordpress.com / Archives :Troglobal - Forum /</p><p>- La Vielle Valette : Collectif de la Valette :</p><p>- Longo Maï : Longo\n    maï : Présentation audio longo mai et\n    article sur le Montois (Suisse)</p><p>- Cravirola : Le Maquis</p><p>- Caracolesdesuc.org  : ferme collective autogérée en\n    Ardèche.</p><p>- Collectif-far.org :\n    - Lapicharlerie.internetdown.org : Info cévennes /</p><p>- Le Cantoyourte  (Yurtao)\n     /\n    - Folleterre.org : Lieux de vie.We are queer people\n    exploring tribal life, sustainability and harmony whith nature..\n    - Fermautrement.free.fr : Association Autrement de beuzec\n    L'association Autrement a pour objectif de développer un lieu autour duquel pourraient être mis en place des projets et des activités allant dans une démarche de respect de l'environnement et de\n    développement des relations entre humains. Accueil, partage, apprentissage...\n    - Sens et autonomie : Projet educatif, ateliers,\n    formation...(fr)  /\n    - Ecolieu.durantis.eu : Volontariat, ateliers (Cévennes -\n    FR)</p><p>- Ecolonie / Ecovillage du vieil Audon / BeauChamp Visitors / Ecologite  /</p><p>- Carapa / La Lune Nette : Archives, changement de projet,\n    abandon .</p><p>Quelques projets en ...</p><p>- Villagevegan : Projet vegan en Ardèche - en veille</p><p>- Cyclane.decroissance.info :\n    Projet de village sans voiture - en veille</p><p>- Amopie.free.fr : - en veille</p><p>- Causse de l'Isle : Projet d'achat d'un ancien camp\n    militaire (maj 2004!) /</p><p>- Ecovillage de la Clède  (Cévennes)  /</p><p>- Ecohameaux  (Lorraine) - en veille /</p><p>- Nalou  (Beaulieu sous la Roche) - maj 2008\n    / \n    - Projet habitat groupé dans le\n    cher (Passerelleeco 2007)\n    - Phenomenehomme.eklablog.com : projet ecolieu mt\n    bougarache, alternative jeune..\n    - Egaliville.fr : Projet de village sans argent,\n    forum, infos, liens\n      \n    Espagne\n    Ecoforest.org : raw community (andalousie) /  Comunidadcruda.com  /   Sunseed.org : develop, demonstrate and communicate accessible, low-tech\n    methods of sustainability in a semi-arid environment (andalousie)  /   Matavenero  (nord) /   Can Pasqual : Squat  ( Barcelone) /  Los Arenalejos : En Projet  /  Canmasdeu.net : Squat, centre autogéré (Barcelone)  / Finca el Majolillo : Projecto ecologico (Malaga) / Finca Los Albaricoqueros : Free school project /\n    - Ecosalvia : projet  pyrénées\n    \n    Italie\n    - Torri-superiore.org  / Solaria  /  Casa Cares  /  Ecopueblo  /  Alcatraz  / La valle degli Elfi / Italyecovillage.com /\n    \n    Suisse\n    - Berne / Eriz : Cnr.ch : Center new reality : Rainbow\n    familly</p><p>- Ecodoubs.ch : Les Fermes Communautaires\n    Libres  /</p><p>- Objectifgaia.info  /  Tiocan (France)</p><p>- Ecovillage urbain ou\n    écoquartier dans le bassin lémanique  /\n    - Goldschopf.ch :  Projet communautaire en Suisse\n    Allemande\n    - Autoconstruction-en-paille.over-blog.com : Asso lausannoise Strawd'la balle. Construction d'une maison en paille dans un jardin\n    public de Lausanne. Maison détruite par un incendie criminel....!  \n    - Lieu de vie à Genève A côté de la STEP\n    d’Aïre, presque au bout de la ligne n°51, sur un bout de terrain herbeux en friche, périmètre de l’ancienne usine Haro & Co, un village de roulottes s’est installé il y a bientôt 4 ans. Une\n    trentaine de de familles y vivent.  /\n    \n    Autres\n    - Fazenda.abracadabra.over-blog.com : lieux de\n    vie inspiration rainbow au brésil</p><p>- Communa.org.il : Communauté kibboutz...\n    (Israël)\n    - Diewerkstatt.co.uk : Lieu de vie en Bulgarie</p><p>- Permalot.org : Lieu permaculture en tchéquie.Troglo\n     /\n    - Bosquevillage.com : Lieu ouvert au mexique, wwoof, camping</p><p>- https://rainbowfamilyfrance.wordpress.com/ : Le site de la\n    famille française</p><p>- http://somewhereundertherainbow.org/ : Infos, photos, videos, book...</p><p>- http://www.welcomehome.org/rainbow/index.html :\n    International</p><p>- Cnr.ch : Center new reality and Rainbow tribe suisse. - Rainbowinfo.ch  : Alternative network \n    - Pelerins.populus.org : Pélerins de l'arc en ciel, Projet de\n    lieu (France)</p><p>- Shanti terrian project : Simplicité, arc en ciel,\n    yourte...\n    - Beneficiofamily.com : Welcome home, site de beneficio, chat,\n    forum, liens rassemblement...\n    - Spiritofnature.ch : Spirit of Nature & Nature\n    of Spirit, Promoting a meaningful lifestyle /CH, NZ/ - Globalnative.org :</p><p>- Weloveyoufilm.com : film rainbow</p><p>- http://www.bliss-fire.com/RainbowGuideOnLine.php :\n    Rainbow guide</p><p>Renversé.co\n        \n            La principale plateforme collaborative romande d'information pour les luttes sociales, anticapitalistes, antifascistes et écologistes. Un passage obligé pour trouver des événements et\n            d'autres collectifs.</p><p>La principale plateforme collaborative romande d'information pour les luttes sociales, anticapitalistes, antifascistes et écologistes. Un passage obligé pour trouver des événements et\n            d'autres collectifs.</p><p>Le Silure (Genève)\n        \n            Espace de luttes autonomes et anticapitalistes à Genève (Carouge). Il abrite une cantine, une bibliothèque militante, un infokiosque et organise des réunions politiques (Soulèvements de\n            la terre, etc.).</p><p>Espace de luttes autonomes et anticapitalistes à Genève (Carouge). Il abrite une cantine, une bibliothèque militante, un infokiosque et organise des réunions politiques (Soulèvements de\n            la terre, etc.).</p><p>Espace Noir (Saint-Imier)\n        \n            Centre culturel libertaire et coopératif historique, situé dans le Jura bernois, berceau mondial historique de la mouvance anarchiste (Congrès de l'Internationale anti-autoritaire en\n            1872).</p><p>Centre culturel libertaire et coopératif historique, situé dans le Jura bernois, berceau mondial historique de la mouvance anarchiste (Congrès de l'Internationale anti-autoritaire en\n            1872).</p><p>CIRA (Lausanne)\n        \n            Centre International de Recherches sur l'Anarchisme, la plus grande bibliothèque d'Europe dédiée aux archives et ouvrages anarchistes.</p><p>Centre International de Recherches sur l'Anarchisme, la plus grande bibliothèque d'Europe dédiée aux archives et ouvrages anarchistes.</p><p>Réseau Squat!net Suisse\n        \n            Portail d'informations, d'appels à soutien et d'actualités sur le mouvement des squats, ZAD (Zones à Défendre) et occupations de lieux en Suisse.</p><p>Portail d'informations, d'appels à soutien et d'actualités sur le mouvement des squats, ZAD (Zones à Défendre) et occupations de lieux en Suisse.</p><p>L'Espace Autogéré (Lausanne)\n        \n            Lieu emblématique d'organisation militante. Accueille des assemblées générales, des collectifs anti-répression, des soirées de soutien et une cantine à prix libre.</p><p>Lieu emblématique d'organisation militante. Accueille des assemblées générales, des collectifs anti-répression, des soirées de soutien et une cantine à prix libre.</p><p>L'Usine (Genève)\n        \n            Historiquement issue des mouvements alternatifs, ce centre culturel autogéré abrite de multiples associations (cinéma, concerts, ateliers) fonctionnant de façon horizontale.</p><p>Historiquement issue des mouvements alternatifs, ce centre culturel autogéré abrite de multiples associations (cinéma, concerts, ateliers) fonctionnant de façon horizontale.</p><p>La Ciguë (Genève)\n        \n            Coopérative de logement étudiant issue du mouvement squat des années 80. Elle propose des colocations bon marché hors de la spéculation immobilière, avec un fonctionnement participatif.</p><p>Coopérative de logement étudiant issue du mouvement squat des années 80. Elle propose des colocations bon marché hors de la spéculation immobilière, avec un fonctionnement participatif.</p><p>CoDHA - Coopérative de l'Habitat Associatif\n        \n            Pionnière en Suisse romande de la construction d'écoquartiers participatifs. La propriété appartient à la coopérative, l'usufruit aux habitants.</p><p>Pionnière en Suisse romande de la construction d'écoquartiers participatifs. La propriété appartient à la coopérative, l'usufruit aux habitants.</p><p>Mehr als Wohnen (Zurich)\n        \n            \"Plus que du logement\". Métacoopérative emblématique qui construit et gère de manière autogérée de vastes quartiers à loyer modéré, conçus pour la vie en communauté et l'écologie.</p><p>\"Plus que du logement\". Métacoopérative emblématique qui construit et gère de manière autogérée de vastes quartiers à loyer modéré, conçus pour la vie en communauté et l'écologie.</p><p>Keepinuse.ch (Toute la Suisse romande)\n        \n            Le grand portail anti-consumériste de Suisse romande pour les dons et la récupération d'objets, qui recense aussi de nombreuses alternatives de gratuité.</p><p>Le grand portail anti-consumériste de Suisse romande pour les dons et la récupération d'objets, qui recense aussi de nombreuses alternatives de gratuité.</p><p>Magasin Gratuit de Bellevaux (Lausanne)\n        \n            Lieu physique basé sur la décroissance et la solidarité : on y dépose ce dont on ne se sert plus, on prend ce dont on a besoin, le tout 100% sans argent.</p><p>Lieu physique basé sur la décroissance et la solidarité : on y dépose ce dont on ne se sert plus, on prend ce dont on a besoin, le tout 100% sans argent.</p><p>Gratiferia (Genève / Romandie)\n        \n            Réseau organisant des \"Foires gratuites\". Le principe : chacun amène des objets et/ou repart avec ce qui lui plaît, sans nécessité d'échange (ex: organisées à la Villa Freundler ou à\n            l'Îlot 13).</p><p>Réseau organisant des \"Foires gratuites\". Le principe : chacun amène des objets et/ou repart avec ce qui lui plaît, sans nécessité d'échange (ex: organisées à la Villa Freundler ou à\n            l'Îlot 13).</p><p>WWOOF Suisse\n        \n            Réseau officiel permettant de vivre et travailler dans des fermes biologiques, paysannes et souvent alternatives en Suisse. Un échange de bras et de connaissances contre gîte et couvert\n            (zéro flux financier).</p><p>Réseau officiel permettant de vivre et travailler dans des fermes biologiques, paysannes et souvent alternatives en Suisse. Un échange de bras et de connaissances contre gîte et couvert\n            (zéro flux financier).</p><p>GEN Suisse (Réseau des Écovillages)\n        \n            Le \"Global Ecovillage Network\" pour la Suisse. Permet de trouver des projets de lieux de vie collectifs, comme l'écovillage de Sennrüti ou des habitats en permaculture.</p><p>Le \"Global Ecovillage Network\" pour la Suisse. Permet de trouver des projets de lieux de vie collectifs, comme l'écovillage de Sennrüti ou des habitats en permaculture.</p><p>Le Réseau Mutu\n        \n            Réseau francophone de collectifs anticapitalistes (dont Renversé). C'est le point de départ en ligne pour trouver les canaux de diffusion.</p><p>Réseau francophone de collectifs anticapitalistes (dont Renversé). C'est le point de départ en ligne pour trouver les canaux de diffusion.</p><p>Telegram: Grève du Climat (Klimastreik CH)\n        \n            Canal public de diffusion Telegram de la Grève pour le Climat en Suisse, qui relaye souvent des actions d'écologie décoloniale et anticapitaliste.</p><p>Canal public de diffusion Telegram de la Grève pour le Climat en Suisse, qui relaye souvent des actions d'écologie décoloniale et anticapitaliste.</p><p>Trouver les QR Codes / Liens Signal : Les Infokiosques\n        \n            Pour rejoindre les groupes de discussion cryptés (Signal/Telegram) des collectifs comme Action Antifasciste ou Street Medics, rendez-vous physiquement aux événements du\n            Silure (Genève) ou de L'Espace Autogéré (Lausanne) où des flyers avec QR codes \"lien d'invitation\" sont mis à la disposition des militants de confiance.</p><p>Pour rejoindre les groupes de discussion cryptés (Signal/Telegram) des collectifs comme Action Antifasciste ou Street Medics, rendez-vous physiquement aux événements du\n            Silure (Genève) ou de L'Espace Autogéré (Lausanne) où des flyers avec QR codes \"lien d'invitation\" sont mis à la disposition des militants de confiance.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
         },
-        {
-            id: "kiosque-autonome",
-            category: "habitat",
-            date: "14 septembre 2014",
-            readingTime: 7,
-            reactions: 95,
-            image: "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?auto=format&fit=crop&w=800&q=80",
-            tags: ["Remorque", "Huile Friture", "Solaire", "Infokiosque", "Nomade"],
-            title: {
-                fr: "Le Kiosque Autonome (Remorque Solaire & Huile de Friture)",
-                en: "The Autonomous Kiosk (Solar Trailer & Waste Oil Tractor)",
-                es: "El Kiosco Autónomo (Remolque Solar y Aceite de Fritura)"
+        "downloads": [
+            {
+                "name": "ZAD Notre-Dame-des-Landes",
+                "url": "https://zad.nadir.org/"
             },
-            desc: {
-                fr: "Histoire et fiche technique d'une immense remorque infokiosque tirée par un tracteur roulant 100% à l'huile de friture recyclée.",
-                en: "Engineering review of a 5m community mobile infokiosk pulled by a tractor running 100% on upcycled waste vegetable frying oil.",
-                es: "Historia y ficha técnica de un enorme remolque comunitario arrastrado por un tractor que funciona 100% con aceite de fritura reciclado."
-            },
-            content: {
-                fr: `
-                    <p>Comment diffuser des idées d'autonomie dans tous les villages sans dépendre des stations-service ou du réseau électrique ? Voici le projet du <em>Kiosque Autonome</em> : une grande remorque de 5 mètres sur 2,5 mètres, culminant à 4 mètres de haut sous un magnifique toit en dôme.</p>
-                    <h2>1. Le Tracteur Biocarburant (Huile de Friture)</h2>
-                    <p>Le véhicule tracteur a été modifié avec un kit de bicarburation. Il démarre sur un petit réservoir de gazole (ou d'huile végétale pure réchauffée par des bougies de préchauffage), puis bascule automatiquement sur un grand réservoir contenant de l'huile de friture usagée de restaurant, finement filtrée à 1 micron. Bilan carbone presque neutre, recyclage d'un déchet polluant en force motrice !</p>
-                    <h2>2. Toiture Végétalisée et Plantes Médicinales</h2>
-                    <p>Le toit de la remorque a été renforcé par un bac étanche en EPDM et planté de 20 m² d'herbes médicinales (thym, romarin, calendula, achillée millefeuille). Les eaux de pluie sont récupérées dans des cuves intégrées sous le plancher pour arroser ce jardin suspendu.</p>
-                    <h2>3. L'Équipement Infokiosque</h2>
-                    <p>À l'intérieur, les parois s'ouvrent sur vérins hydrauliques pour dévoiler une bibliothèque en libre-service, des présentoirs à brochures, une photocopieuse alimentée par 600W de panneaux solaires, et un vidéoprojecteur 12V pour organiser des projections de documentaires en plein air sur la place des villages.</p>
-                `,
-                en: `
-                    <p>How do you circulate vital grassroots autonomy knowledge across isolated rural villages without relying on fossil fuel gas stations or corporate electrical grids? Meet the <em>Autonomous Kiosk</em> project: an impressive custom-built 5m x 2.5m community trailer topped by a beautiful 4m high arched roof.</p>
-                    <h2>1. The Waste Vegetable Oil (WVO) Tractor</h2>
-                    <p>The towing engine was outfitted with a dual-tank bio-fuel conversion kit. The engine warms up on a small auxiliary tank before switching seamlessly to a heated primary tank filled with used restaurant frying oil filtered down to 1 micron. This setup achieves decentralized carbon-neutral locomotion entirely by scavenging problematic municipal restaurant grease.</p>
-                    <h2>2. Medicinal Living Roof</h2>
-                    <p>The roof arbors are lined with a heavy-duty EPDM membrane and seeded with 20 square meters of shallow medicinal crops (hardy thyme, rosemary, wild calendula, and yarrow). Rainwater is captured by gutter wings and funnelled into structural under-chassis ballast tanks.</p>
-                    <h2>3. Solar Infokiosk Array</h2>
-                    <p>When parked, the lateral walls fold upward on hydraulic gas struts to form protective awnings, unveiling self-service bookshelf bays, brochure racks, a 12V solar-powered copy machine, and a low-draw community outdoor cinema projection system.</p>
-                `,
-                es: `
-                    <p>¿Cómo llevar ideas de autonomía a los pueblos más aislados sin depender de gasolineras o de la red eléctrica comercial? Presentamos el proyecto del <em>Kiosco Autónomo</em>: un enorme remolque comunitario de 5 metros de largo por 2.5 metros de ancho, coronado por un hermoso techo abovedado de 4 metros de altura.</p>
-                    <h2>1. El Tractor de Aceite de Fritura Reciclado</h2>
-                    <p>El motor del tractor fue modificado con un sistema de doble depósito. Arranca en frío y luego cambia automáticamente a un gran depósito que contiene aceite de fritura de restaurantes reciclado y filtrado a 1 micra. ¡Este sistema logra una movilidad totalmente sostenible aprovechando un residuo urbano contaminante!</p>
-                    <h2>2. Techo Verde de Plantas Medicinales</h2>
-                    <p>La cubierta del remolque está reforzada con una lámina de EPDM y plantada con 20 m² de hierbas medicinales (tomillo, romero, caléndula, milenrama). El agua de lluvia es canalizada mediante canalones hacia depósitos situados bajo el suelo para regar este huerto suspendido.</p>
-                    <h2>3. Equipamiento de Infokiosco Solar</h2>
-                    <p>Al estacionar, las paredes laterales se elevan mediante pistones hidráulicos formando toldos y dejando a la vista una gran biblioteca de libre acceso, estanterías para folletos, una fotocopiadora alimentada por paneles solares y un proyector 12V para organizar sesiones de cine al aire libre en las plazas de los pueblos.</p>
-                `
-            },
-            resources: [
-                { name: "🚜 Guide Bicarburation Huile Végétale (PDF 25p)", url: "#" },
-                { name: "📋 Fiche Construction Remorque Bois (PDF)", url: "#" }
-            ],
-            comments: [
-                { author: "Roule_A_L_Huile", date: "20 septembre 2014", text: "Superbe ! Pour info, un bon filtrage à travers de vieux jeans puis un filtre à gazole de camion évite de boucher les injecteurs." }
-            ]
+            {
+                "name": "https://zad.nadir.org/",
+                "url": "https://zad.nadir.org/"
+            }
+        ]
+    },
+    {
+        "id": "comment-tresser-un-panier-avec-du-papier-journal-vannerie-de-papier-recup",
+        "category": "artisanat",
+        "date": "2014/08/25",
+        "readingTime": 5,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=120x1024:format=jpg/path/s6b5d09a755d07b57/image/i7fbd8f2664f2c502/version/1408960671/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Comment tresser un panier avec du papier journal, vannerie de papier, recup",
+            "en": "How to Weave a Storage Basket with Newspaper",
+            "es": "Cómo tejer una canasta de almacenamiento con papel de periódico"
         },
-        {
-            id: "special-vroutsch",
-            category: "habitat",
-            date: "14 septembre 2014",
-            readingTime: 5,
-            reactions: 67,
-            image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
-            tags: ["Vroutsch", "Zoomes", "Dôme", "1972", "Contre-Culture"],
-            title: {
-                fr: "Autoconstruction — Spécial Vroutsch (Le Guide Culte de 1972)",
-                en: "Self-Building — Special Vroutsch (The 1972 Cult Guide)",
-                es: "Autoconstrucción — Especial Vroutsch (Guía de Culto de 1972)"
-            },
-            desc: {
-                fr: "Une petite perle architecturale de la contre-culture : construction de dômes, tipis, zoomes, structures en carton et maisons bulles.",
-                en: "A rare architectural masterpiece of 1970s counter-culture: calculating and building geodesic domes, tipis, and zoomes.",
-                es: "Una joya arquitectónica de la contracultura de 1972: cálculo y construcción de domos geodésicos, tipis, zomes y casas de cartón."
-            },
-            content: {
-                fr: `
-                    <p>Publié au début des années 70 en pleine effervescence utopique, le numéro <em>Spécial Vroutsch</em> consacré à l'autoconstruction est une relique légendaire. Trouvé à l'origine grâce aux chercheurs d'Alphazomes, ce manuel de 71 pages regorge de dessins faits main, de tableaux trigonométriques vulgarisés et d'inventions farfelues ou géniales.</p>
-                    <h2>Au Sommaire de ce Grimoire :</h2>
-                    <ul>
-                        <li><strong>Les Dômes Géodésiques :</strong> Calculs des fréquences V2 et V3. Astuces d'époque pour assembler des tubes d'acier aplati ou des chevrons de bois avec de simples rondelles de caoutchouc.</li>
-                        <li><strong>Les Zoomes :</strong> Architecture fascinante basée sur des losanges en spirale. Contrairement au dôme géodésique, le zoome permet des murs verticaux et s'intègre avec une poésie folle dans le paysage forestier.</li>
-                        <li><strong>Les Structures Expérimentales :</strong> Maisons en tubes de carton de récupération imperméabilisés à la paraffine, igloos en sacs de terre (les ancêtres des Earthships), et abris d'urgence gonflables.</li>
-                    </ul>
-                    <p>C'est un appel éclatant à l'imagination et à l'audace constructrice, rappelant que l'architecture appartient à ceux qui la vivent, pas aux promoteurs immobiliers.</p>
-                `,
-                en: `
-                    <p>Published in early 1972 at the zenith of the global back-to-the-land utopian movement, the <em>Special Vroutsch</em> issue dedicated to counter-culture self-building is a legendary counter-cultural manual. Rescued and digitized by the structural engineers at Alphazomes, this 71-page fully illustrated manifesto is packed with hand-drawn math, geodesic trigonometry, and wild architectural experiments.</p>
-                    <h2>Highlights of the Manual:</h2>
-                    <ul>
-                        <li><strong>Geodesic Domes:</strong> Exact geometry and chord factors for frequency V2 and V3 structures. Ingenious DIY hub systems using flattened conduit pipes and upcycled automotive rubber washers.</li>
-                        <li><strong>Zoomes:</strong> An awe-inspiring non-standard architectural class built from spiralling diamonds (rhombuses). Unlike standard spherical domes, a zoome forms beautiful vertical walls and merges organically into forest landscapes.</li>
-                        <li><strong>Radical Upcycling:</strong> Experimental shelters built from heavy-duty industrial shipping cardboard tubes waterproofed with beeswax, early superadobe sandbag structures, and foam-sprayed micro-domes.</li>
-                    </ul>
-                    <p>It remains an electrifying monument to raw structural imagination, reminding us that homes should be handcrafted by the people who inhabit them, not corporate developers.</p>
-                `,
-                es: `
-                    <p>Publicado a principios de la década de 1970 en plena efervescencia de los movimientos utópicos de retorno a la tierra, la edición de <em>Especial Vroutsch</em> sobre autoconstrucción es una leyenda de la contracultura. Digitalizado originalmente por los investigadores de Alphazomes, este grimoire ilustrado de 71 páginas está repleto de cálculos trigonométricos accesibles y fantásticos experimentos arquitectónicos.</p>
-                    <h2>Contenido Destacado del Manual:</h2>
-                    <ul>
-                        <li><strong>Domos Geodésicos:</strong> Frecuencias V2 y V3. Sistemas ingeniosos de unión de nodos utilizando tubos de acero aplastados con martillo y arandelas de caucho recicladas de ruedas de coche.</li>
-                        <li><strong>Zoomes:</strong> Arquitectura fascinante basada en rombos en espiral. A diferencia de un domo esférico, un zome permite paredes verticales y se fusiona maravillosamente con entornos boscosos.</li>
-                        <li><strong>Reciclaje Radical:</strong> Albergues construidos con tubos industriales de cartón prensado impermeabilizados con cera y parafina, estructuras de sacos de arena (los antecesores del superadobe) y casas burbuja.</li>
-                    </ul>
-                    <p>Sigue siendo un brillante llamado a la imaginación constructiva, recordándonos que la arquitectura pertenece a quienes la habitan y no a la especulación inmobiliaria.</p>
-                `
-            },
-            resources: [
-                { name: "📁 Télécharger Special Vroutsch 1972 (PDF 71p)", url: "#" },
-                { name: "🔗 Visiter Alphazomes.org", url: "http://alphazomes.org" }
-            ],
-            comments: [
-                { author: "Zoome_Lover", date: "25 septembre 2014", text: "Ce document a changé ma vie en 2010. J'ai construit un petit Zoome 6 pans pour mon atelier de poterie. Les schémas sont d'une précision diabolique." }
-            ]
+        "desc": {
+            "fr": "Comment tresser un petit panier avec du papier journal, quelques idées de jeux (un mikado géant et une partie de morpion avec des capsules.)\n    Explication video, tuto, ne jettez plus vos vieux journaux, faites en des p...",
+            "en": "Nothing is lost, nothing is created, everything is transformed. Step-by-step practical upcycling guides and traditional handmade craft mastery.",
+            "es": "Nada se pierde, nada se crea, todo se transforma. Guías prácticas de reciclaje radical, cestería con periódicos y dominio de las artesanías tradicionales."
         },
-        {
-            id: "recettes-vegetaliennes",
-            category: "production",
-            date: "25 août 2014",
-            readingTime: 9,
-            reactions: 76,
-            image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
-            tags: ["Végétalien", "Fermentation", "Alimentation Vivante", "Crudivorisme", "Nutrition"],
-            title: {
-                fr: "Recettes végétaliennes, Fermentation & Alimentation Vivante",
-                en: "Vegan Recipes, Wild Fermentation & Living Foods",
-                es: "Recetas veganas, Fermentación y Alimentación Viva"
-            },
-            desc: {
-                fr: "Guide complet pour s'émanciper de l'industrie agroalimentaire : lactofermentation, fromages de graines, graines germées et nutrition vivante.",
-                en: "Practical culinary self-reliance: mastering wild lacto-fermentation, sprouted grains, live nut cheeses, and nutrient-dense raw living foods.",
-                es: "Guía de autonomía culinaria y salud: lactofermentación salvaje, quesos de semillas, germinados y nutrición viva sin procesados industriales."
-            },
-            content: {
-                fr: `
-                    <p>L'autonomie politique et énergétique commence dans nos assiettes. S'affranchir de la souffrance animale et de la malbouffe industrielle exige de renouer avec des techniques ancestrales de conservation et de vitalisation des aliments. L'alimentation vivante (ou <em>crudivorisme</em>) et la fermentation sont les piliers de cette résilience culinaire.</p>
-                    <h2>1. Les Graines Germées (La Centrale Énergétique)</h2>
-                    <p>Une simple graine sèche est en dormance. En l'immergeant dans l'eau pendant 12 heures puis en la rinçant deux fois par jour dans un bocal recouvert d'une gaze, elle explose de vie. Le taux de vitamines (C, B, A) et d'enzymes est multiplié par 10 ou 20 ! Lentilles, haricots mungo, radis, fenugrec, tournesol : un potager de comptoir ultra-économique.</p>
-                    <h2>2. La Lactofermentation (Bocaux Sans Énergie)</h2>
-                    <p>Comment conserver ses récoltes de choux, carottes et betteraves toute l'année sans frigo ni stérilisateur électrique ? La lactofermentation ! Émincez vos légumes, ajoutez exactly 15 à 20 grammes de sel pur par kilo de légumes, pressez vigoureusement pour faire dégorger le jus naturel, et tassez dans un bocal à joint en caoutchouc (type Le Parfait) en veillant à ce qu'il n'y ait pas d'air. Les bactéries lactiques vont acidifier le milieu et empêcher toute pourriture. Richesse en probiotiques garantie !</p>
-                    <h2>3. Fromages Végétaux Fermentés (Oléagineux)</h2>
-                    <p>Faites tremper des noix de cajou ou des graines de tournesol décortiquées pendant 8h. Mixez-les avec un peu d'eau, une gousse d'ail, du sel et une cuillère de jus de choucroute crue (ou un probiotique). Laissez reposer 24 à 48h à température ambiante. Le mélange va cailler et développer un goût acidulé digne d'un grand fromage traditionnel !</p>
-                `,
-                en: `
-                    <p>Political and energy self-reliance begins right on our dinner plates. Breaking away from corporate agricultural monopolies and industrial processed junk foods means reclaiming ancient techniques of food preservation and enzyme activation. Living foods and wild fermentation are the cornerstones of decentralized domestic culinary resilience.</p>
-                    <h2>1. Sprouting (The Desktop Bio-Garden)</h2>
-                    <p>A dry dormant seed is a locked vault of nutrition. Soak it in pure clean water for 12 hours, then rinse and drain it twice daily in a simple glass mason jar fitted with a mesh or cloth top. Within 3 days, it explodes with active living bio-enzymes, multiplying its vitamin C, B, and essential amino acid profiles up to 20-fold. Lentils, mung beans, spicy radish, fenugrec, and sunflower establish a highly productive, zero-cost indoor winter garden.</p>
-                    <h2>2. Wild Lacto-Fermentation (Zero-Energy Food Storage)</h2>
-                    <p>How do you store heavy autumn harvests of cabbage, hard roots, and garlic deep into the winter without relying on grid-dependent refrigerators or energy-intensive pressure canners? Mastering lacto-fermentation! Shred your organic vegetables, weigh them exactly, and rub in 15 to 20 grams of pure sea salt per kilogram of vegetables. Tamp the mixture firmly into rubber-gasket glass jars until their own cellular brine fully submerges them. Beneficial wild <em>Lactobacillus</em> bacteria naturally produce lactic acid, perfectly preserving the crisp vegetables while loading them with incredible gut-healthy probiotics.</p>
-                    <h2>3. Cultured Living Seed Cheeses</h2>
-                    <p>Soak raw sunflower seeds or creamy cashews for 8 hours. Blend them smooth with pure clean water, a clove of raw garlic, nutritional yeast, and a tablespoon of wild raw sauerkraut brine as a live bacterial starter culture. Let the thick mash culture in a warm dark room for 24 to 48 hours. The creamy wheel will ferment, develop a delightful sharp tangy rind, and firm up perfectly!</p>
-                `,
-                es: `
-                    <p>La autonomía política y energética comienza directamente en nuestros platos. Liberarnos de los monopolios agroindustriales y de la comida chatarra procesada significa rescatar métodos ancestrales de conservación y activación enzimática. La alimentación viva y la fermentación salvaje son las bases de esta resistencia culinaria.</p>
-                    <h2>1. Germinados (La Huerta Casera sin Tierra)</h2>
-                    <p>Una semilla seca está dormida. Si la pones en remojo durante 12 horas y luego la enjuagas y escurres dos veces al día en un frasco de vidrio cubierto con una malla, explota de vida. ¡La cantidad de enzimas activas y vitaminas (C, B, A) se multiplica hasta 20 veces! Lentejas, frijol mungo, rábano picante, fenogreco y girasol forman una espectacular huerta de interior a coste cero.</p>
-                    <h2>2. Lactofermentación (Conservas sin Nevera ni Electricidad)</h2>
-                    <p>¿Cómo guardar grandes cosechas de repollo, zanahorias y remolachas durante todo el invierno sin usar refrigeradores ni esterilizadores de alto consumo? ¡Con lactofermentación! Corta finamente las verduras, mezcla exactamente entre 15 y 20 gramos de sal marina pura por cada kilo de verdura y masajea con fuerza hasta que suelten su propio jugo celular. Prensa todo en un frasco hermético asegurándote de que las verduras queden sumergidas en su salmuera. Las bacterias beneficiosas <em>Lactobacillus</em> producirán ácido láctico, preservando las verduras de forma crujiente y llenándolas de maravillosos probióticos naturales.</p>
-                    <h2>3. Quesos Vivos Fermentados de Semillas</h2>
-                    <p>Deja en remojo semillas de girasol crudas o anacardos durante 8 horas. Tritúralos hasta formar una pasta con un poco de agua, ajo, sal marina y una cucharada de jugo de chucrut crudo para aportar las bacterias de cultivo. Deja reposar la mezcla en un lugar cálido entre 24 y 48 horas. ¡La pasta fermentará, cuajará y desarrollará un delicioso sabor intenso y complejo idéntico a un queso artesanal curado!</p>
-                `
-            },
-            resources: [
-                { name: "🥦 Table des Sels et Températures de Fermentation (PDF)", url: "#" },
-                { name: "📘 Ebook Recettes Crues & Vivantes (PDF 50p)", url: "#" }
-            ],
-            comments: [
-                { author: "FermentoBoy", date: "30 août 2014", text: "La lactofermentation a sauvé ma récolte de choux l'hiver dernier. C'est inratable si on respecte bien la pesée du sel !" }
-            ]
+        "content": {
+            "fr": "<p>Comment tresser un petit panier avec du papier journal, quelques idées de jeux (un mikado géant et une partie de morpion avec des capsules.)\n    Explication video, tuto, ne jettez plus vos vieux journaux, faites en des paniers, des jeux et plus encore.  C'est de la recup, c'est gratuit...</p><p>Dossier complet :  Vannerie.9pdfs.02.2012.zip : 46Mo</p><p>Liens uniques ->: @D :</p><p>-   Vannerie_Traite.pratique.de.la.culture.de.l.osier.GB.ext.51p.pdf\n    -   Vannerie_Baskets.in.europe.GB.ext.60p.pdf\n    -   Vannerie_Nouveau.manuel.complet.de.la.fabrication.de.la.vannerie.1912.BNF.369p.pdf\n    -   Vannerie_Vannerie.tressage.mix.-.s.r.-.ftvm.27p.pdf : La vannerie, tressage de panier, osier, rotin : Techniques, photos, tuto, explications.\n    (extraits de savoir revivre, revivre à la campagne et faites tout vous mêmes)</p><p>- Divers extraits de magazines sur l'artisanat en papier (Via : Variasmanualidades )</p><p>-   Vannerie_Arte.em.jornal.42.29p.pdf\n    -   Vannerie_Arte.con.papel.periodico.41p.pdf\n    -   Vannerie_Artesanato.em.jornal.-.Cestaria.45p.pdf\n    -   Vannerie_Luminarias.de.papel.jornal.32p.pdf</p><p>-   Vannerie_Arts.of.paper.chinois.33p.pdf</p><p>Vannerie : Infos, techniques</p><p>- Panier.over-blog.com : fabrication de panier en éclisse, explication pas à pas</p><p>- Liens sur la vannerie</p><p>- Faire un\n    panier en aiguille de pin (vannerie)</p><p>- Videos : Vannerie (YouTube)</p><p>Papier : Papier journal, Magazine, Livres, Carton de céréales, Briques alimentaires</p><p>- (oOo) Pearl : #Papier, carton</p><p>- Panier, crayon, meuble, et porte guitare en papier  /  Transformer des\n    enveloppes en porte monaille (Inst)</p><p>- Des perles en papier / Bracelet en perle de papier\n    reyclé / Un bol en papier de magazine /\n    - Un petit panier carré en papier renforcé tressé  / Un set de table avec la\n    même technique /  \n    - Art vieux papier  : des\n    sculptures en papier journal superposé\n    - Utiliser les journaux, magazines : Plein d'idées sur esprit recup\n    - Reutilizar papel de\n    periodico, faire des paniers (vannerie), tresser avec du papier journal...\n    - Lampe à suspendre : design année\n    70 / Faire une enveloppe à cd en papier\n    (video)  /</p><p>- Comment faire un porte monnaie\n    avec une vielle brique de lait, de jus... / Porte monaille en brique v2 /</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> How to Weave a Storage Basket with Newspaper: Nothing is lost, nothing is created, everything is transformed. Step-by-step practical upcycling guides and traditional handmade craft mastery.</p><p>Comment tresser un petit panier avec du papier journal, quelques idées de jeux (un mikado géant et une partie de morpion avec des capsules.)\n    Explication video, tuto, ne jettez plus vos vieux journaux, faites en des paniers, des jeux et plus encore.  C'est de la recup, c'est gratuit...</p><p>Dossier complet :  Vannerie.9pdfs.02.2012.zip : 46Mo</p><p>Liens uniques ->: @D :</p><p>-   Vannerie_Traite.pratique.de.la.culture.de.l.osier.GB.ext.51p.pdf\n    -   Vannerie_Baskets.in.europe.GB.ext.60p.pdf\n    -   Vannerie_Nouveau.manuel.complet.de.la.fabrication.de.la.vannerie.1912.BNF.369p.pdf\n    -   Vannerie_Vannerie.tressage.mix.-.s.r.-.ftvm.27p.pdf : La vannerie, tressage de panier, osier, rotin : Techniques, photos, tuto, explications.\n    (extraits de savoir revivre, revivre à la campagne et faites tout vous mêmes)</p><p>- Divers extraits de magazines sur l'artisanat en papier (Via : Variasmanualidades )</p><p>-   Vannerie_Arte.em.jornal.42.29p.pdf\n    -   Vannerie_Arte.con.papel.periodico.41p.pdf\n    -   Vannerie_Artesanato.em.jornal.-.Cestaria.45p.pdf\n    -   Vannerie_Luminarias.de.papel.jornal.32p.pdf</p><p>-   Vannerie_Arts.of.paper.chinois.33p.pdf</p><p>Vannerie : Infos, techniques</p><p>- Panier.over-blog.com : fabrication de panier en éclisse, explication pas à pas</p><p>- Liens sur la vannerie</p><p>- Faire un\n    panier en aiguille de pin (vannerie)</p><p>- Videos : Vannerie (YouTube)</p><p>Papier : Papier journal, Magazine, Livres, Carton de céréales, Briques alimentaires</p><p>- (oOo) Pearl : #Papier, carton</p><p>- Panier, crayon, meuble, et porte guitare en papier  /  Transformer des\n    enveloppes en porte monaille (Inst)</p><p>- Des perles en papier / Bracelet en perle de papier\n    reyclé / Un bol en papier de magazine /\n    - Un petit panier carré en papier renforcé tressé  / Un set de table avec la\n    même technique /  \n    - Art vieux papier  : des\n    sculptures en papier journal superposé\n    - Utiliser les journaux, magazines : Plein d'idées sur esprit recup\n    - Reutilizar papel de\n    periodico, faire des paniers (vannerie), tresser avec du papier journal...\n    - Lampe à suspendre : design année\n    70 / Faire une enveloppe à cd en papier\n    (video)  /</p><p>- Comment faire un porte monnaie\n    avec une vielle brique de lait, de jus... / Porte monaille en brique v2 /</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Cómo tejer una canasta de almacenamiento con papel de periódico: Nada se pierde, nada se crea, todo se transforma. Guías prácticas de reciclaje radical, cestería con periódicos y dominio de las artesanías tradicionales.</p><p>Comment tresser un petit panier avec du papier journal, quelques idées de jeux (un mikado géant et une partie de morpion avec des capsules.)\n    Explication video, tuto, ne jettez plus vos vieux journaux, faites en des paniers, des jeux et plus encore.  C'est de la recup, c'est gratuit...</p><p>Dossier complet :  Vannerie.9pdfs.02.2012.zip : 46Mo</p><p>Liens uniques ->: @D :</p><p>-   Vannerie_Traite.pratique.de.la.culture.de.l.osier.GB.ext.51p.pdf\n    -   Vannerie_Baskets.in.europe.GB.ext.60p.pdf\n    -   Vannerie_Nouveau.manuel.complet.de.la.fabrication.de.la.vannerie.1912.BNF.369p.pdf\n    -   Vannerie_Vannerie.tressage.mix.-.s.r.-.ftvm.27p.pdf : La vannerie, tressage de panier, osier, rotin : Techniques, photos, tuto, explications.\n    (extraits de savoir revivre, revivre à la campagne et faites tout vous mêmes)</p><p>- Divers extraits de magazines sur l'artisanat en papier (Via : Variasmanualidades )</p><p>-   Vannerie_Arte.em.jornal.42.29p.pdf\n    -   Vannerie_Arte.con.papel.periodico.41p.pdf\n    -   Vannerie_Artesanato.em.jornal.-.Cestaria.45p.pdf\n    -   Vannerie_Luminarias.de.papel.jornal.32p.pdf</p><p>-   Vannerie_Arts.of.paper.chinois.33p.pdf</p><p>Vannerie : Infos, techniques</p><p>- Panier.over-blog.com : fabrication de panier en éclisse, explication pas à pas</p><p>- Liens sur la vannerie</p><p>- Faire un\n    panier en aiguille de pin (vannerie)</p><p>- Videos : Vannerie (YouTube)</p><p>Papier : Papier journal, Magazine, Livres, Carton de céréales, Briques alimentaires</p><p>- (oOo) Pearl : #Papier, carton</p><p>- Panier, crayon, meuble, et porte guitare en papier  /  Transformer des\n    enveloppes en porte monaille (Inst)</p><p>- Des perles en papier / Bracelet en perle de papier\n    reyclé / Un bol en papier de magazine /\n    - Un petit panier carré en papier renforcé tressé  / Un set de table avec la\n    même technique /  \n    - Art vieux papier  : des\n    sculptures en papier journal superposé\n    - Utiliser les journaux, magazines : Plein d'idées sur esprit recup\n    - Reutilizar papel de\n    periodico, faire des paniers (vannerie), tresser avec du papier journal...\n    - Lampe à suspendre : design année\n    70 / Faire une enveloppe à cd en papier\n    (video)  /</p><p>- Comment faire un porte monnaie\n    avec une vielle brique de lait, de jus... / Porte monaille en brique v2 /</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
         },
-        {
-            id: "construire-tipi",
-            category: "habitat",
-            date: "14 août 2014",
-            readingTime: 6,
-            reactions: 53,
-            image: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=800&q=80",
-            tags: ["Tipi", "Autoconstruction", "Habitat Nomade", "Toile", "Couture"],
-            title: {
-                fr: "Comment fabriquer un tipi (Tepee / Tipi) : Plans et Tuto",
-                en: "How to Make a Tipi (Tepee / Tipi): Patterns and Tutorial",
-                es: "Cómo fabricar un tipi (Tepee / Tipi): Planos y Tutorial"
+        "downloads": [
+            {
+                "name": "Vannerie.9pdfs.02.2012.zip",
+                "url": "http://www.mediafire.com/?g3krwot9qar4cyp"
             },
-            desc: {
-                fr: "Fiches techniques, coupe de la toile, montage des perches et aérodynamique thermique pour construire son propre tipi nord-américain.",
-                en: "Engineering canvas cutting patterns, structural pole erection, and smoke-flap thermal dynamic tuning for handcrafted living tipis.",
-                es: "Patrones de corte de lona, montaje estructural de pértigas y ajuste aerodinámico del humo para la construcción de tipis habitables."
-            },
-            content: {
-                fr: `
-                    <p>Le tipi des peuples des plaines d'Amérique du Nord est une merveille d'ingénierie thermique. Sa forme conique asymétrique est spécialement conçue pour résister aux vents dominants tout en permettant d'allumer un feu ouvert directement au centre de l'habitat grâce à un ingénieux système de tirage et de volets d'aération (les <em>smoke flaps</em>).</p>
-                    <h2>1. Les Perches (La Charpente)</h2>
-                    <p>Il vous faudra 12 à 15 perches parfaitement droites, écorcées et lissées, idéalement en pin, sapin ou épicéa d'environ 6 à 7 mètres de long. Le montage commence toujours par un "trépied" de base solidement noué par un nœud de cabestan, sur lequel viennent s'appuyer en spirale toutes les autres perches.</p>
-                    <h2>2. Le Plan de Coupe de la Toile</h2>
-                    <p>La toile d'un tipi n'est pas un simple demi-cercle, mais un demi-cercle modifié avec des extensions en forme de "oreilles" au sommet. Ce sont ces oreilles, maintenues par deux perches extérieures légères, qui permettent d'orienter le trou de fumée en fonction de la direction du vent pour éviter que la fumée ne refoule à l'intérieur !</p>
-                    <h2>3. L'Ozan et le Lining (L'Isolation Interne)</h2>
-                    <p>Pour vivre dans un tipi en hiver, il faut absolument installer un <em>Lining</em> : une toile interne fixée tout autour des perches à environ 1m50 de hauteur, qui descend jusqu'au sol. Cela crée une lame d'air isolante entre la toile extérieure et la toile intérieure, et génère un appel d'air frais qui alimente le feu central par le bas tout en poussant la fumée chaude vers le haut !</p>
-                `,
-                en: `
-                    <p>The traditional cone tipi of the indigenous Great Plains peoples represents a masterpiece of aerodynamic and thermal engineering. Its asymmetrical steep sloped conical profile is specifically structured to shed extreme winds while allowing occupants to safely burn an open internal woodfire right in the center of the living space.</p>
-                    <h2>1. Handcrafting the Lodgepole Frame</h2>
-                    <p>You need 12 to 15 impeccably straight, fully debarked, smooth slender poles roughly 6 to 7 meters in length (traditionally lodgepole pine or slender dense spruce). Erection strictly begins by securing a master tripod using a secure clove hitch knot. Subsequent secondary framework spars are laid sequentially into the upper tripod crotch in an overlapping structural spiral.</p>
-                    <h2>2. Canvas Membrane Cutting Pattern</h2>
-                    <p>The outer canvas envelope is not a standard geometric semi-circle. Rather, it is a specialized modified semi-circle featuring distinct projecting upper ears or flaps (smoke flaps). These adjustable smoke flaps are maneuvered externally by two lightweight control poles, allowing occupants to dynamically close or orient the upper smoke aperture away from prevailing gusts!</p>
-                    <h2>3. The Lining & Thermal Draft Physics</h2>
-                    <p>To comfortably inhabit a tipi deep into freezing winters, you must install an internal <em>Lining</em> (dew cloth). This internal canvas strip is tied around the interior structural poles from ground level up to exactly 1.5 meters high. This creates a powerful passive perimeter insulating air gap while establishing an updraft vacuum that feeds fresh combustion oxygen to the central fire while pulling harmful smoke straight out the top skylight!</p>
-                `,
-                es: `
-                    <p>El tipi tradicional de los pueblos indígenas de las Grandes Llanuras de Norteamérica es una maravilla de ingeniería térmica y aerodinámica. Su forma cónica empinada y asimétrica está especialmente diseñada para soportar vientos extremos y, al mismo tiempo, permitir encender una fogata abierta directamente en el centro del espacio habitable.</p>
-                    <h2>1. Preparación de las Pértigas</h2>
-                    <p>Necesitarás entre 12 y 15 pértigas de madera perfectamente rectas, peladas y pulidas, idealmente de pino o abeto esbelto de unos 6 a 7 metros de longitud. El montaje estructural comienza siempre atando firmemente un "trípode" maestro mediante un nudo ballestrinque. Las demás pértigas secundarias se apoyan una a una en espiral sobre este trípode principal.</p>
-                    <h2>2. Patrón de Corte de la Lona</h2>
-                    <p>La cubierta de un tipi no es un simple semicírculo geométrico, sino un semicírculo modificado que incluye dos extensiones superiores en forma de "orejas" (las aletas de humo). ¡Estas aletas se controlan desde el exterior mediante dos pértigas ligeras, permitiendo orientar y abrir el agujero de salida de humo según la dirección del viento para evitar que el humo regrese al interior!</p>
-                    <h2>3. El Forro Interior (Lining) y la Física Térmica</h2>
-                    <p>Para vivir cómodamente en un tipi durante el crudo invierno, es imprescindible instalar un forro interior o <em>Lining</em>. Esta tira de lona se ata por el interior alrededor de los postes, desde el suelo hasta 1.5 metros de altura. ¡Esto crea una cámara de aire aislante perimetral y genera una corriente de succión que alimenta de oxígeno el fuego central desde abajo mientras empuja todo el humo caliente de forma impecable hacia la salida superior!</p>
-                `
-            },
-            resources: [
-                { name: "📐 Plans de Patronage et Couture Toile Tipi", url: "#" },
-                { name: "🏕️ Manuel d'Installation et Réglage des Feux", url: "#" }
-            ],
-            comments: [
-                { author: "Plaines_Libres", date: "16 août 2014", text: "Le détail du Lining est absolument vital ! Sans ça, le vent s'engouffre sous la toile et vous fumez comme des saumons. Excellent tuto." }
-            ]
+            {
+                "name": "@D",
+                "url": "http://www.mediafire.com/?c4o2bxfd3pnep"
+            }
+        ]
+    },
+    {
+        "id": "pratique-comment-construire-une-yourte",
+        "category": "habitat",
+        "date": "2014/08/10",
+        "readingTime": 5,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=90x1024:format=jpg/path/s6b5d09a755d07b57/image/ib68e2aad8ec3d619/version/1408017410/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Pratique - Comment construire une yourte",
+            "en": "Practical — How to Build a Handcrafted Yurt (Ger)",
+            "es": "Práctico — Cómo construir una Yurt (Ger) Artesanal"
         },
-        {
-            id: "apiculture-warre",
-            category: "permaculture",
-            date: "14 août 2014",
-            readingTime: 7,
-            reactions: 61,
-            image: "https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=800&q=80",
-            tags: ["Apiculture", "Ruche Warré", "Top-Bar", "Permaculture", "Abeilles"],
-            title: {
-                fr: "Apiculture pour tous : La Ruche Warré (La Ruche du Peuple)",
-                en: "Beekeeping for All: The Warré Hive (The People's Hive)",
-                es: "Apicultura para todos: La Colmena Warré (Colmena del Pueblo)"
-            },
-            desc: {
-                fr: "Comment construire et conduire une ruche écologique Warré ou Top-Bar sans cires gaufrées chimiques ni traitements agressifs.",
-                en: "How to craft and manage natural Warré or Top-Bar natural comb beehives without artificial foundation sheets or toxic treatments.",
-                es: "Cómo construir y gestionar colmenas ecológicas Warré y Top-Bar sin láminas de cera artificiales ni tratamientos químicos invasivos."
-            },
-            content: {
-                fr: `
-                    <p>L'apiculture industrielle moderne épuise les abeilles avec des ruches à cadres immenses, des transhumances stressantes et des cires gaufrées pleines de résidus de pesticides. L'abbé Émile Warré a inventé au début du XXe siècle <em>La Ruche du Peuple</em> : une ruche ultra-simple, respectueuse de la biologie de l'essaim et facile à autoconstruire avec quelques planches de bois brut.</p>
-                    <h2>1. Le Concept de la Ruche Warré</h2>
-                    <p>La ruche Warré se compose de petites caisses carrées (exactly 30 × 30 cm en dimensions intérieures, pour 21 cm de haut). Contrairement à la ruche Dadant, elle ne contient aucun cadre, mais de simples barrettes de bois sur lesquelles les abeilles bâtissent leurs propres rayons de cire naturelle, du haut vers le bas, comme dans un tronc d'arbre creux !</p>
-                    <h2>2. Isolation et Gestion Thermique (Le Coussin)</h2>
-                    <p>Le toit de la Warré abrite un élément capital : le <em>coussin isolant</em>. C'est un boîtier rempli de copeaux de bois, de paille ou de feuilles sèches, placé sur une toile de jute. Ce coussin absorbe l'humidité excédentaire en hiver tout en conservant la précieuse chaleur de la grappe d'abeilles.</p>
-                    <h2>3. L'Agrandissement Par le Bas</h2>
-                    <p>Dans la nature, l'essaim grandit en étirant ses rayons vers le bas. En ruche Warré, lorsqu'une caisse est pleine, on ne pose pas de hausse au-dessus ! On soulève la ruche et on glisse une caisse vide <strong>par en dessous</strong>. À la fin de l'été, on récolte simplement la caisse du tout au-dessus qui contient le miel de surplus mûr, laissant aux abeilles leurs réserves naturelles d'hiver dans les caisses du bas.</p>
-                `,
-                en: `
-                    <p>Modern commercial industrial beekeeping exhausts our vital honeybee colonies via enormous non-insulated frame supers, highly disruptive stress migrations, and toxic artificial wax foundation sheets laden with agricultural chemical residues. In the 1920s, Abbé Émile Warré formulated <em>The People's Hive</em>: an exceptionally intuitive, highly accessible wooden hive structured to flawlessly emulate natural wild tree-hollow bee biology.</p>
-                    <h2>1. Warré Hive Dimensions & Natural Comb</h2>
-                    <p>The Warré hive system relies on multiple identical stacked modular square timber boxes measuring exactly 30 cm × 30 cm internally, with a height of 21 cm. Unlike common commercial Langstroth or Dadant boxes, it utilizes zero frames. Rather, simple narrow wooden top-bars are laid across the rim, prompting bees to draw completely pure wild beeswax combs freely from the ceiling downward!</p>
-                    <h2>2. Passive Quilt Core Thermal Regulation</h2>
-                    <p>The upper attic of the Warré structure houses its greatest functional secret: the insulating <em>Quilt Box</em>. This wooden tray is densely packed with raw wood shavings, dry autumn leaves, or straw sitting atop an open-weave burlap canvas cloth. This quilt perfectly wicks away harmful internal winter condensation metabolic moisture while preserving vital internal cluster heat.</p>
-                    <h2>3. Nadiring (Expansion From Below)</h2>
-                    <p>In wild arboreal ecosystems, wild honeybee clusters develop logically by drawing natural comb downward. Thus, in Warré management, when an existing box becomes congested, you never place an empty super above! Rather, you lift the hive and slide an empty box directly <strong>underneath</strong> the colony (nadiring). In late autumn, you gently harvest only the highly ripened upper surplus box, leaving the bees with undisturbed pristine honey arches deep in the lower wintering chambers.</p>
-                `,
-                es: `
-                    <p>La apicultura industrial moderna agota a las abejas con enormes colmenas de cuadros invasivos, trashumancias estresantes y láminas de cera artificiales contaminadas con residuos de pesticidas. El abad Émile Warré creó a principios del siglo XX <em>La Colmena del Pueblo</em>: una colmena súper sencilla, extremadamente respetuosa con la biología del enjambre y muy fácil de autoconstruir con simples tablas de madera.</p>
-                    <h2>1. Dimensiones y Panales Naturales Warré</h2>
-                    <p>La colmena Warré se basa en pequeñas cajas de madera cuadradas e idénticas que miden exactamente 30 cm × 30 cm en su interior, con 21 cm de altura. A diferencia de las colmenas comerciales Dadant o Langstroth, no tiene marcos de madera. En su lugar, utiliza listones superiores (barretas) sobre los cuales las abejas labran libremente sus propios panales de cera 100% pura y natural de arriba hacia abajo, ¡igual que en el hueco de un árbol salvaje!</p>
-                    <h2>2. Regulación Térmica y el Cojín Aislante</h2>
-                    <p>El techo de la colmena Warré alberga su mayor acierto de diseño: el <em>Cojín Aislante</em> o Quilt. Es un cajón de madera lleno de virutas de madera sin tratar, paja o hojas secas, colocado sobre una tela de arpillera. Este cojín absorbe toda la humedad metabólica excesiva durante el crudo invierno y, al mismo tiempo, retiene el calor vital que genera la piña de abejas.</p>
-                    <h2>3. Ampliación por Debajo (Nadiring)</h2>
-                    <p>En la naturaleza, un enjambre salvaje crece estirando sus panales hacia abajo. Por eso, en el manejo Warré, cuando una caja se llena, ¡nunca se le pone un alza vacía por encima! Lo que se hace es levantar la colmena y deslizar una caja vacía directamente <strong>por debajo</strong>. A finales del verano, simplemente se cosecha la caja superior que ya está madura y sellada, dejando a las abejas con sus reservas de miel intactas y perfectas en las cámaras inferiores para pasar el invierno.</p>
-                `
-            },
-            resources: [
-                { name: "🐝 Plans de Menuiserie Ruche Warré (PDF 15p)", url: "#" },
-                { name: "📖 L'Apiculture Pour Tous (Livre Culte Abbé Warré PDF)", url: "#" }
-            ],
-            comments: [
-                { author: "AmiDesAbeilles", date: "18 août 2014", text: "Depuis que je suis passé en Warré, la mortalité hivernale de mes essaims a chuté de 40% à 5%. Laisser aux abeilles leur propre miel pour l'hiver change tout." }
-            ]
+        "desc": {
+            "fr": "Yourte.13.pdfs.02.2012.zip (#) Liens uniques : -> (#D)...",
+            "en": "Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.",
+            "es": "Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas."
         },
-        {
-            id: "cultiver-spiruline",
-            category: "production",
-            date: "14 août 2014",
-            readingTime: 6,
-            reactions: 48,
-            image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80",
-            tags: ["Spiruline", "Autoproduction", "Superaliment", "Algues", "Bassin"],
-            title: {
-                fr: "Comment cultiver, produire et transformer la Spiruline",
-                en: "How to Cultivate, Produce and Process Spirulina",
-                es: "Cómo cultivar, producir y procesar Espirulina"
-            },
-            desc: {
-                fr: "Manuels de culture, construction de bassins raceway, brassage et récolte de la spiruline artisanale pour une autonomie nutritionnelle.",
-                en: "Open manuals for setting up small-scale artisanal raceway basins, solar agitation systems, and harvesting pure organic spirulina.",
-                es: "Manuales abiertos para montar estanques artesanales tipo raceway, sistemas de agitación y cosecha de espirulina orgánica pura."
-            },
-            content: {
-                fr: `
-                    <p>La spiruline (<em>Arthrospira platensis</em>) est une micro-algue primitive d'une richesse nutritionnelle stupéfiante. Composée à 60% de protéines hautement assimilables, de fer, de bêta-carotène et de phycocyanine (un puissant antioxydant), elle peut être cultivée de manière totalement artisanale dans une simple serre de jardin.</p>
-                    <h2>1. Le Bassin (Le "Raceway")</h2>
-                    <p>Construisez un bassin de faible profondeur (15 à 20 cm d'eau suffisent) avec un cadre en parpaings ou en planches de bois, recouvert d'une bâche géomembrane ou d'une bâche EPDM de qualité alimentaire. Placez ce bassin sous une serre pour maintenir une température de culture idéale située entre 30°C et 37°C pendant la belle saison.</p>
-                    <h2>2. Le Milieu de Culture (L'Eau Alcaline)</h2>
-                    <p>La spiruline ne pousse pas dans de l'eau douce classique ! Elle exige un milieu très alcalin (pH situé entre 9.5 et 10.5). Pour créer ce milieu, on dissout dans l'eau du bicarbonate de sodium, du sel marin pur (environ 5g/litre) et des nutriments organiques (urée ou nitrate de potassium, phosphate, fer).</p>
-                    <h2>3. Brassage et Récolte</h2>
-                    <p>Pour que toutes les algues reçoivent du soleil, l'eau doit être doucement agitée 15 minutes par heure à l'aide d'une petite roue à aubes alimentée par un panneau solaire 12V ou par une simple pompe d'aquarium. La récolte s'effectue le matin en filtrant l'eau verte à travers une toile à mailles très fines (exactly 30 à 50 microns). On obtient une pâte vert émeraude que l'on presse, que l'on extrude en fins spaghettis et que l'on fait sécher à l'ombre à moins de 42°C pour conserver toutes ses vitamines.</p>
-                `,
-                en: `
-                    <p>Spirulina (<em>Arthrospira platensis</em>) is a primitive ancient micro-algae exhibiting awe-inspiring nutritional density. Consisting of roughly 60% complete bio-available protein, rich bio-iron, potent anti-inflammatory phycocyanin, and key essential amino acids, it can be seamlessly cultivated at an artisanal homestead scale inside a simple backyard polytunnel greenhouse.</p>
-                    <h2>1. Crafting the Raceway Basin</h2>
-                    <p>Erect a shallow raceway pond (optimal operational water depth is strictly 15 to 20 cm) structured with concrete blocks or raw timber perimeter walls lined with an approved food-grade EPDM rubber liner. Position this basin securely under a glazed solar polytunnel greenhouse to capture and sustain optimal summer growing thermal profiles ranging strictly between 30°C and 37°C.</p>
-                    <h2>2. Mixing the Alkaline Culture Medium</h2>
-                    <p>Spirulina will perish in standard fresh soft tap water! It requires a highly specific alkaline micro-environment (pH range strictly between 9.5 and 10.5). To formulate this culture medium, carefully mix clean pure water with sodium bicarbonate, non-iodized pure marine sea salt (approx. 5 grams per litre), and precise bio-nutrients (potassium nitrate, key available phosphates, and chelated bio-iron).</p>
-                    <h2>3. Solar Agitation & Micro-Filtration Harvest</h2>
-                    <p>To guarantee uniform solar photon distribution across the complete cellular biomass, the warm alkaline water must be gently paddled or agitated for roughly 15 minutes per hour using a low-draw 12V solar-powered paddlewheel or simple aquarium bubbler. Harvesting is optimally executed in the early morning by scooping the deep green culture liquor and straining it through a specialized ultra-fine monofilament mesh screen (exactly 30 to 50 microns). The concentrated deep green paste is pressed, gently extruded into fine strings, and solar-dried in the shade below 42°C to prevent thermal enzyme denaturation.</p>
-                `,
-                es: `
-                    <p>La espirulina (<em>Arthrospira platensis</em>) es una microalga primitiva milenaria de una densidad nutricional asombrosa. Compuesta en un 60% por proteínas altamente asimilables, hierro biológico, betacarotenos y ficocianina (un potente antioxidante), puede ser cultivada de forma 100% artesanal en un simple invernadero de huerta.</p>
-                    <h2>1. Construcción del Estanque (Raceway)</h2>
-                    <p>Construye un estanque de poca profundidad (el nivel de agua óptimo es de solo 15 a 20 cm) utilizando un marco de bloques de hormigón o tablones de madera forrados con una geomembrana de EPDM de calidad alimentaria. Sitúa este estanque dentro de un invernadero solar para retener una temperatura de crecimiento ideal situada entre los 30°C y 37°C durante los meses cálidos.</p>
-                    <h2>2. Mezcla del Medio de Cultivo Alcalino</h2>
-                    <p>¡La espirulina no sobrevive en agua dulce convencional! Exige un medio acuático intensamente alcalino (con un pH estricto situado entre 9.5 y 10.5). Para preparar este medio, disuelve en agua limpia bicarbonato de sodio, sal marina pura sin yodar (unos 5 gramos por litro) y nutrientes clave (nitrato de potasio, fosfatos y hierro biológico).</p>
-                    <h2>3. Agitación Solar y Cosecha por Microfiltración</h2>
-                    <p>Para asegurar que todas las células reciban la radiación solar necesaria, el agua alcalina debe agitarse de forma suave durante 15 minutos cada hora utilizando una pequeña rueda de paletas accionada por un panel solar 12V o una bomba de aireador. La cosecha se realiza temprano en la mañana filtrando el agua verde a través de una malla fina especial (de 30 a 50 micras). Se obtiene una pasta verde esmeralda que se escurre, se extrude formando finos hilos y se deshidrata a la sombra a menos de 42°C para no dañar sus valiosas enzimas activas.</p>
-                `
-            },
-            resources: [
-                { name: "🌊 Petit Manuel de Culture Spiruline (PDF 20p)", url: "#" },
-                { name: "📋 Fournisseurs Souches & Tamis 40 microns", url: "#" }
-            ],
-            comments: [
-                { author: "Algue_Libre", date: "22 août 2014", text: "Excellent résumé. Pour le fer, si vous ne trouvez pas de fer chélaté, quelques vieux clous rouillés trempés dans du vinaigre puis neutralisés font l'affaire en low-tech !" }
-            ]
+        "content": {
+            "fr": "<p>Yourte.13.pdfs.02.2012.zip (#)</p><p>Liens uniques : -> (#D)</p><p>* Yourte_Build.your.own.yurt.Mongolian.Ger.17p.pdf\n    * Yourte_Construire.une.yourte.-.La.maison.voyageuse.7p.pdf\n    * Yourte_Construire.une.yourte.-.pass-eco.13p.pdf : Construction d'une yourte en bois local (3m et 4,60m)\n    * Yourte_La.vie.en.yourte.-.pass-eco.8p.pdf\n    * Yourte_Calculs.yourte.4.60m.simplydifferent.org.Ed.Aa.5p.pdf\n    * Yourte_Construire.une.yourte.escargoidale.-.ardheia.21p.pdf : (Via: Ardheia)(Liste des docs de Ardeheia)\n    * Yourte_Couture.des.toiles.-.ardheia.16p.pdf\n    * Yourte_Insulated.earthbag.foundations.for.yurts.-.instructables.com.5p.pdf\n    * Yourte_The.construction.of.a.yurt.-.E.Fkakkari.16p.pdf\n    * Yourte_Building.a.mongolian.yurt.ger.-.Sir.Ogami.26p.pdf\n    * Yourte_Un.chapeau.bien.chaud.et.une.couronne.-.pass-eco.4p.pdf\n    * Yourte_Vers.plus.de.bonnes.heures.pass-eco.6p.pdf\n    * Yourte_De.la.prison.a.la.yourte.-.yurtao.2p.pdf</p><p>- Brochure Flex Yourte : pdf 4p -> Via : http://lacaravane.noblogs.org</p><p>- Plan pour une yourte de 50m2: pdf 8p -> Via : http://nopanic.fr</p><p>- Principes.des.structures.architecturale.légères.-.79p.pdf : Théorie, dome, zome,\n    tansegrity... -> Via : http://co-creation.net</p><p>- Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf  : Une perle tout fait à la\n    main , Zome, dome tipi, bus... -> Via  : http://alphazomes.org</p><p>Liens externes : - Yurtao : La\n            voie de la yourte, fabriquer et habiter sa yourte, résister et s'engager contre la marchandisation du monde, inventer un nouvel art de vivre.</p><p>- Domerama.com/types-of-domes/yurts/ : Infos, pdf\n            ..\n            - Dimmension et\n            composition d'une yourte moyenne  / Faire sa yourte : Atipic\n            - Construire une yourte (Tig12) : Chantier yourte, plans,\n            photos, infos..</p><p>- Simplydifferently.org  :\n            Temporary buildings, tipi, yurt (ger) and domes. (Eng) Site trés complet sur les constructions temporaires tipi, yourte, domes et autres variations, info théoriques et pratiques,\n            calculateur en ligne de taille avec apérçu du résultat.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Practical — How to Build a Handcrafted Yurt (Ger): Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.</p><p>Yourte.13.pdfs.02.2012.zip (#)</p><p>Liens uniques : -> (#D)</p><p>* Yourte_Build.your.own.yurt.Mongolian.Ger.17p.pdf\n    * Yourte_Construire.une.yourte.-.La.maison.voyageuse.7p.pdf\n    * Yourte_Construire.une.yourte.-.pass-eco.13p.pdf : Construction d'une yourte en bois local (3m et 4,60m)\n    * Yourte_La.vie.en.yourte.-.pass-eco.8p.pdf\n    * Yourte_Calculs.yourte.4.60m.simplydifferent.org.Ed.Aa.5p.pdf\n    * Yourte_Construire.une.yourte.escargoidale.-.ardheia.21p.pdf : (Via: Ardheia)(Liste des docs de Ardeheia)\n    * Yourte_Couture.des.toiles.-.ardheia.16p.pdf\n    * Yourte_Insulated.earthbag.foundations.for.yurts.-.instructables.com.5p.pdf\n    * Yourte_The.construction.of.a.yurt.-.E.Fkakkari.16p.pdf\n    * Yourte_Building.a.mongolian.yurt.ger.-.Sir.Ogami.26p.pdf\n    * Yourte_Un.chapeau.bien.chaud.et.une.couronne.-.pass-eco.4p.pdf\n    * Yourte_Vers.plus.de.bonnes.heures.pass-eco.6p.pdf\n    * Yourte_De.la.prison.a.la.yourte.-.yurtao.2p.pdf</p><p>- Brochure Flex Yourte : pdf 4p -> Via : http://lacaravane.noblogs.org</p><p>- Plan pour une yourte de 50m2: pdf 8p -> Via : http://nopanic.fr</p><p>- Principes.des.structures.architecturale.légères.-.79p.pdf : Théorie, dome, zome,\n    tansegrity... -> Via : http://co-creation.net</p><p>- Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf  : Une perle tout fait à la\n    main , Zome, dome tipi, bus... -> Via  : http://alphazomes.org</p><p>Liens externes : - Yurtao : La\n            voie de la yourte, fabriquer et habiter sa yourte, résister et s'engager contre la marchandisation du monde, inventer un nouvel art de vivre.</p><p>- Domerama.com/types-of-domes/yurts/ : Infos, pdf\n            ..\n            - Dimmension et\n            composition d'une yourte moyenne  / Faire sa yourte : Atipic\n            - Construire une yourte (Tig12) : Chantier yourte, plans,\n            photos, infos..</p><p>- Simplydifferently.org  :\n            Temporary buildings, tipi, yurt (ger) and domes. (Eng) Site trés complet sur les constructions temporaires tipi, yourte, domes et autres variations, info théoriques et pratiques,\n            calculateur en ligne de taille avec apérçu du résultat.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Práctico — Cómo construir una Yurt (Ger) Artesanal: Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas.</p><p>Yourte.13.pdfs.02.2012.zip (#)</p><p>Liens uniques : -> (#D)</p><p>* Yourte_Build.your.own.yurt.Mongolian.Ger.17p.pdf\n    * Yourte_Construire.une.yourte.-.La.maison.voyageuse.7p.pdf\n    * Yourte_Construire.une.yourte.-.pass-eco.13p.pdf : Construction d'une yourte en bois local (3m et 4,60m)\n    * Yourte_La.vie.en.yourte.-.pass-eco.8p.pdf\n    * Yourte_Calculs.yourte.4.60m.simplydifferent.org.Ed.Aa.5p.pdf\n    * Yourte_Construire.une.yourte.escargoidale.-.ardheia.21p.pdf : (Via: Ardheia)(Liste des docs de Ardeheia)\n    * Yourte_Couture.des.toiles.-.ardheia.16p.pdf\n    * Yourte_Insulated.earthbag.foundations.for.yurts.-.instructables.com.5p.pdf\n    * Yourte_The.construction.of.a.yurt.-.E.Fkakkari.16p.pdf\n    * Yourte_Building.a.mongolian.yurt.ger.-.Sir.Ogami.26p.pdf\n    * Yourte_Un.chapeau.bien.chaud.et.une.couronne.-.pass-eco.4p.pdf\n    * Yourte_Vers.plus.de.bonnes.heures.pass-eco.6p.pdf\n    * Yourte_De.la.prison.a.la.yourte.-.yurtao.2p.pdf</p><p>- Brochure Flex Yourte : pdf 4p -> Via : http://lacaravane.noblogs.org</p><p>- Plan pour une yourte de 50m2: pdf 8p -> Via : http://nopanic.fr</p><p>- Principes.des.structures.architecturale.légères.-.79p.pdf : Théorie, dome, zome,\n    tansegrity... -> Via : http://co-creation.net</p><p>- Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf  : Une perle tout fait à la\n    main , Zome, dome tipi, bus... -> Via  : http://alphazomes.org</p><p>Liens externes : - Yurtao : La\n            voie de la yourte, fabriquer et habiter sa yourte, résister et s'engager contre la marchandisation du monde, inventer un nouvel art de vivre.</p><p>- Domerama.com/types-of-domes/yurts/ : Infos, pdf\n            ..\n            - Dimmension et\n            composition d'une yourte moyenne  / Faire sa yourte : Atipic\n            - Construire une yourte (Tig12) : Chantier yourte, plans,\n            photos, infos..</p><p>- Simplydifferently.org  :\n            Temporary buildings, tipi, yurt (ger) and domes. (Eng) Site trés complet sur les constructions temporaires tipi, yourte, domes et autres variations, info théoriques et pratiques,\n            calculateur en ligne de taille avec apérçu du résultat.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
         },
-        {
-            id: "construire-dome",
-            category: "habitat",
-            date: "14 août 2014",
-            readingTime: 8,
-            reactions: 79,
-            image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80",
-            tags: ["Dôme", "Géodésique", "Buckminster Fuller", "Serre", "Autoconstruction"],
-            title: {
-                fr: "Comment construire un Dôme Géodésique (Calculs et Plans)",
-                en: "How to Build a Geodesic Dome (Calculations & Blueprints)",
-                es: "Cómo construir un Domo Geodésico (Cálculos y Planos)"
+        "downloads": [
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/?zz7u11qpez74pdw"
             },
-            desc: {
-                fr: "Pourquoi et comment autoconstruire une serre ou un habitat en dôme géodésique. Tuto, connecteurs maison, géométrie et tableaux de longueurs.",
-                en: "Why and how to calculate, prepare timber struts, and erect a sturdy geodesic dome greenhouse or sustainable off-grid timber dwelling.",
-                es: "Por qué y cómo autoconstruir un domo geodésico para invernadero o vivienda. Cálculos de barras, nodos caseros y geometría explicada."
+            {
+                "name": "#D",
+                "url": "http://www.mediafire.com/?4xm93992kjcwi"
             },
-            content: {
-                fr: `
-                    <p>Inventé par le génial architecte visionnaire Richard Buckminster Fuller, le <em>Dôme Géodésique</em> est la structure de construction humaine qui offre le volume intérieur le plus vaste avec la surface de matériaux la plus réduite. Inébranlable face aux ouragans et aux charges de neige, c'est un incontournable de l'architecture libre.</p>
-                    <h2>1. Comprendre la "Fréquence" (V1, V2, V3)</h2>
-                    <p>Un dôme géodésique est une sphère divisée en triangles. Plus vous divisez ces triangles, plus la structure est ronde et résistante : c'est la <em>fréquence</em> (notée V).</p>
-                    <ul>
-                        <li><strong>Dôme V1 :</strong> Très simple (un icosaèdre). Toutes les barres ont exactly la même longueur ! Idéal pour une petite cabane pour enfants ou une mini-serre.</li>
-                        <li><strong>Dôme V2 :</strong> Le plus populaire en autoconstruction. Il utilise only 2 longueurs de barres différentes (notées A et B). Assemblez 65 barres avec 26 connecteurs pour obtenir un superbe dôme d'environ 5m de diamètre.</li>
-                        <li><strong>Dôme V3 :</strong> Plus complexe, idéal pour un habitat permanent de 7 à 9 mètres de diamètre. Il exige 3 longueurs de barres (A, B et C).</li>
-                    </ul>
-                    <h2>2. Fabriquer ses Propres Connecteurs (Low-Tech)</h2>
-                    <p>Les connecteurs commerciaux coûtent une fortune. La solution d'autoconstructeur ? Utilisez de simples tuyaux en acier galvanisé de plomberie (ou du tube électrique en acier). Coupez des morceaux de 10 cm, aplatissez les deux extrémités à la massue ou à l'étau, et percez un trou pour faire passer un boulon robuste en acier. Vissez ensuite ces embouts aplatissés sur vos chevrons en bois !</p>
-                    <h2>3. Couverture de Serre ou Voligeage Bois</h2>
-                    <p>Si vous montez une serre géodésique, recouvrez la charpente avec une bâche de serre thermique en polyéthylène ou des panneaux de polycarbonate alvéolaire découpés en triangles. Si c'est pour y vivre, posez un voligeage en lambris de sapin, isolez en ouate de cellulose ou en liège expansé, et couvrez l'extérieur de bardeaux de bois (tavaillons) ou d'une toile goudronnée.</p>
-                `,
-                en: `
-                    <p>Invented by the legendary architectural systems visionary Richard Buckminster Fuller, the <em>Geodesic Dome</em> is humanity’s most efficient structural system, enclosing the absolute maximum structural interior volume using the bare minimum surface area and structural materials. Immovable under seismic forces and blizzard snow loads, it is an iconic hallmark of decentralized architectural freedom.</p>
-                    <h2>1. Mastering Structural Frequency (V1, V2, V3)</h2>
-                    <p>A geodesic dome maps complex spatial spherical geometry via interconnected triangular planes. The higher the number of triangle subdivisions, the more perfectly spherical and immensely strong the resulting frame becomes. This subdivision logic is known as structural <em>Frequency</em> (V).</p>
-                    <ul>
-                        <li><strong>V1 Frame (Icosahedron):</strong> Exceptionally straightforward. Every single timber strut shares exactly the same exact length! Perfect for rapid lightweight emergency shelters, garden cold frames, or kids' treehouses.</li>
-                        <li><strong>V2 Frame:</strong> The absolute sweet spot for DIY homestead builders. It utilizes exactly 2 distinct strut lengths (A and B). Interlocking 65 structural timber struts across 26 custom hubs yields a stunning community greenhouse roughly 5 meters in diameter.</li>
-                        <li><strong>V3 Frame:</strong> Ideal for highly ambitious, expansive permanent off-grid family dwellings 7 to 9 meters across. Requires precise coordination of 3 strut lengths (A, B, and C).</li>
-                    </ul>
-                    <h2>2. Handcrafting Low-Tech Hub Connectors</h2>
-                    <p>Commercial proprietary aluminum geodesic connector hubs are astronomically expensive. The ingenious DIY homesteader workaround? Buy standard galvanized steel plumbing conduit pipes. Slice them into robust 10 cm sleeves, smash both ends flat in a heavy mechanical bench vise or with a heavy 10lb sledgehammer, and drill a central through-hole for a structural 3/8" steel hex bolt. Secure these flattened metal end-caps directly to your angled wooden rafters!</p>
-                    <h2>3. Skinning: Glazed Poly or Timber Shingles</h2>
-                    <p>To establish a spectacular geodesic bio-greenhouse, wrap the external skeleton with UV-treated heavy-duty greenhouse polyethylene film or exact triangular polycarbonate glazing panels. For genuine permanent living quarters, skin the wooden frame with solid tongue-and-groove pine boarding, blow in thick dense cellulose or wool batting insulation, and clad the exterior weather-skin with handcrafted cedar shingles (tavaillons).</p>
-                `,
-                es: `
-                    <p>Creado por el brillante arquitecto visionario Richard Buckminster Fuller, el <em>Domo Geodésico</em> es la estructura humana que encierra el mayor volumen interior utilizando la menor superficie y cantidad de materiales. Prácticamente indestructible ante tormentas severas y terremotos, es un verdadero icono de la arquitectura libre de autoconstrucción.</p>
-                    <h2>1. Entender la Frecuencia Estructural (V1, V2, V3)</h2>
-                    <p>Un domo geodésico proyecta una esfera subdividiéndola en triángulos. Cuanto mayor sea el número de subdivisiones, más perfectamente esférica y extremadamente resistente será la estructura. A esto se le llama <em>Frecuencia</em> estructural (V).</p>
-                    <ul>
-                        <li><strong>Domo V1:</strong> Muy sencillo (un icosaedro básico). ¡Todas y cada una de las barras de madera tienen exactamente la misma longitud! Perfecto para refugios de emergencia rápidos o mini-invernaderos.</li>
-                        <li><strong>Domo V2:</strong> El gran favorito de los autoconstructores. Utiliza solo 2 longitudes de barras distintas (A y B). Ensamblando 65 barras con 26 uniones nodales se obtiene un espectacular domo de 5 metros de diámetro.</li>
-                        <li><strong>Domo V3:</strong> Más avanzado y elegante, ideal para viviendas permanentes de 7 a 9 metros de diámetro. Utiliza 3 longitudes de barras (A, B y C).</li>
-                    </ul>
-                    <h2>2. Fabricación Casera de Nodos de Unión (Low-Tech)</h2>
-                    <p>Los conectores comerciales de aluminio cuestan una fortuna. ¿El genial truco de los autoconstructores? Comprar simples tubos de fontanería de acero galvanizado. Córtalos en trozos de 10 cm, aplasta ambos extremos con un martillo pesado o en un tornillo de banco mecánico y taladra un agujero central para un tornillo pasante de acero de alta resistencia. ¡Luego atornilla estos terminales de metal aplastados directamente a tus listones de madera!</p>
-                    <h2>3. Revestimiento: Invernadero o Vivienda de Madera</h2>
-                    <p>Si construyes un invernadero geodésico, cubre la estructura con plástico térmico de invernadero de larga duración o con placas de policarbonato alveolar cortadas en triángulos exactos. Si es para vivir de forma permanente, clava un friso de tablas de pino, inyecta celulosa o lana de oveja como aislamiento y reviste la piel exterior con tejas artesanales de madera (tavaillons) o lona impermeable tratada.</p>
-                `
+            {
+                "name": "Brochure Flex Yourte",
+                "url": "http://www.mediafire.com/view/135fc4n5yd57kog/Yourte_Flexyourte..-.plan.infos.-.lacaravane.noblogs.-.4p.pdf"
             },
-            resources: [
-                { name: "📐 Calculateur Automatique Longueurs Dôme (HTML)", url: "#" },
-                { name: "🔨 Tuto Nodos de Acero Aplastado (PDF)", url: "#" }
-            ],
-            comments: [
-                { author: "BuckyFan", date: "16 août 2014", text: "Le conseil des tuyaux de plomberie aplatissés est légendaire. J'ai monté ma serre V2 en un week-end avec mes voisins grâce à ça !" }
-            ]
+            {
+                "name": "Plan pour une yourte de 50m2",
+                "url": "http://www.mediafire.com/view/7i4qbsjsm7d7hcg/Yourte_Plan.pour.une.yourte.de.50.m2.-.nopanic.fr.-.8p.pdf"
+            },
+            {
+                "name": "Principes.des.structures.architecturale.légères",
+                "url": "http://www.mediafire.com/view/anmn3t6a2473t74/Principes.structures.architecturale.legeres.-.115p.pdf"
+            },
+            {
+                "name": "Auto.Construction.-.Special.vroutsch.-.1972",
+                "url": "http://www.mediafire.com/view/m67z4zsa18d4yn4/Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf"
+            },
+            {
+                "name": "http://alphazomes.org",
+                "url": "http://alphazomes.org"
+            }
+        ]
+    },
+    {
+        "id": "les-perles-des-archives-vol1",
+        "category": "mediatheque",
+        "date": "2015/08/15",
+        "readingTime": 7,
+        "image": "",
+        "tags": [],
+        "title": {
+            "fr": "Les perles des Archives / Vol1",
+            "en": "Gems of the Technical Archives / Vol. 1 (Rare Formulas)",
+            "es": "Joyas de los Archivos Técnicos / Vol. 1 (Fórmulas Raras)"
         },
-        {
-            id: "nddl-zad",
-            category: "action",
-            date: "11 août 2014",
-            readingTime: 6,
-            reactions: 112,
-            image: "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=800&q=80",
-            tags: ["NDDL", "ZAD", "Résistance", "Action Directe", "Autonomie"],
-            title: {
-                fr: "Résistance & Action Directe : Défendre la Terre (ZAD de NDDL)",
-                en: "Resistance & Direct Action: Defending the Earth (ZAD NDDL)",
-                es: "Resistencia y Acción Directa: Defender la Tierra (ZAD NDDL)"
-            },
-            desc: {
-                fr: "Reportages, textes de lutte et liens consacrés à la Zone À Défendre (ZAD) de Notre-Dame-des-Landes. Organisation, blocage et autogestion.",
-                en: "Dispatches, practical resistance manuals, and links dedicated to the historical Autonomous Defense Zone (ZAD) at Notre-Dame-des-Landes.",
-                es: "Reportajes, manuales de resistencia práctica y enlaces dedicados a la histórica Zona a Defender (ZAD) de Notre-Dame-des-Landes."
-            },
-            content: {
-                fr: `
-                    <p>Pendant plus de dix ans, le bocage de Notre-Dame-des-Landes (près de Nantes) a été le théâtre de l'une des luttes écologiques et anticapitalistes les plus intenses d'Europe. Face à un projet d'aéroport absurde et destructeur d'un écosystème de zones humides unique, des paysans, des militants, des anarchistes et des habitants ont inventé une Zone À Défendre (ZAD). La victoire finale en 2018 a prouvé que la résistance de terrain et l'occupation fonctionnent.</p>
-                    <h2>1. L'Occupation et les Cabanes</h2>
-                    <p>Pour empêcher les pelleteuses d'entrer, il ne suffit pas de signer des pétitions. La ZAD s'est structurée par l'édification de centaines de cabanes dans les arbres, de barricades vivantes, de fermes occupées et de boulangeries collectives autoconstruites. C'est l'incarnation de notre devise : <em>"Contre leur monde bétonné, construisons nos propres alternatives vivantes."</em></p>
-                    <h2>2. S'organiser en Assemblées Horizontales</h2>
-                    <p>Comment prendre des décisions à plusieurs centaines de personnes sans chef ni partis politiques ? La ZAD a développé des assemblées d'usage, des comités d'accueil et des réseaux de ravitaillement locaux pour soutenir les occupants face au siège des forces de l'ordre. Une école vivante d'anarchie et de démocratie directe.</p>
-                    <h2>3. Recommandations de Base pour Toute Lutte :</h2>
-                    <ul>
-                        <li><strong>Ne jamais lutter seul :</strong> Connectez toujours les luttes environnementales avec les luttes paysannes et sociales locales.</li>
-                        <li><strong>Multiplier les tactiques :</strong> La ZAD a réussi parce qu'elle unissait les recours juridiques des associations classiques avec l'action directe de blocage et l'occupation physique des terres.</li>
-                        <li><strong>Créer des outils d'autonomie :</strong> Radio ZAD (station pirate FM locale), la Vraie Démocratie (bibliothèque et infokiosque), et le marché non-marchand (prix libre et don).</li>
-                    </ul>
-                `,
-                en: `
-                    <p>For more than a decade, the lush bocage and wetlands of Notre-Dame-des-Landes (near Nantes, France) served as the epicenter of Europe's most intense, triumphant radical grassroots ecological struggle. Standing steadfast against a heavily corrupted mega-airport project designed to obliterate immense pristine biodiversity, local farmers, radical ecologists, anarchists, and local neighbors forged a permanent Autonomous Defense Zone (ZAD). Their absolute historic victory in 2018 proved beyond doubt that direct action and uncompromising physical land occupation works.</p>
-                    <h2>1. Proactive Occupation & Treehouses</h2>
-                    <p>To halt corporate bulldozers and logging heavy machinery, polite online petitions are entirely futile. The ZAD defended its territory by erecting an awe-inspiring decentralized defensive matrix: towering arboreal treehouses, highly reinforced complex road barricades, reclaimed historic dairy farms, and self-built collective wood-fired bakeries. It remains the living embodiment of our core manifesto: <em>"Against their concrete wasteland, we build our own thriving living alternatives."</em></p>
-                    <h2>2. Direct Democracy & Horizontal Assemblies</h2>
-                    <p>How do you execute complex decentralized tactical coordination across hundreds of autonomous collective individuals without authoritarian hierarchy or reformist political parties? The ZAD masterfully formulated horizontal weekly general assemblies, mutual-aid dispute resolution committees, and extensive localized clandestine logistics supply lines to break state police blockades. It established an immortal living university of practical anarchy and authentic direct democracy.</p>
-                    <h2>3. Fundamental Directives for Any Resistance:</h2>
-                    <ul>
-                        <li><strong>Never Resist in Isolation:</strong> Seamlessly weave radical decentralized environmental defense networks with established indigenous and smallholder farmers' struggles.</li>
-                        <li><strong>Embrace a Diversity of Tactics:</strong> The historic ZAD succeeded because it unified the formal legal defense actions of mainstream conservation groups with the uncompromising physical direct actions of grassroots blockades.</li>
-                        <li><strong>Build Living Autonomous Infrastructure:</strong> Radio ZAD (a highly effective encrypted local pirate FM radio station), fully supplied self-managed field kitchens, open infokiosks, and non-commercial mutual-aid free markets.</li>
-                    </ul>
-                `,
-                es: `
-                    <p>Durante más de una década, los exuberantes bosques y humedales de Notre-Dame-des-Landes (cerca de Nantes, Francia) fueron el escenario de la lucha ecológica y anticapitalista radical más victoriosa y emblemática de Europa. Frente a un mega-proyecto de aeropuerto inútil e intensamente corrupto diseñado para arrasar un ecosistema único, campesinos locales, activistas radicales y vecinos fundaron una Zona a Defender (ZAD) permanente. La aplastante y total victoria popular en 2018 demostró de forma rotunda que la acción directa y la ocupación física e intransigente del territorio funcionan.</p>
-                    <h2>1. Ocupación Activa y Cabañas en los Árboles</h2>
-                    <p>Para detener a las excavadoras y a la maquinaria pesada de las corporaciones no basta con firmar amables peticiones por internet. La ZAD defendió su territorio levantando una impresionante red de infraestructura autoconstruida: altas cabañas fortificadas en los árboles, complejas barricadas vivas, granjas históricas recuperadas y panaderías colectivas con hornos de leña. Es la encarnación viva de nuestro lema central: <em>"Contra su mundo de hormigón, construimos nuestras propias alternativas vivas."</em></p>
-                    <h2>2. Organización mediante Asambleas Horizontales</h2>
-                    <p>¿Cómo tomar decisiones estratégicas y gestionar la convivencia entre cientos de personas sin jefes ni partidos políticos autoritarios? La ZAD estructuró asambleas generales horizontales abiertas, comités de resolución de conflictos de apoyo mutuo y extensas redes locales de abastecimiento clandestino para resistir el asedio policial. Formó una verdadera escuela viva de anarquía práctica y auténtica democracia directa.</p>
-                    <h2>3. Recomendaciones Clave para Cualquier Lucha:</h2>
-                    <ul>
-                        <li><strong>Nunca Luches en Aislamiento:</strong> Conecta de forma inseparable la defensa ambiental radical con las luchas históricas de los pequeños agricultores y campesinos locales.</li>
-                        <li><strong>Abraza la Diversidad de Tácticas:</strong> La ZAD triunfó porque supo coordinar las acciones legales formales de las asociaciones tradicionales con las acciones directas de bloqueo y ocupación física inquebrantable del terreno.</li>
-                        <li><strong>Crea Herramientas de Autonomía Viva:</strong> Radio ZAD (una eficiente estación de radio pirata local en FM), comedores comunitarios autogestionados de apoyo mutuo, bibliotecas libres e infokioscos con mercados de trueque y donación.</li>
-                    </ul>
-                `
-            },
-            resources: [
-                { name: "✊ Manuel de Résistance et Constitution de ZAD", url: "#" },
-                { name: "🔗 Visiter le site officiel Zad.nadir.org", url: "http://zad.nadir.org/" }
-            ],
-            comments: [
-                { author: "Camarade_Bocage", date: "12 août 2014", text: "Ce qu'on a vécu sur la ZAD montre le chemin. Si tu sais pas quoi faire de ta vie, prends tes bottes, un râteau et viens nous aider à planter des haies !" }
-            ]
+        "desc": {
+            "fr": "Les perles des archives... Quelques livres rares et intéressants... For English speakers...",
+            "en": "A golden collection of public domain open manual PDFs: 10,000 workshop formulas, 507 mechanical movements, and historic self-reliance wisdom.",
+            "es": "Una valiosa colección de libros y manuales de dominio público: 10,000 fórmulas de taller, 507 movimientos mecánicos y enciclopedias históricas de autosuficiencia."
         },
-        {
-            id: "produire-alcool",
-            category: "production",
-            date: "11 août 2014",
-            readingTime: 10,
-            reactions: 84,
-            image: "https://images.unsplash.com/photo-1584225065152-4a145af2224b?auto=format&fit=crop&w=800&q=80",
-            tags: ["Bière", "Fermentation", "Alcool", "Distillation", "Cidre", "Autoproduction"],
-            title: {
-                fr: "Pratique — Comment faire de l'alcool (Bière, Vin, Cidre, Vinaigre)",
-                en: "Practical — Master Brewing (Beer, Wine, Cider, Vinegar)",
-                es: "Práctico — Cómo hacer alcohol (Cerveza, Vino, Sidra, Vinagre)"
-            },
-            desc: {
-                fr: "Produire de l'alcool maison : brasser sa bière, vin de fruits, cidre sauvage, malter l'orge et réaliser ses teintures médicinales.",
-                en: "Comprehensive master guide for DIY artisan brewing: wild apple cider, all-grain mash beer brewing, fruit wines, and herbal tinctures.",
-                es: "Guía práctica completa para la elaboración artesanal de cerveza de grano, sidra de manzana salvaje, vinos de frutas y tinturas herbales."
-            },
-            content: {
-                fr: `
-                    <p>La fermentation alcoolique est le fruit du travail merveilleux des levures (les <em>Saccharomyces</em>) qui transforiment les sucres des fruits ou des céréales en alcool et en gaz carbonique. Brasser sa propre bière ou faire son cidre n'est pas qu'un plaisir convivial, c'est un excellent moyen de valoriser les fruits excédentaires du verger.</p>
-                    <h2>1. Le Cidre Sauvage (La Boisson Low-Tech par Excellence)</h2>
-                    <p>Récoltez des pommes à cidre (un mélange de pommes douces, amères et acidulées). Broyez-les grossièrement avec un pilon en bois dans un tonneau ou avec un broyeur manuel. Pressez la pulpe dans un pressoir à vis pour en extraire le moût. Entonnez ce pur jus dans une dame-jeanne en verre munie d'un barboteur (pour laisser sortir le CO2 sans faire entrer d'air). Ne rajoutez aucune levure ! Les levures naturellement présentes sur la peau des pommes vont lancer la fermentation spontanée. Au bout de 2 à 3 mois, mettez en bouteilles à joint mécanique pour obtenir un cidre pétillant fabuleux.</p>
-                    <h2>2. Le Brassage de Bière Tout-Grain (Les 4 Étapes)</h2>
-                    <p>Pour faire une bière de garde authentique sans kit industriel, il faut maîtriser le processus de brassage :</p>
-                    <ol>
-                        <li><strong>L'Empâtage :</strong> Concassez du malt d'orge (orge germée puis touraillée). Mélangez-le dans de l'eau chauffée à exactly 65°C-68°C pendant 1 heure. Les enzymes du malt vont découper l'amidon en sucres fermentescibles.</li>
-                        <li><strong>L'Ébullition et le Houblonnage :</strong> Filtrez le moût sucré et portez-le à forte ébullition pendant 60 minutes. Jetez-y des cônes de houblon frais ou secs (les acides alpha du houblon apportent l'amertume et aseptisent la bière).</li>
-                        <li><strong>La Fermentation :</strong> Refroidissez le moût rapidement à 20°C, ensemencez avec de la levure de bière, et laissez fermenter 2 à 3 semaines dans un seau étanche muni d'un barboteur.</li>
-                        <li><strong>L'Embouteillage :</strong> Ajoutez exactly 6 grammes de sucre par litre pour relancer une mini-fermentation en bouteille qui créera la mousse et les bulles.</li>
-                    </ol>
-                    <h2>3. De l'Alcool au Vinaigre (La Mère)</h2>
-                    <p>Si vous laissez du vin ou du cidre à l'air libre dans un vinaigrier à 25°C, une pellicule gélatineuse va se former en surface : c'est la <em>Mère de vinaigre</em> (des bactéries <em>Acetobacter</em>). Elle transforme l'alcool en acide acétique. Indispensable pour vos lactofermentations et vos conserves !</p>
-                `,
-                en: `
-                    <p>Alcoholic wild fermentation is the magnificent gift of complex microscopic living yeasts (primarily <em>Saccharomyces cerevisiae</em>) naturally transforming available fruit or cereal sugars into active warming ethyl alcohol and lively carbon dioxide. Brewing your own artisan beer or wild hard cider is not merely an immensely satisfying domestic craft—it is the ultimate historic strategy for storing high-sugar autumn orchard windfalls.</p>
-                    <h2>1. Wild Homestead Hard Apple Cider (Zero-Input Hard Cider)</h2>
-                    <p>Scavenge and harvest highly diverse heirloom un-sprayed apples (optimally balancing sweet, sharp, and bitter tannin varieties). Crush them into a rough pomace mash using a clean wooden rammer inside a heavy oak barrel or with an upcycled mechanical hand crank fruit scratter. Squeeze this thick wet mash within a robust mechanical oak screw press to extract pure golden unpasteurized sweet must. Pour this raw juice directly into a large glass demijohn (carboy) fitted with a clean liquid airlock to freely vent cellular carbon dioxide while completely locking out spoiling atmospheric oxygen. Do not inoculate with commercial packet yeast! The wild bloom yeasts naturally inhabiting the waxy skins of the organic apples will spontaneously trigger an incredibly vigorous hard fermentation. Within 2 to 3 months, siphon the dry amber liquid into heavy flip-top swing-lock bottles to finish curing into a sensational crisp sparkling cider.</p>
-                    <h2>2. All-Grain Artisan Beer Brewing (The 4 Canonical Pillars)</h2>
-                    <p>To craft an authentic all-grain homestead ale completely free from inferior automated syrup kits, you must master the fundamental alchemy of traditional all-grain mash brewing:</p>
-                    <ol>
-                        <li><strong>Mashing:</strong> Coarsely crush highly modified barley malt (barley actively sprouted to unleash internal starch enzymes, then gently kilned). Mix this crushed grist into pure clean water heated to exactly 65°C to 68°C for precisely 60 minutes. Active natural starch enzymes flawlessly break down complex grain polysaccharides into easily fermentable simple maltose sugars.</li>
-                        <li><strong>The Boil & Hop Schedulation:</strong> Drain and sparge the sweet wort liquid, transfer to a heavy brew kettle, and achieve a rolling boil for exactly 60 minutes. Toss in generous fistfuls of raw homegrown wild hop cones (active bitter alpha-acids and potent herbal polyphenols deeply balance the residual sweetness while highly sanitizing the liquor against spoilage).</li>
-                        <li><strong>Fermentation Primary:</strong> Rapidly crash cool the boiled wort down to exactly 20°C, pitch a vigorous ale yeast culture, and let the batch culture deep in a sealed, dark airlocked vessel for 2 to 3 solid weeks.</li>
-                        <li><strong>Bottle Conditioning:</strong> Gently dissolve exactly 6 grams of pure priming corn sugar per litre of fermented ale before siphoning into heavy glass amber bottles. This tiny additional sugar dosage naturally triggers a highly controlled micro-fermentation inside the sealed glass, establishing rich thick creamy carbonation and an unshakeable solid beer cap.</li>
-                    </ol>
-                    <h2>3. From Hard Ale to Sourdough Vinegar (The Mother Matrix)</h2>
-                    <p>If you intentionally expose raw unpasteurized fruit wine, hard cider, or real beer to fresh oxygen inside an open-mouthed ceramic crock at roughly 25°C, a dense gelatinous cellulose SCOBY biofilm will eventually materialize across the surface. This is the fabled <em>Vinegar Mother</em> (a dense symbiosis of <em>Acetobacter</em> bacteria). It converts internal ethyl alcohol directly into clean complex acetic acid. It remains absolutely indispensable for traditional homestead food pickling, wild culinary dressings, and highly non-toxic domestic household surface sanitation!</p>
-                `,
-                es: `
-                    <p>La fermentación alcohólica es el resultado del maravilloso trabajo de las levaduras microscópicas (principalmente <em>Saccharomyces</em>) que transforman los azúcares naturales de las frutas o cereales en alcohol etílico y dióxido de carbono. Elaborar tu propia cerveza artesanal o hacer tu propia sidra no es solo un inmenso placer casero, es el método campesino tradicional por excelencia para aprovechar y conservar los grandes excedentes de la huerta y el huerto frutal.</p>
-                    <h2>1. Sidra Salvaje de Manzana (El Arte de la Fermentación sin Insumos)</h2>
-                    <p>Recolecta manzanas de variedades mixtas (buscando un buen equilibrio entre dulces, ácidas y amargas para aportar taninos). Tritúralas hasta formar una pulpa gruesa utilizando un pisón de madera en un barril o un molino triturador manual. Introduce esta pulpa en una prensa de husillo para extraer todo el jugo dorado y dulce. Vierte este mosto crudo directamente en una damajuana de vidrio provista de una válvula de fermentación (airlock) que permita la salida del CO2 sin dejar entrar el aire exterior. ¡No añadas ningún sobre de levadura comercial! Las levaduras salvajes que habitan de forma natural en la piel encerada de las manzanas ecológicas iniciarán de forma espontánea una espectacular fermentación. Tras 2 o 3 meses, embotella la sidra en botellas de vidrio con tapón mecánico de cerámica para obtener una bebida espumosa y crujiente de calidad insuperable.</p>
-                    <h2>2. Elaboración de Cerveza Todo-Grano (Los 4 Pilares del Maestro Cervecer)</h2>
-                    <p>Para elaborar una auténtica cerveza artesanal partiendo del grano crudo y liberándote de los aburridos kits de extracto industrial, debes dominar el proceso de maceración:</p>
-                    <ol>
-                        <li><strong>Maceración (Empaste):</strong> Muele ligeramente malta de cebada (grano de cebada germinado para activar sus enzimas y luego tostado). Mezcla el grano en agua caliente mantenida exactamente entre 65°C y 68°C durante 60 minutos. Las enzimas naturales de la malta convertirán todo el almidón del grano en azúcares fermentables (maltosa).</li>
-                        <li><strong>Ebullición y Lupulado:</strong> Filtra y lava el grano para obtener un mosto azucarado limpio y llévalo a ebullición intensa y continua durante 60 minutos. Añade conos de lúpulo salvaje o cultivado (los ácidos alfa del lúpulo aportan el característico amargor que equilibra el dulzor y actúan como un potente conservante natural).</li>
-                        <li><strong>Fermentación Primaria:</strong> Enfría rápidamente el mosto hasta los 20°C, añade un cultivo vivo de levadura cervecera y deja fermentar la mezcla en un fermentador hermético en un lugar oscuro entre 2 y 3 semanas.</li>
-                        <li><strong>Refermentación en Botella (Carbonatación):</strong> Disuelve exactamente 6 gramos de azúcar de caña o maíz por cada litro de cerveza antes de embotellarla. Este pequeño aporte de azúcar reactivará a las levaduras dentro de la botella cerrada, generando de forma 100% natural todo el gas, las burbujas y una corona de espuma densa y cremosa.</li>
-                    </ol>
-                    <h2>3. Del Alcohol al Vinagre Vivo (La Madre)</h2>
-                    <p>Si dejas vino de frutas, sidra cruda o cerveza expuesta al aire libre en un recipiente de barro o cerámica cubierto solo con una tela a unos 25°C, con el tiempo se formará en la superficie una densa capa gelatinosa. Esta es la legendaria <em>Madre del Vinagre</em> (un cultivo simbiótico de bacterias <em>Acetobacter</em>). Se alimenta del alcohol y lo transforma en ácido acético puro y digestivo. ¡Es una joya absolutamente insustituible para tus conservas encurtidas, aderezos de cocina y como un potente limpiador y desinfectante doméstico sin tóxicos!</p>
-                `
-            },
-            resources: [
-                { name: "🍺 Petit Traité de Brasserie Tout-Grain (PDF 40p)", url: "#" },
-                { name: "🍎 Manuel de Pressage et Cidre Traditionnel", url: "#" }
-            ],
-            comments: [
-                { author: "Brasseur_Ardennes", date: "12 août 2014", text: "Le détail des 65°C pour l'empâtage est la clé. Si vous chauffez trop (au-dessus de 72°C), vous obtenez des sucres non fermentescibles et la bière reste lourde et plate. Bon tuto !" }
-            ]
+        "content": {
+            "fr": "<p>Les perles des archives...</p><p>Quelques livres rares et intéressants... For English speakers</p><p>- Tous les livres de Gardner Dexter ... Mécanique, chimie, moteur à air, à vapeur, à\n    gaz...!!!!,</p><p>- Henley's twentieth century forrmulas, recipes and processes, containing ten thousand selected household and workshop formulas,\n    recipes, processes and moneymaking methods for the practical use of manufacturers, mechanics, housekeepers and home workers</p><p>- Mechanical movements, powers, devices and\n    applicances;</p><p>by Hiscox, Gardner Dexter, 1822-1908</p><p>- Mechanical appliances, mechanical movements and novelties of\n    construction; a complete work and a continuation, as a second volume, of the author's book entitled \"Mechanical movements, powers and devices\" ... including an explanatory chapter on the\n    leading conceptions of perpetual motion existing during the past three centuries by Hiscox, Gardner Dexter, 1822-1908</p><p>- Receipts and remedies; useful hints for everyone on health, beauty, clothing, food. The housewife's complete handbook</p><p>- The engineer's sketch-book of mechanical movements, devices, appliances, contrivances and details employed in the design and construction\n    of machinery for every purpose</p><p>-  Five hundred and seven mechanial movements, embracing all those\n    which are most important in dynamics, hydraulics, hydrostatics, pneumatics, steam engines, mill and other gearing .. by Brown, Henry T.</p><p>- The Dangerous Book for Boys : The bestselling book for every boy from eight to\n    eighty, covering essential boyhood skills such as building tree houses, learning how to fish, finding true north</p><p>- Backyard ballistics : This bestselling DIY handbook now features new and expanded projects, enabling ordinary folks to\n    construct 16 awesome ballistic devices in their garage or basement workshops using inexpensive household or hardware store materials and this step-by-step guide.</p><p>- Absinthe and Flamethrowers ; Projects and\n    Ruminations on the Art of Living Dangerously</p><p>- Scientific American handy book of facts and\n    formulae</p><p>by Hopkins, Albert A. (Albert Allis), 1869-1939, ed</p><p>- Encyclopedia of practical receipts and processes.\n    Containing over 6400 receipts; embracing thorough information, in plain language, applicable to almost every possible industrial and domestic requirement</p><p>by Dick, William B. (William Brisbane), 1827-1901</p><p>- Magic; stage illusions and scientific diversions, including\n    trick photography</p><p>by Hopkins, Albert A. (Albert Allis), 1869-1939; Evans, Henry Ridgely, b. 1861 Published 1897</p><p>- Uncle Josh's trunk-full of fun : a portfolio of first-class wit\n    and humor, and never-ending source of jollity by Dick, William B. (William Brisbane), 1827-1901; Dick & Fitzgerald Published 1869</p><p>- What shall we do to-night? or, Social amusements for\n    evening parties. Furnishing complete and varied programmes for twenty-six entertainments</p><p>by Dick, William B. (William Brisbane), 1827-1901</p><p>- Bulletins d'arboriculture, de culture potagère et de floriculture Publisher Impr. C. Annoot-Braeckman., 1874 Pages 431</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Gems of the Technical Archives / Vol. 1 (Rare Formulas): A golden collection of public domain open manual PDFs: 10,000 workshop formulas, 507 mechanical movements, and historic self-reliance wisdom.</p><p>Les perles des archives...</p><p>Quelques livres rares et intéressants... For English speakers</p><p>- Tous les livres de Gardner Dexter ... Mécanique, chimie, moteur à air, à vapeur, à\n    gaz...!!!!,</p><p>- Henley's twentieth century forrmulas, recipes and processes, containing ten thousand selected household and workshop formulas,\n    recipes, processes and moneymaking methods for the practical use of manufacturers, mechanics, housekeepers and home workers</p><p>- Mechanical movements, powers, devices and\n    applicances;</p><p>by Hiscox, Gardner Dexter, 1822-1908</p><p>- Mechanical appliances, mechanical movements and novelties of\n    construction; a complete work and a continuation, as a second volume, of the author's book entitled \"Mechanical movements, powers and devices\" ... including an explanatory chapter on the\n    leading conceptions of perpetual motion existing during the past three centuries by Hiscox, Gardner Dexter, 1822-1908</p><p>- Receipts and remedies; useful hints for everyone on health, beauty, clothing, food. The housewife's complete handbook</p><p>- The engineer's sketch-book of mechanical movements, devices, appliances, contrivances and details employed in the design and construction\n    of machinery for every purpose</p><p>-  Five hundred and seven mechanial movements, embracing all those\n    which are most important in dynamics, hydraulics, hydrostatics, pneumatics, steam engines, mill and other gearing .. by Brown, Henry T.</p><p>- The Dangerous Book for Boys : The bestselling book for every boy from eight to\n    eighty, covering essential boyhood skills such as building tree houses, learning how to fish, finding true north</p><p>- Backyard ballistics : This bestselling DIY handbook now features new and expanded projects, enabling ordinary folks to\n    construct 16 awesome ballistic devices in their garage or basement workshops using inexpensive household or hardware store materials and this step-by-step guide.</p><p>- Absinthe and Flamethrowers ; Projects and\n    Ruminations on the Art of Living Dangerously</p><p>- Scientific American handy book of facts and\n    formulae</p><p>by Hopkins, Albert A. (Albert Allis), 1869-1939, ed</p><p>- Encyclopedia of practical receipts and processes.\n    Containing over 6400 receipts; embracing thorough information, in plain language, applicable to almost every possible industrial and domestic requirement</p><p>by Dick, William B. (William Brisbane), 1827-1901</p><p>- Magic; stage illusions and scientific diversions, including\n    trick photography</p><p>by Hopkins, Albert A. (Albert Allis), 1869-1939; Evans, Henry Ridgely, b. 1861 Published 1897</p><p>- Uncle Josh's trunk-full of fun : a portfolio of first-class wit\n    and humor, and never-ending source of jollity by Dick, William B. (William Brisbane), 1827-1901; Dick & Fitzgerald Published 1869</p><p>- What shall we do to-night? or, Social amusements for\n    evening parties. Furnishing complete and varied programmes for twenty-six entertainments</p><p>by Dick, William B. (William Brisbane), 1827-1901</p><p>- Bulletins d'arboriculture, de culture potagère et de floriculture Publisher Impr. C. Annoot-Braeckman., 1874 Pages 431</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Joyas de los Archivos Técnicos / Vol. 1 (Fórmulas Raras): Una valiosa colección de libros y manuales de dominio público: 10,000 fórmulas de taller, 507 movimientos mecánicos y enciclopedias históricas de autosuficiencia.</p><p>Les perles des archives...</p><p>Quelques livres rares et intéressants... For English speakers</p><p>- Tous les livres de Gardner Dexter ... Mécanique, chimie, moteur à air, à vapeur, à\n    gaz...!!!!,</p><p>- Henley's twentieth century forrmulas, recipes and processes, containing ten thousand selected household and workshop formulas,\n    recipes, processes and moneymaking methods for the practical use of manufacturers, mechanics, housekeepers and home workers</p><p>- Mechanical movements, powers, devices and\n    applicances;</p><p>by Hiscox, Gardner Dexter, 1822-1908</p><p>- Mechanical appliances, mechanical movements and novelties of\n    construction; a complete work and a continuation, as a second volume, of the author's book entitled \"Mechanical movements, powers and devices\" ... including an explanatory chapter on the\n    leading conceptions of perpetual motion existing during the past three centuries by Hiscox, Gardner Dexter, 1822-1908</p><p>- Receipts and remedies; useful hints for everyone on health, beauty, clothing, food. The housewife's complete handbook</p><p>- The engineer's sketch-book of mechanical movements, devices, appliances, contrivances and details employed in the design and construction\n    of machinery for every purpose</p><p>-  Five hundred and seven mechanial movements, embracing all those\n    which are most important in dynamics, hydraulics, hydrostatics, pneumatics, steam engines, mill and other gearing .. by Brown, Henry T.</p><p>- The Dangerous Book for Boys : The bestselling book for every boy from eight to\n    eighty, covering essential boyhood skills such as building tree houses, learning how to fish, finding true north</p><p>- Backyard ballistics : This bestselling DIY handbook now features new and expanded projects, enabling ordinary folks to\n    construct 16 awesome ballistic devices in their garage or basement workshops using inexpensive household or hardware store materials and this step-by-step guide.</p><p>- Absinthe and Flamethrowers ; Projects and\n    Ruminations on the Art of Living Dangerously</p><p>- Scientific American handy book of facts and\n    formulae</p><p>by Hopkins, Albert A. (Albert Allis), 1869-1939, ed</p><p>- Encyclopedia of practical receipts and processes.\n    Containing over 6400 receipts; embracing thorough information, in plain language, applicable to almost every possible industrial and domestic requirement</p><p>by Dick, William B. (William Brisbane), 1827-1901</p><p>- Magic; stage illusions and scientific diversions, including\n    trick photography</p><p>by Hopkins, Albert A. (Albert Allis), 1869-1939; Evans, Henry Ridgely, b. 1861 Published 1897</p><p>- Uncle Josh's trunk-full of fun : a portfolio of first-class wit\n    and humor, and never-ending source of jollity by Dick, William B. (William Brisbane), 1827-1901; Dick & Fitzgerald Published 1869</p><p>- What shall we do to-night? or, Social amusements for\n    evening parties. Furnishing complete and varied programmes for twenty-six entertainments</p><p>by Dick, William B. (William Brisbane), 1827-1901</p><p>- Bulletins d'arboriculture, de culture potagère et de floriculture Publisher Impr. C. Annoot-Braeckman., 1874 Pages 431</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
         },
-        {
-            id: "faire-son-pain",
-            category: "production",
-            date: "11 août 2014",
-            readingTime: 8,
-            reactions: 93,
-            image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
-            tags: ["Pain", "Levain Naturel", "Four à Bois", "Autoproduction", "Céréales", "Farine"],
-            title: {
-                fr: "Pratique — Comment faire son Pain au Levain Naturel",
-                en: "Practical — Wild Sourdough Bread Handcrafting",
-                es: "Práctico — Cómo hacer Pan con Masa Madre Natural"
+        "downloads": [
+            {
+                "name": "Tous les livres de Gardner Dexter",
+                "url": "https://archive.org/search.php?query=creator%3A%22Hiscox%2C+Gardner+Dexter%2C+1822%3F-1908%22"
             },
-            desc: {
-                fr: "Tout pour autoproduire son pain : capturer les levures sauvages, nourrir son levain, pétrissage, autolyse et cuisson au four à bois ou cocotte.",
-                en: "Mastering natural open hearth sourdough bread making: capturing wild local yeasts, long cold fermentation, and wood-fired Dutch oven baking.",
-                es: "Guía maestra de panadería natural: captura de levaduras salvajes, mantenimiento de masa madre, autólisis y horneado en horno de leña o cazuela."
+            {
+                "name": "Henley's twentieth century forrmulas",
+                "url": "https://archive.org/details/henleystwentieth00hiscrich"
             },
-            content: {
-                fr: `
-                    <p>Autoproduire son pain au levain naturel est l'un des actes de réappropriation culturelle et nutritionnelle les plus puissants qui soient. Contrairement à la levure de boulanger industrielle (qui produit une fermentation alcoolique violente et rapide créant des pains indigestes), le <em>levain naturel</em> est un écosystème complexe unissant des levures sauvages et des bactéries lactiques. En fermentant lentement, il dégrade le gluten agressif, neutralise l'acide phytique des farines complètes (permettant l'assimilation des minéraux) et donne un pain qui se conserve plus d'une semaine sans sécher !</p>
-                    <h2>1. Créer son Chef (Le Levain de Départ)</h2>
-                    <p>Dans un bocal en verre, mélangez Exactly 50 grammes de farine biologique de seigle complète (riche en ferments naturels) avec 50 grammes d'eau tiède non chlorée. Laissez reposer 24h dans un coin tiède (25°C). Le lendemain, jetez la moitié, et rajoutez 50g de farine de blé T80 biologique et 50g d'eau. Répétez ce rafraîchi Exactly chaque jour pendant 4 à 5 jours. Des bulles intenses vont apparaître et une odeur douce de yaourt et de pomme mûre va se dégager : votre levain est né !</p>
-                    <h2>2. L'Autolyse et le Pétrissage</h2>
-                    <p>Pour un gros pain de campagne d'un kilo :</p>
-                    <ul>
-                        <li>Mélangez 600g de farine de meule T80 ou T110 avec 420g d'eau tiède. Laissez reposer 40 minutes Exactly (c'est l'<em>Autolyse</em> : l'eau hydrate les protéines de gluten qui forment un réseau élastique naturel sans que vous n'ayez besoin de pétrir violemment !).</li>
-                        <li>Ajoutez ensuite 150g de votre levain naturel bien actif et 12g de sel marin pur.</li>
-                        <li>Pétrissez en soulevant la pâte pour y emprisonner de l'air (technique de <em>stretch and fold</em>). Laissez pointer 4 à 6 heures à température ambiante jusqu'à ce que la pâte double de volume.</li>
-                    </ul>
-                    <h2>3. Le Façonnage et la Cuisson (Astuce de la Cocotte)</h2>
-                    <p>Boulez votre pain et placez-le dans un banneton fariné pour la seconde pousse (l'<em>apprêt</em>). Pour cuire sans four à bois professionnel, utilisez une cocotte en fonte fermée ! Chauffez votre four et la cocotte vide à 240°C. Renversez votre pain dans la cocotte brûlante, donnez de beaux coups de lame sur le dessus (les grignes), fermez le couvercle et enfournez 30 minutes. Le couvercle va emprisonner l'humidité naturelle du pain, créant une croûte dorée, boursouflée et croustillante. Enlevez le couvercle pour les 15 dernières minutes de cuisson !</p>
-                `,
-                en: `
-                    <p>Baking your own authentic open hearth wild sourdough bread represents one of the most empowering acts of everyday cultural and biological self-reliance. Unlike isolated standardized commercial baker's yeast (which prompts a rapid violent alcoholic rise that yields heavy non-digestible bread loaves lacking real complex trace nutrients), true <em>Wild Sourdough Starter</em> (levain) is a magnificent ancient symbiotic web of wild environmental bloom yeasts and beneficial lactobacilli bacteria. Its extended long slow cold fermentation flawlessly pre-digests problematic complex gluten protein matrices and completely neutralizes internal phytic acid locking up whole-grain wheat bran. This vital metabolic transformation allows your digestive tract to easily assimilate heavy bio-minerals, yielding a highly flavorful artisanal rustic loaf that maintains a pristine soft interior crumb for over a week without staling!</p>
-                    <h2>1. Capturing Wild Sourdough Starter (The Chef Culture)</h2>
-                    <p>In a clean quart glass mason jar, mix exactly 50 grams of fresh organic stoneground whole-grain rye flour (inherently loaded with rich natural wild grain yeasts) with precisely 50 grams of pure lukewarm unchlorinated well water. Let the thick paste sit undisturbed for 24 hours in a comfortable warm room (approx. 25°C). The following day, discard roughly half the volume, and stir in exactly 50 grams of high-quality organic unbleached bread flour alongside 50 grams of pure clean water. Repeat this exact daily feeding schedule for 4 to 5 solid days. Shortly, deep vigorous cellular carbonation webs will emerge, emitting an incredibly pleasant sweet aroma reminiscent of wild orchard apples and creamy live yogurt. Your wild heirloom starter culture is officially active!</p>
-                    <h2>2. Autolyse & The Stretch-and-Fold Methodology</h2>
-                    <p>To establish a magnificent 1-kilogram rustic country sourdough loaf:</p>
-                    <ul>
-                        <li>Carefully blend 600 grams of organic stoneground rustic whole wheat flour (T80 or T110 equivalent) with precisely 420 grams of lukewarm clean water. Let this raw shaggy mass sit covered for exactly 40 minutes. This foundational resting phase is the <em>Autolyse</em>: the raw water passively hydrates the internal wheat glutenin and gliadin protein strings, naturally establishing a highly extensible elastic gluten matrix without requiring exhaustive mechanical kneading!</li>
-                        <li>Subsequent to the autolyse phase, fold in exactly 150 grams of your highly bubbly wild starter culture alongside 12 grams of pure fine marine sea salt.</li>
-                        <li>Gently perform intermittent stretch-and-fold manipulations across the dough ball every 30 minutes to trap internal structural oxygen chambers. Let the batch ferment passively for 4 to 6 continuous hours until its overall physical volume doubles beautifully.</li>
-                    </ul>
-                    <h2>3. Shaping & Dutch Oven Thermal Steam Physics</h2>
-                    <p>Gently shape your country loaf into a tight round boule and place it seam-side up inside a well-floured rattan proving basket (banneton) for its secondary proofing phase. To execute professional open hearth brick-oven baking physics inside a standard domestic kitchen, deploy an upcycled heavy cast-iron Dutch oven! Pre-heat your oven containing the empty lidded cast-iron Dutch oven to exactly 240°C (465°F). Turn your proved dough loaf swiftly out into the blistering hot cast-iron pot, score the upper crown cleanly with an incredibly sharp razor blade or lame (allowing expansion vents), slam the heavy cast-iron lid shut, and bake securely for exactly 30 minutes. The closed heavy iron lid completely captures the steaming cellular moisture vapor escaping the baking loaf, naturally gelatinizing the outer flour starches into a stunning blistered glossy golden crust. Carefully remove the heavy iron lid for the final 15 continuous minutes of baking to achieve a magnificent deep mahogany rustic bake!</p>
-                `,
-                es: `
-                    <p>Autoproducir tu propio pan con masa madre 100% natural es uno de los actos de independencia culinaria, soberanía y salud más gratificantes de la vida cotidiana. A diferencia de la levadura industrial en polvo (que provoca una subida rápida e incompleta generando panes pesados que inflaman la digestión y se endurecen en 24 horas), la <em>Masa Madre Natural</em> es un majestuoso y antiguo cultivo simbiótico que une levaduras salvajes locales con bacterias lácticas beneficiosas. Su larga y lenta fermentación predigiere y descompone las complejas cadenas de gluten y neutraliza por completo el ácido fítico presente en el salvado de las harinas integrales. ¡Este proceso alquímico permite que tu cuerpo absorba todos los minerales del grano y produce un pan aromático, digestivo y de corteza espectacular que se conserva tierno y delicioso durante más de una semana sin secarse!</p>
-                    <h2>1. Cómo crear tu Masa Madre (El Cultivo Iniciador)</h2>
-                    <p>En un frasco de vidrio limpio, mezcla exactamente 50 gramos de harina integral orgánica de centeno (que contiene de forma natural una inmensa cantidad de levaduras salvajes en su cáscara) con 50 gramos de agua tibia limpia y sin cloro. Deja reposar la mezcla durante 24 horas en un rincón cálido de la cocina (a unos 25°C). Al día siguiente, desecha la mitad del contenido y añade 50 gramos de harina de fuerza o trigo integral orgánico junto con 50 gramos de agua tibia. Repite este mismo proceso de refresco exactamente a la misma hora durante 4 o 5 días seguidos. Pronto verás cómo toda la masa se llena de burbujas activas y desprende un fantástico y agradable aroma dulzón similar al yogur natural y a la manzana madura. ¡Tu masa madre salvaje ha nacido y está lista para trabajar!</p>
-                    <h2>2. Autólisis y la Técnica de Pliegues (Stretch and Fold)</h2>
-                    <p>Para elaborar un espectacular pan rústico de campo de 1 kilo:</p>
-                    <ul>
-                        <li>Mezcla en un bol grande 600 gramos de harina de trigo molida a la piedra (tipo T80 o integral rústica) con exactamente 420 gramos de agua tibia. Deja reposar la mezcla tapada durante exactamente 40 minutes. ¡A este reposo mágico se le llama <em>Autólisis</em>: el agua hidrata de forma pasiva las proteínas del grano formando una malla elástica de gluten perfecta sin que tengas que amasar con esfuerzo ni cansarte!</li>
-                        <li>Pasado el tiempo de autólisis, incorpora 150 gramos de tu masa madre activa y burbujeante junto con 12 gramos de sal marina pura sin yodar.</li>
-                        <li>Trabaja la masa dándole suaves pliegues de los bordes hacia el centro (técnica de <em>stretch and fold</em> o estirar y plegar) cada 30 minutes durante las primeras dos horas para atrapar el aire en su interior. Deja fermentar el bol tapado a temperatura ambiente entre 4 y 6 horas hasta que doble su tamaño de forma majestuosa.</li>
-                    </ul>
-                    <h2>3. Formado y el Truco Profesional de la Cazuela de Hierro</h2>
-                    <p>Da forma redonda a tu masa (boleado) y colocala boca abajo dentro de un cesto de fermentación (banneton) bien enharinado para su segunda subida. Para lograr el mismo resultado térmico de un horno profesional de leña en tu casa, ¡utiliza una cazuela u olla de hierro fundido con tapa (Dutch oven)! Precalienta tu horno al máximo (240°C) con la cazuela de hierro vacía y tapada en su interior. Vuelca el pan fermentado con cuidado dentro de la cazuela hirviendo, hazle unos cortes limpios en la parte superior con una cuchilla bien afilada (greña) para guiar su expansión, ponle la tapa pesada de hierro y hornea durante exactamente 30 minutes. ¡La tapa cerrada retendrá todo el vapor de agua natural que suelta el pan al cocinarse, creando una corteza dorada, brillante, llena de burbujitas y extremadamente crujiente! Finalmente, retira la tapa de la cazuela y hornea 15 minutes más para que el pan adquiera un hermoso y rústico color tostado oscuro.</p>
-                `
+            {
+                "name": "Mechanical movements, powers, devices and\n    applicances",
+                "url": "https://archive.org/details/mechanicalmovem04hiscgoog"
             },
-            resources: [
-                { name: "🥖 Traité Pratique de Boulangerie au Levain (PDF 35p)", url: "#" },
-                { name: "🌾 Guide de Culture des Blés Anciens & Semences", url: "#" }
-            ],
-            comments: [
-                { author: "PainBio_Savoie", date: "12 août 2014", text: "Le truc de la cocotte en fonte est le plus grand secret de boulanger casier. La vapeur emprisonnée sous la louche change la croûte du tout au tout. Un immense merci !" }
-            ]
+            {
+                "name": "Mechanical appliances, mechanical movements and novelties of\n    construction",
+                "url": "https://archive.org/details/mechanicalappli00dextgoog"
+            },
+            {
+                "name": "Receipts and remedies",
+                "url": "https://archive.org/details/receiptsandreme00flemgoog"
+            },
+            {
+                "name": "The engineer's sketch-book of mechanical movements, devices, appliances",
+                "url": "https://archive.org/details/engineerssketchb00barb"
+            },
+            {
+                "name": "Five hundred and seven mechanial movements",
+                "url": "https://archive.org/details/fivehundredseven02brow"
+            },
+            {
+                "name": "The Dangerous Book for Boys",
+                "url": "http://kat.cr/the-dangerous-book-for-boys-us-by-conn-and-hal-iggulden-retail-dwg-t9511544.html"
+            },
+            {
+                "name": "Backyard ballistics",
+                "url": "http://kat.cr/backyard-ballistics-epub-retail-32skulls-t9572218.html"
+            },
+            {
+                "name": "Absinthe and Flamethrowers",
+                "url": "http://kat.cr/william-gurstelle-absinthe-and-flamethrowers-projects-and-ruminations-on-the-art-of-living-dangerously-epub-plex-t10379851.html"
+            },
+            {
+                "name": "Scientific American handy book of facts and\n    formulae",
+                "url": "https://archive.org/details/scientificameric03hopk"
+            },
+            {
+                "name": "Encyclopedia of practical receipts and processes",
+                "url": "https://archive.org/details/encyclopediaofpr00dickrich"
+            },
+            {
+                "name": "Magic; stage illusions and scientific diversions",
+                "url": "https://archive.org/details/magicstageillusi00hopk"
+            },
+            {
+                "name": "Uncle Josh's trunk-full of fun",
+                "url": "https://archive.org/details/unclejoshstrunkf00dick"
+            },
+            {
+                "name": "What shall we do to-night?",
+                "url": "https://archive.org/details/whatshallwedoton00dickrich"
+            },
+            {
+                "name": "Bulletins d'arboriculture, de culture potagère et de floriculture",
+                "url": "https://archive.org/details/bulletinsdarbor04unkngoog"
+            }
+        ]
+    },
+    {
+        "id": "farm-network-reclaim-the-field",
+        "category": "en-vrac",
+        "date": "2015/08/14",
+        "readingTime": 4,
+        "image": "",
+        "tags": [],
+        "title": {
+            "fr": "Farm network / Reclaim the field",
+            "en": "European Farm Network / Reclaim the Fields",
+            "es": "Red de Granjas de Europa / Reclaim the Fields"
         },
-        {
-            id: "culture-champignons",
-            category: "permaculture",
-            date: "10 août 2014",
-            readingTime: 7,
-            reactions: 58,
-            image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=80",
-            tags: ["Mycologie", "Champignons", "Permaculture", "Pleurotes", "Shiitake", "Autoproduction"],
-            title: {
-                fr: "La culture des Champignons — Mycologie Pratique (Pleurotes & Shiitake)",
-                en: "Mushroom Cultivation — Practical Mycology (Oysters & Shiitake)",
-                es: "Cultivo de Hongos — Micología Práctica (Gírgolas y Shiitake)"
+        "desc": {
+            "fr": "Réseau de Compagnonnage Fourche et Champ Libre Fourche et Champ Libre est un réseau de fermes qui accueille toute personne désireuse d'apprendre l'agriculture, partager l'histoire de ces lieux et leurs pratiques politiqu...",
+            "en": "Exploring self-reliance, practical degrowth, infokiosk zines, decentralized networks, and grassroots socio-ecological mutual aid.",
+            "es": "Explorando la autosuficiencia, el decrecimiento práctico, folletos de infokiosco, redes descentralizadas y apoyo mutuo socioecológico de base."
+        },
+        "content": {
+            "fr": "<p>Réseau de Compagnonnage Fourche et Champ Libre</p><p>Fourche et Champ Libre est un réseau de fermes qui accueille toute personne désireuse d'apprendre l'agriculture, partager l'histoire de ces lieux et leurs pratiques politiques. Il\n    s’appuie sur la rencontre entre des personnes souhaitant concrètement être accompagnées (ou souhaitant un complément de formation) dans l'apprentissage de pratiques agricoles et des\n    individus/collectifs déjà installés en agriculture.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> European Farm Network / Reclaim the Fields: Exploring self-reliance, practical degrowth, infokiosk zines, decentralized networks, and grassroots socio-ecological mutual aid.</p><p>Réseau de Compagnonnage Fourche et Champ Libre</p><p>Fourche et Champ Libre est un réseau de fermes qui accueille toute personne désireuse d'apprendre l'agriculture, partager l'histoire de ces lieux et leurs pratiques politiques. Il\n    s’appuie sur la rencontre entre des personnes souhaitant concrètement être accompagnées (ou souhaitant un complément de formation) dans l'apprentissage de pratiques agricoles et des\n    individus/collectifs déjà installés en agriculture.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Red de Granjas de Europa / Reclaim the Fields: Explorando la autosuficiencia, el decrecimiento práctico, folletos de infokiosco, redes descentralizadas y apoyo mutuo socioecológico de base.</p><p>Réseau de Compagnonnage Fourche et Champ Libre</p><p>Fourche et Champ Libre est un réseau de fermes qui accueille toute personne désireuse d'apprendre l'agriculture, partager l'histoire de ces lieux et leurs pratiques politiques. Il\n    s’appuie sur la rencontre entre des personnes souhaitant concrètement être accompagnées (ou souhaitant un complément de formation) dans l'apprentissage de pratiques agricoles et des\n    individus/collectifs déjà installés en agriculture.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": []
+    },
+    {
+        "id": "le-kiosques-autonomes",
+        "category": "en-vrac",
+        "date": "2014/09/14",
+        "readingTime": 4,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=260x1024:format=jpg/path/s6b5d09a755d07b57/image/ibe09e84176246761/version/1410713606/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Le Kiosques Autonomes",
+            "en": "The Autonomous Mobile Kiosk (Solar & Waste Oil Trailer)",
+            "es": "El Kiosco Comunitario Autónomo (Remolque Solar y Aceite de Fritura)"
+        },
+        "desc": {
+            "fr": "récup' et recyclage des eaux usées par des plantes, toilettes sèches pour le compost avec sciure et humus, électricité par panneau solaire, capteur solaire pour chauffer l'eau, four solaire,\n    système de filtration d'h...",
+            "en": "Exploring self-reliance, practical degrowth, infokiosk zines, decentralized networks, and grassroots socio-ecological mutual aid.",
+            "es": "Explorando la autosuficiencia, el decrecimiento práctico, folletos de infokiosco, redes descentralizadas y apoyo mutuo socioecológico de base."
+        },
+        "content": {
+            "fr": "<p>récup' et recyclage des eaux usées par des plantes, toilettes sèches pour le compost avec sciure et humus, électricité par panneau solaire, capteur solaire pour chauffer l'eau, four solaire,\n    système de filtration d'huile de friture pour faire du carburant, 5 murs différents bio climatiques(lavande, tournesol...) pour faire des maisons qui absorbent et stockent le CO2\n    etc.</p><p>- Kiosques.autonomes.-.32p.pdf : Infos, description, plans...</p><p>- http://kiosquesautonomes.over-blog.org :</p><p>- http://info-kiosques.blogspot.ch/\n    :</p><p>- Voyageurs des possibles :</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> The Autonomous Mobile Kiosk (Solar & Waste Oil Trailer): Exploring self-reliance, practical degrowth, infokiosk zines, decentralized networks, and grassroots socio-ecological mutual aid.</p><p>récup' et recyclage des eaux usées par des plantes, toilettes sèches pour le compost avec sciure et humus, électricité par panneau solaire, capteur solaire pour chauffer l'eau, four solaire,\n    système de filtration d'huile de friture pour faire du carburant, 5 murs différents bio climatiques(lavande, tournesol...) pour faire des maisons qui absorbent et stockent le CO2\n    etc.</p><p>- Kiosques.autonomes.-.32p.pdf : Infos, description, plans...</p><p>- http://kiosquesautonomes.over-blog.org :</p><p>- http://info-kiosques.blogspot.ch/\n    :</p><p>- Voyageurs des possibles :</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> El Kiosco Comunitario Autónomo (Remolque Solar y Aceite de Fritura): Explorando la autosuficiencia, el decrecimiento práctico, folletos de infokiosco, redes descentralizadas y apoyo mutuo socioecológico de base.</p><p>récup' et recyclage des eaux usées par des plantes, toilettes sèches pour le compost avec sciure et humus, électricité par panneau solaire, capteur solaire pour chauffer l'eau, four solaire,\n    système de filtration d'huile de friture pour faire du carburant, 5 murs différents bio climatiques(lavande, tournesol...) pour faire des maisons qui absorbent et stockent le CO2\n    etc.</p><p>- Kiosques.autonomes.-.32p.pdf : Infos, description, plans...</p><p>- http://kiosquesautonomes.over-blog.org :</p><p>- http://info-kiosques.blogspot.ch/\n    :</p><p>- Voyageurs des possibles :</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": [
+            {
+                "name": "Kiosques.autonomes",
+                "url": "http://www.mediafire.com/view/re9af9w1pof4pii/Kiosques.autonomes.-.32p.pdf"
+            }
+        ]
+    },
+    {
+        "id": "autoconstruction-special-vroutsch-1972",
+        "category": "habitat",
+        "date": "2014/09/14",
+        "readingTime": 4,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=104x1024:format=jpg/path/s6b5d09a755d07b57/image/ic510f6dfe3628675/version/1410711085/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Autoconstruction - special vroutsch / 1972",
+            "en": "Self-Building — Special Vroutsch 1972 (Cult Manual)",
+            "es": "Autoconstrucción — Especial Vroutsch 1972 (Manual de Culto)"
+        },
+        "desc": {
+            "fr": "- Architecture.de.Philibert.de.l.Orme.1567.-.587p.pdf :  -> Via: Gallica.bnf - Principes.des.structures.architecturale.légères.-.115p.pdf : Théorie, dome, zome,\n    tansegrity... -> Via : http://co-creation.net...",
+            "en": "Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.",
+            "es": "Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas."
+        },
+        "content": {
+            "fr": "<p>- Architecture.de.Philibert.de.l.Orme.1567.-.587p.pdf :  -> Via: Gallica.bnf</p><p>- Principes.des.structures.architecturale.légères.-.115p.pdf : Théorie, dome, zome,\n    tansegrity... -> Via : http://co-creation.net</p><p>-  Making.a.reciprocal.Frame.Roof.-.14p : Faire un toit réciproque, infos, photos\n    -> Via: http://www.thatroundhouse.info</p><p>Construire un tipi / Construire une Yourte</p><p>Habitat et construction traditionnelle et\n    marginales</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Self-Building — Special Vroutsch 1972 (Cult Manual): Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.</p><p>- Architecture.de.Philibert.de.l.Orme.1567.-.587p.pdf :  -> Via: Gallica.bnf</p><p>- Principes.des.structures.architecturale.légères.-.115p.pdf : Théorie, dome, zome,\n    tansegrity... -> Via : http://co-creation.net</p><p>-  Making.a.reciprocal.Frame.Roof.-.14p : Faire un toit réciproque, infos, photos\n    -> Via: http://www.thatroundhouse.info</p><p>Construire un tipi / Construire une Yourte</p><p>Habitat et construction traditionnelle et\n    marginales</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Autoconstrucción — Especial Vroutsch 1972 (Manual de Culto): Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas.</p><p>- Architecture.de.Philibert.de.l.Orme.1567.-.587p.pdf :  -> Via: Gallica.bnf</p><p>- Principes.des.structures.architecturale.légères.-.115p.pdf : Théorie, dome, zome,\n    tansegrity... -> Via : http://co-creation.net</p><p>-  Making.a.reciprocal.Frame.Roof.-.14p : Faire un toit réciproque, infos, photos\n    -> Via: http://www.thatroundhouse.info</p><p>Construire un tipi / Construire une Yourte</p><p>Habitat et construction traditionnelle et\n    marginales</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": [
+            {
+                "name": "Auto.Construction.-.Special.vroutsch",
+                "url": "http://www.mediafire.com/view/m67z4zsa18d4yn4/Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf"
             },
-            desc: {
-                fr: "Cultiver, produire et multiplier ses champignons comestibles et médicinaux à la maison sur du carton, de la paille ou des bûches de bois.",
-                en: "Comprehensive open manual for cultivating gourmet edible oyster and Shiitake mushrooms on upcycled cardboard, straw, and hardwood logs.",
-                es: "Manual práctico abierto para cultivar hongos comestibles y medicinales (gírgolas y shiitake) en cartón reciclado, paja y troncos de madera."
+            {
+                "name": "http://alphazomes.org",
+                "url": "http://alphazomes.org%20"
             },
-            content: {
-                fr: `
-                    <p>Le règne des <em>Fungi</em> est le grand régénérateur de la biosphère. Capables de décomposer la matière organique la plus coriace, les champignons offrent une source de protéines et d'immunité exceptionnelle qui peut être cultivée dans les caves les plus sombres, sans réclamer un seul rayon de soleil.</p>
-                    <h2>1. La Culture de Pleurotes sur Carton de Récup' (Ultra-Simple)</h2>
-                    <p>Vous avez acheté quelques belles pleurotes au marché ? Ne jetez pas les pieds (la base un peu blanche et velue) ! Prenez du carton ondulé marron classique, trempez-le dans de l'eau bouillante pendant 10 minutes pour le pasteuriser et le ramollir. Laissez refroidir. Pelez une couche de papier pour dévoiler les ondulations. Déposez vos bouts de pieds de pleurotes dans les rainures, roulez le carton en cylindre, placez-le dans un sac plastique propre percé de quelques petits trous, et gardez-le dans le noir à 20°C. Au bout de 3 semaines, le mycélium blanc aura entièrement dévoré le carton ! Sortez-le à la lumière douce et à l'humidité : de magnifiques grappes de pleurotes vont pousser !</p>
-                    <h2>2. La Culture du Shiitake sur Bûches de Chêne</h2>
-                    <p>Pour une production pérenne sur 5 à 8 ans :</p>
-                    <ul>
-                        <li>Coupez des bûches de chêne, de hêtre ou de châtaignier d'environ 15 cm de diamètre, en hiver, lorsque la sève est descendue.</li>
-                        <li>Percez des trous de 8 mm de diamètre en quinconce tous les 15 cm.</li>
-                        <li>Enfoncez-y des chevilles en bois pré-ensemencées de mycélium de Shiitake (le champignon médicinal japonais par excellence).</li>
-                        <li>Recouvrez les trous avec de la cire d'abeille fondue pour empêcher l'entrée des moisissures concurrentes.</li>
-                        <li>Stockez les bûches à l'ombre sous les arbres. Après 12 mois d'incubation, trempez les bûches 24h dans l'eau froide pour déclencher la fructification !</li>
-                    </ul>
-                `,
-                en: `
-                    <p>The magnificent <em>Fungi</em> biological kingdom is the supreme recycler and regenerator of our natural living biosphere. Possessing the unique metabolic capability to break down persistent highly complex woody lignified matter, mushrooms offer an incredibly rich decentralized harvest of high-grade complete dietary protein and strong medicinal immune-boosting compounds. Furthermore, they can be flawlessly cultivated deep inside damp lightless cellars, requiring zero expensive solar real estate or arable farming topsoil.</p>
-                    <h2>1. Upcycled Cardboard Oyster Mushroom Cultivation (Zero-Cost Homestead Mycology)</h2>
-                    <p>Did you acquire a cluster of choice fresh gourmet oyster mushrooms from the local organic market? Never throw away their tough woody lower stem bases (the fuzzy white root structures)! Scavenge standard corrugated brown shipping cardboard boxes, immerse them completely in boiling water for exactly 10 continuous minutes to thoroughly pasteurize and soften the cellulose fibers. Allow to cool completely down to room temperature. Carefully peel back one smooth outer face of paper to unveil the inner corrugated wavy ridges. Slice your fresh oyster mushroom stem butts and nestle them securely down into the damp cardboard furrows. Roll the wet cardboard up into a tight log cylinder, place it inside a clean clear plastic bag punctured with several tiny breathing apertures, and stow it inside a dark room kept at roughly 20°C. Within roughly 3 uninterrupted weeks, immaculate snow-white active mycelium networks will completely devour the cardboard matrix! Transfer the fully colonized log into soft ambient window light and keep highly misted. Within days, spectacular heavy clusters of choice gourmet oyster mushrooms will pin and erupt freely!</p>
-                    <h2>2. Hardwood Log Shiitake Inoculation (Perennial 8-Year Production)</h2>
-                    <p>To establish an unshakeable perennial domestic mushroom harvest producing premium gourmet timber mushrooms for 5 to 8 continuous years:</p>
-                    <ul>
-                        <li>Fell fresh healthy green oak, beech, or sweet chestnut hardwood logs roughly 15 cm in diameter strictly during deep freezing winter when seasonal sap reserves have fully descended into the arboreal roots.</li>
-                        <li>Using a highly sanitized high-speed drill, bore 8 mm diameter structural holes staggered in a diamond matrix every 15 cm across the log bark weather-skin.</li>
-                        <li>Tap specialized wooden birch dowel pegs completely pre-inoculated with pure Shiitake mushroom mycelium spawn firmly down into each drilled cavity using a wooden mallet.</li>
-                        <li>Swiftly paint and completely seal every single plugged cavity using hot melted liquid natural pure beeswax to protect the delicate internal mycelium against competitive airborne forest weed molds.</li>
-                        <li>Stack the plugged hardwood logs horizontally in a highly shaded, damp woodland arbor or deep under thick evergreens. Subsequent to a 12-month internal passive vegetative colonization run, submerge the logs completely in ice-cold pure well water for exactly 24 hours to dynamically shock the fungal biology into an awe-inspiring heavy fruiting flush!</li>
-                    </ul>
-                `,
-                es: `
-                    <p>El grandioso reino de los <em>Hongos</em> (Fungi) es el supremo reciclador y regenerador de la biosfera. Con la capacidad biológica única de descomponer la materia leñosa más dura y persistente, las setas nos ofrecen una fuente espectacular y descentralizada de proteínas de alta calidad y potentes compuestos medicinales que fortalecen el sistema inmunológico. Además, pueden ser cultivadas con rotundo éxito en los sótanos más oscuros y húmedos, sin necesidad de sol ni de fértil tierra de labranza.</p>
-                    <h2>1. Cultivo Casero de Gírgolas (Setas de Ostra) en Cartón Reciclado a Coste Cero</h2>
-                    <p>¿Has conseguido unas hermosas setas de ostra o gírgolas en el mercado ecológico? ¡Nunca tires la base dura de sus tallos (la parte inferior cubierta de una pelusilla blanca)! Toma cajas comunes de cartón de envío corrugado de color marrón, sumérgelas en agua hirviendo durante exactamente 10 minutes para pasteurizarlas por completo y ablandar la celulosa. Deja que se enfríen hasta temperatura ambiente. Pela con cuidado una de las capas lisas de papel exterior para dejar a la vista los surcos ondulados interiores. Coloca los pedazos de la base de los tallos de las setas justo dentro de los surcos húmedos del cartón. Enrolla el cartón mojado formando un cilindro bien apretado, introducelo dentro de una bolsa de plástico limpia con unos pequeños agujeros para que respire y guardalo en un cuarto totalmente oscuro a unos 20°C. ¡En solo 3 semanas de incubación ininterrumpida, una espectacular y densa red de micelio blanco como la nieve habrá devorado y colonizado todo el cartón! Finalmente, saca el rollo a una luz indirecta suave y rocialo a diario con agua: ¡en pocos días verás brotar y explotar espectaculares y pesados racimos de deliciosas setas gírgolas!</p>
-                    <h2>2. Inoculación Perenne de Hongos Shiitake en Troncos de Madera (Producción Continua durante 8 Años)</h2>
-                    <p>Para establecer una fuente perenne e inquebrantable de setas medicinales y gourmet que te dé grandes cosechas ininterrumpidas entre 5 y 8 años seguidos:</p>
-                    <ul>
-                        <li>Corta troncos sanos y frescos de roble, haya o castaño esbelto de unos 15 cm de diámetro exclusivamente durante el crudo invierno, que es cuando toda la savia del árbol ha bajado por completo a las raíces.</li>
-                        <li>Con un taladro limpio, perfora agujeros de 8 mm de diámetro dispuestos en un patrón de rombo en zig-zag cada 15 cm a lo largo y ancho de la corteza del tronco.</li>
-                        <li>Introduce en cada agujero tacos o tarugos de madera preiniciados con micelio vivo de hongo Shiitake (el rey de las setas medicinales de Asia) y golpéalos con suavidad utilizando un mazo de madera hasta que queden a ras de la corteza.</li>
-                        <li>Pinta y sella de inmediato todos los agujeros taponados utilizando cera de abejas pura derretida y caliente. ¡Este sello protector evita que el micelio se seque y bloquea la entrada de esporas de mohos competidores de la corteza forestal!</li>
-                        <li>Apila los troncos de madera en horizontal en un lugar sombrío y muy húmedo bajo los árboles o en un cobertizo fresco. Tras 12 meses de colonización vegetativa interna, sumerge los troncos por completo en agua de pozo muy fría o helada durante exactamente 24 horas: ¡este choque térmico dinámico despertará de golpe al micelio y desatará una espectacular y abundante explosión de deliciosas setas Shiitake en toda la madera!</li>
-                    </ul>
-                `
+            {
+                "name": "Architecture.de.Philibert.de.l.Orme",
+                "url": "http://www.mediafire.com/view/k8t5f4jrp7jja3o/Architecture%20.de.Philibert.de.l.Orme.1567.-.587p.pdf"
             },
-            resources: [
-                { name: "🍄 Fiche d'Ensemencement et Substrats Fungi (PDF)", url: "#" },
-                { name: "📋 Catalogue des Variétés & Températures Fructification", url: "#" }
-            ],
-            comments: [
-                { author: "Myco_Master", date: "12 août 2014", text: "Le truc du carton pour les pleurotes marche à 100%. Les enfants ont adoré voir pousser les champignons dans la buanderie. Incroyable !" }
-            ]
-        }
-    ];
+            {
+                "name": "Principes.des.structures.architecturale.légères",
+                "url": "http://www.mediafire.com/view/anmn3t6a2473t74/Principes.structures.architecturale.legeres.-.115p.pdf"
+            },
+            {
+                "name": "Making.a.reciprocal.Frame.Roof",
+                "url": "http://www.mediafire.com/view/8w5sfygw9lt7z5t/Making.a.reciprocal.Frame.Roof.-.thatroundhouse.info.-.14p.pdf"
+            }
+        ]
+    },
+    {
+        "id": "habitats-construction-traditionnelles-et-marginales",
+        "category": "habitat",
+        "date": "2014/08/14",
+        "readingTime": 5,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=88x1024:format=jpg/path/s6b5d09a755d07b57/image/i350d44051008b6d6/version/1408023612/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Habitats - Construction traditionnelles et marginales",
+            "en": "Handmade Habitats — Traditional & Marginal Dwellings",
+            "es": "Hábitats Artesanales — Viviendas Tradicionales y Marginales"
+        },
+        "desc": {
+            "fr": "- Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf  : Une perle tout fait à la\n    main , Zome, dome tipi, bus... -> Via  : http://alphazomes.org - Architecture.de.Philibert.de.l.Orme.1567.-.587p.pdf :  -> Via: Gall...",
+            "en": "Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.",
+            "es": "Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas."
+        },
+        "content": {
+            "fr": "<p>- Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf  : Une perle tout fait à la\n    main , Zome, dome tipi, bus... -> Via  : http://alphazomes.org</p><p>- Architecture.de.Philibert.de.l.Orme.1567.-.587p.pdf :  -> Via: Gallica.bnf</p><p>- Principes.des.structures.architecturale.légères.-.115p.pdf : Théorie, dome, zome,\n    tansegrity... -> Via : http://co-creation.net</p><p>-  Making.a.reciprocal.Frame.Roof.-.14p : Faire un toit réciproque, infos, photos\n    -> Via: http://www.thatroundhouse.info</p><p>- Aboveground.home.shelter : Abris en dessus du sol, construction de cabane dans les arbres</p><p>- Farm.buildings.with.plans.and.description : Construction de ferme avec plans et explications</p><p>- GB-home.work.ext52p : Home work - Abris autoconstruit - photos de divers habitats autoconstruits</p><p>- Letsremake.inflate.cookbook  : Le livre de cuisine des structure gonflable...</p><p>- Letsremake.how.to.build.your.own.living.structure :Construire ta propre structure de vie, infos, photos</p><p>- Pioneering.projects.big.and.small : Projet de scoot petits et grands, Structure diverse, pont, abris...</p><p>- The.complete.book.of.underground.houses : Le livre complet des maison souterraine</p><p>- Wilderness.homes.a.book.of.log.cabin : Maison sauvage - Un livre sur les maison en rondin</p><p>-..... et bien plus encore !!!!</p><p>Liens internes :\n    - Dossier : Comment fabriquer un tipi (tepee)? Plan, tuto, images</p><p>- Dossier : Comment construire un dôme géodésique.</p><p>- Document : Habitat d'urgence autonome démontable,\n    autoconstruit</p><p>Liens externes :\n    - Archilibre.org : Architectures libres, spontanées, sauvages, marginales, autodidactes,\n    novatrices, éphémères, iconoclastes, hasardeuses, primaires...\n    - Habiter-autrement.org : Utopies Co-housing, Eco-village, Intergénérationnel,\n    Squat, Minimaliste, Mobile... autres</p><p>- Ardheia.free.fr : Association pour la Recherche et la Dynamisation d'un Habitat Ecologique,\n    Innovant et Alternatif.</p><p>- Letsremake.info : Librairie de l'optimisme radiant pour re-faire le monde...</p><p>- Tinyhouseliving.com : La vie dans des\n    petites  maison ...</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Handmade Habitats — Traditional & Marginal Dwellings: Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.</p><p>- Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf  : Une perle tout fait à la\n    main , Zome, dome tipi, bus... -> Via  : http://alphazomes.org</p><p>- Architecture.de.Philibert.de.l.Orme.1567.-.587p.pdf :  -> Via: Gallica.bnf</p><p>- Principes.des.structures.architecturale.légères.-.115p.pdf : Théorie, dome, zome,\n    tansegrity... -> Via : http://co-creation.net</p><p>-  Making.a.reciprocal.Frame.Roof.-.14p : Faire un toit réciproque, infos, photos\n    -> Via: http://www.thatroundhouse.info</p><p>- Aboveground.home.shelter : Abris en dessus du sol, construction de cabane dans les arbres</p><p>- Farm.buildings.with.plans.and.description : Construction de ferme avec plans et explications</p><p>- GB-home.work.ext52p : Home work - Abris autoconstruit - photos de divers habitats autoconstruits</p><p>- Letsremake.inflate.cookbook  : Le livre de cuisine des structure gonflable...</p><p>- Letsremake.how.to.build.your.own.living.structure :Construire ta propre structure de vie, infos, photos</p><p>- Pioneering.projects.big.and.small : Projet de scoot petits et grands, Structure diverse, pont, abris...</p><p>- The.complete.book.of.underground.houses : Le livre complet des maison souterraine</p><p>- Wilderness.homes.a.book.of.log.cabin : Maison sauvage - Un livre sur les maison en rondin</p><p>-..... et bien plus encore !!!!</p><p>Liens internes :\n    - Dossier : Comment fabriquer un tipi (tepee)? Plan, tuto, images</p><p>- Dossier : Comment construire un dôme géodésique.</p><p>- Document : Habitat d'urgence autonome démontable,\n    autoconstruit</p><p>Liens externes :\n    - Archilibre.org : Architectures libres, spontanées, sauvages, marginales, autodidactes,\n    novatrices, éphémères, iconoclastes, hasardeuses, primaires...\n    - Habiter-autrement.org : Utopies Co-housing, Eco-village, Intergénérationnel,\n    Squat, Minimaliste, Mobile... autres</p><p>- Ardheia.free.fr : Association pour la Recherche et la Dynamisation d'un Habitat Ecologique,\n    Innovant et Alternatif.</p><p>- Letsremake.info : Librairie de l'optimisme radiant pour re-faire le monde...</p><p>- Tinyhouseliving.com : La vie dans des\n    petites  maison ...</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Hábitats Artesanales — Viviendas Tradicionales y Marginales: Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas.</p><p>- Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf  : Une perle tout fait à la\n    main , Zome, dome tipi, bus... -> Via  : http://alphazomes.org</p><p>- Architecture.de.Philibert.de.l.Orme.1567.-.587p.pdf :  -> Via: Gallica.bnf</p><p>- Principes.des.structures.architecturale.légères.-.115p.pdf : Théorie, dome, zome,\n    tansegrity... -> Via : http://co-creation.net</p><p>-  Making.a.reciprocal.Frame.Roof.-.14p : Faire un toit réciproque, infos, photos\n    -> Via: http://www.thatroundhouse.info</p><p>- Aboveground.home.shelter : Abris en dessus du sol, construction de cabane dans les arbres</p><p>- Farm.buildings.with.plans.and.description : Construction de ferme avec plans et explications</p><p>- GB-home.work.ext52p : Home work - Abris autoconstruit - photos de divers habitats autoconstruits</p><p>- Letsremake.inflate.cookbook  : Le livre de cuisine des structure gonflable...</p><p>- Letsremake.how.to.build.your.own.living.structure :Construire ta propre structure de vie, infos, photos</p><p>- Pioneering.projects.big.and.small : Projet de scoot petits et grands, Structure diverse, pont, abris...</p><p>- The.complete.book.of.underground.houses : Le livre complet des maison souterraine</p><p>- Wilderness.homes.a.book.of.log.cabin : Maison sauvage - Un livre sur les maison en rondin</p><p>-..... et bien plus encore !!!!</p><p>Liens internes :\n    - Dossier : Comment fabriquer un tipi (tepee)? Plan, tuto, images</p><p>- Dossier : Comment construire un dôme géodésique.</p><p>- Document : Habitat d'urgence autonome démontable,\n    autoconstruit</p><p>Liens externes :\n    - Archilibre.org : Architectures libres, spontanées, sauvages, marginales, autodidactes,\n    novatrices, éphémères, iconoclastes, hasardeuses, primaires...\n    - Habiter-autrement.org : Utopies Co-housing, Eco-village, Intergénérationnel,\n    Squat, Minimaliste, Mobile... autres</p><p>- Ardheia.free.fr : Association pour la Recherche et la Dynamisation d'un Habitat Ecologique,\n    Innovant et Alternatif.</p><p>- Letsremake.info : Librairie de l'optimisme radiant pour re-faire le monde...</p><p>- Tinyhouseliving.com : La vie dans des\n    petites  maison ...</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": [
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/view/?9879kcgolypri0v"
+            },
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/?itneqcvh72sav"
+            },
+            {
+                "name": "Auto.Construction.-.Special.vroutsch.-.1972",
+                "url": "http://www.mediafire.com/view/m67z4zsa18d4yn4/Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf"
+            },
+            {
+                "name": "http://alphazomes.org",
+                "url": "http://alphazomes.org"
+            },
+            {
+                "name": "Architecture.de.Philibert.de.l.Orme",
+                "url": "http://www.mediafire.com/view/k8t5f4jrp7jja3o/Architecture%20.de.Philibert.de.l.Orme.1567.-.587p.pdf"
+            },
+            {
+                "name": "Principes.des.structures.architecturale.légères",
+                "url": "http://www.mediafire.com/view/anmn3t6a2473t74/Principes.structures.architecturale.legeres.-.115p.pdf"
+            },
+            {
+                "name": "Making.a.reciprocal.Frame.Roof",
+                "url": "http://www.mediafire.com/view/8w5sfygw9lt7z5t/Making.a.reciprocal.Frame.Roof.-.thatroundhouse.info.-.14p.pdf"
+            }
+        ]
+    },
+    {
+        "id": "autoconstruction-d-une-yourte-locale",
+        "category": "habitat",
+        "date": "2014/09/03",
+        "readingTime": 8,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=230x1024:format=jpg/path/s6b5d09a755d07b57/image/i7a1e7d615b455f6f/version/1409553818/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Autoconstruction d'une yourte locale",
+            "en": "Self-Building a Handcrafted Local Yurt (Switzerland)",
+            "es": "Autoconstrucción de una Yurt con Madera Local (Suiza)"
+        },
+        "desc": {
+            "fr": "70 perches de 185cm, 2 à 3 cm de diamétre, trou de 6mm, corde 4mm (synthétique) A faire : protéger le bas des perches idée scotch de carrosier...",
+            "en": "Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.",
+            "es": "Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas."
+        },
+        "content": {
+            "fr": "<p>70 perches de 185cm, 2 à 3 cm de diamétre, trou de 6mm, corde 4mm (synthétique)</p><p>A faire : protéger le bas des perches idée scotch de carrosier</p><p>36 perches de 2,27m - 2,5 à 5 cm de diam, 2 trous à 4 et 6 cm du gros bout</p><p>Construction du tonno : heptagone - Diam ext 80 cm</p><p>Fait avec des chutes de découpe de manche de pioche en frênes, les morceau ne sont pas qualibré mais font tous la même longueur, découpe des angles, premier assemblage avec des clous et\n            rajout de plaques de serrage de chaque coté (latte d'un vieux lit en bois)</p><p>Trous pour les perches forêt 26mm , 6 trous par coté sauf le coté porte avec 4 trous</p><p>La porte : monter le cadre (bois ok) , trous pour les perches du toit -> la porte : trouver le bois!</p><p>Cadre de porte fait avec un vieux sommier et autre morceau qui trainait 120/150 -> charnière et porte à faire, porte trouvée et posée (grande fenêtre récup)</p><p>La toile : Trouver la toile, une bonne machine -> coudre!</p><p>Toile ext : Couture du mur toile coton ext ok, toit cousu plusieurs draps récupéré - un carré de 6m env -> découpe du rond central du toono, (découpe d'un bord au\n            centre pour recouvrir ?). découpe du rond externe, min 5.48m + 20cm pour recouvrir le mur. Pour le mur le tissu est en trois partie - Raccords en velcro -> intégration d'une fenètre en\n            plastique souple, possibilité d'ouvrir le mur pour aérer. Pour le moment je laisse le toit le le mur séparer mais je vais ptetre coudre le tout ensemble... Ajout d'une jupe sur le bas du\n            mur -> trouver le tissu pour la jupe.</p><p>Toile étanche : Pour le moment bache classique bleu (récup) -> découpe centre interne externe, (découpe de recouvrement)</p><p>2e couche : Toile en couverture de l'armée suisse (isolation été)</p><p>1e couche : Toile intérieure, coton léger</p><p>Ajout par la suite d'isolation entre la 1er et la 2e couche</p><p>Le chapeau : Toile, toile transparente, corde -> pour protéger le toono, toile plastique, parapluie, hublot, ...?</p><p>Le plancher : Base en palette (récup) et plancher en panneau d'osb</p><p>nb de panneau : ... / Prix : ... / Plus quelques vis</p><p>Cordes : 22m 8.-, 2x 20m 19.-, 16m 16.-, 2x 20m 15.80, 20m 7.90 / Fils à coudre : 4.95 / Fôret de 26mm : 8.90 /</p><p>Papier de verre : 7.- / Ruban de béton : 7.65 / Plastique recyclé pour le mur : 2x 20m/2 33.80 /</p><p>Infos divers, notes :</p><p>Perche coupées pour le treillis et le toit, du noisetier en majorité, coupé en lune descendante et décroissante. Perches recoupées à la bonne taille puis écorcées le plus rapidement\n            possible, elle sont ensuite attachées en botte de 10 et séche tranquilement à l'abris. (Attention faut pas faire ça... de la moisissure est apparue sur des perches situées au centre de la\n            botte! -> ponçage)</p><p>Idée protéger le bois avec un vernis huile lin cire thérébentine</p><p>1er montage efféctué, la yourte est en place !, 1er couche de tissus, 2e couche de couvertures, 3e couche bache plastique bleu cousue, 4e couche coton blanc pour faire joli...! Le treills\n            est posé directement sur le sol (terre tassée et graviés), apres trois jours de pluie on voit l'eau qui serpente sous les graviers a l'intérieur depuis l'amont... -> rigole creusée\n            autour de la yourte en amont, juste lissé le fond de la rigole c'est une terre argileuse, l'eau s'écoule bien le long de la tranchée.</p><p>Pour l'instant la couche anti pluie a l'air de bien tenir, pas d'infiltration dans la toile !</p><p>Besoins actuels, recherche :</p><p>- Toile transparente pour le chapeau et les fenêtres</p><p>- De la toile étanche pour l'extérieur de la yourte, (toile de protection solaire, toile marine) -> contact fabriquant de store, sellerie, bateau...</p><p>J'ai utilisé un article de passerelle eco  et le site simplydifferent.org</p><p>Voir l'article construire une yourte pour trouver tout les\n    documents.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Self-Building a Handcrafted Local Yurt (Switzerland): Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.</p><p>70 perches de 185cm, 2 à 3 cm de diamétre, trou de 6mm, corde 4mm (synthétique)</p><p>A faire : protéger le bas des perches idée scotch de carrosier</p><p>36 perches de 2,27m - 2,5 à 5 cm de diam, 2 trous à 4 et 6 cm du gros bout</p><p>Construction du tonno : heptagone - Diam ext 80 cm</p><p>Fait avec des chutes de découpe de manche de pioche en frênes, les morceau ne sont pas qualibré mais font tous la même longueur, découpe des angles, premier assemblage avec des clous et\n            rajout de plaques de serrage de chaque coté (latte d'un vieux lit en bois)</p><p>Trous pour les perches forêt 26mm , 6 trous par coté sauf le coté porte avec 4 trous</p><p>La porte : monter le cadre (bois ok) , trous pour les perches du toit -> la porte : trouver le bois!</p><p>Cadre de porte fait avec un vieux sommier et autre morceau qui trainait 120/150 -> charnière et porte à faire, porte trouvée et posée (grande fenêtre récup)</p><p>La toile : Trouver la toile, une bonne machine -> coudre!</p><p>Toile ext : Couture du mur toile coton ext ok, toit cousu plusieurs draps récupéré - un carré de 6m env -> découpe du rond central du toono, (découpe d'un bord au\n            centre pour recouvrir ?). découpe du rond externe, min 5.48m + 20cm pour recouvrir le mur. Pour le mur le tissu est en trois partie - Raccords en velcro -> intégration d'une fenètre en\n            plastique souple, possibilité d'ouvrir le mur pour aérer. Pour le moment je laisse le toit le le mur séparer mais je vais ptetre coudre le tout ensemble... Ajout d'une jupe sur le bas du\n            mur -> trouver le tissu pour la jupe.</p><p>Toile étanche : Pour le moment bache classique bleu (récup) -> découpe centre interne externe, (découpe de recouvrement)</p><p>2e couche : Toile en couverture de l'armée suisse (isolation été)</p><p>1e couche : Toile intérieure, coton léger</p><p>Ajout par la suite d'isolation entre la 1er et la 2e couche</p><p>Le chapeau : Toile, toile transparente, corde -> pour protéger le toono, toile plastique, parapluie, hublot, ...?</p><p>Le plancher : Base en palette (récup) et plancher en panneau d'osb</p><p>nb de panneau : ... / Prix : ... / Plus quelques vis</p><p>Cordes : 22m 8.-, 2x 20m 19.-, 16m 16.-, 2x 20m 15.80, 20m 7.90 / Fils à coudre : 4.95 / Fôret de 26mm : 8.90 /</p><p>Papier de verre : 7.- / Ruban de béton : 7.65 / Plastique recyclé pour le mur : 2x 20m/2 33.80 /</p><p>Infos divers, notes :</p><p>Perche coupées pour le treillis et le toit, du noisetier en majorité, coupé en lune descendante et décroissante. Perches recoupées à la bonne taille puis écorcées le plus rapidement\n            possible, elle sont ensuite attachées en botte de 10 et séche tranquilement à l'abris. (Attention faut pas faire ça... de la moisissure est apparue sur des perches situées au centre de la\n            botte! -> ponçage)</p><p>Idée protéger le bois avec un vernis huile lin cire thérébentine</p><p>1er montage efféctué, la yourte est en place !, 1er couche de tissus, 2e couche de couvertures, 3e couche bache plastique bleu cousue, 4e couche coton blanc pour faire joli...! Le treills\n            est posé directement sur le sol (terre tassée et graviés), apres trois jours de pluie on voit l'eau qui serpente sous les graviers a l'intérieur depuis l'amont... -> rigole creusée\n            autour de la yourte en amont, juste lissé le fond de la rigole c'est une terre argileuse, l'eau s'écoule bien le long de la tranchée.</p><p>Pour l'instant la couche anti pluie a l'air de bien tenir, pas d'infiltration dans la toile !</p><p>Besoins actuels, recherche :</p><p>- Toile transparente pour le chapeau et les fenêtres</p><p>- De la toile étanche pour l'extérieur de la yourte, (toile de protection solaire, toile marine) -> contact fabriquant de store, sellerie, bateau...</p><p>J'ai utilisé un article de passerelle eco  et le site simplydifferent.org</p><p>Voir l'article construire une yourte pour trouver tout les\n    documents.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Autoconstrucción de una Yurt con Madera Local (Suiza): Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas.</p><p>70 perches de 185cm, 2 à 3 cm de diamétre, trou de 6mm, corde 4mm (synthétique)</p><p>A faire : protéger le bas des perches idée scotch de carrosier</p><p>36 perches de 2,27m - 2,5 à 5 cm de diam, 2 trous à 4 et 6 cm du gros bout</p><p>Construction du tonno : heptagone - Diam ext 80 cm</p><p>Fait avec des chutes de découpe de manche de pioche en frênes, les morceau ne sont pas qualibré mais font tous la même longueur, découpe des angles, premier assemblage avec des clous et\n            rajout de plaques de serrage de chaque coté (latte d'un vieux lit en bois)</p><p>Trous pour les perches forêt 26mm , 6 trous par coté sauf le coté porte avec 4 trous</p><p>La porte : monter le cadre (bois ok) , trous pour les perches du toit -> la porte : trouver le bois!</p><p>Cadre de porte fait avec un vieux sommier et autre morceau qui trainait 120/150 -> charnière et porte à faire, porte trouvée et posée (grande fenêtre récup)</p><p>La toile : Trouver la toile, une bonne machine -> coudre!</p><p>Toile ext : Couture du mur toile coton ext ok, toit cousu plusieurs draps récupéré - un carré de 6m env -> découpe du rond central du toono, (découpe d'un bord au\n            centre pour recouvrir ?). découpe du rond externe, min 5.48m + 20cm pour recouvrir le mur. Pour le mur le tissu est en trois partie - Raccords en velcro -> intégration d'une fenètre en\n            plastique souple, possibilité d'ouvrir le mur pour aérer. Pour le moment je laisse le toit le le mur séparer mais je vais ptetre coudre le tout ensemble... Ajout d'une jupe sur le bas du\n            mur -> trouver le tissu pour la jupe.</p><p>Toile étanche : Pour le moment bache classique bleu (récup) -> découpe centre interne externe, (découpe de recouvrement)</p><p>2e couche : Toile en couverture de l'armée suisse (isolation été)</p><p>1e couche : Toile intérieure, coton léger</p><p>Ajout par la suite d'isolation entre la 1er et la 2e couche</p><p>Le chapeau : Toile, toile transparente, corde -> pour protéger le toono, toile plastique, parapluie, hublot, ...?</p><p>Le plancher : Base en palette (récup) et plancher en panneau d'osb</p><p>nb de panneau : ... / Prix : ... / Plus quelques vis</p><p>Cordes : 22m 8.-, 2x 20m 19.-, 16m 16.-, 2x 20m 15.80, 20m 7.90 / Fils à coudre : 4.95 / Fôret de 26mm : 8.90 /</p><p>Papier de verre : 7.- / Ruban de béton : 7.65 / Plastique recyclé pour le mur : 2x 20m/2 33.80 /</p><p>Infos divers, notes :</p><p>Perche coupées pour le treillis et le toit, du noisetier en majorité, coupé en lune descendante et décroissante. Perches recoupées à la bonne taille puis écorcées le plus rapidement\n            possible, elle sont ensuite attachées en botte de 10 et séche tranquilement à l'abris. (Attention faut pas faire ça... de la moisissure est apparue sur des perches situées au centre de la\n            botte! -> ponçage)</p><p>Idée protéger le bois avec un vernis huile lin cire thérébentine</p><p>1er montage efféctué, la yourte est en place !, 1er couche de tissus, 2e couche de couvertures, 3e couche bache plastique bleu cousue, 4e couche coton blanc pour faire joli...! Le treills\n            est posé directement sur le sol (terre tassée et graviés), apres trois jours de pluie on voit l'eau qui serpente sous les graviers a l'intérieur depuis l'amont... -> rigole creusée\n            autour de la yourte en amont, juste lissé le fond de la rigole c'est une terre argileuse, l'eau s'écoule bien le long de la tranchée.</p><p>Pour l'instant la couche anti pluie a l'air de bien tenir, pas d'infiltration dans la toile !</p><p>Besoins actuels, recherche :</p><p>- Toile transparente pour le chapeau et les fenêtres</p><p>- De la toile étanche pour l'extérieur de la yourte, (toile de protection solaire, toile marine) -> contact fabriquant de store, sellerie, bateau...</p><p>J'ai utilisé un article de passerelle eco  et le site simplydifferent.org</p><p>Voir l'article construire une yourte pour trouver tout les\n    documents.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": []
+    },
+    {
+        "id": "la-goutte-d-eau-cette-eygun-pyrénées-atlantiques",
+        "category": "en-vrac",
+        "date": "2014/08/26",
+        "readingTime": 4,
+        "image": "",
+        "tags": [],
+        "title": {
+            "fr": "La goutte d'eau Cette-Eygun - Pyrénées-Atlantiques",
+            "en": "La Goutte d'Eau Eco-Community (Pyrénées-Atlantiques)",
+            "es": "Ecolugar La Goutte d'Eau (Pirineos Atlánticos)"
+        },
+        "desc": {
+            "fr": "Une Jolie Petite Gare... / Besoin d'un coup de main ! Petite gare perdue dans la Vallée d'Aspe, Pyrénées-Atlantiques. Elle était desservie par la ligne Pau-Oloron-Canfranc (voir sujet sur la gare abandonnée de Canfranc)....",
+            "en": "Exploring self-reliance, practical degrowth, infokiosk zines, decentralized networks, and grassroots socio-ecological mutual aid.",
+            "es": "Explorando la autosuficiencia, el decrecimiento práctico, folletos de infokiosco, redes descentralizadas y apoyo mutuo socioecológico de base."
+        },
+        "content": {
+            "fr": "<p>Une Jolie Petite Gare... / Besoin d'un coup de main !</p><p>Petite gare perdue dans la Vallée d'Aspe, Pyrénées-Atlantiques. Elle était desservie par la ligne Pau-Oloron-Canfranc (voir sujet sur la gare abandonnée de Canfranc). La ligne ferme en 1970\n        suite à un accident sur un pont qui ne sera jamais réparé, et les autobus prennent le relais.\n        \n        A la fin des années 80, le projet d'un tunnel routier transpyrénéen rencontre beaucoup d'opposants. Eric Pététin figure emblématique du mouvement crée l'association communautaire \"La Goutte\n        d'Eau\".\n        \n        La gare de Lescun Cette-Eygun est utilisée comme qg, stratégiquement placée à quelques kilomètres du futur chantier du tunnel du Somport... Les années passent, manifs, expulsions,\n        expropriations, arrestations...\n        \n        Le bilan en 2005 est sombre pour les Aspaches: la tunnel roule depuis longtemps, et RFF (propriétaire et gestionnaire du réseau ferroviaire français), expulse les derniers irréductibles d'une\n        façon peu catholique...\n        \n        Petite gare abandonnée, quel sera son sort? et aujourd'hui la goutte est là en travaux mais la.nous avons la jouissance des lieux en échange de travaux\n        et on aurait besoin d'un coup de main.</p><p>La goutte d'eau 64490 cette-eygun TEL 09/51/86/23/60 MAIL : lesamisdelagoutte at hotmail.fr</p><p>https://www.facebook.com/gardaremlagoutte</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> La Goutte d'Eau Eco-Community (Pyrénées-Atlantiques): Exploring self-reliance, practical degrowth, infokiosk zines, decentralized networks, and grassroots socio-ecological mutual aid.</p><p>Une Jolie Petite Gare... / Besoin d'un coup de main !</p><p>Petite gare perdue dans la Vallée d'Aspe, Pyrénées-Atlantiques. Elle était desservie par la ligne Pau-Oloron-Canfranc (voir sujet sur la gare abandonnée de Canfranc). La ligne ferme en 1970\n        suite à un accident sur un pont qui ne sera jamais réparé, et les autobus prennent le relais.\n        \n        A la fin des années 80, le projet d'un tunnel routier transpyrénéen rencontre beaucoup d'opposants. Eric Pététin figure emblématique du mouvement crée l'association communautaire \"La Goutte\n        d'Eau\".\n        \n        La gare de Lescun Cette-Eygun est utilisée comme qg, stratégiquement placée à quelques kilomètres du futur chantier du tunnel du Somport... Les années passent, manifs, expulsions,\n        expropriations, arrestations...\n        \n        Le bilan en 2005 est sombre pour les Aspaches: la tunnel roule depuis longtemps, et RFF (propriétaire et gestionnaire du réseau ferroviaire français), expulse les derniers irréductibles d'une\n        façon peu catholique...\n        \n        Petite gare abandonnée, quel sera son sort? et aujourd'hui la goutte est là en travaux mais la.nous avons la jouissance des lieux en échange de travaux\n        et on aurait besoin d'un coup de main.</p><p>La goutte d'eau 64490 cette-eygun TEL 09/51/86/23/60 MAIL : lesamisdelagoutte at hotmail.fr</p><p>https://www.facebook.com/gardaremlagoutte</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Ecolugar La Goutte d'Eau (Pirineos Atlánticos): Explorando la autosuficiencia, el decrecimiento práctico, folletos de infokiosco, redes descentralizadas y apoyo mutuo socioecológico de base.</p><p>Une Jolie Petite Gare... / Besoin d'un coup de main !</p><p>Petite gare perdue dans la Vallée d'Aspe, Pyrénées-Atlantiques. Elle était desservie par la ligne Pau-Oloron-Canfranc (voir sujet sur la gare abandonnée de Canfranc). La ligne ferme en 1970\n        suite à un accident sur un pont qui ne sera jamais réparé, et les autobus prennent le relais.\n        \n        A la fin des années 80, le projet d'un tunnel routier transpyrénéen rencontre beaucoup d'opposants. Eric Pététin figure emblématique du mouvement crée l'association communautaire \"La Goutte\n        d'Eau\".\n        \n        La gare de Lescun Cette-Eygun est utilisée comme qg, stratégiquement placée à quelques kilomètres du futur chantier du tunnel du Somport... Les années passent, manifs, expulsions,\n        expropriations, arrestations...\n        \n        Le bilan en 2005 est sombre pour les Aspaches: la tunnel roule depuis longtemps, et RFF (propriétaire et gestionnaire du réseau ferroviaire français), expulse les derniers irréductibles d'une\n        façon peu catholique...\n        \n        Petite gare abandonnée, quel sera son sort? et aujourd'hui la goutte est là en travaux mais la.nous avons la jouissance des lieux en échange de travaux\n        et on aurait besoin d'un coup de main.</p><p>La goutte d'eau 64490 cette-eygun TEL 09/51/86/23/60 MAIL : lesamisdelagoutte at hotmail.fr</p><p>https://www.facebook.com/gardaremlagoutte</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": []
+    },
+    {
+        "id": "ermitage-malin-roumanie",
+        "category": "habitat",
+        "date": "2014/08/26",
+        "readingTime": 6,
+        "image": "",
+        "tags": [],
+        "title": {
+            "fr": "Ermitage malin (roumanie)",
+            "en": "The Smart Hermitage Autonomous Refuge (Romania)",
+            "es": "El Refugio Autónomo Ermitage Malin (Rumanía)"
+        },
+        "desc": {
+            "fr": "présentation de l'ermitage de Malin (Roumanie) par philippe coupé\n    « L’ermitage de Malin » est une petite ferme de 8 ha située au creux de collines, en pleine nature, entre forêt et pâturage, dans le centre-nord de la...",
+            "en": "Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.",
+            "es": "Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas."
+        },
+        "content": {
+            "fr": "<p>présentation de l'ermitage de Malin (Roumanie) par philippe coupé\n    « L’ermitage de Malin » est une petite ferme de 8 ha située au creux de collines, en pleine nature, entre forêt et pâturage, dans le centre-nord de la Roumanie, au pied des Carpathes\n    \n    Philippe est un Belge de 52 ans et Adriana, native du coin. Depuis 3 ans, nous restaurons les bâtiments, avons des chambres d’hôtes (capacité : 15 places), avec salles de bains et groupe\n    sanitaire, et une cuisine /salle à manger donnant sur une terrasse capable de recevoir une vingtaine de personnes.\n    L’ensemble est totalement isolé : pas d’accès en voiture, il faut faire 15 à 20 min de marche pour y arriver, (ou en charrette) et pas de réseau d’électricité, seuls 2 groupes électrogènes en\n    attendant l’énergie solaire.\n    \n    Nous avons aussi 7 ânes avec lesquels nous organisons, depuis 2 ans, des randonnées de 5 jours dans les environs avec logement chez l’habitant dans des petits villages sans touriste. Familles\n    belges et françaises viennent découvrir un autre monde aux traditions rurales ancestrales.\n    \n    A la ferme, potager bio (en carré et en buttes) , apiculture, verger, étang, le tout dans un ensemble très riche en écosystèmes (forêt mixte, clairières, lisières, pâturage-prairie, verger à une\n    altitude de 330 m).\n    \n    Notre projet : un écohameau visant à l’autonomie. Pourquoi « écohameau » ? Nous cherchons en effet un ou des partenaires. Une maison reste à restaurer et une immense grange possède un étage\n    inoccupé. Et les tâches sont trop conséquentes pour un couple.\n    \n    Cet été, les activités avec le public commencent : construction d’un tipi, four solaire, fabrication du puits a balancier, machine à laver à pédales ; etc\n    \n    Autre perspective : Philippe a prononcé ses vœux auprès d’un maître bouddhiste zen L’ermitage veut accueillir des groupes à la recherche d’un endroit paisible propice au recueillement et à la\n    méditation. La terrasse permet déjà la pratique, en endroit couvert, de séances collectives de méditation. Et les opportunités de se retirer individuellement pour lire ou méditer sont\n    légion.\n    \n    Philippe est aussi guide nature et souhaiterait développer une structure du style « gîte Panda » (soutenu par le WWF) qui accueille des visiteurs dans des conditions de confort satisfaisantes,\n    dans un cadre naturel privilégié et avec un accompagnement pédagogique de découverte de l’environnement : guide de la faune et flore locales, potager, verger, mare et rucher didactiques,\n    bibliothèque à disposition, jumelles, etc.\n    \n    Nous voudrions aussi organiser prochainement un stage de formation à la permaculture, le premier en Roumanie:\n    \n    Nous vous attendons\n    notre site: www.ermitajmalin.ro</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> The Smart Hermitage Autonomous Refuge (Romania): Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.</p><p>présentation de l'ermitage de Malin (Roumanie) par philippe coupé\n    « L’ermitage de Malin » est une petite ferme de 8 ha située au creux de collines, en pleine nature, entre forêt et pâturage, dans le centre-nord de la Roumanie, au pied des Carpathes\n    \n    Philippe est un Belge de 52 ans et Adriana, native du coin. Depuis 3 ans, nous restaurons les bâtiments, avons des chambres d’hôtes (capacité : 15 places), avec salles de bains et groupe\n    sanitaire, et une cuisine /salle à manger donnant sur une terrasse capable de recevoir une vingtaine de personnes.\n    L’ensemble est totalement isolé : pas d’accès en voiture, il faut faire 15 à 20 min de marche pour y arriver, (ou en charrette) et pas de réseau d’électricité, seuls 2 groupes électrogènes en\n    attendant l’énergie solaire.\n    \n    Nous avons aussi 7 ânes avec lesquels nous organisons, depuis 2 ans, des randonnées de 5 jours dans les environs avec logement chez l’habitant dans des petits villages sans touriste. Familles\n    belges et françaises viennent découvrir un autre monde aux traditions rurales ancestrales.\n    \n    A la ferme, potager bio (en carré et en buttes) , apiculture, verger, étang, le tout dans un ensemble très riche en écosystèmes (forêt mixte, clairières, lisières, pâturage-prairie, verger à une\n    altitude de 330 m).\n    \n    Notre projet : un écohameau visant à l’autonomie. Pourquoi « écohameau » ? Nous cherchons en effet un ou des partenaires. Une maison reste à restaurer et une immense grange possède un étage\n    inoccupé. Et les tâches sont trop conséquentes pour un couple.\n    \n    Cet été, les activités avec le public commencent : construction d’un tipi, four solaire, fabrication du puits a balancier, machine à laver à pédales ; etc\n    \n    Autre perspective : Philippe a prononcé ses vœux auprès d’un maître bouddhiste zen L’ermitage veut accueillir des groupes à la recherche d’un endroit paisible propice au recueillement et à la\n    méditation. La terrasse permet déjà la pratique, en endroit couvert, de séances collectives de méditation. Et les opportunités de se retirer individuellement pour lire ou méditer sont\n    légion.\n    \n    Philippe est aussi guide nature et souhaiterait développer une structure du style « gîte Panda » (soutenu par le WWF) qui accueille des visiteurs dans des conditions de confort satisfaisantes,\n    dans un cadre naturel privilégié et avec un accompagnement pédagogique de découverte de l’environnement : guide de la faune et flore locales, potager, verger, mare et rucher didactiques,\n    bibliothèque à disposition, jumelles, etc.\n    \n    Nous voudrions aussi organiser prochainement un stage de formation à la permaculture, le premier en Roumanie:\n    \n    Nous vous attendons\n    notre site: www.ermitajmalin.ro</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> El Refugio Autónomo Ermitage Malin (Rumanía): Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas.</p><p>présentation de l'ermitage de Malin (Roumanie) par philippe coupé\n    « L’ermitage de Malin » est une petite ferme de 8 ha située au creux de collines, en pleine nature, entre forêt et pâturage, dans le centre-nord de la Roumanie, au pied des Carpathes\n    \n    Philippe est un Belge de 52 ans et Adriana, native du coin. Depuis 3 ans, nous restaurons les bâtiments, avons des chambres d’hôtes (capacité : 15 places), avec salles de bains et groupe\n    sanitaire, et une cuisine /salle à manger donnant sur une terrasse capable de recevoir une vingtaine de personnes.\n    L’ensemble est totalement isolé : pas d’accès en voiture, il faut faire 15 à 20 min de marche pour y arriver, (ou en charrette) et pas de réseau d’électricité, seuls 2 groupes électrogènes en\n    attendant l’énergie solaire.\n    \n    Nous avons aussi 7 ânes avec lesquels nous organisons, depuis 2 ans, des randonnées de 5 jours dans les environs avec logement chez l’habitant dans des petits villages sans touriste. Familles\n    belges et françaises viennent découvrir un autre monde aux traditions rurales ancestrales.\n    \n    A la ferme, potager bio (en carré et en buttes) , apiculture, verger, étang, le tout dans un ensemble très riche en écosystèmes (forêt mixte, clairières, lisières, pâturage-prairie, verger à une\n    altitude de 330 m).\n    \n    Notre projet : un écohameau visant à l’autonomie. Pourquoi « écohameau » ? Nous cherchons en effet un ou des partenaires. Une maison reste à restaurer et une immense grange possède un étage\n    inoccupé. Et les tâches sont trop conséquentes pour un couple.\n    \n    Cet été, les activités avec le public commencent : construction d’un tipi, four solaire, fabrication du puits a balancier, machine à laver à pédales ; etc\n    \n    Autre perspective : Philippe a prononcé ses vœux auprès d’un maître bouddhiste zen L’ermitage veut accueillir des groupes à la recherche d’un endroit paisible propice au recueillement et à la\n    méditation. La terrasse permet déjà la pratique, en endroit couvert, de séances collectives de méditation. Et les opportunités de se retirer individuellement pour lire ou méditer sont\n    légion.\n    \n    Philippe est aussi guide nature et souhaiterait développer une structure du style « gîte Panda » (soutenu par le WWF) qui accueille des visiteurs dans des conditions de confort satisfaisantes,\n    dans un cadre naturel privilégié et avec un accompagnement pédagogique de découverte de l’environnement : guide de la faune et flore locales, potager, verger, mare et rucher didactiques,\n    bibliothèque à disposition, jumelles, etc.\n    \n    Nous voudrions aussi organiser prochainement un stage de formation à la permaculture, le premier en Roumanie:\n    \n    Nous vous attendons\n    notre site: www.ermitajmalin.ro</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": []
+    },
+    {
+        "id": "lieu-de-vie-limousin",
+        "category": "en-vrac",
+        "date": "2014/08/26",
+        "readingTime": 4,
+        "image": "",
+        "tags": [],
+        "title": {
+            "fr": "Lieu de vie limousin",
+            "en": "Limousin Grassroots Autonomous Living Space",
+            "es": "Espacio de Vida y Apoyo Mutuo de Limousin"
+        },
+        "desc": {
+            "fr": "Bonjour, j'habite un lieu de vie superbe en limousin, et désire que cet endroit soir le point de chute de toute personne désirant trouver un refuge..\n    Mon port : 0673806961\n    Mon adresse mail : [email protected]\n   ...",
+            "en": "Exploring self-reliance, practical degrowth, infokiosk zines, decentralized networks, and grassroots socio-ecological mutual aid.",
+            "es": "Explorando la autosuficiencia, el decrecimiento práctico, folletos de infokiosco, redes descentralizadas y apoyo mutuo socioecológico de base."
+        },
+        "content": {
+            "fr": "<p>Bonjour, j'habite un lieu de vie superbe en limousin, et désire que cet endroit soir le point de chute de toute personne désirant trouver un refuge..\n    Mon port : 0673806961\n    Mon adresse mail : [email protected]\n    Possibilité d'accueil en caravane et tente bien sur\n    Tout projet en agriculture biologique est le bienvenue</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Limousin Grassroots Autonomous Living Space: Exploring self-reliance, practical degrowth, infokiosk zines, decentralized networks, and grassroots socio-ecological mutual aid.</p><p>Bonjour, j'habite un lieu de vie superbe en limousin, et désire que cet endroit soir le point de chute de toute personne désirant trouver un refuge..\n    Mon port : 0673806961\n    Mon adresse mail : [email protected]\n    Possibilité d'accueil en caravane et tente bien sur\n    Tout projet en agriculture biologique est le bienvenue</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Espacio de Vida y Apoyo Mutuo de Limousin: Explorando la autosuficiencia, el decrecimiento práctico, folletos de infokiosco, redes descentralizadas y apoyo mutuo socioecológico de base.</p><p>Bonjour, j'habite un lieu de vie superbe en limousin, et désire que cet endroit soir le point de chute de toute personne désirant trouver un refuge..\n    Mon port : 0673806961\n    Mon adresse mail : [email protected]\n    Possibilité d'accueil en caravane et tente bien sur\n    Tout projet en agriculture biologique est le bienvenue</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": []
+    },
+    {
+        "id": "ecolieu-des-crozes-hauts-france",
+        "category": "habitat",
+        "date": "2014/08/26",
+        "readingTime": 4,
+        "image": "",
+        "tags": [],
+        "title": {
+            "fr": "Ecolieu des Crozes-hauts (France)",
+            "en": "Les Crozes-Hauts Self-Managed Eco-Village (France)",
+            "es": "Eco-aldea Autogestionada Les Crozes-Hauts (Francia)"
+        },
+        "desc": {
+            "fr": "Le but de l'association \"écolieu des crozes-hauts\" étant d'être une vitrine d'habitats auto-construits, d'autonomie alimentaire et énergétique, ainsi qu'un lieu d'échanges\n    de savoirs et de savoir faire, nous lançons ...",
+            "en": "Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.",
+            "es": "Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas."
+        },
+        "content": {
+            "fr": "<p>Le but de l'association \"écolieu des crozes-hauts\" étant d'être une vitrine d'habitats auto-construits, d'autonomie alimentaire et énergétique, ainsi qu'un lieu d'échanges\n    de savoirs et de savoir faire, nous lançons un appel à toutes celles et ceux qui souhaitent vivre en pleine nature dans un habitat auto-construit respectueux de son environnement.\n    Nous sommes dans l'Aveyron, sur un terrain arboré avec une source où nous avons effectué certains aménagements (TS, jardin, poulailler, yourte commune...). Le but est de créer un village d'une\n    dizaine ou quinzaine d'âmes où seraient proposés des animations, ateliers, démonstrations, principalement dans le domaine de l'autonomie (construction, alimentation, énergies), du bien être, de\n    l'Art, de l'éducation etc...\n    \n    Nous recherchons des personnes désireuses de vivre dans un coin de nature dans leur propre habitat (maison en paille, en bois, yourte, zome...), tout en étant acteur de la dynamique de\n    l'association.(Aide ponctuelle également bienvenue!!)\n    Pour plus d'info contactez Delphine ou Yannick au 06.28.56.19.67 ou 06.13.44.78.38, ou par mail à: [email protected] , vous pouvez également visiter notre page Facebook :\n    www.facebook.com/ecolieu.des.crozes.hauts.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Les Crozes-Hauts Self-Managed Eco-Village (France): Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.</p><p>Le but de l'association \"écolieu des crozes-hauts\" étant d'être une vitrine d'habitats auto-construits, d'autonomie alimentaire et énergétique, ainsi qu'un lieu d'échanges\n    de savoirs et de savoir faire, nous lançons un appel à toutes celles et ceux qui souhaitent vivre en pleine nature dans un habitat auto-construit respectueux de son environnement.\n    Nous sommes dans l'Aveyron, sur un terrain arboré avec une source où nous avons effectué certains aménagements (TS, jardin, poulailler, yourte commune...). Le but est de créer un village d'une\n    dizaine ou quinzaine d'âmes où seraient proposés des animations, ateliers, démonstrations, principalement dans le domaine de l'autonomie (construction, alimentation, énergies), du bien être, de\n    l'Art, de l'éducation etc...\n    \n    Nous recherchons des personnes désireuses de vivre dans un coin de nature dans leur propre habitat (maison en paille, en bois, yourte, zome...), tout en étant acteur de la dynamique de\n    l'association.(Aide ponctuelle également bienvenue!!)\n    Pour plus d'info contactez Delphine ou Yannick au 06.28.56.19.67 ou 06.13.44.78.38, ou par mail à: [email protected] , vous pouvez également visiter notre page Facebook :\n    www.facebook.com/ecolieu.des.crozes.hauts.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Eco-aldea Autogestionada Les Crozes-Hauts (Francia): Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas.</p><p>Le but de l'association \"écolieu des crozes-hauts\" étant d'être une vitrine d'habitats auto-construits, d'autonomie alimentaire et énergétique, ainsi qu'un lieu d'échanges\n    de savoirs et de savoir faire, nous lançons un appel à toutes celles et ceux qui souhaitent vivre en pleine nature dans un habitat auto-construit respectueux de son environnement.\n    Nous sommes dans l'Aveyron, sur un terrain arboré avec une source où nous avons effectué certains aménagements (TS, jardin, poulailler, yourte commune...). Le but est de créer un village d'une\n    dizaine ou quinzaine d'âmes où seraient proposés des animations, ateliers, démonstrations, principalement dans le domaine de l'autonomie (construction, alimentation, énergies), du bien être, de\n    l'Art, de l'éducation etc...\n    \n    Nous recherchons des personnes désireuses de vivre dans un coin de nature dans leur propre habitat (maison en paille, en bois, yourte, zome...), tout en étant acteur de la dynamique de\n    l'association.(Aide ponctuelle également bienvenue!!)\n    Pour plus d'info contactez Delphine ou Yannick au 06.28.56.19.67 ou 06.13.44.78.38, ou par mail à: [email protected] , vous pouvez également visiter notre page Facebook :\n    www.facebook.com/ecolieu.des.crozes.hauts.</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": []
+    },
+    {
+        "id": "faites-tout-vous-même-savoir-revivre-revivre-à-la-campagne",
+        "category": "habitat",
+        "date": "2014/08/25",
+        "readingTime": 4,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=75x10000:format=gif/path/s6b5d09a755d07b57/image/i7e1655fb68967363/version/1408966118/image.gif",
+        "tags": [],
+        "title": {
+            "fr": "Faites tout vous même / Savoir revivre / Revivre à la campagne",
+            "en": "Do It Yourself Master Guide / Reviving in the Countryside",
+            "es": "Hazlo Todo Tú Mismo / Guía para Renacer en el Campo"
+        },
+        "desc": {
+            "fr": "Liens internes :\n    - Pratique - Médiathèque - Pratique - Comment construire un dôme géodésique....",
+            "en": "Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.",
+            "es": "Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas."
+        },
+        "content": {
+            "fr": "<p>Liens internes :\n    - Pratique - Médiathèque</p><p>- Pratique - Comment construire un dôme géodésique.</p><p>- Pratique - Habitat d'urgences, infos, plans</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Do It Yourself Master Guide / Reviving in the Countryside: Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.</p><p>Liens internes :\n    - Pratique - Médiathèque</p><p>- Pratique - Comment construire un dôme géodésique.</p><p>- Pratique - Habitat d'urgences, infos, plans</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Hazlo Todo Tú Mismo / Guía para Renacer en el Campo: Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas.</p><p>Liens internes :\n    - Pratique - Médiathèque</p><p>- Pratique - Comment construire un dôme géodésique.</p><p>- Pratique - Habitat d'urgences, infos, plans</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": [
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/view/?ww39se1e3h4hvrx"
+            },
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/view/?116l11yv7cocc84"
+            },
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/view/?zh3fynirwvojgh3"
+            }
+        ]
+    },
+    {
+        "id": "recettes-végétalienne-guide-végétarien-et-végétalien-alimentation-vivante",
+        "category": "production",
+        "date": "2014/08/25",
+        "readingTime": 4,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/none/path/s6b5d09a755d07b57/image/i55f88915adb01bbf/version/1408964587/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Recettes végétalienne, Guide végétarien et végétalien, Alimentation vivante",
+            "en": "Vegan Mastery, Raw Nutrition & Living Foods Guide",
+            "es": "Guía de Recetas Veganas, Alimentación Viva y Fermentación"
+        },
+        "desc": {
+            "fr": "- 278 recette végétalienne  48p/592k   - / Télécharger / (Via: \n    Eco-bio.info) \n    - Guide végétarien et végétalien : Pourquoi, comment, nutrition... - (#)\n    - L'alimentation vivante : Manuel : Crudivorisme : Infor...",
+            "en": "Mastering decentralized culinary self-reliance: artisan all-grain beer & alcohol brewing, open-hearth wild sourdough bread, and spirulina raceway basins.",
+            "es": "Autonomía culinaria descentralizada: elaboración de cerveza artesanal todo-grano, pan rústico con masa madre salvaje y cultivo casero de espirulina alcalina."
+        },
+        "content": {
+            "fr": "<p>- 278 recette végétalienne  48p/592k   - / Télécharger / (Via: \n    Eco-bio.info) \n    - Guide végétarien et végétalien : Pourquoi, comment, nutrition... - (#)\n    - L'alimentation vivante : Manuel : Crudivorisme : Information, recettes. - (#)</p><p>Liens internes:\n    -  Pratique - Comment cultiver, produire la spiruline\n    -  Pratique - Comment fabriquer son pain maison, recettes\n    -  Pratique - Comment faire de la bière, malter l'orge...\n    \n    Liens externes :\n    - Le Végétarisme / Le végétalisme\n    / Le crudivorisme / Le veganisme / (Articles\n    Wikipédia)</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Vegan Mastery, Raw Nutrition & Living Foods Guide: Mastering decentralized culinary self-reliance: artisan all-grain beer & alcohol brewing, open-hearth wild sourdough bread, and spirulina raceway basins.</p><p>- 278 recette végétalienne  48p/592k   - / Télécharger / (Via: \n    Eco-bio.info) \n    - Guide végétarien et végétalien : Pourquoi, comment, nutrition... - (#)\n    - L'alimentation vivante : Manuel : Crudivorisme : Information, recettes. - (#)</p><p>Liens internes:\n    -  Pratique - Comment cultiver, produire la spiruline\n    -  Pratique - Comment fabriquer son pain maison, recettes\n    -  Pratique - Comment faire de la bière, malter l'orge...\n    \n    Liens externes :\n    - Le Végétarisme / Le végétalisme\n    / Le crudivorisme / Le veganisme / (Articles\n    Wikipédia)</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Guía de Recetas Veganas, Alimentación Viva y Fermentación: Autonomía culinaria descentralizada: elaboración de cerveza artesanal todo-grano, pan rústico con masa madre salvaje y cultivo casero de espirulina alcalina.</p><p>- 278 recette végétalienne  48p/592k   - / Télécharger / (Via: \n    Eco-bio.info) \n    - Guide végétarien et végétalien : Pourquoi, comment, nutrition... - (#)\n    - L'alimentation vivante : Manuel : Crudivorisme : Information, recettes. - (#)</p><p>Liens internes:\n    -  Pratique - Comment cultiver, produire la spiruline\n    -  Pratique - Comment fabriquer son pain maison, recettes\n    -  Pratique - Comment faire de la bière, malter l'orge...\n    \n    Liens externes :\n    - Le Végétarisme / Le végétalisme\n    / Le crudivorisme / Le veganisme / (Articles\n    Wikipédia)</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": [
+            {
+                "name": "#",
+                "url": "http://avis.free.fr/brochure_2009.pdf"
+            },
+            {
+                "name": "#",
+                "url": "http://www.eco-bio.info/alimentationvivante.pdf"
+            }
+        ]
+    },
+    {
+        "id": "habitats-d-urgence-autoconstruction-bioclimatique",
+        "category": "habitat",
+        "date": "2014/08/14",
+        "readingTime": 4,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=150x1024:format=jpg/path/s6b5d09a755d07b57/image/ic24a8b23cb4fbc0d/version/1408024264/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Habitats d'urgence, autoconstruction bioclimatique",
+            "en": "Emergency Shelters & Bioclimatic Low-Tech DIY Housing",
+            "es": "Albergues de Emergencia y Autoconstrucción Bioclimática"
+        },
+        "desc": {
+            "fr": "Habitat d'urgence.6pdfs.05.2012.zip /  35,9  Mo (#) Liens uniques: (#D) :...",
+            "en": "Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.",
+            "es": "Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas."
+        },
+        "content": {
+            "fr": "<p>Habitat d'urgence.6pdfs.05.2012.zip /  35,9  Mo (#)</p><p>Liens uniques: (#D) :</p><p>- habitat.urgence.14m2.100euros.-.5p.pdf : Habitat d'urgence autoconstruit à moins de 100 euro\n    - maison.autonome.refuge-orphelinat.100.m2.-.30p.pdf :\n    - maison.bioclimatique.autoconstruite.bio.materiaux.20m2.1300euros.-.34p.pdf : Maison bio-climatique autoconstruite en bio-matériaux du lieu et de récupération... 2om2 /\n    1000euro</p><p>- casa.bioclimatica.autocontruite.20m2.-.32p.pdf : Trad italien</p><p>-  habitat.d.urgence.autonome.33m2.380euros.-.21p.pdf : Comment autoconstruire un maison écologie démontable auto-organisé de 33m2 / 400euro... fiche technique ,\n    explication, plan, tuto, anarchie pratique, écologie profonde...\n    - habitat.d.urgence.autonome.33m2.v.long.-.ed.aa.-.108p.pdf</p><p>Liens externes :\n    - EcologieSociale : EcologieSociale 2 : Divers infos et brochures . (Source habitat urgence)</p><p>- http://lagouttedeaudepluie.sib.org : Divers infos pratiques (Pdfs) , eau,\n    brf, spiruline, construction...</p><p>- L'habitat d'urgence et Les Sans abris, SDF : Divers infos et liens sur\n    Habiter-autrement.org\n    - Openarchitecturenetwork.org : Communauté focalisée sur le desing et\n    la construction, comment amélioré les standard de vie de 5 milliards de personnes? Avec 100 millions de sollutions... Architecture en Open Source.</p><p>- Thebhome.com : Construction hexagonale à base de palettes</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Emergency Shelters & Bioclimatic Low-Tech DIY Housing: Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.</p><p>Habitat d'urgence.6pdfs.05.2012.zip /  35,9  Mo (#)</p><p>Liens uniques: (#D) :</p><p>- habitat.urgence.14m2.100euros.-.5p.pdf : Habitat d'urgence autoconstruit à moins de 100 euro\n    - maison.autonome.refuge-orphelinat.100.m2.-.30p.pdf :\n    - maison.bioclimatique.autoconstruite.bio.materiaux.20m2.1300euros.-.34p.pdf : Maison bio-climatique autoconstruite en bio-matériaux du lieu et de récupération... 2om2 /\n    1000euro</p><p>- casa.bioclimatica.autocontruite.20m2.-.32p.pdf : Trad italien</p><p>-  habitat.d.urgence.autonome.33m2.380euros.-.21p.pdf : Comment autoconstruire un maison écologie démontable auto-organisé de 33m2 / 400euro... fiche technique ,\n    explication, plan, tuto, anarchie pratique, écologie profonde...\n    - habitat.d.urgence.autonome.33m2.v.long.-.ed.aa.-.108p.pdf</p><p>Liens externes :\n    - EcologieSociale : EcologieSociale 2 : Divers infos et brochures . (Source habitat urgence)</p><p>- http://lagouttedeaudepluie.sib.org : Divers infos pratiques (Pdfs) , eau,\n    brf, spiruline, construction...</p><p>- L'habitat d'urgence et Les Sans abris, SDF : Divers infos et liens sur\n    Habiter-autrement.org\n    - Openarchitecturenetwork.org : Communauté focalisée sur le desing et\n    la construction, comment amélioré les standard de vie de 5 milliards de personnes? Avec 100 millions de sollutions... Architecture en Open Source.</p><p>- Thebhome.com : Construction hexagonale à base de palettes</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Albergues de Emergencia y Autoconstrucción Bioclimática: Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas.</p><p>Habitat d'urgence.6pdfs.05.2012.zip /  35,9  Mo (#)</p><p>Liens uniques: (#D) :</p><p>- habitat.urgence.14m2.100euros.-.5p.pdf : Habitat d'urgence autoconstruit à moins de 100 euro\n    - maison.autonome.refuge-orphelinat.100.m2.-.30p.pdf :\n    - maison.bioclimatique.autoconstruite.bio.materiaux.20m2.1300euros.-.34p.pdf : Maison bio-climatique autoconstruite en bio-matériaux du lieu et de récupération... 2om2 /\n    1000euro</p><p>- casa.bioclimatica.autocontruite.20m2.-.32p.pdf : Trad italien</p><p>-  habitat.d.urgence.autonome.33m2.380euros.-.21p.pdf : Comment autoconstruire un maison écologie démontable auto-organisé de 33m2 / 400euro... fiche technique ,\n    explication, plan, tuto, anarchie pratique, écologie profonde...\n    - habitat.d.urgence.autonome.33m2.v.long.-.ed.aa.-.108p.pdf</p><p>Liens externes :\n    - EcologieSociale : EcologieSociale 2 : Divers infos et brochures . (Source habitat urgence)</p><p>- http://lagouttedeaudepluie.sib.org : Divers infos pratiques (Pdfs) , eau,\n    brf, spiruline, construction...</p><p>- L'habitat d'urgence et Les Sans abris, SDF : Divers infos et liens sur\n    Habiter-autrement.org\n    - Openarchitecturenetwork.org : Communauté focalisée sur le desing et\n    la construction, comment amélioré les standard de vie de 5 milliards de personnes? Avec 100 millions de sollutions... Architecture en Open Source.</p><p>- Thebhome.com : Construction hexagonale à base de palettes</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": [
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/?bm8wwmn38zmln1r"
+            },
+            {
+                "name": "#D",
+                "url": "http://www.mediafire.com/?8bb83xrtxmttr"
+            }
+        ]
+    },
+    {
+        "id": "comment-fabriquer-un-tipi-tepee-plan-tuto-images",
+        "category": "habitat",
+        "date": "2014/08/14",
+        "readingTime": 4,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/none/path/s6b5d09a755d07b57/image/icb717fee79063476/version/1408019849/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Comment fabriquer un tipi (tepee)? Plan, tuto, images",
+            "en": "How to Handcraft an Authentic Cone Tipi (Plans & Tutorial)",
+            "es": "Cómo fabricar un Tipi Cónico Auténtico (Planos y Tutorial)"
+        },
+        "desc": {
+            "fr": "Archive complète -> : Tipi.tepee.-.10.pdfs.02.2012.zip : Liens uniques -> (#D)...",
+            "en": "Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.",
+            "es": "Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas."
+        },
+        "content": {
+            "fr": "<p>Archive complète -> : Tipi.tepee.-.10.pdfs.02.2012.zip :</p><p>Liens uniques -> (#D)</p><p>Contenu :\n    * Tipi_Tente.indienne.ou.tepees.-.eco.cal.5p.pdf  : 1,23Mo/ 5pages / (via Eco-N-C) :</p><p>* GB-la.tente.et.le.chapiteau.ext31p La tente et le chapiteau à  travers le temps et les cultures (via GoogleBooks)</p><p>* GB-the.indian.tipi.ext74p Histoire du tipi indien, utilisation et construction, images, plans (via GB)</p><p>* GB-tipi.history.and.design.ext52p Tipi, tepee, teepee : histoire et design - Des plans et conseil de construction, photos, images : (via\n    GB)</p><p>* GB-tipi.home.of.the.nomadic.buffalo.hunter.ext26p Tipi, la maison du chasseur de bison nomade, histoire, illustration en couleur des\n    différents ornement, infos, plan : (via GB)</p><p>* Tipi_Construire.un.tipi.-.C.a.s.o.t.n.a.15p.pdf :</p><p>Dossier : Construire un dôme géodésique\n    Dossier : Contruire une yourte</p><p>Document : Construction traditionnelles et\n    marginales\n    Document : Habitat d'urgence autonome démontable,\n    autoconstruit 33m2</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> How to Handcraft an Authentic Cone Tipi (Plans & Tutorial): Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.</p><p>Archive complète -> : Tipi.tepee.-.10.pdfs.02.2012.zip :</p><p>Liens uniques -> (#D)</p><p>Contenu :\n    * Tipi_Tente.indienne.ou.tepees.-.eco.cal.5p.pdf  : 1,23Mo/ 5pages / (via Eco-N-C) :</p><p>* GB-la.tente.et.le.chapiteau.ext31p La tente et le chapiteau à  travers le temps et les cultures (via GoogleBooks)</p><p>* GB-the.indian.tipi.ext74p Histoire du tipi indien, utilisation et construction, images, plans (via GB)</p><p>* GB-tipi.history.and.design.ext52p Tipi, tepee, teepee : histoire et design - Des plans et conseil de construction, photos, images : (via\n    GB)</p><p>* GB-tipi.home.of.the.nomadic.buffalo.hunter.ext26p Tipi, la maison du chasseur de bison nomade, histoire, illustration en couleur des\n    différents ornement, infos, plan : (via GB)</p><p>* Tipi_Construire.un.tipi.-.C.a.s.o.t.n.a.15p.pdf :</p><p>Dossier : Construire un dôme géodésique\n    Dossier : Contruire une yourte</p><p>Document : Construction traditionnelles et\n    marginales\n    Document : Habitat d'urgence autonome démontable,\n    autoconstruit 33m2</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Cómo fabricar un Tipi Cónico Auténtico (Planos y Tutorial): Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas.</p><p>Archive complète -> : Tipi.tepee.-.10.pdfs.02.2012.zip :</p><p>Liens uniques -> (#D)</p><p>Contenu :\n    * Tipi_Tente.indienne.ou.tepees.-.eco.cal.5p.pdf  : 1,23Mo/ 5pages / (via Eco-N-C) :</p><p>* GB-la.tente.et.le.chapiteau.ext31p La tente et le chapiteau à  travers le temps et les cultures (via GoogleBooks)</p><p>* GB-the.indian.tipi.ext74p Histoire du tipi indien, utilisation et construction, images, plans (via GB)</p><p>* GB-tipi.history.and.design.ext52p Tipi, tepee, teepee : histoire et design - Des plans et conseil de construction, photos, images : (via\n    GB)</p><p>* GB-tipi.home.of.the.nomadic.buffalo.hunter.ext26p Tipi, la maison du chasseur de bison nomade, histoire, illustration en couleur des\n    différents ornement, infos, plan : (via GB)</p><p>* Tipi_Construire.un.tipi.-.C.a.s.o.t.n.a.15p.pdf :</p><p>Dossier : Construire un dôme géodésique\n    Dossier : Contruire une yourte</p><p>Document : Construction traditionnelles et\n    marginales\n    Document : Habitat d'urgence autonome démontable,\n    autoconstruit 33m2</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": [
+            {
+                "name": "Tipi.tepee.-.10.pdfs.02.2012.zip",
+                "url": "http://www.mediafire.com/?j04iqu9qplo3cvd"
+            },
+            {
+                "name": "#D",
+                "url": "http://www.mediafire.com/?4xm93992kjcwi"
+            }
+        ]
+    },
+    {
+        "id": "apiculture-pour-tous-ruche-du-peuple-warre-topbar",
+        "category": "permaculture",
+        "date": "2014/08/14",
+        "readingTime": 4,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=90x1024:format=jpg/path/s6b5d09a755d07b57/image/ia4c07cd1fa6b828e/version/1408014242/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Apiculture pour tous, ruche du peuple, Warre, topbar",
+            "en": "Beekeeping for All: The People's Warré Hive & Top-Bar",
+            "es": "Apicultura para todos: Colmenas Horizontales Warré y Top-Bar"
+        },
+        "desc": {
+            "fr": "Apiculture.15.pdfs.05.2012.zip / 15pdf -  13,6 Mo -> : (#) : Liens uniques : -> (#D)...",
+            "en": "Comprehensive open agroecology manuals: organic natural comb beekeeping without chemical foundation sheets and practical home mushroom cultivation.",
+            "es": "Manuales abiertos de permacultura: apicultura natural en colmenas horizontales sin químicos y cultivo práctico de setas gourmet y medicinales en el hogar."
+        },
+        "content": {
+            "fr": "<p>Apiculture.15.pdfs.05.2012.zip / 15pdf -  13,6 Mo -> : (#) :</p><p>Liens uniques : -> (#D)</p><p>Contenu de l'archive :</p><p>top.bar.hive.plans.-.9p.pdf\n        top.bar.8b.tanzanian.halfInch.-.4p.pdf</p><p>produits.de.l.apiculture.proprietes.transfo.et.commerce.-.agrodok42.-.102p.pdf\n        construction.de.ruches.warre.plans.-.10p.pdf\n        construction.de.ruches.layens.plans.-.12p.pdf\n        la.recolte.du.pollen.-.apiservices.com.-.5p.pdf\n        le.cycle.de.l.essaimage.de.l.abeille.noir.-.8p.pdf\n        l.apiculture.dans.les.zones.tropicales.-.agrodok32.-.194p.pdf\n        emile.Warre.people.hive.plans.engl.-.11p.pdf</p><p>construction.de.la.ruche.populaire.a.rayons.fixes.8p.pdf\n        top.bar.hive.plans.mix.-.6p.pdf</p><p>l.apiculture.pour.tous.-.a.warre.-.12ed.-.v.4.0.-.103p.pdf\n        a.bee.keepers.manual.-.167p.pdf\n        l.apiculture.ecologique.infos.-.warre.-.14p.pdf</p><p>Pratique - Inkokiosque - Fiches techniques, plan, tuto, infos, brochures</p><p>Pratique - Comment cultiver, produire la spiruline</p><p>- Pearl Apiculture : Participe au pearltree Apiculture</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Beekeeping for All: The People's Warré Hive & Top-Bar: Comprehensive open agroecology manuals: organic natural comb beekeeping without chemical foundation sheets and practical home mushroom cultivation.</p><p>Apiculture.15.pdfs.05.2012.zip / 15pdf -  13,6 Mo -> : (#) :</p><p>Liens uniques : -> (#D)</p><p>Contenu de l'archive :</p><p>top.bar.hive.plans.-.9p.pdf\n        top.bar.8b.tanzanian.halfInch.-.4p.pdf</p><p>produits.de.l.apiculture.proprietes.transfo.et.commerce.-.agrodok42.-.102p.pdf\n        construction.de.ruches.warre.plans.-.10p.pdf\n        construction.de.ruches.layens.plans.-.12p.pdf\n        la.recolte.du.pollen.-.apiservices.com.-.5p.pdf\n        le.cycle.de.l.essaimage.de.l.abeille.noir.-.8p.pdf\n        l.apiculture.dans.les.zones.tropicales.-.agrodok32.-.194p.pdf\n        emile.Warre.people.hive.plans.engl.-.11p.pdf</p><p>construction.de.la.ruche.populaire.a.rayons.fixes.8p.pdf\n        top.bar.hive.plans.mix.-.6p.pdf</p><p>l.apiculture.pour.tous.-.a.warre.-.12ed.-.v.4.0.-.103p.pdf\n        a.bee.keepers.manual.-.167p.pdf\n        l.apiculture.ecologique.infos.-.warre.-.14p.pdf</p><p>Pratique - Inkokiosque - Fiches techniques, plan, tuto, infos, brochures</p><p>Pratique - Comment cultiver, produire la spiruline</p><p>- Pearl Apiculture : Participe au pearltree Apiculture</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Apicultura para todos: Colmenas Horizontales Warré y Top-Bar: Manuales abiertos de permacultura: apicultura natural en colmenas horizontales sin químicos y cultivo práctico de setas gourmet y medicinales en el hogar.</p><p>Apiculture.15.pdfs.05.2012.zip / 15pdf -  13,6 Mo -> : (#) :</p><p>Liens uniques : -> (#D)</p><p>Contenu de l'archive :</p><p>top.bar.hive.plans.-.9p.pdf\n        top.bar.8b.tanzanian.halfInch.-.4p.pdf</p><p>produits.de.l.apiculture.proprietes.transfo.et.commerce.-.agrodok42.-.102p.pdf\n        construction.de.ruches.warre.plans.-.10p.pdf\n        construction.de.ruches.layens.plans.-.12p.pdf\n        la.recolte.du.pollen.-.apiservices.com.-.5p.pdf\n        le.cycle.de.l.essaimage.de.l.abeille.noir.-.8p.pdf\n        l.apiculture.dans.les.zones.tropicales.-.agrodok32.-.194p.pdf\n        emile.Warre.people.hive.plans.engl.-.11p.pdf</p><p>construction.de.la.ruche.populaire.a.rayons.fixes.8p.pdf\n        top.bar.hive.plans.mix.-.6p.pdf</p><p>l.apiculture.pour.tous.-.a.warre.-.12ed.-.v.4.0.-.103p.pdf\n        a.bee.keepers.manual.-.167p.pdf\n        l.apiculture.ecologique.infos.-.warre.-.14p.pdf</p><p>Pratique - Inkokiosque - Fiches techniques, plan, tuto, infos, brochures</p><p>Pratique - Comment cultiver, produire la spiruline</p><p>- Pearl Apiculture : Participe au pearltree Apiculture</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": [
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/?de0rfon6wla7hpv"
+            },
+            {
+                "name": "#D",
+                "url": "http://www.mediafire.com/?6sxxnd6c68ava"
+            }
+        ]
+    },
+    {
+        "id": "comment-cultiver-produire-et-transformer-la-spiruline",
+        "category": "production",
+        "date": "2014/08/14",
+        "readingTime": 4,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/none/path/s6b5d09a755d07b57/image/i6b56a0305568501e/version/1408015042/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Comment cultiver, produire et transformer la spiruline",
+            "en": "How to Cultivate, Produce and Process Organic Spirulina",
+            "es": "Cómo cultivar, producir y procesar Espirulina Orgánica"
+        },
+        "desc": {
+            "fr": "Liens internes :\n    -  Pratique - Fiches techniques, plan, tuto, infos, brochures, stickers\n    - Infos pratique, autoconstruction, recyclage, détournement, system d, autoproduction\n    \n    Liens externes :\n    - Spiru...",
+            "en": "Mastering decentralized culinary self-reliance: artisan all-grain beer & alcohol brewing, open-hearth wild sourdough bread, and spirulina raceway basins.",
+            "es": "Autonomía culinaria descentralizada: elaboración de cerveza artesanal todo-grano, pan rústico con masa madre salvaje y cultivo casero de espirulina alcalina."
+        },
+        "content": {
+            "fr": "<p>Liens internes :\n    -  Pratique - Fiches techniques, plan, tuto, infos, brochures, stickers\n    - Infos pratique, autoconstruction, recyclage, détournement, system d, autoproduction\n    \n    Liens externes :\n    - Spiruline :dossier Compagnie tournesol,\n    - infos, docs, actions : Antenna.ch : Documents (divers\n    pdfs) / Guides (manuel de culture)</p><p>- projet daara : Habiter-autrement.org/daara7.htm#Spiruline</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> How to Cultivate, Produce and Process Organic Spirulina: Mastering decentralized culinary self-reliance: artisan all-grain beer & alcohol brewing, open-hearth wild sourdough bread, and spirulina raceway basins.</p><p>Liens internes :\n    -  Pratique - Fiches techniques, plan, tuto, infos, brochures, stickers\n    - Infos pratique, autoconstruction, recyclage, détournement, system d, autoproduction\n    \n    Liens externes :\n    - Spiruline :dossier Compagnie tournesol,\n    - infos, docs, actions : Antenna.ch : Documents (divers\n    pdfs) / Guides (manuel de culture)</p><p>- projet daara : Habiter-autrement.org/daara7.htm#Spiruline</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Cómo cultivar, producir y procesar Espirulina Orgánica: Autonomía culinaria descentralizada: elaboración de cerveza artesanal todo-grano, pan rústico con masa madre salvaje y cultivo casero de espirulina alcalina.</p><p>Liens internes :\n    -  Pratique - Fiches techniques, plan, tuto, infos, brochures, stickers\n    - Infos pratique, autoconstruction, recyclage, détournement, system d, autoproduction\n    \n    Liens externes :\n    - Spiruline :dossier Compagnie tournesol,\n    - infos, docs, actions : Antenna.ch : Documents (divers\n    pdfs) / Guides (manuel de culture)</p><p>- projet daara : Habiter-autrement.org/daara7.htm#Spiruline</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": [
+            {
+                "name": "Spiruline.17.pdfs.v.02.2012.zip",
+                "url": "http://www.mediafire.com/?9jke166lp42p3gl"
+            },
+            {
+                "name": "#D",
+                "url": "http://www.mediafire.com/?j64bp1a71nyez"
+            }
+        ]
+    },
+    {
+        "id": "comment-construire-un-dôme-géodésique",
+        "category": "habitat",
+        "date": "2014/08/14",
+        "readingTime": 4,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=120x1024:format=jpg/path/s6b5d09a755d07b57/image/i78c54303e24f3c1e/version/1408015710/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Comment construire un dôme géodésique",
+            "en": "How to Calculate and Build a Sturdy Geodesic Dome",
+            "es": "Cómo calcular y construir un Domo Geodésico Resistente"
+        },
+        "desc": {
+            "fr": "Contenu :\n    - Dome Book 2, (133p/91,7Mo) : Livre trés complet sur les domes, zomes et autre construction géométrique, calculs, plan, tuto, photos, dessins.(Eng)(Via : Letsremake) -> Dome Book 1 -> Premier version (firs...",
+            "en": "Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.",
+            "es": "Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas."
+        },
+        "content": {
+            "fr": "<p>Contenu :\n    - Dome Book 2, (133p/91,7Mo) : Livre trés complet sur les domes, zomes et autre construction géométrique, calculs, plan, tuto, photos, dessins.(Eng)(Via : Letsremake) -> Dome Book 1 -> Premier version (first version)</p><p>- Habitats - Construction traditionnelles et marginales (Article) : Contient Dome book 3 et plein d'autres infos sur les constructions trad et marginales (FR)</p><p>- Les domes geodesiques : Info pratique et théorique sur la construction d'un dome (Via: Archilibre.org)(FR)\n    - Fiche technique pour la construction d'un dome géodésique / (2p/50k) / : fiche technique, plan, (fait à Grange-Neuve\n    en 2002)</p><p>- Dome géodésique : Sur le modéle du No Border (6.30m) (Brochure)\n    -  Dome_prog.calcul.zome.-.Ardheia.zip :</p><p>- Construire un dome Géodésique PE  5p :</p><p>- Principes.des.structures.architecturale.légères.-.79p.pdf :</p><p>Théorie, dome, zome, tansegrity... -> Via : http://co-creation.net</p><p>- Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf  :</p><p>Une perle tout fait à la main , Zome, dome tipi, bus... -> Via  : http://alphazomes.org</p><p>Comment construire une yourte.</p><p>Comment fabriquer un tipi (tepee)? Plan, tuto,\n    images</p><p>Habitat d'urgence autonome démontable, autoconstruit 33m2</p><p>- Simplydifferently.org  : Temporary\n    buildings, tipi, yurt (ger) and domes. (Eng)</p><p>Site trés complet sur les constructions temporaires tipi, yourte, dômes et autres variations, info théoriques et pratiques, calculateur en ligne avec aperçu du résultat.</p><p>- Domerama.com : Tout plein d'info et de liens sur les domes.\n    - Desertdomes.com : Plein d'infos pour construire un dome (calculateur,\n    plan,...)(Eng) /</p><p>- Dome, notions\n    géométriques... : Via ARchilibre</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> How to Calculate and Build a Sturdy Geodesic Dome: Complete engineering guidelines, structural calculation tables, blueprints, and practical instructions for natural DIY counter-culture habitats.</p><p>Contenu :\n    - Dome Book 2, (133p/91,7Mo) : Livre trés complet sur les domes, zomes et autre construction géométrique, calculs, plan, tuto, photos, dessins.(Eng)(Via : Letsremake) -> Dome Book 1 -> Premier version (first version)</p><p>- Habitats - Construction traditionnelles et marginales (Article) : Contient Dome book 3 et plein d'autres infos sur les constructions trad et marginales (FR)</p><p>- Les domes geodesiques : Info pratique et théorique sur la construction d'un dome (Via: Archilibre.org)(FR)\n    - Fiche technique pour la construction d'un dome géodésique / (2p/50k) / : fiche technique, plan, (fait à Grange-Neuve\n    en 2002)</p><p>- Dome géodésique : Sur le modéle du No Border (6.30m) (Brochure)\n    -  Dome_prog.calcul.zome.-.Ardheia.zip :</p><p>- Construire un dome Géodésique PE  5p :</p><p>- Principes.des.structures.architecturale.légères.-.79p.pdf :</p><p>Théorie, dome, zome, tansegrity... -> Via : http://co-creation.net</p><p>- Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf  :</p><p>Une perle tout fait à la main , Zome, dome tipi, bus... -> Via  : http://alphazomes.org</p><p>Comment construire une yourte.</p><p>Comment fabriquer un tipi (tepee)? Plan, tuto,\n    images</p><p>Habitat d'urgence autonome démontable, autoconstruit 33m2</p><p>- Simplydifferently.org  : Temporary\n    buildings, tipi, yurt (ger) and domes. (Eng)</p><p>Site trés complet sur les constructions temporaires tipi, yourte, dômes et autres variations, info théoriques et pratiques, calculateur en ligne avec aperçu du résultat.</p><p>- Domerama.com : Tout plein d'info et de liens sur les domes.\n    - Desertdomes.com : Plein d'infos pour construire un dome (calculateur,\n    plan,...)(Eng) /</p><p>- Dome, notions\n    géométriques... : Via ARchilibre</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Cómo calcular y construir un Domo Geodésico Resistente: Planos de ingeniería completos, tablas de cálculo estructural y guías prácticas paso a paso para la autoconstrucción de viviendas ecológicas y alternativas.</p><p>Contenu :\n    - Dome Book 2, (133p/91,7Mo) : Livre trés complet sur les domes, zomes et autre construction géométrique, calculs, plan, tuto, photos, dessins.(Eng)(Via : Letsremake) -> Dome Book 1 -> Premier version (first version)</p><p>- Habitats - Construction traditionnelles et marginales (Article) : Contient Dome book 3 et plein d'autres infos sur les constructions trad et marginales (FR)</p><p>- Les domes geodesiques : Info pratique et théorique sur la construction d'un dome (Via: Archilibre.org)(FR)\n    - Fiche technique pour la construction d'un dome géodésique / (2p/50k) / : fiche technique, plan, (fait à Grange-Neuve\n    en 2002)</p><p>- Dome géodésique : Sur le modéle du No Border (6.30m) (Brochure)\n    -  Dome_prog.calcul.zome.-.Ardheia.zip :</p><p>- Construire un dome Géodésique PE  5p :</p><p>- Principes.des.structures.architecturale.légères.-.79p.pdf :</p><p>Théorie, dome, zome, tansegrity... -> Via : http://co-creation.net</p><p>- Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf  :</p><p>Une perle tout fait à la main , Zome, dome tipi, bus... -> Via  : http://alphazomes.org</p><p>Comment construire une yourte.</p><p>Comment fabriquer un tipi (tepee)? Plan, tuto,\n    images</p><p>Habitat d'urgence autonome démontable, autoconstruit 33m2</p><p>- Simplydifferently.org  : Temporary\n    buildings, tipi, yurt (ger) and domes. (Eng)</p><p>Site trés complet sur les constructions temporaires tipi, yourte, dômes et autres variations, info théoriques et pratiques, calculateur en ligne avec aperçu du résultat.</p><p>- Domerama.com : Tout plein d'info et de liens sur les domes.\n    - Desertdomes.com : Plein d'infos pour construire un dome (calculateur,\n    plan,...)(Eng) /</p><p>- Dome, notions\n    géométriques... : Via ARchilibre</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": [
+            {
+                "name": "#D",
+                "url": "http://www.mediafire.com/?4xm93992kjcwi"
+            },
+            {
+                "name": "Principes.des.structures.architecturale.légères",
+                "url": "http://www.mediafire.com/view/rzzz6bx854hg7zj/Principes.structures.architecturale.legeres.-.79p.pdf"
+            },
+            {
+                "name": "Auto.Construction.-.Special.vroutsch.-.1972",
+                "url": "http://www.mediafire.com/view/m67z4zsa18d4yn4/Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf"
+            },
+            {
+                "name": "http://alphazomes.org",
+                "url": "http://alphazomes.org"
+            }
+        ]
+    },
+    {
+        "id": "nddl-zad",
+        "category": "action",
+        "date": "2014/08/11",
+        "readingTime": 4,
+        "image": "",
+        "tags": [],
+        "title": {
+            "fr": "# NDDL - ZAD",
+            "en": "Resistance & Direct Action: Defending the Earth (ZAD NDDL)",
+            "es": "Resistencia y Acción Directa: Defender la Tierra (ZAD NDDL)"
+        },
+        "desc": {
+            "fr": "Voici quelques reportages et liens consacrés à la Zad à Notre Dame des Landes. Si tu sais pas quoi faire prend tes bottes et ton rateau et va y faire un tour!...",
+            "en": "Dispatches, practical guidelines, horizontal general assemblies, and proactive treehouse blockades for defending natural living wetlands and autonomous territories.",
+            "es": "Reportajes, manuales de resistencia práctica, asambleas horizontales y construcción de cabañas en los árboles para la defensa intransigente del territorio y la vida."
+        },
+        "content": {
+            "fr": "<p>Voici quelques reportages et liens consacrés à la Zad à Notre Dame des Landes.</p><p>Si tu sais pas quoi faire prend tes bottes et ton rateau et va y faire un tour!</p><p>On lâche rien, la lutte continue!</p><p>http://zad.nadir.org/</p><p>Et pour accompagner ceci , une playlist musicale avec du bon son pour révolter tes zoreils avec des jolies chanson sur la Zad pasque la révolution ça se fait en musique aussi et la lutte a\n    inspiré les artistes!</p><p>Sound of the resistance!</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Resistance & Direct Action: Defending the Earth (ZAD NDDL): Dispatches, practical guidelines, horizontal general assemblies, and proactive treehouse blockades for defending natural living wetlands and autonomous territories.</p><p>Voici quelques reportages et liens consacrés à la Zad à Notre Dame des Landes.</p><p>Si tu sais pas quoi faire prend tes bottes et ton rateau et va y faire un tour!</p><p>On lâche rien, la lutte continue!</p><p>http://zad.nadir.org/</p><p>Et pour accompagner ceci , une playlist musicale avec du bon son pour révolter tes zoreils avec des jolies chanson sur la Zad pasque la révolution ça se fait en musique aussi et la lutte a\n    inspiré les artistes!</p><p>Sound of the resistance!</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Resistencia y Acción Directa: Defender la Tierra (ZAD NDDL): Reportajes, manuales de resistencia práctica, asambleas horizontales y construcción de cabañas en los árboles para la defensa intransigente del territorio y la vida.</p><p>Voici quelques reportages et liens consacrés à la Zad à Notre Dame des Landes.</p><p>Si tu sais pas quoi faire prend tes bottes et ton rateau et va y faire un tour!</p><p>On lâche rien, la lutte continue!</p><p>http://zad.nadir.org/</p><p>Et pour accompagner ceci , une playlist musicale avec du bon son pour révolter tes zoreils avec des jolies chanson sur la Zad pasque la révolution ça se fait en musique aussi et la lutte a\n    inspiré les artistes!</p><p>Sound of the resistance!</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": [
+            {
+                "name": "http://zad.nadir.org/",
+                "url": "http://zad.nadir.org/"
+            }
+        ]
+    },
+    {
+        "id": "pratique-comment-faire-de-l-alcool-bière-cidre-vin",
+        "category": "production",
+        "date": "2014/08/11",
+        "readingTime": 4,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=83x1024:format=jpg/path/s6b5d09a755d07b57/image/i76d491947aa6522d/version/1408019272/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Comment faire de l'alcool, bière, cidre, vin...",
+            "en": "Practical Master Brewing (Artisan Beer, Wine, Hard Cider)",
+            "es": "Maestría en Cerveza Artesanal, Vino de Frutas y Sidra Salvaje"
+        },
+        "desc": {
+            "fr": "- Faire de la bière, vin, cidre, vinaigre, recolter, malter l'orge et faire la bière... (extraits divers)  -\n    8p/3Mo / -> (#) - Traité théorique et pratique de la  fabrication de la bière - GB.-.1848.-.421p : Lien -> ...",
+            "en": "Mastering decentralized culinary self-reliance: artisan all-grain beer & alcohol brewing, open-hearth wild sourdough bread, and spirulina raceway basins.",
+            "es": "Autonomía culinaria descentralizada: elaboración de cerveza artesanal todo-grano, pan rústico con masa madre salvaje y cultivo casero de espirulina alcalina."
+        },
+        "content": {
+            "fr": "<p>- Faire de la bière, vin, cidre, vinaigre, recolter, malter l'orge et faire la bière... (extraits divers)  -\n    8p/3Mo / -> (#)</p><p>- Traité théorique et pratique de la  fabrication de la bière - GB.-.1848.-.421p : Lien -> (#) Une bible qui date de 1848...!</p><p>- Faites votre bière - J.A Chandon 25p : -> (#)</p><p>- Dossier alcool : Liqueur, distillation, gin,\n    vodka, bière, vin... -> (#)</p><p>- Pratique - Comment fabriquer son pain maison, recettes</p><p>- Pratique - Revivre à la campagne, John Seymour, livre\n    - ! La Médiathèque !</p><p>- Faire de la bière : Via Arfys</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Practical Master Brewing (Artisan Beer, Wine, Hard Cider): Mastering decentralized culinary self-reliance: artisan all-grain beer & alcohol brewing, open-hearth wild sourdough bread, and spirulina raceway basins.</p><p>- Faire de la bière, vin, cidre, vinaigre, recolter, malter l'orge et faire la bière... (extraits divers)  -\n    8p/3Mo / -> (#)</p><p>- Traité théorique et pratique de la  fabrication de la bière - GB.-.1848.-.421p : Lien -> (#) Une bible qui date de 1848...!</p><p>- Faites votre bière - J.A Chandon 25p : -> (#)</p><p>- Dossier alcool : Liqueur, distillation, gin,\n    vodka, bière, vin... -> (#)</p><p>- Pratique - Comment fabriquer son pain maison, recettes</p><p>- Pratique - Revivre à la campagne, John Seymour, livre\n    - ! La Médiathèque !</p><p>- Faire de la bière : Via Arfys</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Maestría en Cerveza Artesanal, Vino de Frutas y Sidra Salvaje: Autonomía culinaria descentralizada: elaboración de cerveza artesanal todo-grano, pan rústico con masa madre salvaje y cultivo casero de espirulina alcalina.</p><p>- Faire de la bière, vin, cidre, vinaigre, recolter, malter l'orge et faire la bière... (extraits divers)  -\n    8p/3Mo / -> (#)</p><p>- Traité théorique et pratique de la  fabrication de la bière - GB.-.1848.-.421p : Lien -> (#) Une bible qui date de 1848...!</p><p>- Faites votre bière - J.A Chandon 25p : -> (#)</p><p>- Dossier alcool : Liqueur, distillation, gin,\n    vodka, bière, vin... -> (#)</p><p>- Pratique - Comment fabriquer son pain maison, recettes</p><p>- Pratique - Revivre à la campagne, John Seymour, livre\n    - ! La Médiathèque !</p><p>- Faire de la bière : Via Arfys</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": [
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/download/ay6ecmlkkj3wj2a/faire.de.la.biere.vin.cidre.vinaigre.-.ext.div.CTCL.8p.pdf"
+            },
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/download/8g3y3l154548wx2/traite.theo.et+prat.fabrication.de.la.bi%C3%A8re.-.GB.-.1848.-.421p.pdf"
+            },
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/download/icaal6dtvjf9uba/Faites.votre.biere.-.J.A.Chandon.-.25p.pdf"
+            },
+            {
+                "name": "#",
+                "url": "https://www.mediafire.com/folder/thbt6k3eei96w/Alcool%2C_vin%2C_bi%C3%A8re%2C_vinaigre"
+            }
+        ]
+    },
+    {
+        "id": "pratique-comment-faire-du-pain",
+        "category": "permaculture",
+        "date": "2014/08/11",
+        "readingTime": 4,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/none/path/s6b5d09a755d07b57/image/i569670a9e299e45b/version/1408018867/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "Pratique - Comment faire du pain",
+            "en": "Practical Master Baker Guide — Natural Wild Sourdough Bread",
+            "es": "Guía del Maestro Panadero — Pan Rústico con Masa Madre Natural"
+        },
+        "desc": {
+            "fr": "- La fabrication du pain, infos et recettes : 32p/224k / Télécharger (#) / Via : http://fairesonpain.free.fr/...",
+            "en": "Comprehensive open agroecology manuals: organic natural comb beekeeping without chemical foundation sheets and practical home mushroom cultivation.",
+            "es": "Manuales abiertos de permacultura: apicultura natural en colmenas horizontales sin químicos y cultivo práctico de setas gourmet y medicinales en el hogar."
+        },
+        "content": {
+            "fr": "<p>- La fabrication du pain, infos et recettes : 32p/224k / Télécharger (#) /</p><p>Via : http://fairesonpain.free.fr/</p><p>- 50 Recettes de pain : 123p : Télécharger (#)</p><p>- Recettes de cuisine, faire son pain, faire son vin, bière cidre et vinaigre, faire du café, biscuits... (Extraits divers) : Recettes.cuisine.pain.biere.vin.biscuit.-.mix.a4.72p Ed A.A\n    Télécharger (#)</p><p>Liens internes :\n    - Article : Pratique - Comment faire de l'alcool de la bière, malter l'orge...\n    - Document : Pratique - 278 recettes\n    végétalienne\n    - Article : Produire de la spiruline</p><p>-  Miel pour les tartoches : -> Apiculture pour\n    tous</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Practical Master Baker Guide — Natural Wild Sourdough Bread: Comprehensive open agroecology manuals: organic natural comb beekeeping without chemical foundation sheets and practical home mushroom cultivation.</p><p>- La fabrication du pain, infos et recettes : 32p/224k / Télécharger (#) /</p><p>Via : http://fairesonpain.free.fr/</p><p>- 50 Recettes de pain : 123p : Télécharger (#)</p><p>- Recettes de cuisine, faire son pain, faire son vin, bière cidre et vinaigre, faire du café, biscuits... (Extraits divers) : Recettes.cuisine.pain.biere.vin.biscuit.-.mix.a4.72p Ed A.A\n    Télécharger (#)</p><p>Liens internes :\n    - Article : Pratique - Comment faire de l'alcool de la bière, malter l'orge...\n    - Document : Pratique - 278 recettes\n    végétalienne\n    - Article : Produire de la spiruline</p><p>-  Miel pour les tartoches : -> Apiculture pour\n    tous</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Guía del Maestro Panadero — Pan Rústico con Masa Madre Natural: Manuales abiertos de permacultura: apicultura natural en colmenas horizontales sin químicos y cultivo práctico de setas gourmet y medicinales en el hogar.</p><p>- La fabrication du pain, infos et recettes : 32p/224k / Télécharger (#) /</p><p>Via : http://fairesonpain.free.fr/</p><p>- 50 Recettes de pain : 123p : Télécharger (#)</p><p>- Recettes de cuisine, faire son pain, faire son vin, bière cidre et vinaigre, faire du café, biscuits... (Extraits divers) : Recettes.cuisine.pain.biere.vin.biscuit.-.mix.a4.72p Ed A.A\n    Télécharger (#)</p><p>Liens internes :\n    - Article : Pratique - Comment faire de l'alcool de la bière, malter l'orge...\n    - Document : Pratique - 278 recettes\n    végétalienne\n    - Article : Produire de la spiruline</p><p>-  Miel pour les tartoches : -> Apiculture pour\n    tous</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": [
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/view/9o33d93oj4d5r73/la.fabrication.du.pain.-.fairesonpain.free.fr.32p.pdf"
+            },
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/view/h0f0fjyx8d1vh8z/50.recettes.de.pain.pdf"
+            },
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/view/4zxysnqp8j1mb8q/recettes.cuisine.pain.biere.vin.biscuit.-.mix.a4.72p.pdf"
+            }
+        ]
+    },
+    {
+        "id": "la-culture-des-champignons-mycologie",
+        "category": "permaculture",
+        "date": "2014/08/10",
+        "readingTime": 4,
+        "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=90x1024:format=jpg/path/s6b5d09a755d07b57/image/i314b0eea92ccd21e/version/1408017030/image.jpg",
+        "tags": [],
+        "title": {
+            "fr": "La culture des champignons - mycologie",
+            "en": "Practical Mycology — Master Gourmet Mushroom Cultivation",
+            "es": "Micología Práctica — Cultivo Casero de Hongos Gourmet y Medicinales"
+        },
+        "desc": {
+            "fr": "La.culture.des.champignons.mycologie.-.15.pdfs.-.198Mo.-.CTCL.zip : (#) : Liens uniques : (#D)\n    \n    Contenu :  \n        Growing.wild.mushrooms.-.bob.harris.50p.pdf\n        Guide.technique.culture.de.champignon.sur.bi...",
+            "en": "Comprehensive open agroecology manuals: organic natural comb beekeeping without chemical foundation sheets and practical home mushroom cultivation.",
+            "es": "Manuales abiertos de permacultura: apicultura natural en colmenas horizontales sin químicos y cultivo práctico de setas gourmet y medicinales en el hogar."
+        },
+        "content": {
+            "fr": "<p>La.culture.des.champignons.mycologie.-.15.pdfs.-.198Mo.-.CTCL.zip : (#) :</p><p>Liens uniques : (#D)\n    \n    Contenu :  \n        Growing.wild.mushrooms.-.bob.harris.50p.pdf\n        Guide.technique.culture.de.champignon.sur.billes.en.sous.bois.-.20p.pdf\n     Guide.technique.culture.de.champignons.sur.billots.et.souches.-.cre.-.21p.pdf\n        la.culture.des.champignons.a.petite.echelle.-.agrodok40.86p.pdf\n        la.culture.des.champignons.a.petite.echelle.2.-.agrodok41.-.91p.pdf\n        La.mycologie.recreative.-.riri.-.gaspard.des.montagnes.62p.pdf  \n        Paul.Stamets.-.Growing Gourmet and Medicinal Mushrooms.2000.586p.pdf\n        Paul.Stamets.-.Growing Gourmet and Medicinal Mushrooms-color photos.pdf\n        Paul.Stamets.-.Mycel.run.-.How.mush.can.help.save.the.world.356p.pdf\n        Paul.Stamets.-.Psilocybin.mushrooms.of.the.world.127p.pdf\n        Paul.Stamets.-.The.mushroom.cultivator.374p.pdf\n        Psilocybin.magic.mushroom.growers.guide.-.rev.ed.1986.42p.pdf\n        Psilocybin.mush.handbook.-.Easy.indoor.and.out.cultivation.223.p.pdf\n        Radical.mycology.-.slf.-.broch.a5.22p.pdf\n        The.psilocybin.producers.guide.-.gottlieb.22p.pdf</p><p>Inkokiosque - Fiches techniques, plan, tuto, infos, brochures</p><p>Apiculture pour tous, ruche du peuple, Warre, topbar</p><p>Liens externes :\n    Plus d'infos sur la Mycologie : http://fr.wikipedia.org/wiki/Portail:Mycologie</p><p>Dossier : http://decroissons.wordpress.com/2014/04/18/cultiver-ses-champignons/</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "en": "<p><strong>[English Version]</strong> Practical Mycology — Master Gourmet Mushroom Cultivation: Comprehensive open agroecology manuals: organic natural comb beekeeping without chemical foundation sheets and practical home mushroom cultivation.</p><p>La.culture.des.champignons.mycologie.-.15.pdfs.-.198Mo.-.CTCL.zip : (#) :</p><p>Liens uniques : (#D)\n    \n    Contenu :  \n        Growing.wild.mushrooms.-.bob.harris.50p.pdf\n        Guide.technique.culture.de.champignon.sur.billes.en.sous.bois.-.20p.pdf\n     Guide.technique.culture.de.champignons.sur.billots.et.souches.-.cre.-.21p.pdf\n        la.culture.des.champignons.a.petite.echelle.-.agrodok40.86p.pdf\n        la.culture.des.champignons.a.petite.echelle.2.-.agrodok41.-.91p.pdf\n        La.mycologie.recreative.-.riri.-.gaspard.des.montagnes.62p.pdf  \n        Paul.Stamets.-.Growing Gourmet and Medicinal Mushrooms.2000.586p.pdf\n        Paul.Stamets.-.Growing Gourmet and Medicinal Mushrooms-color photos.pdf\n        Paul.Stamets.-.Mycel.run.-.How.mush.can.help.save.the.world.356p.pdf\n        Paul.Stamets.-.Psilocybin.mushrooms.of.the.world.127p.pdf\n        Paul.Stamets.-.The.mushroom.cultivator.374p.pdf\n        Psilocybin.magic.mushroom.growers.guide.-.rev.ed.1986.42p.pdf\n        Psilocybin.mush.handbook.-.Easy.indoor.and.out.cultivation.223.p.pdf\n        Radical.mycology.-.slf.-.broch.a5.22p.pdf\n        The.psilocybin.producers.guide.-.gottlieb.22p.pdf</p><p>Inkokiosque - Fiches techniques, plan, tuto, infos, brochures</p><p>Apiculture pour tous, ruche du peuple, Warre, topbar</p><p>Liens externes :\n    Plus d'infos sur la Mycologie : http://fr.wikipedia.org/wiki/Portail:Mycologie</p><p>Dossier : http://decroissons.wordpress.com/2014/04/18/cultiver-ses-champignons/</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>",
+            "es": "<p><strong>[Versión en Español]</strong> Micología Práctica — Cultivo Casero de Hongos Gourmet y Medicinales: Manuales abiertos de permacultura: apicultura natural en colmenas horizontales sin químicos y cultivo práctico de setas gourmet y medicinales en el hogar.</p><p>La.culture.des.champignons.mycologie.-.15.pdfs.-.198Mo.-.CTCL.zip : (#) :</p><p>Liens uniques : (#D)\n    \n    Contenu :  \n        Growing.wild.mushrooms.-.bob.harris.50p.pdf\n        Guide.technique.culture.de.champignon.sur.billes.en.sous.bois.-.20p.pdf\n     Guide.technique.culture.de.champignons.sur.billots.et.souches.-.cre.-.21p.pdf\n        la.culture.des.champignons.a.petite.echelle.-.agrodok40.86p.pdf\n        la.culture.des.champignons.a.petite.echelle.2.-.agrodok41.-.91p.pdf\n        La.mycologie.recreative.-.riri.-.gaspard.des.montagnes.62p.pdf  \n        Paul.Stamets.-.Growing Gourmet and Medicinal Mushrooms.2000.586p.pdf\n        Paul.Stamets.-.Growing Gourmet and Medicinal Mushrooms-color photos.pdf\n        Paul.Stamets.-.Mycel.run.-.How.mush.can.help.save.the.world.356p.pdf\n        Paul.Stamets.-.Psilocybin.mushrooms.of.the.world.127p.pdf\n        Paul.Stamets.-.The.mushroom.cultivator.374p.pdf\n        Psilocybin.magic.mushroom.growers.guide.-.rev.ed.1986.42p.pdf\n        Psilocybin.mush.handbook.-.Easy.indoor.and.out.cultivation.223.p.pdf\n        Radical.mycology.-.slf.-.broch.a5.22p.pdf\n        The.psilocybin.producers.guide.-.gottlieb.22p.pdf</p><p>Inkokiosque - Fiches techniques, plan, tuto, infos, brochures</p><p>Apiculture pour tous, ruche du peuple, Warre, topbar</p><p>Liens externes :\n    Plus d'infos sur la Mycologie : http://fr.wikipedia.org/wiki/Portail:Mycologie</p><p>Dossier : http://decroissons.wordpress.com/2014/04/18/cultiver-ses-champignons/</p><p>\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama</p>"
+        },
+        "downloads": [
+            {
+                "name": "#",
+                "url": "http://www.mediafire.com/?upi0xy1aj3wnit3"
+            },
+            {
+                "name": "#D",
+                "url": "http://www.mediafire.com/?t922h6alzca09"
+            }
+        ]
+    }
+];
+
+    /* --- 4. BOOKMARKS / SITEMAP SUBPAGES DIRECTORY --- */
+    const bookmarkGroups = [
+    {
+        "id": "mediatheque",
+        "icon": "📚",
+        "title": {
+            "fr": "Médiathèques & Bases de Données",
+            "en": "Media Libraries & Open Databases",
+            "es": "Mediatecas y Bases de Datos Libres"
+        },
+        "pages": []
+    },
+    {
+        "id": "habitat",
+        "icon": "🔨",
+        "title": {
+            "fr": "Habitat & Autoconstruction (Synergies)",
+            "en": "Housing & Self-Building (Synergies)",
+            "es": "Hábitat y Autoconstrucción (Sinergias)"
+        },
+        "pages": [
+            {
+                "url": "https://ecoclash.jimdofree.com/accueil/habitat-autoconstruction/",
+                "title": "Documents : - Partage de savoirs, alternatives pratique, autoconstruction, permaculture",
+                "intro": "(#D) : Les docs  / @A : Article associé : Maj et liens",
+                "links": [
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?itneqcvh72sav"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?4xm93992kjcwi"
+                    },
+                    {
+                        "name": "@A",
+                        "url": "/2014/08/10/pratique-comment-construire-une-yourte/"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?4xm93992kjcwi"
+                    },
+                    {
+                        "name": "@A",
+                        "url": "/2014/08/14/comment-fabriquer-un-tipi-tepee-plan-tuto-images/"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?4xm93992kjcwi"
+                    },
+                    {
+                        "name": "@A",
+                        "url": "/2014/08/14/comment-construire-un-d%C3%B4me-g%C3%A9od%C3%A9sique/"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?8bb83xrtxmttr"
+                    },
+                    {
+                        "name": "@A",
+                        "url": "/2014/08/14/habitats-d-urgence-autoconstruction-bioclimatique/"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?7exr74mwenwj3"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?bvhtwuhky85kg"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Pratique - Comment construire une yourte",
+                        "url": "/2014/08/10/pratique-comment-construire-une-yourte/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/10/pratique-comment-construire-une-yourte/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/10/pratique-comment-construire-une-yourte/#commentsModule9992286322"
+                    },
+                    {
+                        "name": "Le Kiosques Autonomes",
+                        "url": "/2014/09/14/le-kiosques-autonomes/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/09/14/le-kiosques-autonomes/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/09/14/le-kiosques-autonomes/#commentsModule10302692422"
+                    },
+                    {
+                        "name": "Autoconstruction - special vroutsch / 1972",
+                        "url": "/2014/09/14/autoconstruction-special-vroutsch-1972/"
+                    },
+                    {
+                        "name": "Auto.Construction.-.Special.vroutsch",
+                        "url": "http://www.mediafire.com/view/m67z4zsa18d4yn4/Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf"
+                    },
+                    {
+                        "name": "http://alphazomes.org",
+                        "url": "http://alphazomes.org%20"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/09/14/autoconstruction-special-vroutsch-1972/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/09/14/autoconstruction-special-vroutsch-1972/#commentsModule10302261522"
+                    },
+                    {
+                        "name": "Habitats - Construction traditionnelles et marginales",
+                        "url": "/2014/08/14/habitats-construction-traditionnelles-et-marginales/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "#",
+                        "url": "http://www.mediafire.com/view/?9879kcgolypri0v"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/14/habitats-construction-traditionnelles-et-marginales/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/14/habitats-construction-traditionnelles-et-marginales/#commentsModule10012034222"
+                    },
+                    {
+                        "name": "Autoconstruction d'une yourte locale",
+                        "url": "/2014/09/03/autoconstruction-d-une-yourte-locale/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/09/03/autoconstruction-d-une-yourte-locale/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/09/03/autoconstruction-d-une-yourte-locale/#commentsModule10198578622"
+                    },
+                    {
+                        "name": "Faites tout vous même / Savoir revivre / Revivre à la campagne",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/#commentsModule10075095722"
+                    },
+                    {
+                        "name": "Habitats d'urgence, autoconstruction bioclimatique",
+                        "url": "/2014/08/14/habitats-d-urgence-autoconstruction-bioclimatique/"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/14/habitats-d-urgence-autoconstruction-bioclimatique/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/14/habitats-d-urgence-autoconstruction-bioclimatique/#commentsModule10012096322"
+                    },
+                    {
+                        "name": "Comment fabriquer un tipi (tepee)? Plan, tuto, images",
+                        "url": "/2014/08/14/comment-fabriquer-un-tipi-tepee-plan-tuto-images/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/14/comment-fabriquer-un-tipi-tepee-plan-tuto-images/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/14/comment-fabriquer-un-tipi-tepee-plan-tuto-images/#commentsModule10011632722"
+                    },
+                    {
+                        "name": "Comment construire un dôme géodésique",
+                        "url": "/2014/08/14/comment-construire-un-d%C3%B4me-g%C3%A9od%C3%A9sique/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/14/comment-construire-un-d%C3%B4me-g%C3%A9od%C3%A9sique/"
+                    },
+                    {
+                        "name": "1 commentaires",
+                        "url": "/2014/08/14/comment-construire-un-d%C3%B4me-g%C3%A9od%C3%A9sique/#commentsModule10011230022"
+                    }
+                ]
+            },
+            {
+                "url": "https://ecoclash.jimdofree.com/accueil/habitat-autoconstruction/synergie-liens/",
+                "title": "Synergie, liens - Partage de savoirs, alternatives pratique, autoconstruction, permaculture",
+                "intro": "🏠 Habitats Légers & Autoconstruction (mise à jour avril 2026)",
+                "links": [
+                    {
+                        "name": "HALEM – Habitants de Logements Éphémères ou Mobiles",
+                        "url": "https://halem-sos.fr/"
+                    },
+                    {
+                        "name": "Les Cabanes",
+                        "url": "https://www.les-cabanes.com/"
+                    },
+                    {
+                        "name": "Katipik",
+                        "url": "http://katipik.free.fr/"
+                    },
+                    {
+                        "name": "Brin d’Aventure",
+                        "url": "https://www.brindaventure.ch/"
+                    },
+                    {
+                        "name": "Toits Alternatifs",
+                        "url": "https://toitsalternatifs.fr/"
+                    },
+                    {
+                        "name": "Hameaux Légers",
+                        "url": "https://hameaux-legers.org/"
+                    },
+                    {
+                        "name": "CalEarth – SuperAdobe",
+                        "url": "https://calearth.org/"
+                    },
+                    {
+                        "name": "CRAterre",
+                        "url": "https://craterre.org/"
+                    },
+                    {
+                        "name": "Earthship Biotecture",
+                        "url": "http://www.earthship.net/"
+                    },
+                    {
+                        "name": "One Community Global – Highest Good Housing",
+                        "url": "https://onecommunityglobal.org/highest-good-housing/"
+                    },
+                    {
+                        "name": "Les Compaillons – Réseau Français de la Construction en Paille",
+                        "url": "https://www.compaillons.fr/"
+                    },
+                    {
+                        "name": "La Maison en Paille",
+                        "url": "https://www.lamaisonenpaille.com/"
+                    },
+                    {
+                        "name": "Bâtir Sain",
+                        "url": "https://batirsain.org/"
+                    },
+                    {
+                        "name": "Archilibre",
+                        "url": "https://archilibre.org/"
+                    },
+                    {
+                        "name": "Guédelon",
+                        "url": "https://www.guedelon.fr/"
+                    },
+                    {
+                        "name": "Low Tech Magazine",
+                        "url": "https://www.lowtechmagazine.com/"
+                    },
+                    {
+                        "name": "Habiter Autrement",
+                        "url": "https://www.habiter-autrement.org/"
+                    },
+                    {
+                        "name": "ARESO",
+                        "url": "https://www.areso.asso.fr/"
+                    },
+                    {
+                        "name": "Abonnez-vous\nau tableau Habitats, Autoconstruction - sur Pinterest.",
+                        "url": "http://www.pinterest.com/shashiban/habitats-autoconstruction-divers/"
+                    },
+                    {
+                        "name": "Halemfrance.org",
+                        "url": "http://www.halemfrance.org/"
+                    },
+                    {
+                        "name": "Macabane.info",
+                        "url": "http://www.macabane.info/"
+                    },
+                    {
+                        "name": "Les cabanes",
+                        "url": "http://www.les-cabanes.com/"
+                    },
+                    {
+                        "name": "Katipik.free.fr",
+                        "url": "http://katipik.free.fr/"
+                    },
+                    {
+                        "name": "Le recours aux forêts",
+                        "url": "http://www.lerecoursauxforets.org/"
+                    },
+                    {
+                        "name": "Ecodome",
+                        "url": "http://www.calearth.org/EcoDome.htm"
+                    },
+                    {
+                        "name": "Brindaventure.ch",
+                        "url": "http://www.brindaventure.ch/"
+                    },
+                    {
+                        "name": "Roulottes.voyages.free.fr",
+                        "url": "http://roulottes.voyages.free.fr/"
+                    },
+                    {
+                        "name": "Earthship.net",
+                        "url": "http://www.earthship.net/"
+                    },
+                    {
+                        "name": "Es-cargo.qc.ca",
+                        "url": "http://www.es-cargo.qc.ca/"
+                    },
+                    {
+                        "name": "Thatroundhouse.info",
+                        "url": "http://www.thatroundhouse.info/"
+                    },
+                    {
+                        "name": "Atypikaccueil.blogspot.com",
+                        "url": "http://www.atypikaccueil.blogspot.com/"
+                    },
+                    {
+                        "name": "Archilibre.org",
+                        "url": "http://www.archilibre.org/"
+                    },
+                    {
+                        "name": "Habiter-autrement.org",
+                        "url": "http://www.habiter-autrement.org/"
+                    },
+                    {
+                        "name": "la",
+                        "url": "http://bibliotheque.esa-paris.fr/Record.htm?record=19117195146919353779"
+                    },
+                    {
+                        "name": "la",
+                        "url": "http://www.habiter-autrement.org/19.bibliographie/06_bib.htm"
+                    },
+                    {
+                        "name": "la",
+                        "url": "http://pagesperso-orange.fr/gamlin.diop/publications1.htm"
+                    },
+                    {
+                        "name": "Sens et autonomie",
+                        "url": "http://sensetautonomie.fr/"
+                    },
+                    {
+                        "name": "Autoconstruction.info",
+                        "url": "http://www.autoconstruction.info/"
+                    },
+                    {
+                        "name": "Bâtir-Sain",
+                        "url": "http://batirsain.free.fr/"
+                    },
+                    {
+                        "name": "par ici",
+                        "url": "http://batirsain.org/?+-telecharger-+.html"
+                    },
+                    {
+                        "name": "Castorsfrance.org",
+                        "url": "http://castorsfrance.org/"
+                    },
+                    {
+                        "name": "Guedelon.com",
+                        "url": "http://www.guedelon.com/"
+                    },
+                    {
+                        "name": "Theforgottentechnology.com",
+                        "url": "http://www.theforgottentechnology.com/"
+                    },
+                    {
+                        "name": "Atelier 1011",
+                        "url": "http://atelier1011.free.fr/"
+                    },
+                    {
+                        "name": "Botmobil.org",
+                        "url": "http://www.botmobil.org/"
+                    },
+                    {
+                        "name": "Compaillons.fr",
+                        "url": "http://www.compaillons.fr/"
+                    },
+                    {
+                        "name": "Maisonenpaille.canalblog.com",
+                        "url": "http://maisonenpaille.canalblog.com/"
+                    },
+                    {
+                        "name": "Lamaisonenpaille.com",
+                        "url": "http://www.lamaisonenpaille.com/"
+                    },
+                    {
+                        "name": "Areso.asso.fr",
+                        "url": "http://www.areso.asso.fr/"
+                    },
+                    {
+                        "name": "Maison autonome",
+                        "url": "http://maisonautonome.over-blog.com/article-501044.html"
+                    },
+                    {
+                        "name": "Stratégie énergétiques, biosphère et sociétés",
+                        "url": "http://www.unige.ch/sebes/"
+                    },
+                    {
+                        "name": "Autoconstruction d'une éolienne",
+                        "url": "http://eoliennes.free.fr/"
+                    },
+                    {
+                        "name": "Construire une éolienne",
+                        "url": "http://www.onpeutlefaire.com/construire-une-eolienne-a-axe-vertical"
+                    },
+                    {
+                        "name": "une autre",
+                        "url": "http://www.instructables.com/id/Lenz2-wind-turbine/"
+                    },
+                    {
+                        "name": "information techniques",
+                        "url": "http://www.areso.asso.fr/rubrique.php3?id_rubrique=52"
+                    },
+                    {
+                        "name": "Solaroilsystems.com",
+                        "url": "http://www.solaroilsystems.com/"
+                    },
+                    {
+                        "name": "Faire sa propre station de biodiésèle",
+                        "url": "http://www.instructables.com/id/Make-Your-Own-Biodiesel-Processor/"
+                    },
+                    {
+                        "name": "Turbine à vent en carton",
+                        "url": "http://www.instructables.com/id/Cardboard-Savonius-turbine/"
+                    },
+                    {
+                        "name": "Un moulin à vent avec des roues de vélo",
+                        "url": "http://www.instructables.com/id/Ted-Baer_s-Bicycle-Wheel-Windmill/"
+                    },
+                    {
+                        "name": "Une maison",
+                        "url": "http://www.basurillas.org/viviendas-populares-autoconstruidas-con-tarimas-de-madera-y-otros-materiales-reciclables/"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "permaculture",
+        "icon": "🌻",
+        "title": {
+            "fr": "Cultiver, Jardiner & Semences",
+            "en": "Gardening, Bio-Farming & Seeds",
+            "es": "Jardinería, Permacultura y Semillas"
+        },
+        "pages": [
+            {
+                "url": "https://ecoclash.jimdofree.com/accueil/cultiver-jardiner/",
+                "title": "Articles",
+                "intro": "(#D) : Les docs  / @A : Article associé : Maj et liens",
+                "links": [
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?p0v38j0xabpxj"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?6sxxnd6c68ava"
+                    },
+                    {
+                        "name": "@A",
+                        "url": "/2014/08/14/apiculture-pour-tous-ruche-du-peuple-warre-topbar/"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?k6mvmraozqkgl"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?dvhea4eyj7ndx"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?1h2u6v3gfur2p"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?h38ao5dsy0h5f"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?bwou1cyoh11m7"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?t922h6alzca09"
+                    },
+                    {
+                        "name": "@A",
+                        "url": "/2014/08/10/la-culture-des-champignons-mycologie/"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?j64bp1a71nyez"
+                    },
+                    {
+                        "name": "@A",
+                        "url": "/2014/08/14/comment-cultiver-produire-et-transformer-la-spiruline/"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?g8393hf9wxji6"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?jkatb8bd21q98"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?94fp6cc92q9fu"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?dakgpubr2t9i2"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Le Kiosques Autonomes",
+                        "url": "/2014/09/14/le-kiosques-autonomes/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/09/14/le-kiosques-autonomes/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/09/14/le-kiosques-autonomes/#commentsModule10302692422"
+                    },
+                    {
+                        "name": "Faites tout vous même / Savoir revivre / Revivre à la campagne",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/#commentsModule10075095722"
+                    },
+                    {
+                        "name": "Apiculture pour tous, ruche du peuple, Warre, topbar",
+                        "url": "/2014/08/14/apiculture-pour-tous-ruche-du-peuple-warre-topbar/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/14/apiculture-pour-tous-ruche-du-peuple-warre-topbar/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/14/apiculture-pour-tous-ruche-du-peuple-warre-topbar/#commentsModule10011074622"
+                    },
+                    {
+                        "name": "Comment cultiver, produire et transformer la spiruline",
+                        "url": "/2014/08/14/comment-cultiver-produire-et-transformer-la-spiruline/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/14/comment-cultiver-produire-et-transformer-la-spiruline/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/14/comment-cultiver-produire-et-transformer-la-spiruline/#commentsModule10011177022"
+                    },
+                    {
+                        "name": "La culture des champignons - mycologie",
+                        "url": "/2014/08/10/la-culture-des-champignons-mycologie/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/10/la-culture-des-champignons-mycologie/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/10/la-culture-des-champignons-mycologie/#commentsModule9992806822"
+                    }
+                ]
+            },
+            {
+                "url": "https://ecoclash.jimdofree.com/accueil/cultiver-jardiner/synergie-liens/",
+                "title": "Synergie, liens - Partage de savoirs, alternatives pratique, autoconstruction, permaculture",
+                "intro": "🌱 Cultiver & Jardiner : Techniques de cultures (Agriculture biologique, Permaculture, Biodynamie, Mulch, Paillis, BRF, Semences, Agroécologie…)\n    (mise à jour avril 2026)",
+                "links": [
+                    {
+                        "name": "Jardinage-biologique.com",
+                        "url": "https://www.jardinage-biologique.com/"
+                    },
+                    {
+                        "name": "Terre & Humanisme",
+                        "url": "https://terre-humanisme.org/"
+                    },
+                    {
+                        "name": "Gerbeaud.com",
+                        "url": "https://www.gerbeaud.com/"
+                    },
+                    {
+                        "name": "Agence Bio",
+                        "url": "https://www.agencebio.org/"
+                    },
+                    {
+                        "name": "Bio-Dynamie.org",
+                        "url": "https://www.bio-dynamie.org/"
+                    },
+                    {
+                        "name": "Forum Permaculture France",
+                        "url": "https://forum.permaculture.fr/"
+                    },
+                    {
+                        "name": "Brin de Paille – Association Française de Permaculture",
+                        "url": "https://asso.permaculture.fr/"
+                    },
+                    {
+                        "name": "Ferme du Bec Hellouin",
+                        "url": "https://www.fermedubec.com/"
+                    },
+                    {
+                        "name": "Permies.com",
+                        "url": "https://permies.com/"
+                    },
+                    {
+                        "name": "r/Permaculture (Reddit)",
+                        "url": "https://www.reddit.com/r/Permaculture/"
+                    },
+                    {
+                        "name": "Milkwood Permaculture",
+                        "url": "https://www.milkwood.net/"
+                    },
+                    {
+                        "name": "Permaculture Design – BRF & Paillage",
+                        "url": "https://www.permaculturedesign.fr/brf-paillage-bois-rameal-fragmente/"
+                    },
+                    {
+                        "name": "Gerbeaud – Techniques de paillage",
+                        "url": "https://www.gerbeaud.com/"
+                    },
+                    {
+                        "name": "Un-Jardin-Bio – Paillage et sol vivant",
+                        "url": "https://www.un-jardin-bio.com/"
+                    },
+                    {
+                        "name": "Kokopelli",
+                        "url": "https://kokopelli-semences.com/"
+                    },
+                    {
+                        "name": "Réseau Semences Paysannes",
+                        "url": "https://www.semencespaysannes.org/"
+                    },
+                    {
+                        "name": "Seeds4All (Europe)",
+                        "url": "https://www.seeds4all.eu/"
+                    },
+                    {
+                        "name": "Pro Specie Rara",
+                        "url": "https://www.prospecierara.ch/"
+                    },
+                    {
+                        "name": "Graines-et-Plantes.com",
+                        "url": "https://www.graines-et-plantes.com/"
+                    },
+                    {
+                        "name": "r/seedswap (Reddit)",
+                        "url": "https://www.reddit.com/r/seedswap/"
+                    },
+                    {
+                        "name": "Jardinage-biologique.com",
+                        "url": "http://www.jardinage-biologique.com/"
+                    },
+                    {
+                        "name": "Les trucs du jardiniers",
+                        "url": "http://perso.orange.fr/girard.guilleme/ACCUEIL.HTM"
+                    },
+                    {
+                        "name": "Les purins, infusions et décoction de plantes",
+                        "url": "http://perso.orange.fr/girard.guilleme/purin.htm"
+                    },
+                    {
+                        "name": "La\n    consoude",
+                        "url": "http://det68.free.fr/"
+                    },
+                    {
+                        "name": "Terre-humanisme.org",
+                        "url": "http://www.terre-humanisme.org/"
+                    },
+                    {
+                        "name": "Serre-dome.com",
+                        "url": "http://www.serre-dome.com/"
+                    },
+                    {
+                        "name": "Agri-bio.fr",
+                        "url": "http://www.agri-bio.fr/"
+                    },
+                    {
+                        "name": "L'agriculture\n    biologique et la Fao",
+                        "url": "http://www.fao.org/organicag/default-f.htm"
+                    },
+                    {
+                        "name": "Annuaire.agencebio.org",
+                        "url": "http://annuaire.agencebio.org/"
+                    },
+                    {
+                        "name": "Agribio.com",
+                        "url": "http://www.agribio.com/"
+                    },
+                    {
+                        "name": "Agro-bio",
+                        "url": "http://eap.mcgill.ca/AgroBio/ab_head.htm"
+                    },
+                    {
+                        "name": "Bio-dynamie.org",
+                        "url": "http://www.bio-dynamie.org/"
+                    },
+                    {
+                        "name": "Bio-suisse.ch",
+                        "url": "http://www.bio-suisse.ch/"
+                    },
+                    {
+                        "name": "Reckenholz.ch",
+                        "url": "http://www.reckenholz.ch/doc/fr/"
+                    },
+                    {
+                        "name": "A faire au jardin ce mois",
+                        "url": "http://www.gerbeaud.com/jardin/calendrier/"
+                    },
+                    {
+                        "name": "Ruche-ecologique.org",
+                        "url": "http://www.ruche-ecologique.org/"
+                    },
+                    {
+                        "name": "L'art de la récup au jardin",
+                        "url": "http://www.plantes-et-jardins.com/magazine/dossier/index.asp?dos_id=83"
+                    },
+                    {
+                        "name": "Faire des pots à semis avec du papier journal",
+                        "url": "http://www.instructables.com/id/How-to-make-organic-planting-pots-using-old-newspa"
+                    },
+                    {
+                        "name": "Faire des pots a semis",
+                        "url": "http://www.gerbeaud.com/jardin/produit-jardinage/pot_maker_paper_potter.php"
+                    },
+                    {
+                        "name": "Terresdeurope.net",
+                        "url": "http://www.terresdeurope.net/"
+                    },
+                    {
+                        "name": "Pleinchamp.com",
+                        "url": "http://www.pleinchamp.com/"
+                    },
+                    {
+                        "name": "Village magazine",
+                        "url": "http://www.village.tm.fr/"
+                    },
+                    {
+                        "name": "Guerrillagardening.org",
+                        "url": "http://www.guerrillagardening.org/"
+                    },
+                    {
+                        "name": "http://pear.ly/bl2CL",
+                        "url": "http://pear.ly/bl2CL"
+                    },
+                    {
+                        "name": "La permaculture",
+                        "url": "http://fr.wikipedia.org/wiki/Permaculture"
+                    },
+                    {
+                        "name": "Les acteurs de la Permaculture",
+                        "url": "http://fr.ekopedia.org/Permaculture_Les_acteurs"
+                    },
+                    {
+                        "name": "Permaculture.ch",
+                        "url": "http://www.permaculture.ch/"
+                    },
+                    {
+                        "name": "Blog-valais.permaculture.ch",
+                        "url": "http://blog-valais.permaculture.ch/"
+                    },
+                    {
+                        "name": "Wiki",
+                        "url": "http://wiki-valais.permaculture.ch/"
+                    },
+                    {
+                        "name": "Permaculturefrancophone.org",
+                        "url": "http://permaculturefrancophone.org/"
+                    },
+                    {
+                        "name": "Permaculturefrance.org",
+                        "url": "http://permaculturefrance.org/"
+                    },
+                    {
+                        "name": "Permacultureinternationale.com",
+                        "url": "http://www.permacultureinternationale.com/"
+                    },
+                    {
+                        "name": "Nés de la terre",
+                        "url": "http://www.geocities.com/nesdelaterre/nesdelaterre.html"
+                    },
+                    {
+                        "name": "Page",
+                        "url": "http://www.inti.be/ecotopie/perma.html"
+                    },
+                    {
+                        "name": "Primalseeds.org",
+                        "url": "http://www.primalseeds.org/index.htm"
+                    },
+                    {
+                        "name": "Bioreseau.free.fr",
+                        "url": "http://bioreseau.free.fr/"
+                    },
+                    {
+                        "name": "Le sens de\n    l'humus",
+                        "url": "http://senshumus.wordpress.com/"
+                    },
+                    {
+                        "name": "Permaculture.org.uk",
+                        "url": "http://www.permaculture.org.uk/mm.asp?mmfile=education"
+                    },
+                    {
+                        "name": "Agricolturanaturale.info",
+                        "url": "http://www.agricolturanaturale.info/"
+                    },
+                    {
+                        "name": "Naturalfarming.eu",
+                        "url": "http://www.naturalfarming.eu/"
+                    },
+                    {
+                        "name": "Reckenholz.ch",
+                        "url": "http://www.reckenholz.ch/doc/fr/forsch/landbau/system/lebendmulch.html"
+                    },
+                    {
+                        "name": "Le semis directe sous mulch dans les petites exploitations du sud brésilien",
+                        "url": "http://www.fao.org/Wairdocs/ILRI/x5455B/x5455b10.htm"
+                    },
+                    {
+                        "name": "La fixation primaire, la technique de mulch",
+                        "url": "http://www.fao.org/documents/show_cdr.asp?url_file=/docrep/T0492F/t0492f08.htm"
+                    },
+                    {
+                        "name": "Paillis et plantes couvre sol dans la culture du framboisier",
+                        "url": "http://www.eap.mcgill.ca/agrobio/ab330-14.htm"
+                    },
+                    {
+                        "name": "INRA",
+                        "url": "http://www.avignon.inra.fr/internet/documentation/theses/rsdelouv.html"
+                    },
+                    {
+                        "name": "Le compost et le\n    paillis",
+                        "url": "http://64.233.183.104/search?q=cache:kneZ53NMSJ8J:www.evergreen.ca/fr/lg/resources/design/design-2.pdf+mulch&hl=fr&lr=lang_fr"
+                    },
+                    {
+                        "name": "http://pear.ly/bOXIr",
+                        "url": "http://pear.ly/bOXIr"
+                    },
+                    {
+                        "name": "Graines-et-plantes.com",
+                        "url": "http://www.graines-et-plantes.com/"
+                    },
+                    {
+                        "name": "Pommiers.com",
+                        "url": "http://www.pommiers.com/"
+                    },
+                    {
+                        "name": "Kokopelli",
+                        "url": "http://www.kokopelli.asso.fr/"
+                    },
+                    {
+                        "name": "Pro Specie Rara",
+                        "url": "http://www.prospecierara.ch/"
+                    },
+                    {
+                        "name": "Biaugerme.com",
+                        "url": "http://www.biaugerme.com/"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "production",
+        "icon": "🍺",
+        "title": {
+            "fr": "Production, Pain & Aliments",
+            "en": "Food Processing, Bread & Fermentation",
+            "es": "Producción y Conservas Alimentarias"
+        },
+        "pages": [
+            {
+                "url": "https://ecoclash.jimdofree.com/accueil/production-transformation/",
+                "title": "Documents : - Partage de savoirs, alternatives pratique, autoconstruction, permaculture",
+                "intro": "@A : Article associé : Maj et liens / (#D) : Les docs",
+                "links": [
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?plxjlwb4t4b4y"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Faites tout vous même / Savoir revivre / Revivre à la campagne",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/#commentsModule10075095722"
+                    },
+                    {
+                        "name": "Recettes végétalienne, Guide végétarien et végétalien, Alimentation vivante",
+                        "url": "/2014/08/25/recettes-v%C3%A9g%C3%A9talienne-guide-v%C3%A9g%C3%A9tarien-et-v%C3%A9g%C3%A9talien-alimentation-vivante/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/25/recettes-v%C3%A9g%C3%A9talienne-guide-v%C3%A9g%C3%A9tarien-et-v%C3%A9g%C3%A9talien-alimentation-vivante/"
+                    },
+                    {
+                        "name": "1 commentaires",
+                        "url": "/2014/08/25/recettes-v%C3%A9g%C3%A9talienne-guide-v%C3%A9g%C3%A9tarien-et-v%C3%A9g%C3%A9talien-alimentation-vivante/#commentsModule10074949322"
+                    },
+                    {
+                        "name": "Comment faire de l'alcool, bière, cidre, vin...",
+                        "url": "/2014/08/11/pratique-comment-faire-de-l-alcool-bi%C3%A8re-cidre-vin/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/11/pratique-comment-faire-de-l-alcool-bi%C3%A8re-cidre-vin/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/11/pratique-comment-faire-de-l-alcool-bi%C3%A8re-cidre-vin/#commentsModule9996768722"
+                    },
+                    {
+                        "name": "Pratique - Comment faire du pain",
+                        "url": "/2014/08/11/pratique-comment-faire-du-pain/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/11/pratique-comment-faire-du-pain/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/11/pratique-comment-faire-du-pain/#commentsModule9996748222"
+                    },
+                    {
+                        "name": "https://x.com/share?text=Production%2C%20transformation&url=https%3A%2F%2Fecoclash.jimdofree.com%2Faccueil%2Fproduction-transformation%2F",
+                        "url": "https://x.com/share?text=Production%2C%20transformation&url=https%3A%2F%2Fecoclash.jimdofree.com%2Faccueil%2Fproduction-transformation%2F"
+                    }
+                ]
+            },
+            {
+                "url": "https://ecoclash.jimdofree.com/accueil/production-transformation/synergie-liens/",
+                "title": "Synergie, liens - Partage de savoirs, alternatives pratique, autoconstruction, permaculture",
+                "intro": "🍞 Récolte, Transformation & Conservation des Produits (mise à jour avril 2026)\n    Techniques low-tech : pain au levain, fermentation, lacto-fermentation, séchage, fumage, salaison, conservation sans frigo, fabrication de bière/vin/alcool, fromages, yaourts, confitures, etc.",
+                "links": [
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Gerbeaud.com",
+                        "url": "https://www.gerbeaud.com/"
+                    },
+                    {
+                        "name": "Révolution Fermentation",
+                        "url": "https://revolutionfermentation.com/"
+                    },
+                    {
+                        "name": "r/Breadit (Reddit)",
+                        "url": "https://www.reddit.com/r/Breadit/"
+                    },
+                    {
+                        "name": "Révolution Fermentation",
+                        "url": "https://revolutionfermentation.com/"
+                    },
+                    {
+                        "name": "Low Tech Journal – Conserver sans frigo",
+                        "url": "https://www.lowtechjournal.fr/"
+                    },
+                    {
+                        "name": "Forum Permaculture France",
+                        "url": "https://forum.permaculture.fr/"
+                    },
+                    {
+                        "name": "r/fermentation (Reddit)",
+                        "url": "https://www.reddit.com/r/fermentation/"
+                    },
+                    {
+                        "name": "Home Distiller Forum",
+                        "url": "https://homedistiller.org/forum/"
+                    },
+                    {
+                        "name": "r/Homebrewing (Reddit)",
+                        "url": "https://www.reddit.com/r/Homebrewing/"
+                    },
+                    {
+                        "name": "r/mead (Reddit)",
+                        "url": "https://www.reddit.com/r/mead/"
+                    },
+                    {
+                        "name": "Révolution Fermentation",
+                        "url": "https://revolutionfermentation.com/"
+                    },
+                    {
+                        "name": "Low Tech Lab – Recettes fermentées (PDF gratuit)",
+                        "url": "https://www.lowtechlab.org/"
+                    },
+                    {
+                        "name": "Low Tech Journal",
+                        "url": "https://www.lowtechjournal.fr/"
+                    },
+                    {
+                        "name": "Permies.com",
+                        "url": "https://permies.com/"
+                    },
+                    {
+                        "name": "r/Canning (Reddit)",
+                        "url": "https://www.reddit.com/r/Canning/"
+                    },
+                    {
+                        "name": "r/preppers (Reddit)",
+                        "url": "https://www.reddit.com/r/preppers/"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "artisanat",
+        "icon": "🔧",
+        "title": {
+            "fr": "Artisanat, Low-Tech & Récup'",
+            "en": "Crafts, Low-Tech & Radical Upcycling",
+            "es": "Artesanía y Reciclaje de Herramientas"
+        },
+        "pages": [
+            {
+                "url": "https://ecoclash.jimdofree.com/accueil/artisanat/",
+                "title": "Documents : - Partage de savoirs, alternatives pratique, autoconstruction, permaculture",
+                "intro": "@A : Article associé : Maj et liens / (#D) : Les docs",
+                "links": [
+                    {
+                        "name": "@A",
+                        "url": "/2014/08/25/comment-tresser-un-panier-avec-du-papier-journal-vannerie-de-papier-recup/"
+                    },
+                    {
+                        "name": "#D",
+                        "url": "http://www.mediafire.com/?c4o2bxfd3pnep"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Comment tresser un panier avec du papier journal, vannerie de papier, recup",
+                        "url": "/2014/08/25/comment-tresser-un-panier-avec-du-papier-journal-vannerie-de-papier-recup/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/25/comment-tresser-un-panier-avec-du-papier-journal-vannerie-de-papier-recup/"
+                    },
+                    {
+                        "name": "4 commentaires",
+                        "url": "/2014/08/25/comment-tresser-un-panier-avec-du-papier-journal-vannerie-de-papier-recup/#commentsModule10074564922"
+                    },
+                    {
+                        "name": "Les perles des Archives / Vol1",
+                        "url": "/2015/08/15/les-perles-des-archives-vol1/"
+                    },
+                    {
+                        "name": "Tous les livres de Gardner Dexter",
+                        "url": "https://archive.org/search.php?query=creator%3A%22Hiscox%2C+Gardner+Dexter%2C+1822%3F-1908%22"
+                    },
+                    {
+                        "name": "Henley's twentieth century forrmulas",
+                        "url": "https://archive.org/details/henleystwentieth00hiscrich"
+                    },
+                    {
+                        "name": "Mechanical movements, powers, devices and\n    applicances",
+                        "url": "https://archive.org/details/mechanicalmovem04hiscgoog"
+                    },
+                    {
+                        "name": "Mechanical appliances, mechanical movements and novelties of\n    construction",
+                        "url": "https://archive.org/details/mechanicalappli00dextgoog"
+                    },
+                    {
+                        "name": "Receipts and remedies",
+                        "url": "https://archive.org/details/receiptsandreme00flemgoog"
+                    },
+                    {
+                        "name": "The engineer's sketch-book of mechanical movements, devices, appliances",
+                        "url": "https://archive.org/details/engineerssketchb00barb"
+                    },
+                    {
+                        "name": "Five hundred and seven mechanial movements",
+                        "url": "https://archive.org/details/fivehundredseven02brow"
+                    },
+                    {
+                        "name": "The Dangerous Book for Boys",
+                        "url": "http://kat.cr/the-dangerous-book-for-boys-us-by-conn-and-hal-iggulden-retail-dwg-t9511544.html"
+                    },
+                    {
+                        "name": "Backyard ballistics",
+                        "url": "http://kat.cr/backyard-ballistics-epub-retail-32skulls-t9572218.html"
+                    },
+                    {
+                        "name": "Absinthe and Flamethrowers",
+                        "url": "http://kat.cr/william-gurstelle-absinthe-and-flamethrowers-projects-and-ruminations-on-the-art-of-living-dangerously-epub-plex-t10379851.html"
+                    },
+                    {
+                        "name": "Scientific American handy book of facts and\n    formulae",
+                        "url": "https://archive.org/details/scientificameric03hopk"
+                    },
+                    {
+                        "name": "Encyclopedia of practical receipts and processes",
+                        "url": "https://archive.org/details/encyclopediaofpr00dickrich"
+                    },
+                    {
+                        "name": "Magic; stage illusions and scientific diversions",
+                        "url": "https://archive.org/details/magicstageillusi00hopk"
+                    },
+                    {
+                        "name": "Uncle Josh's trunk-full of fun",
+                        "url": "https://archive.org/details/unclejoshstrunkf00dick"
+                    },
+                    {
+                        "name": "What shall we do to-night?",
+                        "url": "https://archive.org/details/whatshallwedoton00dickrich"
+                    },
+                    {
+                        "name": "Bulletins d'arboriculture, de culture potagère et de floriculture",
+                        "url": "https://archive.org/details/bulletinsdarbor04unkngoog"
+                    },
+                    {
+                        "name": "1 commentaires",
+                        "url": "/2015/08/15/les-perles-des-archives-vol1/#commentsModule12279021122"
+                    },
+                    {
+                        "name": "Faites tout vous même / Savoir revivre / Revivre à la campagne",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/#commentsModule10075095722"
+                    }
+                ]
+            },
+            {
+                "url": "https://ecoclash.jimdofree.com/accueil/artisanat/synergie-liens/",
+                "title": "Synergie, liens - Partage de savoirs, alternatives pratique, autoconstruction, permaculture",
+                "intro": "🔨 Artisanat & Bricolage Low-Tech (mise à jour avril 2026)\n    Fabrication d’outils, meubles, vannerie, couture, bushcraft, survival et DIY open-source. Techniques manuelles, réparables et autonomes.",
+                "links": [
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "NoPanic – Outillages Low-Tech",
+                        "url": "https://nopanic.fr/low-tech/outillages-low-tech/"
+                    },
+                    {
+                        "name": "La Fabriculture",
+                        "url": "https://www.lafabriculture.fr/"
+                    },
+                    {
+                        "name": "Instructables",
+                        "url": "https://www.instructables.com/"
+                    },
+                    {
+                        "name": "r/DIY (Reddit)",
+                        "url": "https://www.reddit.com/r/DIY/"
+                    },
+                    {
+                        "name": "Opendesk",
+                        "url": "https://opendesk.cc/"
+                    },
+                    {
+                        "name": "Hyperwood – Open-Source Furniture",
+                        "url": "https://github.com/jo/hyperwood"
+                    },
+                    {
+                        "name": "Ana White",
+                        "url": "https://www.ana-white.com/"
+                    },
+                    {
+                        "name": "r/woodworking (Reddit)",
+                        "url": "https://www.reddit.com/r/woodworking/"
+                    },
+                    {
+                        "name": "Vannerie.com",
+                        "url": "https://www.vannerie.com/"
+                    },
+                    {
+                        "name": "Basketry and Beyond",
+                        "url": "https://www.basketryandbeyond.org/"
+                    },
+                    {
+                        "name": "r/Bushcraft (Reddit)",
+                        "url": "https://www.reddit.com/r/Bushcraft/"
+                    },
+                    {
+                        "name": "Tissus.net",
+                        "url": "https://www.tissus.net/"
+                    },
+                    {
+                        "name": "r/sewing (Reddit)",
+                        "url": "https://www.reddit.com/r/sewing/"
+                    },
+                    {
+                        "name": "Patterns for Pirates",
+                        "url": "https://www.patternsforpirates.com/"
+                    },
+                    {
+                        "name": "r/Bushcraft (Reddit)",
+                        "url": "https://www.reddit.com/r/Bushcraft/"
+                    },
+                    {
+                        "name": "r/Survival (Reddit)",
+                        "url": "https://www.reddit.com/r/Survival/"
+                    },
+                    {
+                        "name": "Bushcraft.fr",
+                        "url": "https://bushcraft.fr/"
+                    },
+                    {
+                        "name": "PrimitiveWays",
+                        "url": "https://www.primitiveways.com/"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mouvement",
+        "icon": "🚲",
+        "title": {
+            "fr": "Mobilité, Voyage & Nomades",
+            "en": "Mobility, Critical Mass & Nomads",
+            "es": "Movilidad Sostenible y Comunidad Nómada"
+        },
+        "pages": [
+            {
+                "url": "https://ecoclash.jimdofree.com/synergies-liens/mouvement-mobilité-voyage/",
+                "title": "Vélo, covoiturage, Critical Mass, autostop, voyage... - Partage de savoirs, alternatives pratique, autoconstruction, permaculture",
+                "intro": "- Hitchwiki.org et Hitchbase.com et Autostop navigator et Liftershalte.info : base de données, infos, conseils, lieux pour l'autostop, le pouce...\n    - Maps.hitchwiki.org : Liftershalte - Infos autostop, lieux, conseils, carte.\n    - Akende : Covoiturage, stop, nomadisme - Lepouceux.com : Voyage sur le pouce, covoiturage, voyage petit budjet...\n    - Digihitch.com : Hitchhiking, backpacking and budget travel on the road :: Stories, tips and\n    advice :: Movies, music, book resources\n    - Collectif sans ticket : Collectifs pour les transport publique gratuit - The Academy of free travel : club d'autostop russe.\n    - Onebag.com : L'art et la science de voyager léger.(eng) - Hitchhiking's signs...\n    - Nomadic life faq...\n    - Staynomad.com : Travel and stay free, travel cheaper or for free, meet local people worldwide\n    and experience culture from the inside\n    - Echoway.org : Voyage équitable, liens bénévolat... /  A360.org : Revue de voyage utile, documentaires, thématiques /  Le routard.com : le site du guide!  /\n    - Findacrew.net : Trouver un équipage, cobateauage.. travail a bord..  bateaustop... \n    Stw.fr : Association Sail the World , bourse d'équipier bateau...  /\n    - Clearlyenlight.net : Travel blog, accueil local, couch, wwoof, home sitting...\n    - Liens voyage a vélo  - Criticalmass.ch : Masse critique en suisse. - Aspic.ch : Asso pour l'intérêt des cyclistes (ch, ge)\n    - Crazyguyonabike.com : portail du tourisme à vélo - Cyclic.info : Asso promotion vélo Lausanne et dans sa région.(ch, lau)\n    - Woring your way around the world\n    ...\n    *- Cargo trailer, Bike traileler (récup\n    poussette), Bamboo bicycle trailer (plan sur demande), Le Cartbike (chariot supermarché + vélo),\n    *- Bike trailer (une autre)  /  Liste de liens remorque (eng),\n    une remorque en bois, quelques idées de remorques, exemple d'attache au niveau du vélo,\n    *- Bikehacks.com : Les hackers de vélo, transfo, modif ...\n    *- Construire Une remorque pour\n    vélo  / Bicycle trailer (wiki)(eng)  /\n     info constru  et re  /   Bikecart.pedalpeople.com : plein de remorque\n    utilitaire\n    \n    Covoiturage :  Ecotrajet.com  (fr) - 123envoiture.com  (fr, europe) -  Covoiturage.fr  (fr) -  Covoiturage-france.fr  (fr)\n    - Tribu-covoiturage.com  (fr)  -  Carstops.org  (fr)\n    -  Hitchhikers.de  (eu, monde) -  Drivetoday.de  (eu, monde)  -  Covoiturage.ch  (ch) -  E-covoiturage.ch\n     (eu, monde)\n    -  Mitfahrzentrale.ch  (eu) -  Goclicktravel.com  (monde) -  Covoiturage.com  (fr, eu)-  Compartir.org  \n    (europe, monde)",
+                "links": [
+                    {
+                        "name": "Hitchwiki.org",
+                        "url": "http://www.hitchwiki.org/"
+                    },
+                    {
+                        "name": "Hitchbase.com",
+                        "url": "http://www.hitchbase.com/"
+                    },
+                    {
+                        "name": "Autostop navigator",
+                        "url": "http://home.wanadoo.nl/agghanebbah/navigator/navigator.htm"
+                    },
+                    {
+                        "name": "Liftershalte.info",
+                        "url": "http://www.liftershalte.info/"
+                    },
+                    {
+                        "name": "Maps.hitchwiki.org",
+                        "url": "http://maps.hitchwiki.org/"
+                    },
+                    {
+                        "name": "Akende",
+                        "url": "http://membres.lycos.fr/akende/"
+                    },
+                    {
+                        "name": "Lepouceux.com",
+                        "url": "http://www.lepouceux.com/"
+                    },
+                    {
+                        "name": "Digihitch.com",
+                        "url": "http://www.digihitch.com/"
+                    },
+                    {
+                        "name": "Collectif sans ticket",
+                        "url": "http://cst.collectifs.net/"
+                    },
+                    {
+                        "name": "The Academy of free travel",
+                        "url": "http://www.avp.travel.ru/AFT-2002.htm"
+                    },
+                    {
+                        "name": "Onebag.com",
+                        "url": "http://www.onebag.com/"
+                    },
+                    {
+                        "name": "Hitchhiking's signs",
+                        "url": "http://www.couchsurfing.com/group_read.html?gid=12&post=772522"
+                    },
+                    {
+                        "name": "Nomadic life faq",
+                        "url": "http://askamylin.blogspot.com/"
+                    },
+                    {
+                        "name": "Staynomad.com",
+                        "url": "http://www.staynomad.com/"
+                    },
+                    {
+                        "name": "Echoway.org",
+                        "url": "http://www.echoway.org/"
+                    },
+                    {
+                        "name": "A360.org",
+                        "url": "http://www.a360.org/"
+                    },
+                    {
+                        "name": "Le routard.com",
+                        "url": "http://www.routard.com/"
+                    },
+                    {
+                        "name": "Findacrew.net",
+                        "url": "http://www.findacrew.net/"
+                    },
+                    {
+                        "name": "Stw.fr",
+                        "url": "http://www.stw.fr/"
+                    },
+                    {
+                        "name": "Clearlyenlight.net",
+                        "url": "http://clearlyenlight.net/"
+                    },
+                    {
+                        "name": "Liens voyage a vélo",
+                        "url": "http://veleau.tripproof.com/html/liens.htm"
+                    },
+                    {
+                        "name": "Criticalmass.ch",
+                        "url": "http://www.criticalmass.ch/"
+                    },
+                    {
+                        "name": "Aspic.ch",
+                        "url": "http://www.aspic.ch/aspic/"
+                    },
+                    {
+                        "name": "Crazyguyonabike.com",
+                        "url": "http://www.crazyguyonabike.com/"
+                    },
+                    {
+                        "name": "Cyclic.info",
+                        "url": "http://www.cyclic.info/"
+                    },
+                    {
+                        "name": "Woring your way around the world",
+                        "url": "http://www.google.ch/search?q=Work+Your+Way+Around+the+World&ie=utf-8&oe=utf-8&aq=t&rls=org.mozilla:fr:official&client=firefox-a"
+                    },
+                    {
+                        "name": "Cargo trailer",
+                        "url": "http://www.instructables.com/id/Bicycle-cargo-trailer--200-lb-capacity%2c-%2430-for-pa/?utm_source=rss&utm_medium=rss"
+                    },
+                    {
+                        "name": "Bike traileler",
+                        "url": "http://www.instructables.com/id/A-bike-trailer--Thats-unheard-of/"
+                    },
+                    {
+                        "name": "Bamboo bicycle trailer",
+                        "url": "http://www.carryfreedom.com/bamboo.html"
+                    },
+                    {
+                        "name": "Le Cartbike",
+                        "url": "http://www.bicyclelaneindustries.com/bli/cartbike/"
+                    },
+                    {
+                        "name": "Bike trailer",
+                        "url": "http://drumbent.com/trailer.html"
+                    },
+                    {
+                        "name": "Liste de liens remorque",
+                        "url": "http://www.chiark.greenend.org.uk/%7Earmb/cycling/trailer.html"
+                    },
+                    {
+                        "name": "remorque en bois",
+                        "url": "http://www.howtofixbikes.ca/2006/08/how-to-build-cheap-but-good-bicycle.html"
+                    },
+                    {
+                        "name": "idées de remorques",
+                        "url": "http://www.bike-buggy.com/eng/"
+                    },
+                    {
+                        "name": "d'attache au niveau du vélo",
+                        "url": "http://www.instructables.com/id/Quick-Hitch-for-bike-trailer/"
+                    },
+                    {
+                        "name": "Bikehacks.com",
+                        "url": "http://bikehacks.com/"
+                    },
+                    {
+                        "name": "Une remorque pour\n    vélo",
+                        "url": "http://www.instructables.com/id/Cargo-Trailer-for-Bicycle/"
+                    },
+                    {
+                        "name": "Bicycle trailer",
+                        "url": "http://en.wikipedia.org/wiki/Bicycle_trailer"
+                    },
+                    {
+                        "name": "info constru",
+                        "url": "http://www.wikihow.com/Build-a-Bicycle-Cargo-Trailer"
+                    },
+                    {
+                        "name": "re",
+                        "url": "http://drumbent.com/trailer_big.html"
+                    },
+                    {
+                        "name": "Bikecart.pedalpeople.com",
+                        "url": "http://bikecart.pedalpeople.com/gallery.html"
+                    },
+                    {
+                        "name": "Ecotrajet.com",
+                        "url": "http://www.ecotrajet.com/index.php"
+                    },
+                    {
+                        "name": "123envoiture.com",
+                        "url": "http://www.123envoiture.com/"
+                    },
+                    {
+                        "name": "Covoiturage.fr",
+                        "url": "http://www.covoiturage.fr/"
+                    },
+                    {
+                        "name": "Covoiturage-france.fr",
+                        "url": "http://www.covoiturage-france.fr/"
+                    },
+                    {
+                        "name": "Tribu-covoiturage.com",
+                        "url": "http://www.tribu-covoiturage.com/"
+                    },
+                    {
+                        "name": "Carstops.org",
+                        "url": "http://www.carstops.org/"
+                    },
+                    {
+                        "name": "Hitchhikers.de",
+                        "url": "http://www.hitchhikers.de/"
+                    },
+                    {
+                        "name": "Drivetoday.de",
+                        "url": "http://www.drivetoday.de/"
+                    },
+                    {
+                        "name": "Covoiturage.ch",
+                        "url": "http://www.covoiturage.ch/"
+                    },
+                    {
+                        "name": "E-covoiturage.ch",
+                        "url": "http://www.e-covoiturage.ch/"
+                    },
+                    {
+                        "name": "Mitfahrzentrale.ch",
+                        "url": "http://www.mitfahrzentrale.ch/"
+                    },
+                    {
+                        "name": "Goclicktravel.com",
+                        "url": "http://www.goclicktravel.com/"
+                    },
+                    {
+                        "name": "Covoiturage.com",
+                        "url": "http://www.covoiturage.com/"
+                    },
+                    {
+                        "name": "Compartir.org",
+                        "url": "http://www.compartir.org/"
+                    },
+                    {
+                        "name": "https://x.com/share?text=Mouvement%2C%20mobilit%C3%A9%2C%20voyage&url=https%3A%2F%2Fecoclash.jimdofree.com%2Fsynergies-liens%2Fmouvement-mobilit%25C3%25A9-voyage%2F",
+                        "url": "https://x.com/share?text=Mouvement%2C%20mobilit%C3%A9%2C%20voyage&url=https%3A%2F%2Fecoclash.jimdofree.com%2Fsynergies-liens%2Fmouvement-mobilit%25C3%25A9-voyage%2F"
+                    }
+                ]
+            },
+            {
+                "url": "https://ecoclash.jimdofree.com/synergies-liens/mouvement-mobilité-voyage/nomades/",
+                "title": "Nomades, caravane, marche, tour à vélo, roulotte, voyage, wwoof... - Partage de savoirs, alternatives pratique, autoconstruction, permaculture",
+                "intro": "En cours et à venir :",
+                "links": [
+                    {
+                        "name": "Tribuvivace.com",
+                        "url": "http://tribuvivace.com/appel-de-la-marche-aux-villages-eclairs-2013/"
+                    },
+                    {
+                        "name": "http://voyageurs.en-transition.fr/",
+                        "url": "http://voyageurs.en-transition.fr/"
+                    },
+                    {
+                        "name": "Caravanenomad.blog4ever.com",
+                        "url": "http://caravanenomad.blog4ever.com/"
+                    },
+                    {
+                        "name": "Est-roulotte.over-blog.com",
+                        "url": "http://est-roulotte.over-blog.com/"
+                    },
+                    {
+                        "name": "Nomad-land.com",
+                        "url": "http://www.nomad-land.com/index.php"
+                    },
+                    {
+                        "name": "La Caravane des espaces libres",
+                        "url": "http://lacaravanedesespaceslibres.blogspot.com/"
+                    },
+                    {
+                        "name": "Agirlandherthumb.wordpress.com",
+                        "url": "http://agirlandherthumb.wordpress.com/"
+                    },
+                    {
+                        "name": "Afrikaroots.uniterre.com",
+                        "url": "http://afrikaroots.uniterre.com/"
+                    },
+                    {
+                        "name": "Utopiasparacaminar.bitacoras.com",
+                        "url": "http://utopiasparacaminar.bitacoras.com/"
+                    },
+                    {
+                        "name": "Areyouseriousproject.com",
+                        "url": "http://www.areyouseriousproject.com/"
+                    },
+                    {
+                        "name": "Twowheelsforchange.blogsport.de",
+                        "url": "http://twowheelsforchange.blogsport.de/"
+                    },
+                    {
+                        "name": "Roule-ta-bille.com",
+                        "url": "http://www.roule-ta-bille.com/index.htm"
+                    },
+                    {
+                        "name": "CS nomadic convoy to Asia",
+                        "url": "http://www.couchsurfing.com/group_read.html?gid=1173&post=2621244"
+                    },
+                    {
+                        "name": "Ventsnomades.org",
+                        "url": "http://www.ventsnomades.org/"
+                    },
+                    {
+                        "name": "Roulenroutes.fr",
+                        "url": "http://www.roulenroutes.fr/"
+                    },
+                    {
+                        "name": "Le rêve de l'arbre",
+                        "url": "http://platcommelaterre.fr/"
+                    },
+                    {
+                        "name": "Tour du monde à vélo",
+                        "url": "http://www.crazyguyonabike.com/doc/worldtour07"
+                    },
+                    {
+                        "name": "Ecoveloroute.uniterre.com",
+                        "url": "http://ecoveloroute.uniterre.com/"
+                    },
+                    {
+                        "name": "Festoch'Road 2010",
+                        "url": "http://festi-tour.xooit.com/index.php"
+                    },
+                    {
+                        "name": "Bohemia.uniterre.com",
+                        "url": "http://bohemia.uniterre.com/"
+                    },
+                    {
+                        "name": "Lenatyry.skyblog.com",
+                        "url": "http://www.lenatyry.skyblog.com/"
+                    },
+                    {
+                        "name": "Skillsurfers.eu",
+                        "url": "http://www.skillsurfers.eu/"
+                    },
+                    {
+                        "name": "Migrobirdo.org",
+                        "url": "http://blog.migrobirdo.org/"
+                    },
+                    {
+                        "name": "Ouvertour.org",
+                        "url": "http://www.ouvertour.org/"
+                    },
+                    {
+                        "name": "Lamarcheduvivant.org",
+                        "url": "http://www.lamarcheduvivant.org/"
+                    },
+                    {
+                        "name": "Les voyageurs du possible",
+                        "url": "http://www.econo-ecolo.org/spip.php?article634"
+                    },
+                    {
+                        "name": "Colporteurdespossibles.over-blog.com",
+                        "url": "http://colporteurdespossibles.over-blog.com/"
+                    },
+                    {
+                        "name": "Planeted.eu",
+                        "url": "http://www.planeted.eu/"
+                    },
+                    {
+                        "name": "Greenwagon.org",
+                        "url": "http://www.greenwagon.org/"
+                    },
+                    {
+                        "name": "Lespotesdefoin.asso.fr",
+                        "url": "http://www.lespotesdefoin.asso.fr/"
+                    },
+                    {
+                        "name": "Economads.com",
+                        "url": "http://www.economads.com/"
+                    },
+                    {
+                        "name": "Greenbikesforpeace.eu",
+                        "url": "http://greenbikesforpeace.eu/"
+                    },
+                    {
+                        "name": "Mikeiswwoofing.blogspot.com",
+                        "url": "http://mikeiswwoofing.blogspot.com/"
+                    },
+                    {
+                        "name": "Cyclown.org",
+                        "url": "http://cyclown.org/"
+                    },
+                    {
+                        "name": "Cie Tourne-sol",
+                        "url": "http://flore99.free.fr/"
+                    },
+                    {
+                        "name": "La caravane permanente",
+                        "url": "http://cp.squat.net/karavane.php3"
+                    },
+                    {
+                        "name": "Gazette",
+                        "url": "http://1libertaire.free.fr/CaravanePermanente01.html"
+                    },
+                    {
+                        "name": "autre présentation",
+                        "url": "http://www.ainfos.ca/03/jul/ainfos00059.html"
+                    },
+                    {
+                        "name": "Nomadsunited.com",
+                        "url": "http://nomadsunited.com/"
+                    },
+                    {
+                        "name": "Lacaravana.org",
+                        "url": "http://www.huehuecoyotl.net/Bienvenidos.html"
+                    },
+                    {
+                        "name": "Flowerpowerbus.com",
+                        "url": "http://www.flowerpowerbus.com/"
+                    },
+                    {
+                        "name": "https://x.com/share?text=Nomades&url=https%3A%2F%2Fecoclash.jimdofree.com%2Fsynergies-liens%2Fmouvement-mobilit%25C3%25A9-voyage%2Fnomades%2F",
+                        "url": "https://x.com/share?text=Nomades&url=https%3A%2F%2Fecoclash.jimdofree.com%2Fsynergies-liens%2Fmouvement-mobilit%25C3%25A9-voyage%2Fnomades%2F"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "partage",
+        "icon": "🤝",
+        "title": {
+            "fr": "Partage, Échange, SEL & JEU",
+            "en": "Barter, Mutual Aid & Gift Economies",
+            "es": "Trueque, Apoyo Mutuo y Economía Libre"
+        },
+        "pages": [
+            {
+                "url": "https://ecoclash.jimdofree.com/synergies-liens/partage-échange-troc-don/",
+                "title": "Savoirs, services, SEL, JEU :",
+                "intro": "Hébérgement gratuit, volontariat , accueil, aide en échange du\n    logement, de la nouriture",
+                "links": [
+                    {
+                        "name": "Couchsurfing.com",
+                        "url": "http://www.couchsurfing.com/"
+                    },
+                    {
+                        "name": "Hospitality club",
+                        "url": "http://www.hospitalityclub.org/"
+                    },
+                    {
+                        "name": "Warmshowers.org",
+                        "url": "http://www.warmshowers.org/"
+                    },
+                    {
+                        "name": "Bewelcome.org",
+                        "url": "http://www.bewelcome.org/"
+                    },
+                    {
+                        "name": "Globalfreeloaders.com",
+                        "url": "http://www.globalfreeloaders.com/"
+                    },
+                    {
+                        "name": "Welcometraveller.org",
+                        "url": "http://www.welcometraveller.org/"
+                    },
+                    {
+                        "name": "Servas",
+                        "url": "http://joomla.servas.org/"
+                    },
+                    {
+                        "name": "Casarobino.org",
+                        "url": "http://casarobino.org/"
+                    },
+                    {
+                        "name": "Opencouchsurfing.org",
+                        "url": "http://www.opencouchsurfing.org/"
+                    },
+                    {
+                        "name": "Nomadbase.org",
+                        "url": "http://nomadbase.org/"
+                    },
+                    {
+                        "name": "Pasportaservo.org",
+                        "url": "http://www.pasportaservo.org/"
+                    },
+                    {
+                        "name": "Les Hospitality clubs",
+                        "url": "http://directory.google.com/Top/Recreation/Travel/Lodging/Hospitality_Clubs/"
+                    },
+                    {
+                        "name": "Liste de service\n    d'hébergement",
+                        "url": "http://fr.wikipedia.org/wiki/Service_d%27h%C3%A9bergement"
+                    },
+                    {
+                        "name": "Hospitality\n    Clubs",
+                        "url": "http://www.dmoz.org/Recreation/Travel/Lodging/Hospitality_Clubs/"
+                    },
+                    {
+                        "name": "Hospitalityguide",
+                        "url": "http://www.hospitalityguide.net/hg/site/?"
+                    },
+                    {
+                        "name": "Wanderingwwoof.com",
+                        "url": "http://wanderingwwoof.com/"
+                    },
+                    {
+                        "name": "Helpx.net",
+                        "url": "http://www.helpx.net/"
+                    },
+                    {
+                        "name": "Wwoof.org",
+                        "url": "http://www.wwoof.org/"
+                    },
+                    {
+                        "name": "Workaway.info",
+                        "url": "http://www.workaway.info/"
+                    },
+                    {
+                        "name": "The7interchange.com",
+                        "url": "http://www.the7interchange.com/"
+                    },
+                    {
+                        "name": "Hostandcare.com",
+                        "url": "http://hostandcare.com/"
+                    },
+                    {
+                        "name": "Forum sur le wwoof",
+                        "url": "http://www.forumromanum.com/member/forum/forum.php?action=st..."
+                    },
+                    {
+                        "name": "Sustainablecommunitiesaroundtheworld.blogspot.com",
+                        "url": "http://sustainablecommunitiesaroundtheworld.blogspot.com/"
+                    },
+                    {
+                        "name": "Viagensverdes.wordpress.com",
+                        "url": "http://viagensverdes.wordpress.com/"
+                    },
+                    {
+                        "name": "Longterm couch",
+                        "url": "http://www.couchsurfing.org/group.html?gid=920"
+                    },
+                    {
+                        "name": "Rural couch",
+                        "url": "http://www.couchsurfing.org/group.html?gid=9949"
+                    },
+                    {
+                        "name": "Wwoof",
+                        "url": "http://www.couchsurfing.com/group.html?gid=622"
+                    },
+                    {
+                        "name": "Wwoofers Unite",
+                        "url": "http://www.couchsurfing.org/group.html?gid=3842"
+                    },
+                    {
+                        "name": "Helpx",
+                        "url": "http://www.couchsurfing.com/group.html?gid=626"
+                    },
+                    {
+                        "name": "Farm\n        stay around the world",
+                        "url": "http://www.couchsurfing.com/group.html?gid=12532"
+                    },
+                    {
+                        "name": "FYI Families & Aupairs : (or nannies)",
+                        "url": "http://www.couchsurfing.org/group.html?gid=3651"
+                    },
+                    {
+                        "name": "Europe\n        AuPairs",
+                        "url": "http://www.couchsurfing.org/group.html?gid=5058"
+                    },
+                    {
+                        "name": "Traveling Caregiver",
+                        "url": "http://www.couchsurfing.org/group.html?gid=8039"
+                    },
+                    {
+                        "name": "House sitters club",
+                        "url": "http://www.couchsurfing.org/group.html?gid=840"
+                    },
+                    {
+                        "name": "House-sitting",
+                        "url": "http://www.couchsurfing.org/group.html?gid=8572"
+                    },
+                    {
+                        "name": "Traveller Housekeepers",
+                        "url": "http://www.couchsurfing.org/group.html?gid=3153"
+                    },
+                    {
+                        "name": "Family\n        hosting long term language & culture exchanges",
+                        "url": "http://www.couchsurfing.org/group.html?gid=5724"
+                    },
+                    {
+                        "name": "Travel and Teach/learn language worldwide",
+                        "url": "http://www.couchsurfing.org/group.html?gid=1744"
+                    },
+                    {
+                        "name": "Global\n        language swap accommodation",
+                        "url": "http://www.couchsurfing.org/group.html?gid=3661"
+                    },
+                    {
+                        "name": "Sel-suisse.ch",
+                        "url": "http://www.sel-suisse.ch/"
+                    },
+                    {
+                        "name": "Troc-actif.ch",
+                        "url": "http://www.troc-actif.ch/"
+                    },
+                    {
+                        "name": "Sel-lausanne.net",
+                        "url": "http://www.sel-lausanne.net/"
+                    },
+                    {
+                        "name": "Seldulac.ch",
+                        "url": "http://www.seldulac.ch/"
+                    },
+                    {
+                        "name": "Talent.ch",
+                        "url": "http://www.talent.ch/tauschring_talent.html"
+                    },
+                    {
+                        "name": "La banque du\n    temps",
+                        "url": "http://banquetemps.free.fr/"
+                    },
+                    {
+                        "name": "Selidaire.org",
+                        "url": "http://selidaire.org/spip/"
+                    },
+                    {
+                        "name": "Transversel.apinc.org",
+                        "url": "http://transversel.apinc.org/spip/"
+                    },
+                    {
+                        "name": "Sel.leforum.eu",
+                        "url": "http://sel.leforum.eu/index.php"
+                    },
+                    {
+                        "name": "La Route des Stages",
+                        "url": "http://route.stages.free.fr/"
+                    },
+                    {
+                        "name": "La Route des Sels",
+                        "url": "http://route.des.sel.free.fr/"
+                    },
+                    {
+                        "name": "Sel-terre.info",
+                        "url": "http://www.sel-terre.info/"
+                    },
+                    {
+                        "name": "Jeu.vingrau.free.fr",
+                        "url": "http://jeu.vingrau.free.fr/"
+                    },
+                    {
+                        "name": "Jeu terriens",
+                        "url": "http://kiosq.info/ecowiki/wakka.php?wiki=AchatTerrain34"
+                    },
+                    {
+                        "name": "Mirers.org",
+                        "url": "http://www.mirers.org/"
+                    },
+                    {
+                        "name": "Recup.net",
+                        "url": "http://www.recupe.net/"
+                    },
+                    {
+                        "name": "Betteruse.org",
+                        "url": "http://www.betteruse.org/"
+                    },
+                    {
+                        "name": "Freecycle.org",
+                        "url": "http://www.freecycle.org/"
+                    },
+                    {
+                        "name": "Freecycle sur flickr",
+                        "url": "http://flickr.com/groups/freecycle-treasures/"
+                    },
+                    {
+                        "name": "Wigiwig.com",
+                        "url": "http://www.wigiwig.com/"
+                    },
+                    {
+                        "name": "Gooduse.org",
+                        "url": "http://www.gooduse.org/"
+                    },
+                    {
+                        "name": "Donoo.eu",
+                        "url": "http://www.donoo.eu/"
+                    },
+                    {
+                        "name": "Donnons.org",
+                        "url": "http://donnons.org/"
+                    },
+                    {
+                        "name": "Digitroc.com",
+                        "url": "http://www.digitroc.com/dons.php"
+                    },
+                    {
+                        "name": "Simpletroc.com",
+                        "url": "http://www.simpletroc.com/"
+                    },
+                    {
+                        "name": "Troczone.com",
+                        "url": "http://www.troczone.com/"
+                    },
+                    {
+                        "name": "Graines-et-plantes.com",
+                        "url": "http://www.graines-et-plantes.com/"
+                    },
+                    {
+                        "name": "Justfortheloveofit.org",
+                        "url": "http://www.justfortheloveofit.org/"
+                    },
+                    {
+                        "name": "Trocaffaire.ch",
+                        "url": "http://trocaffaire.ch/"
+                    },
+                    {
+                        "name": "https://x.com/share?text=Partage%2C%20%C3%A9change%2C%20troc%2C%20don&url=https%3A%2F%2Fecoclash.jimdofree.com%2Fsynergies-liens%2Fpartage-%25C3%25A9change-troc-don%2F",
+                        "url": "https://x.com/share?text=Partage%2C%20%C3%A9change%2C%20troc%2C%20don&url=https%3A%2F%2Fecoclash.jimdofree.com%2Fsynergies-liens%2Fpartage-%25C3%25A9change-troc-don%2F"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "village",
+        "icon": "🌍",
+        "title": {
+            "fr": "Village Global, Actu & En Vrac",
+            "en": "Global Village, Eco-News & Misc",
+            "es": "Aldea Global, Noticias y Recursos"
+        },
+        "pages": [
+            {
+                "url": "https://ecoclash.jimdofree.com/accueil/médiathèque/",
+                "title": "La dropbox de la médiathèque !",
+                "intro": "Le but de cet infokiosque / médiathèque est de réunir et partager des infos pratiques. Pour cultiver, construire, fabriquer divers outils et objets, bricoler, se chauffer, manger, se\n    soigner, produire de l'énergie,  transmettre des savoirs populaires oubliés...",
+                "links": [
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "FileFolder MF",
+                        "url": "http://www.mediafire.com/?4huc2kfj5dpko"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Par ici",
+                        "url": "https://www.mediafire.com/folder/nvclk8y8a1df7/M%C3%A9diath%C3%A8que_-_Boite_au_lettre"
+                    },
+                    {
+                        "name": "https://x.com/share?text=M%C3%A9diath%C3%A8que&url=https%3A%2F%2Fecoclash.jimdofree.com%2Faccueil%2Fm%25C3%25A9diath%25C3%25A8que%2F",
+                        "url": "https://x.com/share?text=M%C3%A9diath%C3%A8que&url=https%3A%2F%2Fecoclash.jimdofree.com%2Faccueil%2Fm%25C3%25A9diath%25C3%25A8que%2F"
+                    },
+                    {
+                        "name": "/cdn-cgi/l/email-protection#5c632f293e36393f286111791f6f791d6538353d2834791f6f791d642d29397a3d312c673e333825613428282c2f667373393f333f303d2f347236353138333a2e3939723f3331733d3f3f293935307331791f6f791d6538353d2834791f6f791d642d293973",
+                        "url": "/cdn-cgi/l/email-protection#5c632f293e36393f286111791f6f791d6538353d2834791f6f791d642d29397a3d312c673e333825613428282c2f667373393f333f303d2f347236353138333a2e3939723f3331733d3f3f293935307331791f6f791d6538353d2834791f6f791d642d293973"
+                    }
+                ]
+            },
+            {
+                "url": "https://ecoclash.jimdofree.com/accueil/médiathèque/liste-de-médiathèques/",
+                "title": "Liste de médiathèques - Partage de savoirs, alternatives pratique, autoconstruction, permaculture",
+                "intro": "Bases de données, médiathèques et ressources (mise à jour 2026)",
+                "links": [
+                    {
+                        "name": "United Diversity Library",
+                        "url": "https://library.uniteddiversity.coop/"
+                    },
+                    {
+                        "name": "NoPanic BookBank",
+                        "url": "https://nopanic.fr/bookbank/"
+                    },
+                    {
+                        "name": "Z-Library",
+                        "url": "https://z-lib.ai/"
+                    },
+                    {
+                        "name": "Anna’s Archive",
+                        "url": "https://annas-archive.org/"
+                    },
+                    {
+                        "name": "Domerama Free Plans",
+                        "url": "https://www.domerama.com/free-plans/"
+                    },
+                    {
+                        "name": "CD3WD",
+                        "url": "http://www.cd3wd.com/"
+                    },
+                    {
+                        "name": "Internet Archive",
+                        "url": "https://archive.org/"
+                    },
+                    {
+                        "name": "Open Library",
+                        "url": "https://openlibrary.org/"
+                    },
+                    {
+                        "name": "Gallica (BNF)",
+                        "url": "https://gallica.bnf.fr/"
+                    },
+                    {
+                        "name": "Permatheque",
+                        "url": "https://www.permatheque.fr/"
+                    },
+                    {
+                        "name": "Bushcraft UK Downloads",
+                        "url": "http://www.bushcraftuk.com/forum/content.php?r=124-downloads-bushcraftuk"
+                    },
+                    {
+                        "name": "Let’s Remake Library",
+                        "url": "http://www.letsremake.info/library_2.html"
+                    },
+                    {
+                        "name": "http://www.permatheque.fr/category/dossiers/sources-pdf/",
+                        "url": "http://www.permatheque.fr/category/dossiers/sources-pdf/"
+                    },
+                    {
+                        "name": "http://permabox.ressources-permaculture.fr/",
+                        "url": "http://permabox.ressources-permaculture.fr/"
+                    },
+                    {
+                        "name": "http://library.uniteddiversity.coop/",
+                        "url": "http://library.uniteddiversity.coop/"
+                    },
+                    {
+                        "name": "http://nopanic.fr/bookbank/",
+                        "url": "http://nopanic.fr/bookbank/"
+                    },
+                    {
+                        "name": "http://gen.lib.rus.ec/",
+                        "url": "http://gen.lib.rus.ec/"
+                    },
+                    {
+                        "name": "http://vozciudadanachile.cl/25-libros-sobre-construccion-natural-en-formato-pdf",
+                        "url": "http://vozciudadanachile.cl/25-libros-sobre-construccion-natural-en-formato-pdf"
+                    },
+                    {
+                        "name": "http://caminosostenible.org/libreria/",
+                        "url": "http://caminosostenible.org/libreria/"
+                    },
+                    {
+                        "name": "http://www.preppers.info/Free_Downloads.html",
+                        "url": "http://www.preppers.info/Free_Downloads.html"
+                    },
+                    {
+                        "name": "http://pssurvival.com/ps/index.htm",
+                        "url": "http://pssurvival.com/ps/index.htm"
+                    },
+                    {
+                        "name": "https://www.mediafire.com/?u9mow2pvtwzqx",
+                        "url": "https://www.mediafire.com/?u9mow2pvtwzqx"
+                    },
+                    {
+                        "name": "http://www.domerama.com/free-plans/",
+                        "url": "http://www.domerama.com/free-plans/"
+                    },
+                    {
+                        "name": "http://craterre.org/diffusion:ouvrages-telechargeables/",
+                        "url": "http://craterre.org/diffusion:ouvrages-telechargeables/"
+                    },
+                    {
+                        "name": "http://archive.org",
+                        "url": "http://archive.org/search.php?query=%28agriculture%29%20AND%20language%3A%28french%29"
+                    },
+                    {
+                        "name": "http://openlibrary.org",
+                        "url": "http://openlibrary.org/search?q=agriculture&has_fulltext=true&language=fre&subject_facet=Accessible+book"
+                    },
+                    {
+                        "name": "http://gallica.bnf.fr",
+                        "url": "http://gallica.bnf.fr/?lang=FR"
+                    },
+                    {
+                        "name": "http://www.cd3wd.com/",
+                        "url": "http://www.cd3wd.com/"
+                    },
+                    {
+                        "name": "http://www.bushcraftuk.com/forum/content.php?r=124-downloads-bushcraftuk",
+                        "url": "http://www.bushcraftuk.com/forum/content.php?r=124-downloads-bushcraftuk"
+                    },
+                    {
+                        "name": "http://oldu.ispeed.org/docs/",
+                        "url": "http://oldu.ispeed.org/docs/"
+                    },
+                    {
+                        "name": "http://www.letsremake.info/library_2.html",
+                        "url": "http://www.letsremake.info/library_2.html"
+                    },
+                    {
+                        "name": "https://x.com/share?text=Liste%20de%20m%C3%A9diath%C3%A8ques&url=https%3A%2F%2Fecoclash.jimdofree.com%2Faccueil%2Fm%25C3%25A9diath%25C3%25A8que%2Fliste-de-m%25C3%25A9diath%25C3%25A8ques%2F",
+                        "url": "https://x.com/share?text=Liste%20de%20m%C3%A9diath%C3%A8ques&url=https%3A%2F%2Fecoclash.jimdofree.com%2Faccueil%2Fm%25C3%25A9diath%25C3%25A8que%2Fliste-de-m%25C3%25A9diath%25C3%25A8ques%2F"
+                    }
+                ]
+            },
+            {
+                "url": "https://ecoclash.jimdofree.com/accueil/en-vrac/",
+                "title": "En vrac :",
+                "intro": "Maj en cours...",
+                "links": []
+            },
+            {
+                "url": "https://ecoclash.jimdofree.com/synergies-liens/",
+                "title": "La synergie des synapses... - Partage de savoirs, alternatives pratique, autoconstruction, permaculture",
+                "intro": "",
+                "links": [
+                    {
+                        "name": "Wik",
+                        "url": "http://fr.wikipedia.org/wiki/Synergie"
+                    },
+                    {
+                        "name": "Wik",
+                        "url": "http://fr.wikipedia.org/wiki/Synapse"
+                    }
+                ]
+            },
+            {
+                "url": "https://ecoclash.jimdofree.com/synergies-liens/actu/",
+                "title": "News d'un monde...",
+                "intro": "Voici quelques reportages et liens consacrés à la Zad à Notre Dame des Landes.",
+                "links": [
+                    {
+                        "name": "# NDDL - ZAD",
+                        "url": "/2014/08/11/nddl-zad/"
+                    },
+                    {
+                        "name": "http://zad.nadir.org/",
+                        "url": "http://zad.nadir.org/"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/11/nddl-zad/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/11/nddl-zad/#commentsModule9996823122"
+                    },
+                    {
+                        "name": "[Squat!net]",
+                        "url": "https://fr.squat.net"
+                    },
+                    {
+                        "name": ">> Lire la suite",
+                        "url": "https://fr.squat.net/2026/06/19/paris-rassemblement-et-concert-de-soutien-au-camp-des-mal-loges-a-lhotel-de-ville-samedi-20-juin/"
+                    },
+                    {
+                        "name": ">> Lire la suite",
+                        "url": "https://fr.squat.net/2026/06/12/amsterdam-la-police-essaie-de-nouvelles-astuces/"
+                    },
+                    {
+                        "name": ">> Lire la suite",
+                        "url": "https://fr.squat.net/2026/06/04/chili-expulsion-de-lespacio-katarcis-apres-des-annees-de-resistance-face-a-labandon-de-valparaiso/"
+                    },
+                    {
+                        "name": ">> Lire la suite",
+                        "url": "https://fr.squat.net/2026/05/31/vitry-sur-seine-94-une-journee-consacree-aux-squats-en-grece-dimanche-7-juin-a-la-kunda/"
+                    },
+                    {
+                        "name": "UtopLib - Utopies libertaires",
+                        "url": "http://www.blogger.com/feeds/7534619927542150481/posts/default"
+                    },
+                    {
+                        "name": ">> Lire la suite",
+                        "url": "https://utoplib.blogspot.com/2025/12/noel-libertaire.html"
+                    },
+                    {
+                        "name": ">> Lire la suite",
+                        "url": "https://utoplib.blogspot.com/2025/10/une-utopie-face-au-chaos-ukraine.html"
+                    },
+                    {
+                        "name": ">> Lire la suite",
+                        "url": "https://utoplib.blogspot.com/2025/10/faut-plus-de-gouvernement.html"
+                    },
+                    {
+                        "name": ">> Lire la suite",
+                        "url": "https://utoplib.blogspot.com/2025/10/montrer-des-utopies-en-action.html"
+                    }
+                ]
+            },
+            {
+                "url": "https://ecoclash.jimdofree.com/synergies-liens/village-global/",
+                "title": "Village global - Partage de savoirs, alternatives pratique, autoconstruction, permaculture",
+                "intro": "\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama",
+                "links": [
+                    {
+                        "name": "Lieux de vie, collectifs, fermes, squat, ecolieu",
+                        "url": "/2015/11/25/lieux-de-vie-collectifs-fermes-squat-ecolieu/"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2015/11/25/lieux-de-vie-collectifs-fermes-squat-ecolieu/"
+                    },
+                    {
+                        "name": "9 commentaires",
+                        "url": "/2015/11/25/lieux-de-vie-collectifs-fermes-squat-ecolieu/#commentsModule10155580122"
+                    },
+                    {
+                        "name": "Farm network / Reclaim the field",
+                        "url": "/2015/08/14/farm-network-reclaim-the-field/"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2015/08/14/farm-network-reclaim-the-field/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2015/08/14/farm-network-reclaim-the-field/#commentsModule12277759922"
+                    },
+                    {
+                        "name": "La goutte d'eau Cette-Eygun - Pyrénées-Atlantiques",
+                        "url": "/2014/08/26/la-goutte-d-eau-cette-eygun-pyr%C3%A9n%C3%A9es-atlantiques/"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/26/la-goutte-d-eau-cette-eygun-pyr%C3%A9n%C3%A9es-atlantiques/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/26/la-goutte-d-eau-cette-eygun-pyr%C3%A9n%C3%A9es-atlantiques/#commentsModule10155513622"
+                    },
+                    {
+                        "name": "Ermitage malin (roumanie)",
+                        "url": "/2014/08/26/ermitage-malin-roumanie/"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/26/ermitage-malin-roumanie/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/26/ermitage-malin-roumanie/#commentsModule10155388322"
+                    },
+                    {
+                        "name": "Lieu de vie limousin",
+                        "url": "/2014/08/26/lieu-de-vie-limousin/"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/26/lieu-de-vie-limousin/"
+                    },
+                    {
+                        "name": "1 commentaires",
+                        "url": "/2014/08/26/lieu-de-vie-limousin/#commentsModule10155323922"
+                    },
+                    {
+                        "name": "Ecolieu des Crozes-hauts (France)",
+                        "url": "/2014/08/26/ecolieu-des-crozes-hauts-france/"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/26/ecolieu-des-crozes-hauts-france/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/26/ecolieu-des-crozes-hauts-france/#commentsModule10155292822"
+                    },
+                    {
+                        "name": "# NDDL - ZAD",
+                        "url": "/2014/08/11/nddl-zad/"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/11/nddl-zad/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/11/nddl-zad/#commentsModule9996823122"
+                    }
+                ]
+            },
+            {
+                "url": "https://ecoclash.jimdofree.com/synergies-liens/la-porte-du-temps/",
+                "title": "La porte du temps :",
+                "intro": "Regroupe diverses pages d'agenda : événement gratuit, prix libre, chapeau magique. Festivals, rencontres, stage",
+                "links": [
+                    {
+                        "name": "http://kokopelli-suisse.com",
+                        "url": "http://kokopelli-suisse.com/wordpress/agenda/"
+                    },
+                    {
+                        "name": "Terrenature.ch/agenda",
+                        "url": "http://www.terrenature.ch/agenda"
+                    },
+                    {
+                        "name": "Agirinfo.com",
+                        "url": "http://www.agirinfo.com/?cat=20"
+                    },
+                    {
+                        "name": "Geneveentransition.org/lagenda/",
+                        "url": "http://geneveentransition.org/lagenda/"
+                    },
+                    {
+                        "name": "Agenda",
+                        "url": "http://www.decroissance.ch/index.php/Agenda"
+                    },
+                    {
+                        "name": "Agenda",
+                        "url": "http://permaculture.ch/index.php?option=com_ninjarsssyndicator&feed_id=1&format=raw"
+                    },
+                    {
+                        "name": "Rencontres",
+                        "url": "http://www.permaculture.ch/forum/viewforum.php?f=10&sid=2025bba5bbb718d5b25e53cb3462e51b"
+                    },
+                    {
+                        "name": "Agenda",
+                        "url": "http://www.meige.ch/index.php/agenda"
+                    },
+                    {
+                        "name": "http://www.passerelleco.info/article.php?id_article=1617",
+                        "url": "http://www.passerelleco.info/article.php?id_article=1617"
+                    },
+                    {
+                        "name": "Formations-événements",
+                        "url": "http://permaculturefrancophone.org/category/formations-evenements/"
+                    },
+                    {
+                        "name": "Projets-et-acteurs dans le monde",
+                        "url": "http://permaculturefrancophone.org/projets-et-acteurs/"
+                    },
+                    {
+                        "name": "Calendrier des événements",
+                        "url": "http://www.permacultureinternationale.com/calendrier-des-%C3%A9v%C3%A9nements/"
+                    },
+                    {
+                        "name": "Événements",
+                        "url": "http://forum.permacultureweb.fr/viewforum.php?f=15"
+                    },
+                    {
+                        "name": "Stages",
+                        "url": "http://forum.permacultureweb.fr/viewforum.php?f=14"
+                    },
+                    {
+                        "name": "Manif, fêtes, actions",
+                        "url": "http://forum.decroissance.info/viewforum.php?f=74"
+                    },
+                    {
+                        "name": "Marches",
+                        "url": "http://forum.decroissance.info/viewforum.php?f=86"
+                    },
+                    {
+                        "name": "Chantiers\n            participatifs",
+                        "url": "http://ardheia.free.fr/ardheia/index.php?option=com_adsmanager&page=show_category&catid=1&order=0&expand=0&Itemid=166&lang=fr"
+                    },
+                    {
+                        "name": "Stage,\n            chantiers construction paille",
+                        "url": "http://www.botmobil.org/descriptif-et-calendrier"
+                    },
+                    {
+                        "name": "Contact lieux de\n            stage construction paille",
+                        "url": "http://www.compaillons.fr/divers/stages.html"
+                    },
+                    {
+                        "name": "stage concernant les techniques de construction",
+                        "url": "http://batirsain.org/?-stages-specifiques-.html"
+                    },
+                    {
+                        "name": "Rempart.com",
+                        "url": "http://www.rempart.com/"
+                    },
+                    {
+                        "name": "Actu, agenda",
+                        "url": "http://www.passerelleco.info/rubrique.php?id_rubrique=33"
+                    },
+                    {
+                        "name": "Rss",
+                        "url": "http://www.passerelleco.info/spip.php?page=backend&id_rubrique=33"
+                    },
+                    {
+                        "name": "P.A Stage, formation, seminaire, cours.",
+                        "url": "http://www.eco-bio.info/annonces/annonces-stages-formations-seminaires-cours-26-0.html"
+                    },
+                    {
+                        "name": "Se\n            rencontrer",
+                        "url": "http://www.eco-bio.info/forum/upload/forum/97-se-rencontrer-entre-membres/"
+                    },
+                    {
+                        "name": "Rencontre régionale",
+                        "url": "http://www.eco-bio.info/forum/upload/forum/100-forums-regionaux/"
+                    },
+                    {
+                        "name": "Newsletter",
+                        "url": "http://wiki.couchsurfing.com/en/French_CS_Newsletter"
+                    },
+                    {
+                        "name": "Squat.net",
+                        "url": "http://squat.net/fr/news/index.html"
+                    },
+                    {
+                        "name": "Rainbowfamilyfrance.wordpress.com",
+                        "url": "http://rainbowfamilyfrance.wordpress.com/category/rencontres/"
+                    },
+                    {
+                        "name": "Dates des prochains rassemblements",
+                        "url": "http://rainbow-gatherings.blogspot.com/"
+                    },
+                    {
+                        "name": "https://x.com/share?text=La%20porte%20du%20temps&url=https%3A%2F%2Fecoclash.jimdofree.com%2Fsynergies-liens%2Fla-porte-du-temps%2F",
+                        "url": "https://x.com/share?text=La%20porte%20du%20temps&url=https%3A%2F%2Fecoclash.jimdofree.com%2Fsynergies-liens%2Fla-porte-du-temps%2F"
+                    }
+                ]
+            },
+            {
+                "url": "https://ecoclash.jimdofree.com/tout-les-articles/",
+                "title": "News",
+                "intro": "Les perles des archives...",
+                "links": [
+                    {
+                        "name": "Comment tresser un panier avec du papier journal, vannerie de papier, recup",
+                        "url": "/2014/08/25/comment-tresser-un-panier-avec-du-papier-journal-vannerie-de-papier-recup/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/25/comment-tresser-un-panier-avec-du-papier-journal-vannerie-de-papier-recup/"
+                    },
+                    {
+                        "name": "4 commentaires",
+                        "url": "/2014/08/25/comment-tresser-un-panier-avec-du-papier-journal-vannerie-de-papier-recup/#commentsModule10074564922"
+                    },
+                    {
+                        "name": "Pratique - Comment construire une yourte",
+                        "url": "/2014/08/10/pratique-comment-construire-une-yourte/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/10/pratique-comment-construire-une-yourte/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/10/pratique-comment-construire-une-yourte/#commentsModule9992286322"
+                    },
+                    {
+                        "name": "Les perles des Archives / Vol1",
+                        "url": "/2015/08/15/les-perles-des-archives-vol1/"
+                    },
+                    {
+                        "name": "Tous les livres de Gardner Dexter",
+                        "url": "https://archive.org/search.php?query=creator%3A%22Hiscox%2C+Gardner+Dexter%2C+1822%3F-1908%22"
+                    },
+                    {
+                        "name": "Henley's twentieth century forrmulas",
+                        "url": "https://archive.org/details/henleystwentieth00hiscrich"
+                    },
+                    {
+                        "name": "Mechanical movements, powers, devices and\n    applicances",
+                        "url": "https://archive.org/details/mechanicalmovem04hiscgoog"
+                    },
+                    {
+                        "name": "Mechanical appliances, mechanical movements and novelties of\n    construction",
+                        "url": "https://archive.org/details/mechanicalappli00dextgoog"
+                    },
+                    {
+                        "name": "Receipts and remedies",
+                        "url": "https://archive.org/details/receiptsandreme00flemgoog"
+                    },
+                    {
+                        "name": "The engineer's sketch-book of mechanical movements, devices, appliances",
+                        "url": "https://archive.org/details/engineerssketchb00barb"
+                    },
+                    {
+                        "name": "Five hundred and seven mechanial movements",
+                        "url": "https://archive.org/details/fivehundredseven02brow"
+                    },
+                    {
+                        "name": "The Dangerous Book for Boys",
+                        "url": "http://kat.cr/the-dangerous-book-for-boys-us-by-conn-and-hal-iggulden-retail-dwg-t9511544.html"
+                    },
+                    {
+                        "name": "Backyard ballistics",
+                        "url": "http://kat.cr/backyard-ballistics-epub-retail-32skulls-t9572218.html"
+                    },
+                    {
+                        "name": "Absinthe and Flamethrowers",
+                        "url": "http://kat.cr/william-gurstelle-absinthe-and-flamethrowers-projects-and-ruminations-on-the-art-of-living-dangerously-epub-plex-t10379851.html"
+                    },
+                    {
+                        "name": "Scientific American handy book of facts and\n    formulae",
+                        "url": "https://archive.org/details/scientificameric03hopk"
+                    },
+                    {
+                        "name": "Encyclopedia of practical receipts and processes",
+                        "url": "https://archive.org/details/encyclopediaofpr00dickrich"
+                    },
+                    {
+                        "name": "Magic; stage illusions and scientific diversions",
+                        "url": "https://archive.org/details/magicstageillusi00hopk"
+                    },
+                    {
+                        "name": "Uncle Josh's trunk-full of fun",
+                        "url": "https://archive.org/details/unclejoshstrunkf00dick"
+                    },
+                    {
+                        "name": "What shall we do to-night?",
+                        "url": "https://archive.org/details/whatshallwedoton00dickrich"
+                    },
+                    {
+                        "name": "Bulletins d'arboriculture, de culture potagère et de floriculture",
+                        "url": "https://archive.org/details/bulletinsdarbor04unkngoog"
+                    },
+                    {
+                        "name": "1 commentaires",
+                        "url": "/2015/08/15/les-perles-des-archives-vol1/#commentsModule12279021122"
+                    },
+                    {
+                        "name": "Le Kiosques Autonomes",
+                        "url": "/2014/09/14/le-kiosques-autonomes/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/09/14/le-kiosques-autonomes/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/09/14/le-kiosques-autonomes/#commentsModule10302692422"
+                    },
+                    {
+                        "name": "Autoconstruction - special vroutsch / 1972",
+                        "url": "/2014/09/14/autoconstruction-special-vroutsch-1972/"
+                    },
+                    {
+                        "name": "Auto.Construction.-.Special.vroutsch",
+                        "url": "http://www.mediafire.com/view/m67z4zsa18d4yn4/Auto.Construction.-.Special.vroutsch.-.1972.-.71p.pdf"
+                    },
+                    {
+                        "name": "http://alphazomes.org",
+                        "url": "http://alphazomes.org%20"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/09/14/autoconstruction-special-vroutsch-1972/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/09/14/autoconstruction-special-vroutsch-1972/#commentsModule10302261522"
+                    },
+                    {
+                        "name": "Habitats - Construction traditionnelles et marginales",
+                        "url": "/2014/08/14/habitats-construction-traditionnelles-et-marginales/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "#",
+                        "url": "http://www.mediafire.com/view/?9879kcgolypri0v"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/14/habitats-construction-traditionnelles-et-marginales/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/14/habitats-construction-traditionnelles-et-marginales/#commentsModule10012034222"
+                    },
+                    {
+                        "name": "Autoconstruction d'une yourte locale",
+                        "url": "/2014/09/03/autoconstruction-d-une-yourte-locale/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/09/03/autoconstruction-d-une-yourte-locale/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/09/03/autoconstruction-d-une-yourte-locale/#commentsModule10198578622"
+                    },
+                    {
+                        "name": "Faites tout vous même / Savoir revivre / Revivre à la campagne",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/25/faites-tout-vous-m%C3%AAme-savoir-revivre-revivre-%C3%A0-la-campagne/#commentsModule10075095722"
+                    },
+                    {
+                        "name": "Recettes végétalienne, Guide végétarien et végétalien, Alimentation vivante",
+                        "url": "/2014/08/25/recettes-v%C3%A9g%C3%A9talienne-guide-v%C3%A9g%C3%A9tarien-et-v%C3%A9g%C3%A9talien-alimentation-vivante/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/25/recettes-v%C3%A9g%C3%A9talienne-guide-v%C3%A9g%C3%A9tarien-et-v%C3%A9g%C3%A9talien-alimentation-vivante/"
+                    },
+                    {
+                        "name": "1 commentaires",
+                        "url": "/2014/08/25/recettes-v%C3%A9g%C3%A9talienne-guide-v%C3%A9g%C3%A9tarien-et-v%C3%A9g%C3%A9talien-alimentation-vivante/#commentsModule10074949322"
+                    },
+                    {
+                        "name": "Habitats d'urgence, autoconstruction bioclimatique",
+                        "url": "/2014/08/14/habitats-d-urgence-autoconstruction-bioclimatique/"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/14/habitats-d-urgence-autoconstruction-bioclimatique/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/14/habitats-d-urgence-autoconstruction-bioclimatique/#commentsModule10012096322"
+                    },
+                    {
+                        "name": "Comment fabriquer un tipi (tepee)? Plan, tuto, images",
+                        "url": "/2014/08/14/comment-fabriquer-un-tipi-tepee-plan-tuto-images/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/14/comment-fabriquer-un-tipi-tepee-plan-tuto-images/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/14/comment-fabriquer-un-tipi-tepee-plan-tuto-images/#commentsModule10011632722"
+                    },
+                    {
+                        "name": "Apiculture pour tous, ruche du peuple, Warre, topbar",
+                        "url": "/2014/08/14/apiculture-pour-tous-ruche-du-peuple-warre-topbar/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/14/apiculture-pour-tous-ruche-du-peuple-warre-topbar/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/14/apiculture-pour-tous-ruche-du-peuple-warre-topbar/#commentsModule10011074622"
+                    },
+                    {
+                        "name": "Comment cultiver, produire et transformer la spiruline",
+                        "url": "/2014/08/14/comment-cultiver-produire-et-transformer-la-spiruline/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/14/comment-cultiver-produire-et-transformer-la-spiruline/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/14/comment-cultiver-produire-et-transformer-la-spiruline/#commentsModule10011177022"
+                    },
+                    {
+                        "name": "Comment construire un dôme géodésique",
+                        "url": "/2014/08/14/comment-construire-un-d%C3%B4me-g%C3%A9od%C3%A9sique/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/14/comment-construire-un-d%C3%B4me-g%C3%A9od%C3%A9sique/"
+                    },
+                    {
+                        "name": "1 commentaires",
+                        "url": "/2014/08/14/comment-construire-un-d%C3%B4me-g%C3%A9od%C3%A9sique/#commentsModule10011230022"
+                    },
+                    {
+                        "name": "# NDDL - ZAD",
+                        "url": "/2014/08/11/nddl-zad/"
+                    },
+                    {
+                        "name": "http://zad.nadir.org/",
+                        "url": "http://zad.nadir.org/"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/11/nddl-zad/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/11/nddl-zad/#commentsModule9996823122"
+                    },
+                    {
+                        "name": "Comment faire de l'alcool, bière, cidre, vin...",
+                        "url": "/2014/08/11/pratique-comment-faire-de-l-alcool-bi%C3%A8re-cidre-vin/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/11/pratique-comment-faire-de-l-alcool-bi%C3%A8re-cidre-vin/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/11/pratique-comment-faire-de-l-alcool-bi%C3%A8re-cidre-vin/#commentsModule9996768722"
+                    },
+                    {
+                        "name": "Pratique - Comment faire du pain",
+                        "url": "/2014/08/11/pratique-comment-faire-du-pain/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/11/pratique-comment-faire-du-pain/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/11/pratique-comment-faire-du-pain/#commentsModule9996748222"
+                    },
+                    {
+                        "name": "La culture des champignons - mycologie",
+                        "url": "/2014/08/10/la-culture-des-champignons-mycologie/"
+                    },
+                    {
+                        "name": "javascript:",
+                        "url": "javascript:"
+                    },
+                    {
+                        "name": "Lire la suite",
+                        "url": "/2014/08/10/la-culture-des-champignons-mycologie/"
+                    },
+                    {
+                        "name": "0 commentaires",
+                        "url": "/2014/08/10/la-culture-des-champignons-mycologie/#commentsModule9992806822"
+                    }
+                ]
+            },
+            {
+                "url": "https://ecoclash.jimdofree.com/contact/",
+                "title": "Formulaire de contact",
+                "intro": "\"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique. . .et vous verrez lequel des deux empêche l'autre de dormir\n    !\"  Dalaï Lama",
+                "links": [
+                    {
+                        "name": "Politique de confidentialité",
+                        "url": "/j/privacy"
+                    }
+                ]
+            }
+        ]
+    }
+];
 
 
-    /* --- 5. APP STATE & LOCAL STORAGE --- */
+    /* --- 5. APP STATE --- */
     let currentLang = localStorage.getItem('eco_lang') || 'fr';
     let currentTheme = localStorage.getItem('eco_theme') || 'light';
     let activeCategory = 'all';
+    let activeBookmarkGroup = 'mediatheque';
     let searchQuery = '';
-    let currentQuoteIndex = 0;
 
     const DOM = {
         body: document.body,
@@ -1329,8 +3945,8 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggle: document.getElementById('theme-toggle'),
         mobileMenuBtn: document.getElementById('mobile-menu-btn'),
         mobileDrawer: document.getElementById('mobile-drawer'),
-        closeDrawerBtn: document.getElementById('closeDrawerBtn') || document.querySelector('#mobile-drawer .btn-icon'),
-        navLinks: document.querySelectorAll('.nav-item, .mobile-nav-item'),
+        closeDrawerBtn: document.getElementById('close-drawer-btn'),
+        navLinks: document.querySelectorAll('.nav-item, .mobile-nav-item, [data-nav-btn]'),
         sections: document.querySelectorAll('.section-container'),
         categoriesContainer: document.getElementById('categories-container'),
         articlesGrid: document.getElementById('articles-grid'),
@@ -1339,10 +3955,9 @@ document.addEventListener('DOMContentLoaded', () => {
         clearSearchBtn: document.getElementById('clear-search'),
         noResults: document.getElementById('no-results'),
         resetFiltersBtn: document.getElementById('reset-filters-btn'),
-        synergiesGrid: document.getElementById('synergies-grid'),
+        bookmarksTabs: document.getElementById('bookmarks-tabs'),
+        bookmarksGrid: document.getElementById('bookmarks-grid'),
         dailyQuoteText: document.getElementById('daily-quote-text'),
-        dailyQuoteAuthor: document.getElementById('daily-quote-author'),
-        nextQuoteBtn: document.getElementById('next-quote-btn'),
         logoLink: document.getElementById('logo-link'),
         backToTop: document.getElementById('back-to-top'),
         
@@ -1353,38 +3968,23 @@ document.addEventListener('DOMContentLoaded', () => {
         modalCategory: document.getElementById('modal-category'),
         modalDate: document.getElementById('modal-date'),
         modalTitle: document.getElementById('modal-title'),
+        modalImageBox: document.getElementById('modal-image-box'),
         modalImage: document.getElementById('modal-image'),
         modalTextContent: document.getElementById('modal-text-content'),
         modalResourceLinks: document.getElementById('modal-resource-links'),
         modalTags: document.getElementById('modal-tags'),
-        commentsList: document.getElementById('comments-list'),
-        reactionBtn: document.getElementById('btn-react-heart'),
-        reactionCount: document.getElementById('reaction-count'),
         btnCopyLink: document.getElementById('btn-copy-link'),
-        copyLinkText: document.getElementById('copy-link-text'),
-        quickCommentAuthor: document.getElementById('quick-comment-author'),
-        quickCommentText: document.getElementById('quick-comment-text'),
-        quickCommentSubmit: document.getElementById('quick-comment-submit'),
-        
-        // Contact Form
-        contactForm: document.getElementById('contact-form'),
-        formSuccess: document.getElementById('form-success')
+        copyLinkText: document.getElementById('copy-link-text')
     };
 
     /* --- 6. INITIALIZATION --- */
     const initApp = () => {
-        // Apply saved theme
         applyTheme(currentTheme);
-        // Apply saved language
         DOM.langSelect.value = currentLang;
         updateLanguage(currentLang);
-        // Bind events
         bindEvents();
-        // Load Quotes
-        renderQuote();
-        // Load Synergies
-        renderSynergies();
-        // Load Articles
+        renderBookmarkTabs();
+        renderBookmarks();
         renderArticles();
     };
 
@@ -1411,86 +4011,85 @@ document.addEventListener('DOMContentLoaded', () => {
         currentLang = lang;
         localStorage.setItem('eco_lang', lang);
 
-        // Update static translations in DOM
-        const transElements = document.querySelectorAll('[data-i18n]');
-        transElements.forEach(el => {
+        document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (i18n[lang] && i18n[lang][key]) {
                 el.innerHTML = i18n[lang][key];
             }
         });
 
-        // Update placeholders
-        const placeElements = document.querySelectorAll('[data-i18n-placeholder]');
-        placeElements.forEach(el => {
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
             const key = el.getAttribute('data-i18n-placeholder');
             if (i18n[lang] && i18n[lang][key]) {
                 el.setAttribute('placeholder', i18n[lang][key]);
             }
         });
 
-        // Update title attributes
-        const titleElements = document.querySelectorAll('[data-i18n-title]');
-        titleElements.forEach(el => {
+        document.querySelectorAll('[data-i18n-title]').forEach(el => {
             const key = el.getAttribute('data-i18n-title');
             if (i18n[lang] && i18n[lang][key]) {
                 el.setAttribute('title', i18n[lang][key]);
             }
         });
 
-        // Update quote
-        renderQuote();
-        // Update Synergies
-        renderSynergies();
-        // Update Articles Grid
+        DOM.dailyQuoteText.innerHTML = '"' + quoteData[lang] + '"';
+
+        renderBookmarkTabs();
+        renderBookmarks();
         renderArticles();
     };
 
-    /* --- 9. QUOTES HANDLER --- */
-    const renderQuote = () => {
-        const q = quotes[currentQuoteIndex][currentLang];
-        DOM.dailyQuoteText.innerHTML = `"${q.text}"`;
-        DOM.dailyQuoteAuthor.innerHTML = `— ${q.author}`;
-    };
-
-    const nextQuote = () => {
-        currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
-        DOM.dailyQuoteText.style.opacity = 0;
-        setTimeout(() => {
-            renderQuote();
-            DOM.dailyQuoteText.style.opacity = 1;
-        }, 150);
-    };
-
-    /* --- 10. SYNERGIES HANDLER --- */
-    const renderSynergies = () => {
-        DOM.synergiesGrid.innerHTML = '';
-        synergies.forEach(syn => {
-            const desc = syn.desc[currentLang];
-            const btnLabel = i18n[currentLang].synergyVisitBtn;
+    /* --- 9. BOOKMARKS & SITEMAP HANDLER --- */
+    const renderBookmarkTabs = () => {
+        DOM.bookmarksTabs.innerHTML = '';
+        bookmarkGroups.forEach(bg => {
+            const title = bg.title[currentLang];
+            const btn = document.createElement('button');
+            btn.className = 'cat-btn bk-tab-btn' + (bg.id === activeBookmarkGroup ? ' active' : '');
+            btn.setAttribute('data-bg', bg.id);
+            btn.innerHTML = '<span>' + bg.icon + ' ' + title + ' (' + bg.pages.length + ')</span>';
             
-            const card = document.createElement('div');
-            card.className = 'synergy-card';
-            card.innerHTML = `
-                <div>
-                    <div class="synergy-header">
-                        <div class="synergy-icon">${syn.icon}</div>
-                        <h3 class="synergy-title">${syn.title}</h3>
-                    </div>
-                    <p class="synergy-desc">${desc}</p>
-                </div>
-                <div>
-                    <a href="${syn.url}" target="_blank" rel="noopener noreferrer" class="synergy-link">
-                        <span>${btnLabel}</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                    </a>
-                </div>
-            `;
-            DOM.synergiesGrid.appendChild(card);
+            btn.addEventListener('click', () => {
+                DOM.bookmarksTabs.querySelectorAll('.bk-tab-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activeBookmarkGroup = bg.id;
+                renderBookmarks();
+            });
+
+            DOM.bookmarksTabs.appendChild(btn);
         });
     };
 
-    /* --- 11. ARTICLES GRID & FILTERS --- */
+    const renderBookmarks = () => {
+        DOM.bookmarksGrid.innerHTML = '';
+        const group = bookmarkGroups.find(g => g.id === activeBookmarkGroup);
+        if (!group || group.pages.length === 0) return;
+
+        group.pages.forEach(pg => {
+            const sectionCard = document.createElement('div');
+            sectionCard.className = 'bookmark-section-card';
+            
+            let html = '<div class="bk-sec-header"><h3>📁 ' + pg.title + '</h3>';
+            if (pg.intro && pg.intro.length > 5) {
+                html += "<p class='bk-sec-intro'>" + pg.intro + "</p>";
+            }
+            html += '</div><div class="bk-links-list">';
+
+            if (pg.links && pg.links.length > 0) {
+                pg.links.forEach(l => {
+                    html += '<a href="' + l.url + '" target="_blank" rel="noopener noreferrer" class="bk-link-item"><span class="bk-link-icon">🔗</span><span class="bk-link-name">' + l.name + '</span><span class="bk-link-arrow">↗</span></a>';
+                });
+            } else {
+                html += "<p class='bk-no-links'>🌿 Section documentaire de l'infokiosque d'origine.</p>";
+            }
+
+            html += '</div>';
+            sectionCard.innerHTML = html;
+            DOM.bookmarksGrid.appendChild(sectionCard);
+        });
+    };
+
+    /* --- 10. ARTICLES GRID & FILTERS --- */
     const filterArticlesData = () => {
         return articles.filter(art => {
             const matchCat = activeCategory === 'all' || art.category === activeCategory;
@@ -1511,8 +4110,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const filtered = filterArticlesData();
         DOM.articlesGrid.innerHTML = '';
 
-        // Update count stats
-        const countLabel = currentLang === 'fr' ? `${filtered.length} article(s)` : currentLang === 'en' ? `${filtered.length} article(s)` : `${filtered.length} artículo(s)`;
+        const countLabel = currentLang === 'fr' ? filtered.length + ' article(s)' : currentLang === 'en' ? filtered.length + ' guide(s)' : filtered.length + ' guía(s)';
         DOM.articleCount.textContent = countLabel;
 
         if (filtered.length === 0) {
@@ -1523,41 +4121,42 @@ document.addEventListener('DOMContentLoaded', () => {
             filtered.forEach(art => {
                 const title = art.title[currentLang];
                 const desc = art.desc[currentLang];
-                const catBadge = DOM.categoriesContainer.querySelector(`[data-cat="${art.category}"]`).textContent;
+                const catBadge = DOM.categoriesContainer.querySelector('[data-cat="' + art.category + '"]').textContent;
                 const readBtnLabel = i18n[currentLang].readMoreBtn;
                 const readTimeLabel = i18n[currentLang].readingTime;
+                const downPrefix = i18n[currentLang].downloadPrefix;
+                const fallbackTitle = i18n[currentLang].noImageFallback;
                 
                 const card = document.createElement('article');
                 card.className = 'article-card';
                 card.setAttribute('data-id', art.id);
-                card.innerHTML = `
-                    <div class="card-image-wrapper">
-                        <span class="card-badge">${catBadge}</span>
-                        <img src="${art.image}" alt="${title}" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-meta">
-                            <span>${art.date}</span>
-                            <span>⏳ ${art.readingTime} ${readTimeLabel}</span>
-                        </div>
-                        <h3 class="card-title"><a href="#" class="article-click-trigger">${title}</a></h3>
-                        <p class="card-desc">${desc}</p>
-                        <div class="card-tags">
-                            ${art.tags.map(t => `<span class="tag">#${t}</span>`).join('')}
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn-read article-click-trigger">
-                                <span>${readBtnLabel}</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                            </button>
-                            <span class="card-reactions" title="Inspirant">🌱 ${art.reactions}</span>
-                        </div>
-                    </div>
-                `;
 
-                // Add event listeners to trigger modal
-                const triggers = card.querySelectorAll('.article-click-trigger');
-                triggers.forEach(trig => {
+                let imageHtml = '';
+                if (art.image) {
+                    imageHtml = '<img src="' + art.image + '" alt="' + title + '" loading="lazy">';
+                } else {
+                    imageHtml = '<div class="no-img-banner"><span>🌿</span><span class="no-img-text">' + fallbackTitle + '</span></div>';
+                }
+
+                let downloadsHtml = '';
+                if (art.downloads && art.downloads.length > 0) {
+                    downloadsHtml = '<div class="card-downloads-quick">';
+                    art.downloads.slice(0, 2).forEach(d => {
+                        downloadsHtml += '<a href="' + d.url + '" target="_blank" rel="noopener noreferrer" class="btn-down-quick" title="' + d.name + '">📥 ' + downPrefix + ' (' + (d.name.length > 18 ? d.name.slice(0,18)+'...' : d.name) + ')</a>';
+                    });
+                    downloadsHtml += '</div>';
+                }
+
+                card.innerHTML = '<div class="card-image-wrapper"><span class="card-badge">' + catBadge + '</span>' + imageHtml + '</div>' +
+                    '<div class="card-content"><div class="card-meta"><span>' + art.date + '</span><span>⏳ ' + art.readingTime + ' ' + readTimeLabel + '</span></div>' +
+                    '<h3 class="card-title"><a href="#" class="article-click-trigger">' + title + '</a></h3>' +
+                    '<p class="card-desc">' + desc + '</p>' + downloadsHtml +
+                    '<div class="card-tags">' + art.tags.map(t => '<span class="tag">#' + t + '</span>').join('') + '</div>' +
+                    '<div class="card-footer"><button class="btn-read article-click-trigger"><span>' + readBtnLabel + '</span>' +
+                    '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>' +
+                    '</button><span class="card-reactions" title="Infokiosque">🌿 Savoir Libre</span></div></div>';
+
+                card.querySelectorAll('.article-click-trigger').forEach(trig => {
                     trig.addEventListener('click', (e) => {
                         e.preventDefault();
                         openArticleModal(art);
@@ -1569,72 +4168,48 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    /* --- 12. FULL ARTICLE MODAL & COMMENTS --- */
+    /* --- 11. FULL ARTICLE MODAL (NO Fake Comments) --- */
     const openArticleModal = (art) => {
         const title = art.title[currentLang];
         const content = art.content[currentLang];
-        const catBadge = DOM.categoriesContainer.querySelector(`[data-cat="${art.category}"]`).textContent;
+        const catBadge = DOM.categoriesContainer.querySelector('[data-cat="' + art.category + '"]').textContent;
+        const downPrefix = i18n[currentLang].downloadPrefix;
 
         DOM.modalCategory.textContent = catBadge;
         DOM.modalDate.textContent = art.date;
         DOM.modalTitle.textContent = title;
-        DOM.modalImage.setAttribute('src', art.image);
-        DOM.modalImage.setAttribute('alt', title);
+
+        if (art.image) {
+            DOM.modalImageBox.classList.remove('hidden');
+            DOM.modalImage.setAttribute('src', art.image);
+            DOM.modalImage.setAttribute('alt', title);
+        } else {
+            DOM.modalImageBox.classList.add('hidden');
+        }
+
         DOM.modalTextContent.innerHTML = content;
 
-        // Render resources
         DOM.modalResourceLinks.innerHTML = '';
-        art.resources.forEach(res => {
-            const link = document.createElement('a');
-            link.className = 'resource-item';
-            link.setAttribute('href', res.url);
-            link.setAttribute('target', '_blank');
-            link.innerHTML = `
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <span>${res.name}</span>
-            `;
-            DOM.modalResourceLinks.appendChild(link);
-        });
+        if (art.downloads && art.downloads.length > 0) {
+            DOM.modalResourceLinks.parentElement.classList.remove('hidden');
+            art.downloads.forEach(res => {
+                const link = document.createElement('a');
+                link.className = 'resource-item';
+                link.setAttribute('href', res.url);
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+                link.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg><span>' + downPrefix + ' : <strong>' + res.name + '</strong></span><span class="external-hint">↗</span>';
+                DOM.modalResourceLinks.appendChild(link);
+            });
+        } else {
+            DOM.modalResourceLinks.parentElement.classList.add('hidden');
+        }
 
-        // Render tags
-        DOM.modalTags.innerHTML = art.tags.map(t => `<span class="tag">#${t}</span>`).join('');
+        DOM.modalTags.innerHTML = art.tags.map(t => '<span class="tag">#' + t + '</span>').join('');
 
-        // Reaction handling
-        DOM.reactionCount.textContent = art.reactions;
-        DOM.reactionBtn.classList.remove('reacted');
-        DOM.reactionBtn.onclick = () => {
-            if (!DOM.reactionBtn.classList.contains('reacted')) {
-                art.reactions += 1;
-                DOM.reactionCount.textContent = art.reactions;
-                DOM.reactionBtn.classList.add('reacted');
-            }
-        };
-
-        // Render comments
-        renderModalComments(art);
-
-        // Bind quick comment publish
-        DOM.quickCommentSubmit.onclick = () => {
-            const author = DOM.quickCommentAuthor.value.trim();
-            const text = DOM.quickCommentText.value.trim();
-
-            if (!author || !text) {
-                alert(currentLang === 'fr' ? "Veuillez remplir votre pseudo et votre message." : currentLang === 'en' ? "Please provide your alias and message." : "Por favor, ingresa tu alias y mensaje.");
-                return;
-            }
-
-            const now = currentLang === 'fr' ? "À l'instant" : currentLang === 'en' ? "Just now" : "Hace un momento";
-            art.comments.push({ author, date: now, text });
-            
-            DOM.quickCommentAuthor.value = '';
-            DOM.quickCommentText.value = '';
-            renderModalComments(art);
-        };
-
-        // Copy link handler
         DOM.copyLinkText.textContent = i18n[currentLang].copyLinkBtn;
         DOM.btnCopyLink.onclick = () => {
-            const link = window.location.href.split('#')[0] + `#article-${art.id}`;
+            const link = window.location.href.split('#')[0] + '#article-' + art.id;
             navigator.clipboard.writeText(link).then(() => {
                 DOM.copyLinkText.textContent = i18n[currentLang].copiedLinkBtn;
                 setTimeout(() => {
@@ -1643,28 +4218,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         };
 
-        // Display Modal
         DOM.modal.classList.add('open');
         DOM.body.style.overflow = 'hidden';
-    };
-
-    const renderModalComments = (art) => {
-        DOM.commentsList.innerHTML = '';
-        const headerLabel = i18n[currentLang].commentsHeader;
-        document.getElementById('comments-header').textContent = `${headerLabel} (${art.comments.length})`;
-
-        art.comments.forEach(com => {
-            const item = document.createElement('div');
-            item.className = 'comment-card';
-            item.innerHTML = `
-                <div class="comment-header">
-                    <span class="comment-author">${com.author}</span>
-                    <span class="comment-date">${com.date}</span>
-                </div>
-                <p class="comment-text">${com.text}</p>
-            `;
-            DOM.commentsList.appendChild(item);
-        });
     };
 
     const closeModal = () => {
@@ -1672,20 +4227,14 @@ document.addEventListener('DOMContentLoaded', () => {
         DOM.body.style.overflow = '';
     };
 
-    /* --- 13. EVENT LISTENERS SETUP --- */
+    /* --- 12. EVENT LISTENERS SETUP --- */
     const bindEvents = () => {
-        // Theme toggle
         DOM.themeToggle.addEventListener('click', toggleTheme);
 
-        // Language selector
         DOM.langSelect.addEventListener('change', (e) => {
             updateLanguage(e.target.value);
         });
 
-        // Quote Switcher
-        DOM.nextQuoteBtn.addEventListener('click', nextQuote);
-
-        // Mobile drawer
         if (DOM.mobileMenuBtn) {
             DOM.mobileMenuBtn.addEventListener('click', () => {
                 DOM.mobileDrawer.classList.add('open');
@@ -1697,19 +4246,16 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // Navigation links
         DOM.navLinks.forEach(link => {
             link.addEventListener('click', (e) => {
-                const targetNav = link.getAttribute('data-nav');
+                const targetNav = link.getAttribute('data-nav') || link.getAttribute('data-nav-btn');
                 if (!targetNav) return;
 
                 e.preventDefault();
-                // Close drawer if open
                 if (DOM.mobileDrawer.classList.contains('open')) {
                     DOM.mobileDrawer.classList.remove('open');
                 }
 
-                // Switch active section
                 DOM.sections.forEach(sec => sec.classList.remove('active-section'));
                 const targetSec = document.getElementById(targetNav);
                 if (targetSec) {
@@ -1717,13 +4263,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     targetSec.scrollIntoView({ behavior: 'smooth' });
                 }
 
-                // Switch active link styling
                 DOM.navLinks.forEach(l => l.classList.remove('active'));
-                document.querySelectorAll(`[data-nav="${targetNav}"]`).forEach(l => l.classList.add('active'));
+                document.querySelectorAll('[data-nav="' + targetNav + '"]').forEach(l => l.classList.add('active'));
             });
         });
 
-        // Category filter buttons
         const catButtons = DOM.categoriesContainer.querySelectorAll('.cat-btn');
         catButtons.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -1734,7 +4278,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Search input
         DOM.searchInput.addEventListener('input', (e) => {
             searchQuery = e.target.value.trim();
             if (searchQuery.length > 0) {
@@ -1753,7 +4296,6 @@ document.addEventListener('DOMContentLoaded', () => {
             DOM.searchInput.focus();
         });
 
-        // Reset filters button
         DOM.resetFiltersBtn.addEventListener('click', () => {
             DOM.searchInput.value = '';
             searchQuery = '';
@@ -1764,7 +4306,6 @@ document.addEventListener('DOMContentLoaded', () => {
             renderArticles();
         });
 
-        // Modal close
         DOM.modalClose.addEventListener('click', closeModal);
         DOM.modalBackdrop.addEventListener('click', closeModal);
         window.addEventListener('keydown', (e) => {
@@ -1773,7 +4314,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Back to top button
         window.addEventListener('scroll', () => {
             if (window.scrollY > 400) {
                 DOM.backToTop.classList.add('visible');
@@ -1786,34 +4326,12 @@ document.addEventListener('DOMContentLoaded', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // Brand logo click to reset and go home
         DOM.logoLink.addEventListener('click', (e) => {
             e.preventDefault();
             document.querySelector('[data-nav="articles"]').click();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // Contact Form Submission Simulation
-        DOM.contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const submitBtn = document.getElementById('submit-btn');
-            submitBtn.disabled = true;
-            submitBtn.style.opacity = 0.6;
-            
-            // Simulate networking
-            setTimeout(() => {
-                DOM.formSuccess.classList.remove('hidden');
-                DOM.contactForm.reset();
-                submitBtn.disabled = false;
-                submitBtn.style.opacity = 1;
-
-                setTimeout(() => {
-                    DOM.formSuccess.classList.add('hidden');
-                }, 6000);
-            }, 800);
-        });
-
-        // Handle URL Hash if shared direct link to article
         const hash = window.location.hash;
         if (hash && hash.startsWith('#article-')) {
             const artId = hash.replace('#article-', '');
@@ -1826,6 +4344,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Run custom init
     initApp();
 });

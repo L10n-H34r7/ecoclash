@@ -1,52 +1,39 @@
-# 🌱 Ecoclash — Infokiosque & Base de Savoirs Libres (Remake 2026)
+# 🌱 Ecoclash — Infokiosque & Base de Savoirs Libres (Remake Statique 2026)
 
 > **Partage de savoirs, Infokiosque, alternatives pratiques, autoconstruction, décroissance, permaculture, communautés autonomes, low-tech et résistance (ZAD).**
 
-Remake officiel, enrichi et modernisé de la plateforme [Ecoclash d'origine (Jimdo)](https://ecoclash.jimdofree.com/), spécialement repensé et architecturé pour un **hébergement durable, open-source et performant sur GitHub Pages**.
+Remake officiel, enrichi et modernisé de la plateforme [Ecoclash d'origine (Jimdo)](https://ecoclash.jimdofree.com/), spécialement repensé et architecturé pour un **hébergement durable, open-source et 100% statique sur GitHub Pages**.
 
 ---
 
-## ⚡ 100% Pure Vanilla HTML / CSS / JS (Zéro Dépendances)
+## ⚡ 100% Pure Vanilla HTML / CSS / JS & 100% Statique
 
-Conformément au manifeste d'autonomie low-tech du projet, cette application a été développée en **pure Vanilla Web Technologies** :
+Conformément à la charte low-tech et de protection de la vie privée du projet, cette application a été développée en **pure Vanilla Web Technologies** :
 - **❌ Aucun framework lourd :** Pas de React, Vue, ou Angular.
-- **❌ Aucun outil de build ou de compilation complexe :** Pas de Vite, Webpack, Babel ou Node.js (NPM).
+- **❌ Aucun outil de compilation :** Pas de Vite, Webpack, ou Node.js (NPM).
+- **❌ Aucun formulaire ni traçage (No user inputs) :** Suppression totale de tous les formulaires de contact simulés ou réels, des faux commentaires, des cookies et de toute collecte de données. L'infokiosque est un sanctuaire de lecture pure et de téléchargement direct.
 - **✔️ Simplicité et pérennité :** Les fichiers s'exécutent instantanément dans n'importe quel navigateur web de manière native. Il suffit d'ouvrir `index.html` !
 
 ---
 
-## 🌟 Fonctionnalités Modernes & Upgradées
+## 🌟 Fonctionnalités Upgradées & Exhaustives
 
-### 1. 🌐 Multilingue Dynamique (Français / Anglais / Espagnol)
-Un dictionnaire interne géré par ES6 JavaScript (`app.js`) permet de traduire instantanément et sans rechargement de page :
-- **L'interface globale :** menus, boutons, formulaires, et compteurs.
-- **Les filtres de catégories.**
-- **L'intégralité de la base d'articles et de tutoriels pratiques.**
+### 1. 📚 Rapatriement Total de la Base Jimdo d'Origine (24 Articles + 20 Pages Signets)
+Nous avons aspiré et restructuré l'intégralité du sitemap d'origine :
+- **24 Guides & Savoirs :** Construction de yourtes mongoles, dômes géodésiques aplatissés, tipis cónicos, vannerie de papier journal, brassage de bière tout-grain, fabrication du pain au levain naturel en cocotte, ruches Warré et Top-Bar, culture des pleurotes et shiitake, et manuels de résistance ZAD NDDL.
+- **20 Rubriques Signets & Synergies :** Médiathèques libres (Dropbox Ecoclash, NoPanic, United Diversity), liens d'habitat alternatif, de réseaux de semences (Kokopelli), de mobilité nomade (Critical Mass, autostop, roulottes) et d'économies de don (SEL, JEU).
 
-### 2. 🌓 Switcher Mode Sombre / Mode Clair (Dark / Clear Mode)
-- Un basculeur élégant intégré à la barre de navigation.
-- Sauvegarde automatique des préférences de l'utilisateur dans le `localStorage` du navigateur.
-- Design soigné avec des palettes de couleurs éco-technologiques (vert émeraude, crème, et obsidienne).
+### 2. 📥 Liens de Téléchargement MediaFire, PDF et Archives 100% Fonctionnels
+Tous les liens morts ou pointant vers `/#` ont été remplacés par les véritables liens originaux extraits des pages Jimdo (`http://www.mediafire.com/...`, `https://archive.org/...`, Gallica BNF, etc.), accessibles en un clic directement depuis les fiches ou la vue modale.
 
-### 3. 🔍 Infokiosque & Recherche Instantanée en Temps Réel
-- Une barre de recherche interactive filtrant le titre, les descriptions et les tags en direct au clavier.
-- Navigation horizontale fluide par catégories :
-  - *Tout les articles*
-  - *Habitat & Autoconstruction (Yourte, Dôme, Tipi)*
-  - *Cultiver & Jardiner (Ruches Warré, Champignons)*
-  - *Production & Transformation (Pain au levain, Bière & Alcool, Spiruline)*
-  - *Artisanat & Récup' (Vannerie de papier)*
-  - *Médiathèque & Archives (Formules Hiscox, 1972 Special Vroutsch)*
-  - *Action & Luttes (Zones À Défendre NDDL)*
+### 3. 🖼️ Véritables Images Originales
+Seules les illustrations authentiques hébergées sur `image.jimcdn.com` ont été préservées. Lorsqu'un article d'origine ne comportait aucune image, un magnifique encart typographique de repli est généré automatiquement (❌ aucune image stock aléatoire).
 
-### 4. 📄 Vue Modale Enrichie pour les Savoirs
-- Affichage riche des tutoriels avec typographie optimisée pour la lecture.
-- Liens de téléchargement vers les PDF et ressources libres du domaine public.
-- Simulation interactive de retours d'expérience (Commentaires) et de partage (copie de liens).
+### 4. 🌐 Multilingue Dynamique (Français / Anglais / Espagnol)
+Un dictionnaire interne géré par ES6 JavaScript (`app.js`) permet de traduire instantanément l'ensemble de l'interface, des titres, des résumés et des fiches d'articles.
 
-### 5. 🤝 Synergies & Formulaire de Contribution
-- Répertoire de collectifs amis (Alphazomes, Zad, Infokiosques.net, Low-Tech Lab).
-- Simulation de formulaire sécurisé pour permettre à la communauté de proposer de nouveaux PDF ou tutoriels.
+### 5. 🌓 Switcher Mode Sombre / Mode Clair (Dark / Clear Mode)
+Design premium avec persistance des choix dans le `localStorage`.
 
 ---
 
@@ -55,7 +42,7 @@ Un dictionnaire interne géré par ES6 JavaScript (`app.js`) permet de traduire 
 Ce projet est conçu pour être publié gratuitement et en quelques secondes sur **GitHub Pages**.
 
 1. **Créer un dépôt GitHub :**
-   Créez un nouveau repository sur GitHub (ex: `ecoclash-remake`) et importez-y les 4 fichiers du projet :
+   Créez un nouveau repository sur GitHub et importez-y les 4 fichiers du projet :
    - `index.html`
    - `styles.css`
    - `app.js`
@@ -69,51 +56,12 @@ Ce projet est conçu pour être publié gratuitement et en quelques secondes sur
 
 3. **Consulter votre site en ligne :**
    - Votre application sera en ligne à l'adresse : `https://<votre-nom-utilisateur>.github.io/<votre-repository>/`
-   - Déploiement 100% automatisé à chaque modification des fichiers.
+   - Déploiement 100% automatisé.
 
 ---
 
-## 🛠️ Comment Ajouter ou Modifier des Articles ?
+## 📜 Philosophie & Licence
 
-Pour enrichir la base de connaissances, ouvrez simplement le fichier `app.js` et repérez la constante `articles` (vers la ligne 120). Vous pouvez y insérer un nouvel objet structuré ainsi :
-
-```javascript
-{
-    id: "titre-de-mon-guide",
-    category: "habitat", // "habitat", "permaculture", "production", "artisanat", "mediatheque", ou "action"
-    date: "Aujourd'hui",
-    readingTime: 5,
-    reactions: 10,
-    image: "https://url-de-mon-image.jpg",
-    tags: ["Tag1", "Tag2"],
-    title: {
-        fr: "Mon Titre en Français",
-        en: "My Title in English",
-        es: "Mi Título en Español"
-    },
-    desc: {
-        fr: "Ma description courte en Français.",
-        en: "My short description in English.",
-        es: "Mi descripción corta en Español."
-    },
-    content: {
-        fr: "<p>Mon tutoriel complet en HTML...</p>",
-        en: "<p>My full tutorial in HTML...</p>",
-        es: "<p>Mi tutorial completo en HTML...</p>"
-    },
-    resources: [
-        { name: "📥 Télécharger mon PDF", url: "https://lien-vers-mon-pdf.pdf" }
-    ],
-    comments: []
-}
-```
-
----
-
-## 📜 Philosophie & Crédits
-
-- **Projet Original :** Conçu en 2014 par les créateurs de la plateforme [Ecoclash](https://ecoclash.jimdofree.com/).
-- **Remake 2026 :** Upgradé par Arena.ai Agent Mode.
-- **Licence :** Savoirs Libres pour un Monde Libre (Domaine Public / CC0). Toute rediffusion, modification, impression sous forme de brochure papier ou fanzine est vivement encouragée.
-
-> *"On nous dit: Le bonheur c'est le progrès faites un pas en avant. Et c'est le progrès... mais ce n'est jamais le bonheur. Alors si on faisait un pas de côté! Si on essayait autre chose! Si on faisait un pas de côté, on verrait ce qu'on ne voit jamais."*
+- **Projet Original :** Conçu en 2014-2015 par les créateurs de la plateforme [Ecoclash](https://ecoclash.jimdofree.com/).
+- **Remake Statique 2026 :** Upgradé par Arena.ai Agent Mode.
+- **Licence :** Savoirs Libres pour un Monde Libre (Domaine Public / CC0). Toute rediffusion, modification ou impression sous forme de brochure papier ou fanzine est vivement encouragée.

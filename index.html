@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecoclash - Partage de savoirs, infokiosque & alternatives pratiques</title>
-    <meta name="description" content="Plateforme de partage de savoirs, autoconstruction, permaculture, décroissance, écologie, infokiosque et alternatives pratiques.">
+    <title>Ecoclash - Partage de savoirs, autoconstruction, permaculture & alternatives</title>
+    <meta name="description" content="Plateforme de partage de savoirs, infokiosque, autoconstruction, permaculture, décroissance, écologie, et alternatives pratiques (Remake 2026).">
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
     <!-- Google Fonts -->
@@ -24,16 +24,10 @@
             <div class="quote-content">
                 <span class="quote-icon">❝</span>
                 <blockquote id="daily-quote-text">
-                    "On nous dit: Le bonheur c'est le progrès faites un pas en avant. Et c'est le progrès... mais ce n'est jamais le bonheur. Alors si on faisait un pas de côté! Si on essayait autre chose!"
+                    "On nous dit: Le bonheur c'est le progrès faites un pas en avant. Et c'est le progrès... mais ce n'est jamais le bonheur. Alors si on faisait un pas de côté! Si on essayait autre chose! Si on faisait un pas de côté, on verrait ce qu'on ne voit jamais."
                 </blockquote>
             </div>
             <div class="quote-author" id="daily-quote-author">— Ecoclash</div>
-            <button id="next-quote-btn" class="btn-icon" data-i18n-title="nextQuoteTitle" title="Citation suivante">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
-                    <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
-                </svg>
-            </button>
         </div>
     </div>
 
@@ -52,10 +46,9 @@
 
             <!-- Navigation Links -->
             <nav class="nav-links" id="nav-links">
-                <a href="#articles" class="nav-item active" data-nav="articles" data-i18n="navArticles">Articles & Guides</a>
-                <a href="#manifesto" class="nav-item" data-nav="manifesto" data-i18n="navManifesto">Infokiosque</a>
-                <a href="#synergies" class="nav-item" data-nav="synergies" data-i18n="navSynergies">Synergies & Liens</a>
-                <a href="#participate" class="nav-item" data-nav="participate" data-i18n="navParticipate">Participer</a>
+                <a href="#articles" class="nav-item active" data-nav="articles" data-i18n="navArticles">Articles & Tutoriels</a>
+                <a href="#bookmarks" class="nav-item" data-nav="bookmarks" data-i18n="navBookmarks">Signets & Liens (Sitemap)</a>
+                <a href="#manifesto" class="nav-item" data-nav="manifesto" data-i18n="navManifesto">Notre Démarche</a>
             </nav>
 
             <!-- Tools & Control Panel (Language + Theme) -->
@@ -75,7 +68,7 @@
                 </div>
 
                 <!-- Theme Switcher (Dark / Clear mode) -->
-                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Activer le mode sombre" data-i18n-title="themeToggleTitle" title="Mode sombre / Mode clair">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Basculer le thème" data-i18n-title="themeToggleTitle" title="Mode sombre / Mode clair">
                     <span class="sun-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="12" r="5"></circle>
@@ -115,10 +108,9 @@
             <button id="close-drawer-btn" class="btn-icon">&times;</button>
         </div>
         <nav class="mobile-nav">
-            <a href="#articles" class="mobile-nav-item active" data-nav="articles" data-i18n="navArticles">Articles & Guides</a>
-            <a href="#manifesto" class="mobile-nav-item" data-nav="manifesto" data-i18n="navManifesto">Infokiosque</a>
-            <a href="#synergies" class="mobile-nav-item" data-nav="synergies" data-i18n="navSynergies">Synergies & Liens</a>
-            <a href="#participate" class="mobile-nav-item" data-nav="participate" data-i18n="navParticipate">Participer</a>
+            <a href="#articles" class="mobile-nav-item active" data-nav="articles" data-i18n="navArticles">Articles & Tutoriels</a>
+            <a href="#bookmarks" class="mobile-nav-item" data-nav="bookmarks" data-i18n="navBookmarks">Signets & Liens (Sitemap)</a>
+            <a href="#manifesto" class="mobile-nav-item" data-nav="manifesto" data-i18n="navManifesto">Notre Démarche</a>
         </nav>
     </div>
 
@@ -129,8 +121,8 @@
             <h1 class="hero-title" data-i18n="heroTitle">Autonomie, Écologie & <span class="gradient-text">Résistance Pratique</span></h1>
             <p class="hero-subtitle" data-i18n="heroSubtitle">Partage de savoirs, Infokiosque, alternatives pratiques, autoconstruction, décroissance, permaculture, communautés autonomes et action directe.</p>
             <div class="hero-actions">
-                <a href="#articles" class="btn btn-primary" data-i18n="heroBtnExplore">Explorer la Médiathèque</a>
-                <a href="#manifesto" class="btn btn-secondary" data-i18n="heroBtnManifesto">Notre Démarche</a>
+                <a href="#articles" class="btn btn-primary" data-nav-btn="articles" data-i18n="heroBtnExplore">Explorer les 24 Articles</a>
+                <a href="#bookmarks" class="btn btn-secondary" data-nav-btn="bookmarks" data-i18n="heroBtnBookmarks">Consulter le Sitemap</a>
             </div>
         </div>
     </section>
@@ -138,11 +130,11 @@
     <!-- Main Content Area -->
     <main id="main-content">
 
-        <!-- SECTION 1: ARTICLES & GUIDES (The core Infokiosk) -->
+        <!-- SECTION 1: ARTICLES & GUIDES (All 24 Scraped Articles with og images and true download links) -->
         <section id="articles" class="section-container active-section">
             <div class="section-header">
                 <h2 class="section-title" data-i18n="sectionArticlesTitle">Savoirs & Guides Pratiques</h2>
-                <p class="section-desc" data-i18n="sectionArticlesDesc">Une base de connaissances libre et accessible pour expérimenter, construire et s'émanciper.</p>
+                <p class="section-desc" data-i18n="sectionArticlesDesc">Une base de connaissances libre et accessible avec liens de téléchargement directs.</p>
             </div>
 
             <!-- Search and Filter Bar -->
@@ -157,9 +149,9 @@
                     <button id="clear-search" class="clear-search-btn hidden" aria-label="Effacer la recherche">&times;</button>
                 </div>
 
-                <!-- Stats / Sorting -->
+                <!-- Stats -->
                 <div class="filter-stats">
-                    <span id="article-count">15 articles</span>
+                    <span id="article-count">24 articles</span>
                 </div>
             </div>
 
@@ -193,7 +185,26 @@
         </section>
 
 
-        <!-- SECTION 2: INFOKIOSQUE / MANIFESTO -->
+        <!-- SECTION 2: BOOKMARKS & SITEMAP PAGES -->
+        <section id="bookmarks" class="section-container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="bookmarksTitle">Signets, Synergies & Plan du Site</h2>
+                <p class="section-desc" data-i18n="bookmarksSubtitle">Réseaux, banques de données, alternatives et pages annexes de l'infokiosque.</p>
+            </div>
+
+            <!-- Bookmarks Categories Switcher -->
+            <div class="categories-tabs bookmarks-subtabs" id="bookmarks-tabs">
+                <!-- Populated dynamically by JS -->
+            </div>
+
+            <!-- Bookmarks Grid -->
+            <div class="bookmarks-grid" id="bookmarks-grid">
+                <!-- Loaded dynamically by JS -->
+            </div>
+        </section>
+
+
+        <!-- SECTION 3: INFOKIOSQUE / MANIFESTO (Static, no user input) -->
         <section id="manifesto" class="section-container">
             <div class="section-header">
                 <h2 class="section-title" data-i18n="manifestoTitle">Pourquoi Ecoclash ?</h2>
@@ -225,92 +236,17 @@
                 <p class="dalai-quote" data-i18n="dalaiQuote">"Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique... et vous verrez lequel des deux empêche l'autre de dormir !"</p>
                 <span class="dalai-author">— Dalaï Lama</span>
             </div>
-        </section>
 
-
-        <!-- SECTION 3: SYNERGIES & LIENS -->
-        <section id="synergies" class="section-container">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="synergiesTitle">Synergies & Liens Amis</h2>
-                <p class="section-desc" data-i18n="synergiesSubtitle">Réseaux, collectifs et plateformes qui partagent notre horizon.</p>
-            </div>
-
-            <div class="synergies-grid" id="synergies-grid">
-                <!-- Will be populated by JS for multi-language support or statically populated below -->
-            </div>
-        </section>
-
-
-        <!-- SECTION 4: PARTICIPATE / CONTACT -->
-        <section id="participate" class="section-container">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="participateTitle">Contribuer & Participer</h2>
-                <p class="section-desc" data-i18n="participateSubtitle">Ce site est un outil collectif. Partagez vos propres tutoriels, livres ou retours d'expérience.</p>
-            </div>
-
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3 data-i18n="contactInfoTitle">Faites tourner les savoirs !</h3>
-                    <p data-i18n="contactInfoText1">Vous avez construit un habitat atypique, rédigé une brochure, ou découvert une pépite dans les archives libres ?</p>
-                    <p data-i18n="contactInfoText2">Écrivez-nous via ce formulaire sécurisé pour que nous puissions l'ajouter à l'infokiosque.</p>
-                    <div class="contact-perks">
-                        <div class="perk-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-                            <span data-i18n="perk1">100% Anonyme si souhaité</span>
-                        </div>
-                        <div class="perk-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-                            <span data-i18n="perk2">Open-Source & Sans droits commerciaux</span>
-                        </div>
-                        <div class="perk-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-                            <span data-i18n="perk3">Hébergé durablement sur GitHub Pages</span>
-                        </div>
-                    </div>
-                </div>
-
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group">
-                        <label for="contact-name" data-i18n="formNameLabel">Votre pseudo / nom :</label>
-                        <input type="text" id="contact-name" required data-i18n-placeholder="formNamePlaceholder" placeholder="Ex: Louise Michel">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="contact-email" data-i18n="formEmailLabel">Adresse e-mail (optionnel) :</label>
-                        <input type="email" id="contact-email" data-i18n-placeholder="formEmailPlaceholder" placeholder="pour vous répondre...">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="contact-subject" data-i18n="formSubjectLabel">Sujet de votre contribution :</label>
-                        <select id="contact-subject" required>
-                            <option value="tutorial" data-i18n="formSubOption1">Proposer un tutoriel ou guide PDF</option>
-                            <option value="link" data-i18n="formSubOption2">Suggérer un site ami (Synergies)</option>
-                            <option value="correction" data-i18n="formSubOption3">Signaler un lien mort ou une correction</option>
-                            <option value="message" data-i18n="formSubOption4">Petit mot d'encouragement ou contact</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="contact-message" data-i18n="formMessageLabel">Votre message ou lien de téléchargement :</label>
-                        <textarea id="contact-message" rows="6" required data-i18n-placeholder="formMessagePlaceholder" placeholder="Partagez vos liens (Framadrop, Archive.org, Mediafire, etc.) ou décrivez votre projet ici..."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
-                        <span data-i18n="formSubmitBtn">Envoyer la contribution</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                    </button>
-
-                    <div id="form-success" class="form-alert success hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                        <span data-i18n="formSuccessMsg">Merci ! Votre message a été transmis avec succès.</span>
-                    </div>
-                </form>
+            <div class="static-contact-box">
+                <div class="static-contact-icon">✉️</div>
+                <h3 data-i18n="staticContactTitle">Mentions & Contact</h3>
+                <p data-i18n="staticContactText">Cette version de la base de connaissances (Remake 2026) est un infokiosque entièrement statique hébergé sur GitHub Pages, garantissant l'absence de cookies, de traçage ou de collecte de données. Pour toute suggestion ou partage de documents, contactez directement l'équipe via les réseaux d'autonomie habituels.</p>
             </div>
         </section>
 
     </main>
 
-    <!-- FULL ARTICLE VIEW MODAL -->
+    <!-- FULL ARTICLE VIEW MODAL (Static, NO fake comments, NO user input) -->
     <div class="modal" id="article-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
         <div class="modal-backdrop" id="modal-backdrop"></div>
         <div class="modal-content">
@@ -326,7 +262,7 @@
             <!-- Modal Body -->
             <div class="modal-body">
                 <h1 class="modal-title" id="modal-title">Titre de l'article</h1>
-                <div class="modal-image-container">
+                <div class="modal-image-container" id="modal-image-box">
                     <img id="modal-image" src="" alt="Illustration de l'article">
                 </div>
 
@@ -335,9 +271,9 @@
                     <!-- Loaded dynamically -->
                 </div>
 
-                <!-- Resource Link / Action Box -->
+                <!-- Resource Links (Mediafire / Archive / PDF) -->
                 <div class="modal-resources" id="modal-resources-box">
-                    <h3 data-i18n="modalResourcesTitle">Documents & Téléchargements Libres :</h3>
+                    <h3 data-i18n="modalResourcesTitle">Documents & Téléchargements (MediaFire, PDF, Archives) :</h3>
                     <div id="modal-resource-links" class="resource-links-list">
                         <!-- Loaded dynamically -->
                     </div>
@@ -349,7 +285,7 @@
                 </div>
             </div>
 
-            <!-- Modal Footer (Interactive comments/sharing simulation) -->
+            <!-- Modal Footer -->
             <div class="modal-footer">
                 <div class="modal-share">
                     <span data-i18n="shareArticle">Partager ce savoir :</span>
@@ -357,32 +293,14 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
                         <span id="copy-link-text" data-i18n="copyLinkBtn">Copier le lien</span>
                     </button>
-                    <a id="btn-share-fb" href="#" target="_blank" class="btn-share fb" title="Partager sur Facebook">
+                    <a id="btn-share-fb" href="#" target="_blank" rel="noopener noreferrer" class="btn-share fb" title="Partager sur Facebook">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                     </a>
                 </div>
-
                 <div class="modal-feedback">
-                    <button class="btn-reaction" id="btn-react-heart">
-                        <span class="reaction-emoji">🌱</span> <span id="reaction-count">42</span> <span data-i18n="reactionLabel">Inspirant</span>
-                    </button>
+                    <span class="static-reaction">🌱 Ecoclash Infokiosque</span>
                 </div>
             </div>
-
-            <!-- Comments Simulation Box -->
-            <div class="modal-comments">
-                <h3 id="comments-header" data-i18n="commentsHeader">Discussions & Retours (4)</h3>
-                <div class="comments-list" id="comments-list">
-                    <!-- Loaded dynamically -->
-                </div>
-                <!-- Add comment quick form -->
-                <div class="quick-comment-box">
-                    <input type="text" id="quick-comment-author" placeholder="Votre pseudo..." data-i18n-placeholder="quickCommentAuthor">
-                    <textarea id="quick-comment-text" rows="2" placeholder="Ajouter une question, une astuce ou un retour d'expérience..." data-i18n-placeholder="quickCommentText"></textarea>
-                    <button id="quick-comment-submit" class="btn btn-secondary btn-sm" data-i18n="quickCommentSubmit">Publier le commentaire</button>
-                </div>
-            </div>
-
         </div>
     </div>
 
@@ -400,7 +318,7 @@
                     <span class="brand-name">ECO<span class="brand-highlight">CLASH</span></span>
                 </div>
                 <p class="footer-bio" data-i18n="footerBio">
-                    Version améliorée, modernisée et mise à jour (Remake 2026). Partage de savoirs d'autonomie, d'autoconstruction et d'écologie de lutte. Conçu en pure Vanilla HTML / CSS / JS pour GitHub Pages.
+                    Version améliorée, modernisée et mise à jour (Remake 2026). Partage de savoirs d'autonomie, d'autoconstruction et d'écologie de lutte. Conçu en pure Vanilla HTML / CSS / JS pour GitHub Pages. Version 100% statique sans formulaires ni traceurs.
                 </p>
                 <div class="footer-copy">
                     &copy; 2014-2026 Ecoclash — <span data-i18n="footerOpenSource">Savoirs Libres pour un Monde Libre</span>.
@@ -410,10 +328,9 @@
             <div class="footer-col">
                 <h4 data-i18n="footerNavTitle">Navigation</h4>
                 <ul class="footer-links">
-                    <li><a href="#articles" data-nav="articles" data-i18n="navArticles">Articles & Guides</a></li>
-                    <li><a href="#manifesto" data-nav="manifesto" data-i18n="navManifesto">Infokiosque</a></li>
-                    <li><a href="#synergies" data-nav="synergies" data-i18n="navSynergies">Synergies & Liens</a></li>
-                    <li><a href="#participate" data-nav="participate" data-i18n="navParticipate">Participer</a></li>
+                    <li><a href="#articles" data-nav-link="articles" data-i18n="navArticles">Articles & Tutoriels</a></li>
+                    <li><a href="#bookmarks" data-nav-link="bookmarks" data-i18n="navBookmarks">Signets & Liens (Sitemap)</a></li>
+                    <li><a href="#manifesto" data-nav-link="manifesto" data-i18n="navManifesto">Notre Démarche</a></li>
                 </ul>
             </div>
 
@@ -425,6 +342,7 @@
                     <li><span class="tech-tag">Déploiement GitHub Pages</span></li>
                     <li><span class="tech-tag">Mode Sombre / Mode Clair</span></li>
                     <li><span class="tech-tag">Multilingue (FR / EN / ES)</span></li>
+                    <li><span class="tech-tag">100% Statique (Sans user inputs)</span></li>
                     <li><a href="README.md" target="_blank" class="readme-link" data-i18n="footerReadmeLink">📖 Consulter le README.md</a></li>
                 </ul>
             </div>
