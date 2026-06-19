@@ -1,7 +1,5 @@
 # 🔨 Artisanat, bricolage, « tout faire soi-même »
 
-> **Légende :** `(#D)` Les docs · `@A` Article associé · Maj & liens ➡️ [Synergies](artisanat-synergies.md)
-
 ---
 
 ## 📂 Documents
@@ -26,8 +24,7 @@
 
 ---
 
-## 🔗 Synergies & liens
-# 🔨 Synergies & liens — Artisanat & Bricolage Low-Tech
+# 🔗 Liens Artisanat & Bricolage Low-Tech
 
 > 🆕 **Mise à jour avril 2026**
 >
