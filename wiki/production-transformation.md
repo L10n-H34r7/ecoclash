@@ -9,7 +9,21 @@ Techniques low-tech : pain au levain, fermentation, lacto-fermentation, séchage
 ### 📂 Documents
 - Article — **[Recettes végétalienne, Guide végétarien et végétalien, Alimentation vivante](blog/recettes-vegan.md)** — Végétarien, végétalien, crudivore, alimentation vivante… Pourquoi, comment, la nutrition, philosophie, les recettes…
 
+# Recettes végétalienne, Guide végétarien et végétalien, Alimentation vivante
+
+### 📂 Documents
+
+- **278 recettes végétaliennes** — 48p / 592k · [Télécharger](http://avis.free.fr/recettes-2004.04.doc) · Via : [Eco-bio.info](http://www.eco-bio.info/main3.html)
+- **Guide végétarien et végétalien** — Pourquoi, comment, nutrition… · [#](http://avis.free.fr/brochure_2009.pdf)
+- **L'alimentation vivante** — Manuel : Crudivorisme. Information, recettes. · [#](http://www.eco-bio.info/alimentationvivante.pdf)
+
 #### 🔗 Liens
+
+- [Le Végétarisme](http://fr.wikipedia.org/wiki/V%C3%A9g%C3%A9tarisme)
+- [Le végétalisme](http://fr.wikipedia.org/wiki/V%C3%A9g%C3%A9talisme)
+- [Le crudivorisme](http://fr.wikipedia.org/wiki/Crudivorisme)
+- [Le véganisme](http://fr.wikipedia.org/wiki/Veganisme)
+- https://www.vitality4life.fr/blog/recettes-sante/recettes-des-mixeurs/5-recettes-blender/
 
 ---
 
