@@ -8,17 +8,7 @@
 
 Le but de cet **infokiosque / médiathèque** est de réunir et partager des infos pratiques. Pour :
 
-- 🌱 Cultiver, jardiner
-- 🏠 Construire, autoconstruire, fabriquer
-- 🔨 Fabriquer divers outils et objets, bricoler
-- 🍞 Manger, boire, cuisiner
-- 💊 Se soigner (plantes médicinales)
-- ⚡ Produire de l'énergie
-- 📚 Transmettre des savoirs populaires oubliés…
-
-Certains documents sont des créations numériques, d'autres sont disponibles en version papier (livre) — vous pouvez vous les procurer pour soutenir les auteurs et leurs projets (liens dans l'article associé ou via moteur de recherche).
-
-> Imprimer, créer, diffuser, partager vos infokiosques — **que la culture libre circule !**
+🌱 Cultiver, jardiner 🏠 Construire, autoconstruire, fabriquer 🔨 Fabriquer divers outils et objets, bricoler 🍞 Manger, boire, cuisiner 💊 Se soigner (plantes médicinales) ⚡ Produire de l'énergie 📚 Transmettre des savoirs populaires oubliés…
 
 ## 📚 Sections du wiki
 
