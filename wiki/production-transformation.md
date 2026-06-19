@@ -3,13 +3,24 @@ Techniques low-tech : pain au levain, fermentation, lacto-fermentation, séchage
 
 ---
 
-- **Plantes médicinales, sauvages, utiles** → [Docs](http://www.mediafire.com/?plxjlwb4t4b4y)
+## 📚 Ressources Générales & Guides Téléchargeables
+
+### 📂 Documents
+
+ - Article — **[Faites tout vous-même / Savoir revivre / Revivre à la campagne](blog/faites-vous-meme.md)** — Trois livres mythiques pour l'autonomie (encyclopédie 1975, Massacrier, Seymour).
+ - - **Plantes médicinales, sauvages, utiles** → [Docs](http://www.mediafire.com/?plxjlwb4t4b4y)
+
+#### 🔗 Liens
+
+- [**Low Tech Journal**](https://www.lowtechjournal.fr/) — Articles pratiques sur conservation low-tech (séchage, fumage, saumure…).
+- [**Permies.com**](https://permies.com/) — Forum international permaculture avec sections très riches sur food preservation et transformation (anglais).
+- [**r/Canning (Reddit)**](https://www.reddit.com/r/Canning/) — Communauté dédiée à la mise en conserve, stérilisation et conservation longue durée.
+- [**r/preppers (Reddit)**](https://www.reddit.com/r/preppers/) — Discussions sur conservation alimentaire en autonomie (inclut fermentation, séchage, etc.).
+
+---
 
 ## Manger, boire, recettes, cuisine
-### 📂 Documents
-- Article — **[Recettes végétalienne, Guide végétarien et végétalien, Alimentation vivante](blog/recettes-vegan.md)** — Végétarien, végétalien, crudivore, alimentation vivante… Pourquoi, comment, la nutrition, philosophie, les recettes…
-
-# Recettes végétalienne, Guide végétarien et végétalien, Alimentation vivante
+Recettes végétalienne, Guide végétarien et végétalien, Alimentation vivante
 
 ### 📂 Documents
 
@@ -19,10 +30,6 @@ Techniques low-tech : pain au levain, fermentation, lacto-fermentation, séchage
 
 #### 🔗 Liens
 
-- [Le Végétarisme](http://fr.wikipedia.org/wiki/V%C3%A9g%C3%A9tarisme)
-- [Le végétalisme](http://fr.wikipedia.org/wiki/V%C3%A9g%C3%A9talisme)
-- [Le crudivorisme](http://fr.wikipedia.org/wiki/Crudivorisme)
-- [Le véganisme](http://fr.wikipedia.org/wiki/Veganisme)
 - https://www.vitality4life.fr/blog/recettes-sante/recettes-des-mixeurs/5-recettes-blender/
 
 ---
@@ -85,20 +92,5 @@ Produire de l'alcool : comment faire de la bière, du vin, du cidre, du vinaigre
 - [**Low Tech Lab – Recettes fermentées (PDF gratuit)**](https://www.lowtechlab.org/) — Petit concentré de recettes fermentées à télécharger (yaourts, fromages végétaux, etc.).
 
 ---
-
-## 📚 Ressources Générales & Guides Téléchargeables
-
-### 📂 Documents
-
- - Article — **[Faites tout vous-même / Savoir revivre / Revivre à la campagne](blog/faites-vous-meme.md)** — Trois livres mythiques pour l'autonomie (encyclopédie 1975, Massacrier, Seymour).
-
-#### 🔗 Liens
-
-- [**Low Tech Journal**](https://www.lowtechjournal.fr/) — Articles pratiques sur conservation low-tech (séchage, fumage, saumure…).
-- [**Permies.com**](https://permies.com/) — Forum international permaculture avec sections très riches sur food preservation et transformation (anglais).
-- [**r/Canning (Reddit)**](https://www.reddit.com/r/Canning/) — Communauté dédiée à la mise en conserve, stérilisation et conservation longue durée.
-- [**r/preppers (Reddit)**](https://www.reddit.com/r/preppers/) — Discussions sur conservation alimentaire en autonomie (inclut fermentation, séchage, etc.).
-
-> **Note :** La lacto-fermentation et les techniques sans frigo (séchage solaire, salaison, fumage) sont idéales pour l'autonomie et la permaculture. Les forums et subreddits sont très vivants pour poser des questions concrètes et partager des retours d'expérience. **Attention :** la distillation d'alcool est réglementée dans de nombreux pays – renseignez-vous sur la législation locale.
 
 🌱 [Sommaire](Home.md) · [Production, transformation](production-transformation.md)
