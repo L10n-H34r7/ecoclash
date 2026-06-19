@@ -1,23 +1,17 @@
-# Comment tresser un panier avec du papier journal, vannerie de papier, récup
-
-![Panier papier](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/panier.jpg)
-
-> 📅 Publié le 25/08/2014 (cité 17/08/2015) — Catégories : Artisanat
+# Vannerie 
 
 > *« Rien ne se perd, rien ne se crée, tout se transforme… »*
->
-> Apprendre la vannerie, le tressage du papier, de l'osier… Documents, liens, photos et vidéo.
+
+> Apprendre la vannerie, le tressage du papier, de l'osier… Documents, liens, photos et vidéo. 
 
 ---
 
 ## 🎬 Vidéo
 
+▶️ [**Vannerie de papier journal, jeux, tressage de panier, récup, tutorial — YouTube (Tyldur)**](https://www.youtube.com/watch?v=fIBhv9ViA5k)
 > Comment tresser un petit panier avec du papier journal, quelques idées de jeux (un mikado géant et une partie de morpion avec des capsules).
 >
 > Explication vidéo, tuto, ne jetez plus vos vieux journaux, faites-en des paniers, des jeux et plus encore. C'est de la récup, c'est gratuit…
-
-▶️ [**Vannerie de papier journal, jeux, tressage de panier, récup, tutorial — YouTube (Tyldur)**](https://www.youtube.com/watch?v=fIBhv9ViA5k)
-
 ---
 
 ## 📂 Documents
@@ -40,7 +34,7 @@
 
 ---
 
-## 🔗 Voir aussi
+## 🔗 Liens
 
 ### Vannerie — Infos, techniques
 
