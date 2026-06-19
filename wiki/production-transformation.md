@@ -19,13 +19,6 @@ Techniques low-tech : pain au levain, fermentation, lacto-fermentation, séchage
 
 - **Plantes médicinales, sauvages, utiles** → [Docs](http://www.mediafire.com/?plxjlwb4t4b4y)
 
-#### 🔗 Liens
-
-- [**Low Tech Journal**](https://www.lowtechjournal.fr/) — Articles pratiques sur conservation low-tech (séchage, fumage, saumure…).
-- [**Permies.com**](https://permies.com/) — Forum international permaculture avec sections très riches sur food preservation et transformation (anglais).
-- [**r/Canning (Reddit)**](https://www.reddit.com/r/Canning/) — Communauté dédiée à la mise en conserve, stérilisation et conservation longue durée.
-- [**r/preppers (Reddit)**](https://www.reddit.com/r/preppers/) — Discussions sur conservation alimentaire en autonomie (inclut fermentation, séchage, etc.).
-
 ---
 
 ## Manger, boire, recettes, cuisine
@@ -38,7 +31,10 @@ Recettes végétalienne, Guide végétarien et végétalien, Alimentation vivant
 - **L'alimentation vivante** — Manuel : Crudivorisme. Information, recettes. · [#](http://www.eco-bio.info/alimentationvivante.pdf)
 
 #### 🔗 Liens
-
+- [**Low Tech Journal**](https://www.lowtechjournal.fr/) — Articles pratiques sur conservation low-tech (séchage, fumage, saumure…).
+- [**Permies.com**](https://permies.com/) — Forum international permaculture avec sections très riches sur food preservation et transformation (anglais).
+- [**r/Canning (Reddit)**](https://www.reddit.com/r/Canning/) — Communauté dédiée à la mise en conserve, stérilisation et conservation longue durée.
+- [**r/preppers (Reddit)**](https://www.reddit.com/r/preppers/) — Discussions sur conservation alimentaire en autonomie (inclut fermentation, séchage, etc.).
 - https://www.vitality4life.fr/blog/recettes-sante/recettes-des-mixeurs/5-recettes-blender/
 
 ---
