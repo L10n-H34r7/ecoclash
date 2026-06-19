@@ -1,0 +1,28 @@
+# Pratique - Comment faire du pain
+
+> 📅 Publié le 11/08/2014 — Catégories : Transformation
+
+> Faire un levain, cuire le pain, les différents types de pain, la farine, les céréales… **Tout pour autoproduire son pain !**
+
+---
+
+## 📂 Documents
+
+- **La fabrication du pain, infos et recettes** — 32p / 224k · [Télécharger (#)](http://www.mediafire.com/view/9o33d93oj4d5r73/la.fabrication.du.pain.-.fairesonpain.free.fr.32p.pdf) · Via : [http://fairesonpain.free.fr/](http://fairesonpain.free.fr/)
+- **50 Recettes de pain** — 123p · [Télécharger (#)](http://www.mediafire.com/view/h0f0fjyx8d1vh8z/50.recettes.de.pain.pdf)
+- **Recettes de cuisine, faire son pain, faire son vin, bière cidre et vinaigre, faire du café, biscuits…** (Extraits divers) — *Recettes.cuisine.pain.biere.vin.biscuit.-.mix.a4.72p Ed A.A* · [Télécharger (#)](http://www.mediafire.com/view/4zxysnqp8j1mb8q/recettes.cuisine.pain.biere.vin.biscuit.-.mix.a4.72p.pdf)
+
+---
+
+## 🔗 Voir aussi
+
+### Liens internes
+
+- Article : [Pratique - Comment faire de l'alcool de la bière, malter l'orge…](2014-08-11-alcool.md)
+- Document : [Pratique - 278 recettes végétaliennes](2014-08-25-recettes-vegan.md)
+- Article : [Produire de la spiruline](2014-08-14-spiruline.md)
+- Miel pour les tartines → [Apiculture pour tous](2014-08-14-apiculture.md)
+
+---
+
+🌱 [Sommaire](../Home.md) · [Production, transformation](../production-transformation.md)
