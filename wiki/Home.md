@@ -1,6 +1,4 @@
-# 🏠 Ecoclash
-
-![Bannière](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/og-banner.jpg)
+# 🏠 Home / Humanity OS
 
 > **Partage de savoirs, infokiosque, vidéokiosque, alternatives pratiques, autoconstruction, décroissance, permaculture, écovillage, communauté, écologie, anarchie, résistance, altermondialisme, freegan, squat, action directe…**
 
