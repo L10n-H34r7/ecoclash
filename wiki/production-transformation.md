@@ -18,7 +18,15 @@ Techniques low-tech : pain au levain, fermentation, lacto-fermentation, séchage
 
 ## 🥖 Pain, Levain & Boulangerie Autonome
 
-- 11/08 — **[Pratique - Comment faire du pain](blog/pain.md)** — Faire un levain, cuire le pain, les différents types de pain, la farine, les céréales… Tout pour autoproduire son pain !
+> Faire un levain, cuire le pain, les différents types de pain, la farine, les céréales… **Tout pour autoproduire son pain !**
+
+## 📂 Documents
+
+- **La fabrication du pain, infos et recettes** — 32p / 224k · [Télécharger (#)](http://www.mediafire.com/view/9o33d93oj4d5r73/la.fabrication.du.pain.-.fairesonpain.free.fr.32p.pdf) · Via : [http://fairesonpain.free.fr/](http://fairesonpain.free.fr/)
+- **50 Recettes de pain** — 123p · [Télécharger (#)](http://www.mediafire.com/view/h0f0fjyx8d1vh8z/50.recettes.de.pain.pdf)
+- **Recettes de cuisine, faire son pain, faire son vin, bière cidre et vinaigre, faire du café, biscuits…** (Extraits divers) — *Recettes.cuisine.pain.biere.vin.biscuit.-.mix.a4.72p Ed A.A* · [Télécharger (#)](http://www.mediafire.com/view/4zxysnqp8j1mb8q/recettes.cuisine.pain.biere.vin.biscuit.-.mix.a4.72p.pdf)
+
+- Article : Miel pour les tartines → [Apiculture pour tous](2014-08-14-apiculture.md)
 
 ### 🔗 Liens
 
