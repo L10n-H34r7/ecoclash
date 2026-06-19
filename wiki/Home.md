@@ -78,9 +78,7 @@ Articles, tutoriels, reportages, présentations de lieux de vie, perles d'archiv
 >
 > *"Les synapses (du grec syn-ensemble ; haptein-toucher, saisir ; c'est-à-dire connexion) désigne une zone de contact fonctionnelle qui s'établit entre deux neurones, ou entre un neurone et une autre cellule (cellules musculaires, récepteurs sensoriels…). Elle assure la conversion d'un potentiel d'action"* — [Wik](http://fr.wikipedia.org/wiki/Synapse)
 
----
-
-## 📑 Sous-sections
+--- 
 
 - 📰 [Actu](synergies-actu.md) — News d'un monde… (flux Squat!net, UtopLib…)
 - 🌍 [Village global](synergies-village-global.md) — Lieux de vie, collectifs, fermes, squats, écolieux
