@@ -98,4 +98,4 @@ Produire de l'alcool : comment faire de la bière, du vin, du cidre, du vinaigre
 
 ---
 
-🌱 [Sommaire](Home.md) · [Cultiver, Jardiner produire](cultiver-jardiner.md) [Artisanat](artisanat.md)
+🌱 [Sommaire](Home.md) · [Cultiver, Jardiner produire](cultiver-jardiner.md) · [Artisanat](artisanat.md)
