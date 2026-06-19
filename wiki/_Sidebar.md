@@ -5,7 +5,6 @@
 ## 📚 Médiathèque
 
 - [📚 Médiathèque / Infokiosque](mediatheque.md)
-- [📖 Liste de médiathèques & ressources PDF](mediatheque-liste.md)
 
 ## 🏠 Habitat, autoconstruction
 
@@ -61,16 +60,12 @@
 - [26/08 — Ermitage malin (Roumanie)](blog/ermitage-malin.md)
 - [26/08 — Lieu de vie limousin](blog/lieu-limousin.md)
 - [26/08 — Écolieu des Crozes-hauts (France)](blog/crozes-hauts.md)
-- [25/08 — Faites tout vous-même / Savoir revivre / Revivre à la campagne](blog/faites-vous-meme.md)
-- [25/08 — Recettes végétaliennes / alimentation vivante](blog/recettes-vegan.md)
 - [14/08 — Habitats d'urgence, autoconstruction bioclimatique](blog/habitats-urgence.md)
 - [14/08 — Comment fabriquer un tipi (tepee)](blog/tipi.md)
 - [14/08 — Apiculture (ruche Warré, topbar)](blog/apiculture.md)
 - [14/08 — Spiruline : cultiver, produire, transformer](blog/spiruline.md)
 - [14/08 — Construire un dôme géodésique](blog/dome-geodesique.md)
 - [11/08 — # NDDL — ZAD](blog/zad.md)
-- [11/08 — Bière, cidre, vin : faire son alcool](blog/alcool.md)
-- [11/08 — Comment faire son pain](blog/pain.md)
 - [10/08 — Culture des champignons — mycologie](blog/champignons.md)
 
 ---
