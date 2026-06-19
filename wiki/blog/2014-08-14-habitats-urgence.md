@@ -1,6 +1,6 @@
 # Habitats d'urgence, autoconstruction bioclimatique
 
-![Habitat d'urgence](https://raw.githubusercontent.com/ecoclash/ecoclash-wiki/main/images/urgence.jpg)
+![Habitat d'urgence](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/urgence.jpg)
 
 > 📅 Publié le 14/08/2014 — Catégories : Habitat, Autoconstruction
 

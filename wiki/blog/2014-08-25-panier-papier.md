@@ -1,6 +1,6 @@
 # Comment tresser un panier avec du papier journal, vannerie de papier, récup
 
-![Panier papier](https://raw.githubusercontent.com/ecoclash/ecoclash-wiki/main/images/panier.jpg)
+![Panier papier](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/panier.jpg)
 
 > 📅 Publié le 25/08/2014 (cité 17/08/2015) — Catégories : Artisanat
 

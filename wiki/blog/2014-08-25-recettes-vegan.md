@@ -1,6 +1,6 @@
 # Recettes végétalienne, Guide végétarien et végétalien, Alimentation vivante
 
-![Alimentation vivante](https://raw.githubusercontent.com/ecoclash/ecoclash-wiki/main/images/vegetalien.jpg)
+![Alimentation vivante](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/vegetalien.jpg)
 
 > 📅 Publié le 25/08/2014 — Catégories : Transformation
 

@@ -1,6 +1,6 @@
 # Faites tout vous même / Savoir revivre / Revivre à la campagne
 
-![Faites vous-même](https://raw.githubusercontent.com/ecoclash/ecoclash-wiki/main/images/faites-vous-meme.jpg)
+![Faites vous-même](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/faites-vous-meme.jpg)
 
 > 📅 Publié le 25/08/2014 — Catégories : Cultiver, Transformation, Autoconstruction, Artisanat
 

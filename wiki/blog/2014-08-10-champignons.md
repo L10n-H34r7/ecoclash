@@ -1,6 +1,6 @@
 # La culture des champignons - mycologie
 
-![Champignons](https://raw.githubusercontent.com/ecoclash/ecoclash-wiki/main/images/champignons.jpg)
+![Champignons](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/champignons.jpg)
 
 > 📅 Publié le 10/08/2014 — Catégories : Cultiver
 

@@ -1,6 +1,6 @@
 # Comment construire un dôme géodésique
 
-![Dôme géodésique](https://raw.githubusercontent.com/ecoclash/ecoclash-wiki/main/images/dome.jpg)
+![Dôme géodésique](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/dome.jpg)
 
 > 📅 Publié le 14/08/2014 — Catégories : Habitat, Autoconstruction
 

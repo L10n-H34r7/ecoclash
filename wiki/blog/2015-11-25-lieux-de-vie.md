@@ -1,6 +1,6 @@
 # 🌍 Lieux de vie, collectifs, fermes, squat, écolieu
 
-![Lieux de vie](https://raw.githubusercontent.com/ecoclash/ecoclash-wiki/main/images/lieux-de-vie.jpg)
+![Lieux de vie](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/lieux-de-vie.jpg)
 
 > 📅 **25 novembre 2015** — Catégories : Lieux
 >

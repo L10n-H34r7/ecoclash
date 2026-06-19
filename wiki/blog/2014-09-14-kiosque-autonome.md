@@ -1,6 +1,6 @@
 # Le Kiosques Autonomes
 
-![Kiosque](https://raw.githubusercontent.com/ecoclash/ecoclash-wiki/main/images/kiosque.jpg)
+![Kiosque](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/kiosque.jpg)
 
 > 📅 Publié le 14/09/2014 — Catégories : Cultiver, Autoconstruction, doc
 

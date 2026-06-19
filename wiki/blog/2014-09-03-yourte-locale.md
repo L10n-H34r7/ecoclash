@@ -1,6 +1,6 @@
 # Autoconstruction d'une yourte locale
 
-![Yourte locale](https://raw.githubusercontent.com/ecoclash/ecoclash-wiki/main/images/yourte-locale.jpg)
+![Yourte locale](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/yourte-locale.jpg)
 
 > 📅 Publié le 03/09/2014 — Catégories : Habitat, Autoconstruction
 

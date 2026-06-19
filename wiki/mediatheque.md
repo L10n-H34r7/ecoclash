@@ -1,6 +1,6 @@
 # 📚 Médiathèque — Infokiosque
 
-![Médiathèque](https://raw.githubusercontent.com/ecoclash/ecoclash-wiki/main/images/og-banner.jpg)
+![Médiathèque](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/og-banner.jpg)
 
 ## Le but de cet infokiosque / médiathèque
 

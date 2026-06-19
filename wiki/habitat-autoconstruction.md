@@ -1,6 +1,6 @@
 # 🏠 Habitat, autoconstruction
 
-![Habitat](https://raw.githubusercontent.com/ecoclash/ecoclash-wiki/main/images/og-banner.jpg)
+![Habitat](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/og-banner.jpg)
 
 > **Légende :** `(#D)` Les docs · `@A` Article associé · Maj & liens ➡️ [Synergies](habitat-autoconstruction-synergies.md)
 

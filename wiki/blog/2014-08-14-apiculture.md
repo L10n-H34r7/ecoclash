@@ -1,6 +1,6 @@
 # Apiculture pour tous, ruche du peuple, Warre, topbar
 
-![Apiculture](https://raw.githubusercontent.com/ecoclash/ecoclash-wiki/main/images/apiculture.jpg)
+![Apiculture](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/apiculture.jpg)
 
 > 📅 Publié le 14/08/2014 — Catégories : Cultiver
 

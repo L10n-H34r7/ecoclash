@@ -1,6 +1,6 @@
 # Habitats - Construction traditionnelles et marginales
 
-![Habitats traditionnels](https://raw.githubusercontent.com/ecoclash/ecoclash-wiki/main/images/habitats-trad.jpg)
+![Habitats traditionnels](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/habitats-trad.jpg)
 
 > 📅 Publié le 14/08/2014 — Catégories : Habitat, Autoconstruction
 
