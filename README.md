@@ -1,150 +1,119 @@
-# 🌱 Ecoclash
+# 🌱 Ecoclash — Infokiosque & Base de Savoirs Libres (Remake 2026)
 
-> **Partage de savoirs, alternatives pratiques**
->
-> Knowledge sharing, practical alternatives, self-construction, permaculture, degrowth
+> **Partage de savoirs, Infokiosque, alternatives pratiques, autoconstruction, décroissance, permaculture, communautés autonomes, low-tech et résistance (ZAD).**
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Success-brightgreen)](https://pages.github.com/)
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey)](https://creativecommons.org/licenses/by-sa/4.0/)
-
-## 🌐 Languages / Langues / Idiomas
-
-| 🇫🇷 Français | 🇬🇧 English | 🇪🇸 Español |
-|:---:|:---:|:---:|
-| Version originale | Available in settings | Disponible en paramètres |
-
-Switch language using the buttons in the header.
+Remake officiel, enrichi et modernisé de la plateforme [Ecoclash d'origine (Jimdo)](https://ecoclash.jimdofree.com/), spécialement repensé et architecturé pour un **hébergement durable, open-source et performant sur GitHub Pages**.
 
 ---
 
-## 📖 About / À propos
+## ⚡ 100% Pure Vanilla HTML / CSS / JS (Zéro Dépendances)
 
-Ecoclash is a **free knowledge sharing platform** dedicated to practical alternatives for sustainable living. Inspired by the original [ecoclash.jimdofree.com](https://ecoclash.jimdofree.com/), this modern version offers:
-
-- 📚 **Infokiosque / Mediatheque** - Share practical information documents
-- 🏠 **Housing & Self-Construction** - Yurts, tipis, geodesic domes, earth construction
-- 🌿 **Growing & Gardening** - Beekeeping, permaculture, mushroom cultivation
-- 🍺 **Production & Processing** - Bread making, beer, wine, medicinal plants
-- 🛠️ **Craftsmanship & DIY** - Wicker weaving, bushcraft, tools
-- 🔗 **Synergies & Links** - News, sharing networks, movement resources
+Conformément au manifeste d'autonomie low-tech du projet, cette application a été développée en **pure Vanilla Web Technologies** :
+- **❌ Aucun framework lourd :** Pas de React, Vue, ou Angular.
+- **❌ Aucun outil de build ou de compilation complexe :** Pas de Vite, Webpack, Babel ou Node.js (NPM).
+- **✔️ Simplicité et pérennité :** Les fichiers s'exécutent instantanément dans n'importe quel navigateur web de manière native. Il suffit d'ouvrir `index.html` !
 
 ---
 
-## ✨ Features
+## 🌟 Fonctionnalités Modernes & Upgradées
 
-| Feature | Description |
-|---------|-------------|
-| 🌐 **Multilingual** | French, English, Spanish support |
-| 🌓 **Theme Toggle** | Dark and Light mode |
-| 📱 **Responsive** | Mobile-first design |
-| ⚡ **Fast Loading** | Static HTML, no dependencies |
-| 🔒 **Privacy-First** | No tracking, local storage for preferences |
-| 🎨 **Modern UI** | Clean, eco-friendly design |
+### 1. 🌐 Multilingue Dynamique (Français / Anglais / Espagnol)
+Un dictionnaire interne géré par ES6 JavaScript (`app.js`) permet de traduire instantanément et sans rechargement de page :
+- **L'interface globale :** menus, boutons, formulaires, et compteurs.
+- **Les filtres de catégories.**
+- **L'intégralité de la base d'articles et de tutoriels pratiques.**
 
----
+### 2. 🌓 Switcher Mode Sombre / Mode Clair (Dark / Clear Mode)
+- Un basculeur élégant intégré à la barre de navigation.
+- Sauvegarde automatique des préférences de l'utilisateur dans le `localStorage` du navigateur.
+- Design soigné avec des palettes de couleurs éco-technologiques (vert émeraude, crème, et obsidienne).
 
-## 🚀 Quick Start
+### 3. 🔍 Infokiosque & Recherche Instantanée en Temps Réel
+- Une barre de recherche interactive filtrant le titre, les descriptions et les tags en direct au clavier.
+- Navigation horizontale fluide par catégories :
+  - *Tout les articles*
+  - *Habitat & Autoconstruction (Yourte, Dôme, Tipi)*
+  - *Cultiver & Jardiner (Ruches Warré, Champignons)*
+  - *Production & Transformation (Pain au levain, Bière & Alcool, Spiruline)*
+  - *Artisanat & Récup' (Vannerie de papier)*
+  - *Médiathèque & Archives (Formules Hiscox, 1972 Special Vroutsch)*
+  - *Action & Luttes (Zones À Défendre NDDL)*
 
-Simply open `index.html` in any web browser. No build step required!
+### 4. 📄 Vue Modale Enrichie pour les Savoirs
+- Affichage riche des tutoriels avec typographie optimisée pour la lecture.
+- Liens de téléchargement vers les PDF et ressources libres du domaine public.
+- Simulation interactive de retours d'expérience (Commentaires) et de partage (copie de liens).
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/ecoclash.git
-
-# Open in browser
-open index.html
-```
-
----
-
-## 📂 Project Structure
-
-```
-ecoclash/
-├── index.html          # Main website (single-page application)
-├── README.md           # This file
-└── .github/
-    └── workflows/
-        └── deploy.yml  # GitHub Pages deployment workflow
-```
+### 5. 🤝 Synergies & Formulaire de Contribution
+- Répertoire de collectifs amis (Alphazomes, Zad, Infokiosques.net, Low-Tech Lab).
+- Simulation de formulaire sécurisé pour permettre à la communauté de proposer de nouveaux PDF ou tutoriels.
 
 ---
 
-## 🚢 Deployment
+## 🚀 Déploiement sur GitHub Pages (En 3 Clics)
 
-### Automatic Deployment (Recommended)
+Ce projet est conçu pour être publié gratuitement et en quelques secondes sur **GitHub Pages**.
 
-This project includes a GitHub Actions workflow for automatic deployment to GitHub Pages.
+1. **Créer un dépôt GitHub :**
+   Créez un nouveau repository sur GitHub (ex: `ecoclash-remake`) et importez-y les 4 fichiers du projet :
+   - `index.html`
+   - `styles.css`
+   - `app.js`
+   - `README.md`
 
-1. **Fork or clone this repository**
-2. **Push to main branch** - The workflow will automatically deploy
-3. **Access your site** at `https://yourusername.github.io/ecoclash/`
+2. **Activer GitHub Pages :**
+   - Allez dans les **Settings** (Paramètres) de votre repository.
+   - Cliquez sur la rubrique **Pages** dans le menu de gauche.
+   - Sous **Source**, sélectionnez la branche `main` (ou `master`) et le dossier `/ (root)`.
+   - Cliquez sur **Save**.
 
-### Manual Deployment
-
-```bash
-# Build for production
-# Just commit and push - GitHub Actions handles the rest!
-git add .
-git commit -m "Update content"
-git push origin main
-```
+3. **Consulter votre site en ligne :**
+   - Votre application sera en ligne à l'adresse : `https://<votre-nom-utilisateur>.github.io/<votre-repository>/`
+   - Déploiement 100% automatisé à chaque modification des fichiers.
 
 ---
 
-## 🎨 Customization
+## 🛠️ Comment Ajouter ou Modifier des Articles ?
 
-### Theme Colors
+Pour enrichir la base de connaissances, ouvrez simplement le fichier `app.js` et repérez la constante `articles` (vers la ligne 120). Vous pouvez y insérer un nouvel objet structuré ainsi :
 
-Edit the CSS variables in `index.html`:
-
-```css
-:root {
-  --accent: #2d6a2d;        /* Primary green */
-  --accent-hover: #1f4d1f;  /* Darker green for hover */
-  --leaf-green: #3a7d3a;    /* Leaf icon color */
+```javascript
+{
+    id: "titre-de-mon-guide",
+    category: "habitat", // "habitat", "permaculture", "production", "artisanat", "mediatheque", ou "action"
+    date: "Aujourd'hui",
+    readingTime: 5,
+    reactions: 10,
+    image: "https://url-de-mon-image.jpg",
+    tags: ["Tag1", "Tag2"],
+    title: {
+        fr: "Mon Titre en Français",
+        en: "My Title in English",
+        es: "Mi Título en Español"
+    },
+    desc: {
+        fr: "Ma description courte en Français.",
+        en: "My short description in English.",
+        es: "Mi descripción corta en Español."
+    },
+    content: {
+        fr: "<p>Mon tutoriel complet en HTML...</p>",
+        en: "<p>My full tutorial in HTML...</p>",
+        es: "<p>Mi tutorial completo en HTML...</p>"
+    },
+    resources: [
+        { name: "📥 Télécharger mon PDF", url: "https://lien-vers-mon-pdf.pdf" }
+    ],
+    comments: []
 }
 ```
 
-### Adding Content
-
-1. **Articles**: Modify the articles grid in `index.html`
-2. **Categories**: Edit the category grid section
-3. **Translations**: Update the `translations` object in JavaScript
-
 ---
 
-## 📜 License
+## 📜 Philosophie & Crédits
 
-This project is licensed under **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**.
+- **Projet Original :** Conçu en 2014 par les créateurs de la plateforme [Ecoclash](https://ecoclash.jimdofree.com/).
+- **Remake 2026 :** Upgradé par Arena.ai Agent Mode.
+- **Licence :** Savoirs Libres pour un Monde Libre (Domaine Public / CC0). Toute rediffusion, modification, impression sous forme de brochure papier ou fanzine est vivement encouragée.
 
-You are free to:
-- **Share** — copy and redistribute the material
-- **Adapt** — remix, transform, and build upon the material
-
-Under the following terms:
-- **Attribution** — You must give appropriate credit
-- **ShareAlike** — If you remix the material, you must distribute your contributions under the same license
-
-[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
-
----
-
-## 🙏 Acknowledgments
-
-- Original Ecoclash project and its contributors
-- Jimdo for the original platform
-- All knowledge sharers and open source advocates
-- The permaculture and degrowth movements
-
----
-
-## 📬 Contact
-
-For questions, contributions, or to share documents for the infokiosque, please open an issue or contact via the website.
-
----
-
-*"If you feel like you're too small to make a difference, try sleeping with a mosquito... and see which one prevents the other from sleeping!"*
-
-— **Dalai Lama**
+> *"On nous dit: Le bonheur c'est le progrès faites un pas en avant. Et c'est le progrès... mais ce n'est jamais le bonheur. Alors si on faisait un pas de côté! Si on essayait autre chose! Si on faisait un pas de côté, on verrait ce qu'on ne voit jamais."*
