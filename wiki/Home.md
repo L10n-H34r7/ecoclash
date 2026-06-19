@@ -12,32 +12,25 @@
 ## 📚 Sections du wiki
 
 ### 📖 Médiathèque / Infokiosque 
-
-➡️ [Médiathèque](mediatheque.md) · [Liste de médiathèques & ressources](mediatheque-liste.md) 
+➡️ [Médiathèque](mediatheque.md) : Tout les documents à télécharger.
 
 ### 🏠 Habitat, autoconstruction
-
 ➡️ [Habitat, autoconstruction](habitat-autoconstruction.md) Yourte, tipi, dôme géodésique, habitat léger, terre/paille, autoconstruction bioclimatique, low-tech…
 
 ### 🔨 Artisanat
-
 ➡️ [Artisanat](artisanat.md) Vannerie, bricolage low-tech, menuiserie, bushcraft, meubles open-source…
 
 ### 🌱 Cultiver, jardiner
-
 ➡️ [Cultiver, jardiner](cultiver-jardiner.md) Permaculture, BRF, compost, purins, agroforesterie, apiculture, spiruline, champignons…
 
 ### 🍞 Production, transformation
-
 ➡️ [Production, transformation](production-transformation.md) Pain au levain, bière/vin/cidre, recettes végétaliennes, plantes médicinales, lacto-fermentation…
 
 ### 🌀 En vrac
-
 ➡️ [En vrac](en-vrac.md) Affiches, stickers, tracts, sciences, chimie, Crimethinc, revues…
 
 
 ### 🔗 Synergies / Liens
-
 ➡️ [Synergies / Liens](synergies.md) Actus, écolieux, partage/troc/don, mobilité/voyage, agendas…
 
 ## 📑 Sous-sections
