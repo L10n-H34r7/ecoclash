@@ -1,6 +1,6 @@
 # Comment cultiver, produire et transformer la spiruline
 
-![Spiruline](https://github.com/L10n-H34r7/ecoclash/blob/main/images/spiruline.jpg)
+![Spiruline](https://github.com/L10n-H34r7/ecoclash/tree/main/images/spiruline.jpg)
 
 > 📅 Publié le 14/08/2014 — Catégories : Cultiver
 
