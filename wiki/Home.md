@@ -1,10 +1,9 @@
-# 🏠 Ecoclash
+# 🏠 Home / Humanity OS
 
 > **Partage de savoirs, infokiosque, vidéokiosque, alternatives pratiques, autoconstruction, décroissance, permaculture, écovillage, communauté, écologie, anarchie, résistance, altermondialisme, freegan, squat, action directe…**
 
----
 
-## ✊ Pourquoi ce wiki ? Le but de cet **infokiosque / médiathèque** est de réunir et partager des infos pratiques. Pour :
+## ✊ Le but de cet **infokiosque / médiathèque** est de réunir et partager des infos pratiques. Pour vivre librement :
 
 - 🏠 Construire, autoconstruire, fabriquer - 🔨 Fabriquer divers outils et objets, bricoler
 - 🌱 Cultiver, jardiner - 🍞 Manger, boire, cuisiner - 💊 Se soigner (plantes médicinales)
@@ -14,11 +13,15 @@
 
 ### 📖 Médiathèque / Infokiosque 
 
-➡️ [Médiathèque](mediatheque.md) · [Liste de médiathèques & ressources](mediatheque-liste.md)
+➡️ [Médiathèque](mediatheque.md) · [Liste de médiathèques & ressources](mediatheque-liste.md) 
 
 ### 🏠 Habitat, autoconstruction
 
 ➡️ [Habitat, autoconstruction](habitat-autoconstruction.md) Yourte, tipi, dôme géodésique, habitat léger, terre/paille, autoconstruction bioclimatique, low-tech…
+
+### 🔨 Artisanat
+
+➡️ [Artisanat](artisanat.md) Vannerie, bricolage low-tech, menuiserie, bushcraft, meubles open-source…
 
 ### 🌱 Cultiver, jardiner
 
@@ -26,35 +29,16 @@
 
 ### 🍞 Production, transformation
 
-Pain au levain, bière/vin/cidre, recettes végétaliennes, plantes médicinales, lacto-fermentation…
-
-➡️ [Production, transformation](production-transformation.md)
-
-### 🔨 Artisanat
-
-Vannerie, bricolage low-tech, menuiserie, bushcraft, meubles open-source…
-
-➡️ [Artisanat](artisanat.md)
+➡️ [Production, transformation](production-transformation.md) Pain au levain, bière/vin/cidre, recettes végétaliennes, plantes médicinales, lacto-fermentation…
 
 ### 🌀 En vrac
 
-Affiches, stickers, tracts, sciences, chimie, Crimethinc, revues…
+➡️ [En vrac](en-vrac.md) Affiches, stickers, tracts, sciences, chimie, Crimethinc, revues…
 
-➡️ [En vrac](en-vrac.md)
 
 ### 🔗 Synergies / Liens
 
-Actus, écolieux, partage/troc/don, mobilité/voyage, agendas…
-
-➡️ [Synergies / Liens](synergies.md)
-
-> ## La synergie des synapses…
->
-> *"La synergie est un effet positif de complémentarité dans une organisation. La synergie est communément de nos jours un phénomène par lequel plusieurs facteurs ou influences agissant ensemble créent un effet plus grand que la somme des effets attendus s'ils avaient opéré indépendamment, ou créent un effet que chacun d'entre eux n'aurait pas créé isolément."* — [Wik](http://fr.wikipedia.org/wiki/Synergie)
->
-> *"Les synapses (du grec syn-ensemble ; haptein-toucher, saisir ; c'est-à-dire connexion) désigne une zone de contact fonctionnelle qui s'établit entre deux neurones, ou entre un neurone et une autre cellule (cellules musculaires, récepteurs sensoriels…). Elle assure la conversion d'un potentiel d'action"* — [Wik](http://fr.wikipedia.org/wiki/Synapse)
-
----
+➡️ [Synergies / Liens](synergies.md) Actus, écolieux, partage/troc/don, mobilité/voyage, agendas…
 
 ## 📑 Sous-sections
 
@@ -73,6 +57,14 @@ Actus, écolieux, partage/troc/don, mobilité/voyage, agendas…
 Articles, tutoriels, reportages, présentations de lieux de vie, perles d'archives…
 
 ➡️ [Tous les articles](tout-les-articles.md) · [Blog](blog/)
+
+---
+
+> ## La synergie des synapses…
+>
+> *"La synergie est un effet positif de complémentarité dans une organisation. La synergie est communément de nos jours un phénomène par lequel plusieurs facteurs ou influences agissant ensemble créent un effet plus grand que la somme des effets attendus s'ils avaient opéré indépendamment, ou créent un effet que chacun d'entre eux n'aurait pas créé isolément."* — [Wik](http://fr.wikipedia.org/wiki/Synergie)
+>
+> *"Les synapses (du grec syn-ensemble ; haptein-toucher, saisir ; c'est-à-dire connexion) désigne une zone de contact fonctionnelle qui s'établit entre deux neurones, ou entre un neurone et une autre cellule (cellules musculaires, récepteurs sensoriels…). Elle assure la conversion d'un potentiel d'action"* — [Wik](http://fr.wikipedia.org/wiki/Synapse)
 
 ---
 
