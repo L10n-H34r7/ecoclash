@@ -1,7 +1,5 @@
 # 🔨 Artisanat, bricolage, « tout faire soi-même »
 
----
-
 ## 📂 Documents
 
 - **Artisanat, bricolage, tout faire soi-même** :
@@ -13,13 +11,8 @@
 
 ## 📰 Articles
 
-### 🟢 2015
-
-- 17/08 — **[Comment tresser un panier avec du papier journal, vannerie de papier, récup](blog/2014-08-25-panier-papier.md)** — *« Rien ne se perd, rien ne se crée, tout se transforme… »* Apprendre la vannerie, le tressage du papier, de l'osier… Documents, liens, photos et vidéo.
-- 15/08 — **[Les perles des Archives / Vol1](blog/2015-08-15-perles-archives.md)** — Quelques livres rares et intéressants (For English speakers).
-
-### 🟡 2014
-
+- **[Comment tresser un panier avec du papier journal, vannerie de papier, récup](blog/2014-08-25-panier-papier.md)** — *« Rien ne se perd, rien ne se crée, tout se transforme… »* Apprendre la vannerie, le tressage du papier, de l'osier… Documents, liens, photos et vidéo.
+- **[Les perles des Archives / Vol1](blog/2015-08-15-perles-archives.md)** — Quelques livres rares et intéressants (For English speakers).
 - 25/08 — **[Faites tout vous-même / Savoir revivre / Revivre à la campagne](blog/2014-08-25-faites-vous-meme.md)**
 
 ---
