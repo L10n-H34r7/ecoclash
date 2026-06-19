@@ -50,9 +50,16 @@ Certains documents sont des créations numériques, d'autres sont disponibles en
 
 ➡️ [Tous les articles](tout-les-articles.md) · [Blog](blog/)
 
----
+### 🔗 Synergies / Liens
 
-# 🔗 Synergies / Liens
+- 📰 [Actu](synergies-actu.md) — News d'un monde… (flux Squat!net, UtopLib…)
+- 🌍 [Village global](synergies-village-global.md) — Lieux de vie, collectifs, fermes, squats, écolieux
+- 🎁 [Partage, échange, troc, don](synergies-partage.md) — Hébergement gratuit, volontariat, SEL, JEU, récup…
+- 🚲 [Mouvement, mobilité, voyage](synergies-mouvement.md) — Vélo, covoiturage, autostop, voyage…
+  - 🚶 [Nomades](synergies-mouvement-nomades.md) — Caravanes, marche, roulotte, wwoof…
+- 🕰️ [La porte du temps](synergies-porte-du-temps.md) — Agendas suisse, permaculture, chantiers, stages, rencontres…
+
+--- 
 
 > ## La synergie des synapses…
 >
@@ -62,19 +69,4 @@ Certains documents sont des créations numériques, d'autres sont disponibles en
 
 --- 
 
-- 📰 [Actu](synergies-actu.md) — News d'un monde… (flux Squat!net, UtopLib…)
-- 🌍 [Village global](synergies-village-global.md) — Lieux de vie, collectifs, fermes, squats, écolieux
-- 🎁 [Partage, échange, troc, don](synergies-partage.md) — Hébergement gratuit, volontariat, SEL, JEU, récup…
-- 🚲 [Mouvement, mobilité, voyage](synergies-mouvement.md) — Vélo, covoiturage, autostop, voyage…
-  - 🚶 [Nomades](synergies-mouvement-nomades.md) — Caravanes, marche, roulotte, wwoof…
-- 🕰️ [La porte du temps](synergies-porte-du-temps.md) — Agendas suisse, permaculture, chantiers, stages, rencontres…
-
 🌱 [Sommaire](Home.md) · [Médiathèque](mediatheque.md) · [Contact](contact.md)
-
-## ✊ Trop petit ?!
-
-> *« Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique… et vous verrez lequel des deux empêche l'autre de dormir ! »* — Dalaï Lama
-
----
-
-🌱 [Voir le sommaire](_Sidebar.md) · [Contact](contact.md) · Source originale : [ecoclash.jimdofree.com](https://ecoclash.jimdofree.com/)
