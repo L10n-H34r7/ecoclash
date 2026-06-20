@@ -8,7 +8,6 @@
 
 ### Réseaux d'hospitalité
 
-- [**Couchsurfing.com**](http://www.couchsurfing.com/) — *« Helps you make connections worldwide. Participe à faire un monde meilleur, un canapé à la fois… »*
 - [**Hospitality Club**](http://www.hospitalityclub.org/) — Des milliers de membres s'entraident lorsqu'ils voyagent (logement, accompagnement pour visiter la ville).
 - [**Warmshowers.org**](http://www.warmshowers.org/) — *« Une douche chaude, un lit, une place pour camper… Le couchsurfing pour cyclistes ! »*
 - [**BeWelcome.org**](http://www.bewelcome.org/) — Réseau d'hébergement de partage.
@@ -43,24 +42,6 @@
 - [Forum sur le wwoof](http://www.forumromanum.com/member/forum/forum.php?action=st...) — Annonces, demande, proposition
 - [Sustainablecommunitiesaroundtheworld.blogspot.com](http://sustainablecommunitiesaroundtheworld.blogspot.com/) — Communautés durables autour du monde, wwoof, écolieux…
 - [Viagensverdes.wordpress.com](http://viagensverdes.wordpress.com/) — Wwoof, ecovillages, ecotourisme… (Port)
-
-### Groupes Couchsurfing liés
-
-- [Longterm couch](http://www.couchsurfing.org/group.html?gid=920)
-- [Rural couch](http://www.couchsurfing.org/group.html?gid=9949)
-- [Wwoof](http://www.couchsurfing.com/group.html?gid=622)
-- [Wwoofers Unite](http://www.couchsurfing.org/group.html?gid=3842)
-- [Helpx](http://www.couchsurfing.com/group.html?gid=626)
-- [Farm stay around the world](http://www.couchsurfing.com/group.html?gid=12532)
-- [FYI Families & Aupairs](http://www.couchsurfing.org/group.html?gid=3651)
-- [Europe AuPairs](http://www.couchsurfing.org/group.html?gid=5058)
-- [Traveling Caregiver](http://www.couchsurfing.org/group.html?gid=8039)
-- [House sitters club](http://www.couchsurfing.org/group.html?gid=840)
-- [House-sitting](http://www.couchsurfing.org/group.html?gid=8572)
-- [Traveller Housekeepers](http://www.couchsurfing.org/group.html?gid=3153)
-- [Family hosting long term language & culture exchanges](http://www.couchsurfing.org/group.html?gid=5724)
-- [Travel and Teach/learn language worldwide](http://www.couchsurfing.org/group.html?gid=1744)
-- [Global language swap accommodation](http://www.couchsurfing.org/group.html?gid=3661)
 
 ---
 
