@@ -1,23 +1,27 @@
 # 🎁 Partage, échange, troc, don
 
 > *De savoir, de temps, d'hébergement, de matériel, de services…*
->
-> *Liens vérifiés et mis à jour — juillet 2025*
 
 ---
 
 ## 🛏️ Hébergement gratuit, volontariat, accueil, aide en échange du logement / nourriture
 
-### Réseaux d'hospitalité
+### 🤝 Hébergement, accueil et partage pour nomades, Réseaux d'hospitalité
 
 - [**Hospitality Club**](https://www.hospitalityclub.org/) — Réseau mondial d'échange d'hospitalité : des milliers de membres s'entraident pour le logement et les visites de ville.
-- [**BeWelcome.org**](https://www.bewelcome.org/) — Plus grande communauté gratuite d'hospitalité (272 000+ membres). Plateforme open-source gérée par des bénévoles, héritière de l'esprit couchsurfing originel.
-- 🆕 [**Couchers.org**](https://couchers.org/) — Alternative open-source et 100% gratuite à Couchsurfing. Association à but non lucratif (501c3), construite par la communauté. 73 000+ utilisateurs. ([GitHub](https://github.com/Couchers-org/couchers))
-- 🆕 [**Trustroots.org**](https://www.trustroots.org/) — Réseau d'hospitalité open-source pour auto-stoppeurs, nomades, cyclistes, activistes. Fondé en 2014, par l'équipe de Hitchwiki et Trashwiki. Système de « cercles » par centres d'intérêt. ([GitHub](https://github.com/Trustroots/trustroots))
 - [**Pasporta Servo**](https://www.pasportaservo.org/) — Réseau d'hébergement gratuit pour espérantistes. 2 400+ hôtes dans 121 pays. Géré par TEJO.
 - [**CasaRobino.org**](http://casarobino.org/) — Projet d'hospitalité durable basé à Amsterdam. Communauté liée au mouvement nomade et au volontariat.
 - [**OpenCouchSurfing.org**](http://www.opencouchsurfing.org/) — Projet militant pour un CouchSurfing ouvert et transparent. Wiki, blog et réflexions sur les alternatives libres.
-- 🆕 [**Host A Sister**](https://www.facebook.com/groups/hostasister/) — Groupe Facebook de femmes offrant l'hospitalité à d'autres femmes dans le monde entier. Échange culturel sûr et solidaire.
+- [**Host A Sister**](https://www.facebook.com/groups/hostasister/) — Groupe Facebook de femmes offrant l'hospitalité à d'autres femmes dans le monde entier. Échange culturel sûr et solidaire.
+- [**Trustroots**](https://www.trustroots.org/) — Réseau gratuit d’hospitalité pour voyageurs alternatifs, autostoppeurs, cyclistes et nomades ; basé sur des cercles d’intérêts et l’accueil entre membres.
+- [**Trustroots — code source GitHub**](https://github.com/Trustroots/trustroots) — Dépôt open source du projet Trustroots ; utile pour contribuer, suivre le développement ou auto-documenter l’outil.
+- [**BeWelcome**](https://www.bewelcome.org/) — Réseau d’hospitalité non lucratif et communautaire pour héberger, être hébergé, rencontrer des voyageurs et organiser des rencontres locales.
+- [**BeWelcome — code source GitHub**](https://github.com/BeWelcome/rox) — Dépôt principal de la plateforme BeWelcome ; projet libre, maintenu par des bénévoles.
+- [**Couchers.org**](https://couchers.org/) — Alternative communautaire à Couchsurfing, sans but lucratif, pensée pour l’hébergement gratuit et les rencontres locales entre voyageurs.
+- [**Couchers — code source GitHub**](https://github.com/Couchers-org/couchers) — Code open source de Couchers ; permet de suivre les évolutions, signaler des bugs ou contribuer.
+- [**Warmshowers**](https://www.warmshowers.org/) — Réseau d’hospitalité spécialisé pour les voyageuses et voyageurs à vélo : douche, toit, conseils d’itinéraire et entraide cyclonomade.
+- [**sleepy.bike**](https://sleepy.bike/) — Alternative libre et décentralisée orientée cyclotourisme et hospitalité ; projet lié à l’Open Hospitality Network.
+- [**sleepy.bike / Open Hospitality Network — GitHub**](https://github.com/solidcouch/solidcouch) — Projet open source pour une hospitalité décentralisée où les membres gardent la maîtrise de leurs données.
 
 ### Annuaires & Guides
 
@@ -25,6 +29,12 @@
 - [Liste de services d'hébergement (Wikipédia)](https://fr.wikipedia.org/wiki/Service_d%27h%C3%A9bergement) — Article Wikipédia listant les différents services d'hébergement gratuit et d'échange d'hospitalité.
 - 🆕 [r/couchsurfing (Reddit)](https://www.reddit.com/r/couchsurfing/) — Subreddit dédié à l'échange d'hospitalité : conseils, retours d'expérience, comparatifs de plateformes (46 000+ membres). Wiki très complet sur les alternatives.
 - 🆕 [Alternatives gratuites à Couchsurfing (AlternativeTo)](https://alternativeto.net/software/couchsurfing/?license=free) — Annuaire collaboratif listant et comparant les alternatives gratuites et open-source à Couchsurfing, avec avis d'utilisateurs.
+- [**Hitchwiki**](https://hitchwiki.org/) — Wiki collaboratif pour l’autostop : bons spots, conseils de route, sécurité, frontières et retours d’expérience.
+- [**Nomadwiki**](https://nomadwiki.org/wiki/Main_Page) — Wiki de ressources pour voyageurs à petit budget : dormir, manger, se déplacer, communautés, lieux et astuces.
+- [**r/hitchhiking**](https://www.reddit.com/r/hitchhiking/) — Subreddit d’entraide autour de l’autostop : itinéraires, expériences, conseils pratiques et questions de sécurité.
+- [**r/vagabond**](https://www.reddit.com/r/vagabond/) — Communauté Reddit sur le vagabondage, la vie sur la route, les abris, l’équipement léger et les récits de voyage.
+- [**r/bicycletouring**](https://www.reddit.com/r/bicycletouring/) — Subreddit pour le voyage à vélo : équipement, itinéraires, bivouac, retours de tours et entraide entre cyclistes.
+
 
 ---
 
