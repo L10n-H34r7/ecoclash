@@ -2,14 +2,14 @@
 
 ## 📂 Documents
 
-- **Autoconstruction, habitats léger, abris, tente, cabanes…** → [Docs (#D)](http://www.mediafire.com/?itneqcvh72sav)
+- Dossier principal : **Autoconstruction, habitats léger, abris, tente, cabanes…** → [Docs (#D)](http://www.mediafire.com/?itneqcvh72sav)
 
-**Yourte / Yurt / Ger** [Docs](http://www.mediafire.com/?4xm93992kjcwi) [@A — Construire une yourte](blog/yourte.md)
-**Tipi / Tepee**  [Docs](http://www.mediafire.com/?4xm93992kjcwi)  [@A — Fabriquer un tipi](blog/tipi.md)
-**Dôme géodésique**  [Docs](http://www.mediafire.com/?4xm93992kjcwi)  [@A — Construire un dôme géodésique](blog/dome-geodesique.md)
-**Habitat d'urgence** | [Docs](http://www.mediafire.com/?8bb83xrtxmttr)  [@A — Habitat d'urgence bioclimatique](blog/habitats-urgence.md)
-**Terre, adobe, torchis** [Docs](http://www.mediafire.com/?7exr74mwenwj3)
-**Construction diverse** [Docs](http://www.mediafire.com/?bvhtwuhky85kg)
+- **Yourte / Yurt / Ger** [Docs](http://www.mediafire.com/?4xm93992kjcwi) [@A — Construire une yourte](blog/yourte.md)
+- **Tipi / Tepee**  [Docs](http://www.mediafire.com/?4xm93992kjcwi)  [@A — Fabriquer un tipi](blog/tipi.md)
+- **Dôme géodésique**  [Docs](http://www.mediafire.com/?4xm93992kjcwi)  [@A — Construire un dôme géodésique](blog/dome-geodesique.md)
+- **Habitat d'urgence** | [Docs](http://www.mediafire.com/?8bb83xrtxmttr)  [@A — Habitat d'urgence bioclimatique](blog/habitats-urgence.md)
+- **Terre, adobe, torchis** [Docs](http://www.mediafire.com/?7exr74mwenwj3)
+- **Construction diverse** [Docs](http://www.mediafire.com/?bvhtwuhky85kg)
 
 > **Légende :** `(#D)` Les docs · `@A` Article associé
 > 
