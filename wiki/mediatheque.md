@@ -1,23 +1,15 @@
 # 📚 Médiathèque — Infokiosque
 
-## Le but de cet infokiosque / médiathèque
-Réunir et partager des **infos pratiques** pour :
+Partage d'**infos pratiques** pour :
 
-- 🌱 Cultiver, construire, fabriquer divers outils et objets
-- 🔨 Bricoler, se chauffer, manger, se soigner
-- ⚡ Produire de l'énergie
-- 📚 Transmettre des savoirs populaires oubliés
+- 🌱 Cultiver, construire, fabriquer divers outils et objets - 🔨 Bricoler, se chauffer, manger, se soigner
+- ⚡ Produire de l'énergie - 📚 Transmettre des savoirs populaires oubliés
 
----
-
-## 📂 Tout télécharger d'un coup > ⚠️ **Maj 08.2015** — Dossier global : [FileFolder MF](http://www.mediafire.com/?4huc2kfj5dpko)
+## 📂 l'Infokiosque : Tout les documents à télécharger > — Dossier global : [FileFolder MF](http://www.mediafire.com/?4huc2kfj5dpko)
 
 ---
 
 ## 📬 Dropbox collective
-
-Tu peux directement ajouter des documents à la médiathèque ! > ⚠️ Merci de donner une description claire : **Titre / nb de pages / source**
-
 📥 [Voir le contenu de la dropbox](https://www.mediafire.com/folder/nvclk8y8a1df7/M%C3%A9diath%C3%A8que_-_Boite_au_lettre)
 
 ---
@@ -46,8 +38,6 @@ Tu peux directement ajouter des documents à la médiathèque ! > ⚠️ Merci d
 - [**Permatheque**](https://www.permatheque.fr/) — Site français actif sur la permaculture (ressources, agenda, vidéos, outils). La catégorie « dossiers/sources PDF » a disparu, mais le site reste une bonne référence.
 - [**Bushcraft UK Downloads**](http://www.bushcraftuk.com/forum/content.php?r=124-downloads-bushcraftuk) — Ressources bushcraft et survie en anglais.
 - [**Let's Remake Library**](http://www.letsremake.info/library_2.html) — Vieux livres intéressants en PDF (book of the month club style).
-
-> **Note :** Les sites comme Permabox, Craterre (ouvrages téléchargeables), Olduvai et certains miroirs LibGen sont malheureusement morts ou inaccessibles en 2026. Je les ai remplacés par des alternatives actuelles.
 
 ---
 
