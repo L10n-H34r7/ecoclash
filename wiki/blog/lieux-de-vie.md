@@ -1,4 +1,4 @@
-# 🌍 Lieux de vie, collectifs, fermes, squat, écolieu
+# 🌍 Lieux de vie, collectifs, fermes, squats, écolieux
 
 > 📅 **25 novembre 2015** — Catégories : Lieux
 >
@@ -8,419 +8,225 @@
 >
 > **Tous les lieux sympas où on peut se retrouver entre humains pour créer notre futur !**
 
----
-
-## 🌐 Réseaux, Associations & Annuaires de Lieux
-
-> 🆕 **Mise à jour avril 2026**
-
-### ✅ Liens actifs
-
-- [**ReclaimTheFields.org**](https://reclaimthefields.org/) — Constellation européenne de paysan·nes, sans-terre et collectifs reprenant la main sur la terre et la production alimentaire. Camps, actions, rencontres. _(Actif)_
-- [**Wwolfing.wordpress.com**](https://wwolfing.wordpress.com/) — *« Wwoofing with teeth »* : blog issu de Reclaim the Fields sur le wwoofing militant (ZAD, fermes autogérées, etc.). Plus mis à jour mais toujours consultable. _(Actif, contenu ancien)_
-- [**GEN‑Europe.org**](https://gen-europe.org/) — Global Ecovillage Network – branche européenne : carte interactive, annuaire d'écovillages, projets, formations, événements. _(Actif)_
-- [**GEN – Global Ecovillage Network (gen.ecovillage.org)**](https://ecovillage.org/) — Réseau international des écovillages, avec carte mondiale et nombreuses ressources. _(Actif)_
-- [**Eurotopia.de**](https://www.eurotopia.de/english.html) — Annuaire/guide de communautés intentionnelles et écovillages en Europe, version anglaise du site Eurotopia. _(Actif)_
-- [**EYFA.org**](https://eyfa.org/) — European Youth For Action : réseau de jeunesse écolo-radicale, rencontres (Ecotopia, camps, caravanes à vélo…). _(Actif)_
-- [**Habiter-Autrement.org – Écolieux / Écovillages**](https://habiter-autrement.org/05.eco-village/eco.htm) — Dossier très riche (en français) sur les écovillages, écolieux, écohameaux, avec de nombreux liens complémentaires. _(Actif)_
-- [**Passerelle Éco**](https://www.passerelleco.info/) — Revue & réseau d'écovillages, habitats groupés, écolieux en France. Annonces, petites annonces, fiches de lieux. _(Actif)_
-- [**HALEM France**](https://www.halemfrance.org/) — Habitant·es de Logements Éphémères ou Mobiles : défense des modes de vie mobiles/légers (yourtes, caravanes, camions, cabanes, etc.). _(Actif, très vivant)_
-- [**TerreDeLiens.org**](https://www.terredeliens.org/) — Mouvement qui achète des terres agricoles pour les soustraire à la spéculation et installer des paysan·nes en bio, souvent en collectif. _(Actif)_
-- [**Colibris – Mouvement pour la Terre et l'Humanisme**](https://www.colibris-lemouvement.org/) — Mouvement fondé autour de Pierre Rabhi, soutenant la transition (écologie, éducation, habitat participatif). Carte d'initiatives, outils, MOOC. _(Actif)_
-- [**Écolieux-de-France (ecolieuxdefrance.free.fr)**](https://ecolieuxdefrance.free.fr/) — Ancien mais toujours consultable : gros répertoire d'écolieux, concepts, textes. _(Actif comme archive web)_
-- [**TerraVie.org**](https://www.terravie.org/) — Fonds foncier communautaire au Québec : préserve des terres à perpétuité et les transforme en aires protégées et lieux de vie collectifs. _(Actif)_
-- [**PermacultureGlobal.com (PermacultureGlobal.org)**](https://www.permacultureglobal.com/) — Carte et base de données mondiale de projets et praticiens de permaculture. _(Actif)_
-- [**Wikipedia – Category:Intentional communities**](https://en.wikipedia.org/wiki/Category:Intentional_communities) — Catégorie Wikipédia listant de nombreuses communautés intentionnelles dans le monde. _(Actif, mis à jour)_
-- [**IC.org**](https://www.ic.org/) — Foundation for Intentional Community (ex‑FIC) : base de données mondiale de communautés, ressources, livres, formations. _(Actif)_
-- [**Ecovillage Wiki (Fandom)**](https://ecovillage.fandom.com/wiki/Main_Page) — Petit wiki collaboratif anglophone sur les écovillages. _(Actif, contenu modeste)_
-- [**SustainableCommunitiesAroundTheWorld.blogspot.com**](https://sustainablecommunitiesaroundtheworld.blogspot.com/) — Blog en anglais sur des communautés durables et wwoofing, peu mis à jour mais toujours accessible. _(Actif comme archive)_
-- [**PlanetFriendly.net/community**](https://www.planetfriendly.net/community.html) — Page anglophone listant de nombreuses communautés intentionnelles et écovillages (Canada & international). _(Actif)_
-- [**LivingInTheFuture.org**](https://www.livinginthefuture.org/) — Série de +60 courts métrages et films documentaires sur des écovillages et communautés (Lammas, Findhorn, etc.). _(Actif)_
-- [**Groupe Dailymotion « Ecovillage »**](https://www.dailymotion.com/group/ecovillage/1) — Ancien groupe vidéo Dailymotion rassemblant des vidéos sur les écovillages et alternatives. _(Actif mais plus vraiment alimenté)_
-
-### ⚠️ Sites en veille, projets historiques ou archives consultables
-
-- [Sharewiki – *« Lieu de vie ouvert »*](http://sharewiki.org/en/Lieu_de_vie_ouvert) _(En veille / archive)_
-- [Carte Google *« Lieux de vie, bases nomades, collectifs, squats, écolieux »*](https://maps.google.com/maps/ms?hl=fr&ptab=2&ie=UTF8&oe=UTF8&msa=0&msid=217099418962518226328.00044786646fd2372bada&t=h&ll=47.279229,6.591797&spn=20.886692,37.353516&z=4&source=embed) _(Toujours en ligne)_
-- [Voyageurs.en-transition.fr](http://voyageurs.en-transition.fr/) _(En veille / difficile d'accès)_
-- [Réseau des ÉcoHameaux & ÉcoVillages du Québec (REEQ)](http://ecohameau.tripod.com/index.html) _(Archive, souvent hors-ligne)_
-- [Communauté en fête (Canada)](http://web.ncf.ca/di760/HTMLpages/indexfr.html) _(Archive)_
-- [LaPlumeDeFeu.com – Revue Aube (Québec)](http://www.laplumedefeu.com/) _(En grande veille)_
-- [Sharewiki – List of ecovillages](http://sharewiki.org/en/List_of_ecovillages) _(En veille)_
-- [Sustainable Communities Around the World](http://sustainablecommunitiesaroundtheworld.blogspot.com/) _(En veille)_
-- [Anarchopedia – Communautarisme de lieu de vie](http://fra.anarchopedia.org/Communautarisme_de_lieu_de_vie) _(Wiki irrégulier, archive)_
-
-### 🔴 Liens cassés, domaines réutilisés ou chemins obsolètes
-
-- [Ancienne liste GEN Europe](http://php.ecovillage.org/php/public/evdir/evsearchlist.php?geneu=mem&lg=1) _(Lien obsolète)_
-- [gen-europe.org (chemin ancien)](http://www.gen-europe.org/) — Remplacé par [gen-europe.org](https://gen-europe.org/) _(Chemin ancien, redirigé)_
-- [PasserelleEco.info/index.php3](http://www.passerelleco.info/index.php3) — Remplacé par [passerelleco.info](https://www.passerelleco.info/) _(Chemin obsolète)_
-- [Macabane.info](http://www.macabane.info/) _(Site d'origine hors‑ligne)_
-- [Katipik.free.fr](http://katipik.free.fr/) _(Lien cassé)_
-- [Permisdevivre.org](http://permisdevivre.org/) _(Site hors‑ligne)_
-- [Etyc.org/paradigmes](http://www.etyc.org/paradigmes) _(Lien cassé / réutilisé)_
-- [Archiutop.com – L'Archipel des Utopies](http://www.archiutop.com/association.html) — Remplacé par [archipel-utopies.com](https://archipel-utopies.com/) _(Lien obsolète)_
-- [GaiaDir – annuaire d'écovillages](http://fr.gaiadir.com/ecovillage) _(Domaine repris)_
-- [LaPlumeDeFeu.com](http://www.laplumedefeu.com/) _(Pratiquement hors‑ligne)_
-- [gen.ecovillage.org](http://gen.ecovillage.org/) _(Chemin problématique)_
-- [Nomadbase.org](http://nomadbase.org/) _(Projet et domaine inactifs)_
-- [ICDB.org](http://www.icdb.org/) _(Domaine réutilisé)_
-- [Ekopedia (ancien)](http://fr.ekopedia.org/Comment_monter_un_projet_d%27%C3%A9colieu) — Remplacé par [ekopedia.fr](https://www.ekopedia.fr/wiki/Comment_monter_un_projet_d%27%C3%A9colieu) _(URL obsolète)_
-- [Spirale.Attac – L'écohabitat, l'habitat groupé](http://www.spirale.attac.org/content/leco-habitat-habitat-groupe) _(Lien cassé)_
-- [Spirale.Attac – Vie communautaire ou collective](http://www.spirale.attac.org/content/vie-communautaire-ou-collective) _(Lien cassé)_
-- [Radio‑Canada – « Génération hippie »](http://archives.radio-canada.ca/IDCC-0-10-561-2871/vie_societe/generation_hippie/) _(Permalien obsolète)_
+> **Mise à jour liens — 20/06/2026 :** page nettoyée après une révision devenue redondante : doublons supprimés, liens regroupés par thème, URLs corrigées quand un nouveau domaine ou chemin fiable a été retrouvé. Ajout de projets actifs récents (Oasis, écolieux, habitats participatifs, coopératives, réseaux paysans). Les liens morts, domaines repris ou pages devenues hors sujet sont archivés en bas de page.
 
 ---
 
-## 🌈 Rainbow Family & Communautés associées
+## 🌐 Réseaux, annuaires & cartes de lieux
 
-### ✅ Liens Rainbow actifs
-
-- [**Rainbow Family France**](https://rainbowfamilyfrance.wordpress.com/) _(Actif)_
-- [**WelcomeHome.org – Rainbow Family**](http://www.welcomehome.org/rainbow/index.html) _(Actif, plutôt archivistique)_
-- [**GlobalNatives.org**](https://www.globalnatives.org/) _(Actif)_
-- [**Rainbow Guide Online (Bliss‑Fire)**](https://www.bliss-fire.com/RainbowGuideOnLine.php) _(Actif mais accès parfois difficile)_
-
-### ⚠️ Sites en veille ou archives
-
-- [SomewhereUnderTheRainbow.org](http://somewhereundertherainbow.org/) _(En veille / hors‑ligne)_
-- [RainbowInfo.ch](http://rainbowinfo.ch/) _(Archive, non maintenu)_
-- [BeneficioFamily.com](http://beneficiofamily.com/) _(Site en panne / communauté toujours existante — voir [Beneficio – NuMundo](https://numundo.org/center/spain/beneficio))_
-- [Shanti Terrian Project (AudeCulture)](http://www.audeculture.com/shanti/) _(Projet historique)_
-- [SpiritOfNature.ch](http://spiritofnature.ch/index.en.html) _(Archive disparaissant)_
-- [Rainbow Gathering Guide (rainbowinfo.ch/info.htm)](http://rainbowinfo.ch/info.htm) _(Lien spécifique obsolète)_
-
-### 🔴 Liens cassés / domaines repris
-
-- [CNR.ch – Center New Reality (Suisse)](http://cnr.ch/) _(Domaine repris)_
-- [Pelerins.populus.org](http://pelerins.populus.org/) _(Lien cassé)_
-- [WeLoveYouFilm.com](http://www.weloveyoufilm.com/index.html) _(Domaine hors‑service)_
-
----
-
-## 🏘️ Lieux de Vie, Collectifs, Micro-Sociétés, Squats & Communautés Intentionnelles
-
-> 🆕 **Mise à jour avril 2026** — Lieux ouverts à l'accueil, au partage, à l'échange, à la vie collective et aux expérimentations (écovillages, ZAD, habitats alternatifs, projets autogérés…)
-
-### ✅ LIEUX & PROJETS ACTIFS
-
-#### 🇫🇷 France
-
-- [**ZAD Notre-Dame-des-Landes**](https://zad.nadir.org/) — Zone À Défendre historique en Loire-Atlantique (1 650 ha). Le projet d'aéroport abandonné en 2018, le lieu poursuit la vie collective, l'agriculture paysanne et l'accueil de luttes. ✅
-- [**Village Troglobal**](https://troglobal.wordpress.com/) — Collectif autogéré installé depuis 1997 dans d'anciennes caves troglodytiques à Grézillé (Maine-et-Loire). ✅
-- [**La Vieille Valette**](http://collectif.valette.free.fr/) — Collectif de la Valette : lieu de création pour des projets alternatifs d'autonomie libertaire dans une vallée escarpée des Cévennes (Gard). Le lieu est toujours habité, avec une quinzaine de personnes sur place. ✅
-  - Voir aussi : [Fiche Passerelle Éco](https://www.passerelleco.info/article.php?id_article=527) · [Fiche Radar Squat](https://radar.squat.net/fr/robiac-rochessadoules/la-vieille-valette)
-- [**Longo Maï — La Cabrery**](https://www.lacabrery.org/longo-mai/) — Réseau de coopératives autogérées fondé en 1973, regroupant plus de 250 personnes sur une dizaine de sites (France, Suisse, Autriche, Allemagne, Ukraine, Costa Rica). Agriculture, élevage, artisanat, Radio Zinzine. ✅
-  - [Pro Longo Maï (Suisse)](https://www.prolongomaif.ch/) — Association de soutien. ✅
-- [**Cravirola — La Commune du Maquis**](https://www.cravirola.com/) — SCOP (ferme coopérative autogérée) à Minerve (Hérault), 265 ha. Agriculture paysanne bio, camping participatif, résidences d'artistes. Fait partie de Terres Communes. ✅
-- [**Caracoles de Suc**](http://www.caracolesdesuc.org/) — Ferme où production agricole cohabite avec engagement social et militant, située à St-Fortunat (Ardèche). Membre du réseau Terres Communes avec Cravirola et la FAR. ✅
-- [**Collectif FAR (Ferme Autogérée de la Roya)**](http://www.collectif-far.org/) — Perchée au fond de la vallée de la Roya, à 1200 mètres d'altitude, la FAR est un lieu de vie porté par des valeurs paysannes. Projet de vie collectif et paysan avec activités agricoles et vivrières en autogestion, sur la commune de La Brigue (06). ✅
-- [**Écolonie (nouveau site : ecolonie.eu)**](https://www.ecolonie.eu/) — Communauté néerlandaise située dans les Basses-Vosges, lieu inspirant depuis 1989. Environ 17 résidents permanents, ~150 volontaires/an, ~2 500 visiteurs/an. ✅
-  - [Facebook Écolonie](https://www.facebook.com/ecovillageEcolonie/) · [Fiche GEN](https://ecovillage.org/ecovillage/ecolonie-centre-ecologique-intern/)
-- [**Écovillage du Viel Audon (nouveau site : levielaudon.org)**](https://levielaudon.org/) — Hameau au flanc d'une falaise des Gorges de l'Ardèche, près de Balazuc, inaccessible en voiture, abandonné pendant des décennies, aujourd'hui lieu riche d'activités, de partage et de solidarité. Créé en 1972, 13 salarié·es, 60 hectares, 12 000 bénévoles passé·es sur le lieu. ✅
-  - [Fiche Coopérative Oasis](https://cooperative-oasis.org/oasis/viel-audon/)
-- [**Folleterre**](http://www.folleterre.org/) — Communauté queer (Radical Faeries) en Bourgogne. Vie tribale, durabilité et harmonie avec la nature. ✅
-- [Baluet (via Passerelle Éco)](http://www.passerelleco.info/rubrique.php3?id_rubrique=55) ✅
-- [Carapa (via Passerelle Éco)](http://www.passerelleco.info/rubrique.php3?id_rubrique=8) ✅
-
-#### 🇪🇸 Espagne
-
-- [**Sunseed Desert Technology**](http://www.sunseed.org.uk/) — Développe et démontre des méthodes low-tech de durabilité en milieu semi-aride, Andalousie. ✅
-- [**Can Masdeu**](http://www.canmasdeu.net/) — Centre social autogéré et squat légalisé à Barcelone. Jardins communautaires, ateliers, événements. ✅
-- [**Ecoforest**](http://www.ecoforest.org/) — Communauté écologique et raw food en Andalousie. Permaculture, volontariat, retraites. ✅
-
-#### 🇮🇹 Italie
-
-- [**Torri Superiore Ecovillage**](https://www.torri-superiore.org/) — Village médiéval restauré écologiquement près de Vintimille (Ligurie). ~20 membres permanents, éco-tourisme, permaculture, volontariat. ✅
-- [**Alcatraz**](http://www.alcatraz.it/) — Centre culturel, agritourisme et « université de l'irréel » fondé par Jacopo Fo en Ombrie. ✅
-
-#### 🇨🇭 Suisse
-
-- [**EcoDoubs**](http://www.ecodoubs.ch/) — Les Fermes Communautaires Libres dans le Doubs suisse. ✅
-
-#### 🌍 Autres
-
-- [**Bosque Village**](http://bosquevillage.com/fr/) — Lieu ouvert au Mexique : WWOOF, camping, volontariat, communauté. ✅
+- [**Reclaim the Fields**](https://reclaimthefields.org/) — Constellation européenne de paysan·nes, sans-terre et collectifs qui reprennent la main sur la terre, les semences et la production alimentaire.
+- [**Wwoofing with Teeth**](https://wwolfing.wordpress.com/) — Blog issu de Reclaim the Fields autour du wwoofing militant, des fermes autogérées, des ZAD et des lieux paysans radicaux ; contenu ancien mais consultable.
+- [**Global Ecovillage Network — GEN**](https://ecovillage.org/) — Réseau mondial des écovillages : carte internationale, ressources, formations, événements et fiches de projets.
+- [**GEN Europe**](https://gen-europe.org/) — Branche européenne du Global Ecovillage Network ; remplace les anciens liens profonds `php.ecovillage.org` et `gen-europe.org` obsolètes.
+- [**Eurotopia**](https://eurotopia.de/) — Guide et annuaire de communautés intentionnelles, écovillages et collectifs en Europe.
+- [**EYFA — European Youth For Action**](https://eyfa.org/) — Réseau européen de jeunesse écolo-radicale : rencontres, campagnes, camps, caravanes à vélo et outils d’organisation.
+- [**Habiter Autrement**](https://www.habiter-autrement.org/) — Portail francophone très riche sur l’habitat alternatif, les écolieux, écohameaux, écovillages, coopératives et habitats groupés.
+- [**Écolieux / Écovillages — Habiter Autrement**](https://habiter-autrement.org/05.eco-village/eco.htm) — Dossier spécifique sur les écolieux avec définitions, exemples et nombreux liens complémentaires.
+- [**Passerelle Éco**](https://www.passerelleco.info/) — Revue, petites annonces et réseau historique autour des écovillages, habitats groupés, écolieux et alternatives en France.
+- [**Écovillage Global**](https://ecovillageglobal.fr/) — Annuaire francophone et annonces liées à Passerelle Éco pour trouver ou proposer des écolieux, chantiers, stages et habitats collectifs.
+- [**Coopérative Oasis**](https://cooperative-oasis.org/) — Réseau français d’écolieux, habitats participatifs, fermes collectives et tiers-lieux écologiques ; accompagnement, documentation, formations et financement solidaire.
+- [**Carte nationale Oasis / Habitat Participatif**](https://hameaux-legers.org/parcours-creation-hameau-leger/apports-theoriques/carte-nationale-des-projets-dhabitat-participatif-et-des-oasis) — Carte commune Coopérative Oasis + Habitat Participatif France pour repérer les collectifs et projets d’habitat partagé.
+- [**Habitat Participatif France**](https://www.habitatparticipatif-france.fr/) — Mouvement national de l’habitat participatif : ressources, carte, groupes locaux, événements et documentation juridique.
+- [**Hameaux Légers**](https://www.hameaux-legers.org/) — Association qui accompagne les habitats réversibles, sobres et participatifs, en lien avec des communes et collectifs d’habitant·es.
+- [**Carte aux trésors — Hameaux Légers**](https://hameaux-legers.org/habitat-reversible/carte_aux_tresors) — Carte d’initiatives autour de l’habitat léger/réversible et des collectifs en création.
+- [**Transiscope — carte des alternatives**](https://transiscope.org/carte-des-alternatives/) — Carte collaborative des alternatives écologiques, sociales et solidaires : lieux, collectifs, associations, tiers-lieux, monnaies locales, ressourceries, etc.
+- [**Archipel du Vivant — annuaires écolieux**](https://archipelduvivant.org/ressources/annuaires/ecovillages-ecolieux/) — Page ressource qui regroupe plusieurs annuaires et cartes d’écolieux, écovillages, habitats participatifs et hameaux légers.
+- [**HALEM France**](https://www.halemfrance.org/) — Association de défense des habitant·es de logements éphémères ou mobiles : yourtes, caravanes, camions, cabanes, habitats légers.
+- [**Terre de Liens**](https://terredeliens.org/) — Mouvement qui sort des terres agricoles de la spéculation pour installer des paysan·nes, souvent en agriculture biologique et collective.
+- [**Colibris**](https://www.colibris-lemouvement.org/) — Mouvement citoyen de transition écologique et sociale ; ressources, formations, carte d’initiatives et appui aux projets collectifs.
+- [**Écolieux de France**](http://ecolieuxdefrance.free.fr/) — Ancien répertoire francophone d’écolieux, concepts et textes ; surtout utile comme archive web.
+- [**TerraVie**](https://www.terravie.org/) — Fonds foncier communautaire au Québec : conservation de terres et lieux de vie collectifs protégés à perpétuité.
+- [**Permaculture Global**](https://permacultureglobal.org/) — Carte mondiale de projets, praticien·nes et initiatives de permaculture ; l’ancien `.com` redirige vers `.org`.
+- [**Foundation for Intentional Community — IC.org**](https://www.ic.org/) — Base de données internationale de communautés intentionnelles, cohousing, écovillages, communes et coopératives d’habitat.
+- [**Wikipedia — Intentional communities**](https://en.wikipedia.org/wiki/Category:Intentional_communities) — Catégorie Wikipédia listant des communautés intentionnelles dans le monde ; utile pour explorer par pays ou courant.
+- [**PlanetFriendly — Communities**](https://www.planetfriendly.net/community.html) — Page anglophone listant des communautés intentionnelles, écovillages et ressources, surtout Canada/international.
+- [**Living in the Future**](https://www.livinginthefuture.org/) — Série documentaire et films sur les écovillages, habitats low-tech et communautés résilientes, dont Lammas et d’autres lieux pionniers.
+- [**Dailymotion — groupe Ecovillage**](https://www.dailymotion.com/group/ecovillage/1) — Ancien groupe vidéo autour des écovillages et alternatives ; plutôt archive vidéo.
+- [**Radar Squat**](https://radar.squat.net/) — Agenda/annuaire international des squats, centres sociaux autonomes, lieux autogérés et événements militants.
+- [**Squat!net**](https://squat.net/) — Portail historique d’actualité, ressources et hébergement web autour des squats, occupations et espaces autonomes.
+- [**Carte Google historique Ecoclash**](https://maps.google.com/maps/ms?hl=fr&ptab=2&ie=UTF8&oe=UTF8&msa=0&msid=217099418962518226328.00044786646fd2372bada&t=h&ll=47.279229,6.591797&spn=20.886692,37.353516&z=4&source=embed) — Ancienne carte « lieux de vie, bases nomades, collectifs, squats, écolieux » ; encore consultable mais peut demander une connexion Google.
+- [**L’Atelier Paysan**](https://www.latelierpaysan.org/) — Coopérative d’autoconstruction paysanne : outils libres, formations, enquêtes et appui aux fermes collectives qui veulent gagner en autonomie technique.
+- [**Réseau RELIER**](https://www.reseau-relier.org/) — Réseau d’expérimentation et de liaison des initiatives en espace rural : habitat, foncier, transmission, lieux collectifs et dynamiques rurales.
+- [**Réseau REPAS**](http://www.reseaurepas.free.fr/) — Réseau d’échanges et de pratiques alternatives et solidaires ; vieux site mais encore consultable, utile pour les coopératives, collectifs de travail et lieux autogérés.
+- [**Terres Communes — Passerelle Éco**](https://www.passerelleco.info/rubrique.php?id_rubrique=103) — Archives et explications sur une forme de propriété collective du foncier réunissant Cravirola, Caracoles de Suc et la FAR.
+- [**Twiza**](https://fr.twiza.org/) — Réseau francophone de chantiers participatifs, habitat écologique, entraide, formations et projets d’autoconstruction.
+- [**Low-tech Lab**](https://lowtechlab.org/fr) — Réseau et base de connaissances autour des low-tech ; utile pour les écolieux qui expérimentent autonomie, énergie, eau, habitat et outils sobres.
 
 ---
 
-### 🟡 PROJETS EN VEILLE / HISTORIQUES
+## 🏘️ Lieux & projets — France
 
-#### 🇫🇷 France
-
-- [Village Vegan](http://villagevegan.free.fr/) — Projet de village vegan en Ardèche. 🟡
-- [Cyclane / Village sans voiture](http://www.passerelleco.info/rubrique.php?id_rubrique=84) 🟡
-- [Amopie](http://amopie.free.fr/) 🟡
-- [Causse de l'Isle](http://caussedelisle.free.fr/) — Projet d'achat d'un ancien camp militaire (maj 2004 !). 🟡
-- [Écohameaux (Lorraine)](http://www.construire-sain.com/ecohameau.htm) 🟡
-- [Nalou](http://www.nalou.com/index.htm) — Beaulieu-sous-la-Roche (maj 2008). 🟡
-- [Habitat groupé dans le Cher](http://www.passerelleco.info/article.php?id_article=731) — Passerelle Éco, 2007. 🟡
-- [Phenomenum](http://phenomenum.eklablog.com/) — Projet écolieu au Mont Bugarach. 🟡
-- [Égaliville](http://egaliville.clicforum.fr/portal.php) — Projet de village sans argent. 🟡
-- [Sens et Autonomie](http://sensetautonomie.wordpress.com/) — Ateliers, formations autour de l'autonomie. 🟡
-- [Écovillage urbain / écoquartier lémanique](http://www.passerelleco.info/article.php3?id_article=423) 🟡
-
-#### 🇪🇸 Espagne
-
-- [Ecosalvia](http://www.ecoaldea.com/ecosalvia/) — Pyrénées espagnoles. 🟡
-
----
-
-### ⚠️ SITES INACTIFS (en ligne mais obsolètes)
-
-- [Écolieu Durantis](http://www.ecolieu.durantis.eu/) — Volontariat et ateliers en Cévennes. ⚠️
-- [Objectif Gaïa / Tiocan](http://www.objectifgaia.info/) — Suisse / France. ⚠️
-- [Goldschopf](http://www.goldschopf.ch/) — Suisse alémanique. ⚠️
-- [Lieu de vie à Genève](http://www.ecoattitude.org/accueil/node/110) — Village de roulottes près de la STEP d'Aïre, une trentaine de familles. ⚠️
-- [Écovillage de la Clède](http://fr.gaiadir.com/ecovillage-de-la-clede) — Cévennes (annuaire GaiaDir probablement hors ligne). ⚠️
-- [Finca El Majolillo](http://www.fincaelmajolillo.es/) — Malaga, Espagne. ⚠️
-- [ItalyEcovillage.com](http://www.italyecovillage.com/) — Voir plutôt [GEN Europe](https://ecovillage.org/region/gen-europe/) ou [Rete RIVE](https://www.reterive.it/). ⚠️
-- [Permalot](http://www.permalot.org/) — Permaculture troglodyte en Tchéquie. ⚠️
-- [Communa (Israël)](http://www.communa.org.il/welcome.shtml) — Kibboutz urbain. ⚠️
-- [Die Werkstatt](http://www.diewerkstatt.co.uk/) — Bulgarie. ⚠️
-- [Solaria (via Passerelle Éco)](http://www.passerelleco.info/rubrique.php3?id_rubrique=37) — Écovillage italien. ⚠️
-
----
-
-### 🔴 ARCHIVES — Liens cassés / Hors ligne
-
-> Ces liens sont conservés à titre d'archives historiques. Les domaines sont expirés, les hébergeurs fermés, ou les pages supprimées.
-
-- 🔴 Troglobal – Archives Web-Utopia
-- 🔴 Forum Troglobal (hébergeur FRBB fermé)
-- 🔴 Longo Maï sur Habiter-Autrement (lien profond mort)
-- 🔴 Présentation audio Longo Maï (Le Montois)
-- 🔴 La Picharlerie (domaine internetdown.org mort)
-- 🔴 Le Cantoyourte (Yurtao – article Canalblog de 2008)
-- 🔴 Association Autrement (Beuzec) (site Free mort)
-- 🔴 Comunidad Cruda (Espagne) (domaine mort)
-- 🔴 Matavenero (hébergeur Lineone fermé)
-- 🔴 Can Pasqual (Barcelone) (domaine mort)
-- 🔴 Los Arenalejos (Geocities fermé depuis 2009)
-- 🔴 Finca Los Albaricoqueros — Free School (webs.com probablement mort)
-- 🔴 Casa Cares (Italie) (domaine mort)
-- 🔴 Ecopueblo (blog abandonné)
-- 🔴 La Valle degli Elfi (lien ancien cassé)
-- 🔴 Center New Reality (Berne/Eriz) (domaine mort)
-- 🔴 Strawd'la Balle (Lausanne) (Over-blog abandonné, maison détruite par incendie criminel)
-- 🔴 BeauChamp Visitors (domaine mort)
-- 🔴 Écologite (site Free mort)
-- 🔴 La Lune Nette (archives 2001, projet abandonné)
-- 🔴 Fazenda Abracadabra (Brésil) (Over-blog abandonné)
-- 🔴 vielaudon.free.fr (remplacé par [levielaudon.org](https://levielaudon.org/))
-- 🔴 ecolonie.org (remplacé par [ecolonie.eu](https://www.ecolonie.eu/))
+- [**ZAD Notre-Dame-des-Landes**](https://zad.nadir.org/) — Zone À Défendre historique en Loire-Atlantique ; après l’abandon du projet d’aéroport, le territoire continue avec fermes, ateliers, habitats collectifs et lieux de lutte.
+- [**Village Troglobal**](https://troglobal.wordpress.com/) — Collectif autogéré installé dans d’anciennes caves troglodytiques à Grézillé, Maine-et-Loire ; ancien forum et archives Web-Utopia déplacés en archive.
+- [**La Vieille Valette**](http://collectif.valette.free.fr/) — Collectif dans une vallée cévenole : autonomie libertaire, expérimentations rurales, vie collective et accueil de projets.
+  - [Fiche Passerelle Éco](https://www.passerelleco.info/article.php?id_article=527) · [Fiche Radar Squat](https://radar.squat.net/fr/robiac-rochessadoules/la-vieille-valette)
+- [**Longo Maï — La Cabrery**](https://www.lacabrery.org/longo-mai/) — Présentation d’une coopérative du réseau Longo Maï : agriculture, artisanat, accueil, radio libre et autogestion.
+- [**Pro Longo Maï**](https://www.prolongomaif.ch/) — Association suisse de soutien au réseau de coopératives Longo Maï.
+- [**Cravirola — La Commune du Maquis**](https://www.cravirola.com/) — Ferme coopérative autogérée à Minerve, Hérault : agriculture paysanne, camping participatif, culture et communs fonciers.
+- [**Baluet — Passerelle Éco**](https://www.passerelleco.info/spip.php?page=rubrique&id_rubrique=55) — Fiche/ancienne rubrique Passerelle Éco sur un lieu collectif ; archive utile.
+- [**Carapa — Passerelle Éco**](https://www.passerelleco.info/spip.php?page=rubrique&id_rubrique=8) — Fiche/ancienne rubrique Passerelle Éco autour d’un écolieu/projet collectif ; archive utile.
+- [**Écolonie**](https://www.ecolonie.eu/) — Communauté écologique dans les Vosges, active depuis 1989 : accueil, volontariat, stages et vie collective.
+- [**Écovillage du Viel Audon**](https://levielaudon.org/) — Hameau restauré en Ardèche, inaccessible en voiture, avec chantiers, accueil, ferme, pédagogie et vie collective.
+- [**Folleterre**](https://www.folleterre.org/en/home/) — Communauté queer / Radical Faeries en Bourgogne, orientée vie tribale, écologie, soin, culture et spiritualité alternative.
+- [**La Ferme Légère**](https://fermelegere.greli.net/) — Écolieu collectif en Béarn qui expérimente un mode de vie soutenable : autonomie en eau/énergie/bois, sobriété, stages, visites et séjours d’immersion.
+- [**TERA**](https://www.tera.coop/) — Coopérative et écosystème territorial dans le Lot-et-Garonne : relocalisation de l’économie, revenu d’autonomie, monnaies citoyennes, habitat et production locale.
+- [**Eotopia**](https://eotopia.org/) — Écolieu vegan et antispéciste en Saône-et-Loire, ouvert au volontariat, aux rencontres et aux expérimentations de vie collective sobre.
+- [**Les Amanins**](https://www.lesamanins.com/) — Centre agroécologique dans la Drôme : ferme, école, accueil, formations, séjours et transmission autour de l’écologie pratique.
+- [**Écovillage Sainte Camelle**](https://ecovillagestecamelle.fr/) — Écovillage en Ariège orienté autonomie, culture, spiritualité, alimentation végétale, accueil et événements.
+- [**Écoravie**](https://www.ecoravie.org/) — Habitat participatif écologique dans la Drôme : bâtiments bioclimatiques, gouvernance partagée, mutualisation et vie de voisinage.
+- [**Habiterre**](https://www.habiterre.org/) — Habitat groupé écologique dans la Drôme, installé depuis plus de dix ans ; exemple concret de gouvernance et d’écoconstruction collective.
+- [**Ferme du Suchel**](https://cooperative-oasis.org/oasis/ferme-du-suchel/) — Oasis dans le Beaujolais Vert mêlant habitat participatif, agriculture paysanne, biodiversité, autogestion et ancrage territorial.
+- [**Oasis de Poul’Art**](https://cooperative-oasis.org/oasis/oasis-de-poulart/) — Lieu de vie et d’activité près de Toulouse : habitats légers, ferme, accueil, stages, enfants, boutique de producteurs et coopérative.
+- [**Montbel Arbre**](https://cooperative-oasis.org/oasis/montbel-arbre/) — Écolieu ariégeois né en 2023 : ferme collective, habitats, stages, accueil touristique et gouvernance coopérative.
+- [**La Crouzille**](https://cooperative-oasis.org/oasis/la-crouzille/) — Écolieu près de Poitiers en habitats légers, avec potager permacole, forêt-jardin, tiers-lieu en développement et collectif intergénérationnel.
+- [**Domaine des Éveils**](https://cooperative-oasis.org/oasis/domaine-des-eveils/) — Domaine coopératif en Bresse bourguignonne : lieu de vie, gîte, accueil, ressourcement et gouvernance partagée.
+- [**Oasis21**](https://www.oasis21.org/) — Réseau de tiers-lieux franciliens engagés dans la transition, les communs, l’économie sociale et l’expérimentation collective.
+- [**Village Vegan**](http://villagevegan.free.fr/) — Projet ancien de village vegan en Ardèche ; site consultable comme archive.
+- [**Amopie**](http://amopie.free.fr/) — Ancien projet/lieu alternatif ; en veille mais encore consultable.
+- [**Causse de l’Isle**](http://caussedelisle.free.fr/) — Projet d’achat d’un ancien camp militaire ; archives anciennes autour d’un projet de lieu collectif.
+- [**Nalou**](http://www.nalou.com/index.htm) — Projet/lieu à Beaulieu-sous-la-Roche ; contenu ancien, conservé comme archive.
+- [**Sens et Autonomie**](https://sensetautonomie.wordpress.com/) — Projet éducatif et ateliers autour de l’autonomie ; blog ancien mais toujours lisible.
+- [**Cyclane / village sans voiture**](https://www.passerelleco.info/spip.php?page=rubrique&id_rubrique=84) — Archive Passerelle Éco sur un projet de village sans voiture.
+- [**Habitat groupé dans le Cher**](https://www.passerelleco.info/spip.php?page=article&id_article=731) — Article Passerelle Éco de 2007 sur un projet d’habitat groupé.
+- [**Écovillage urbain / écoquartier lémanique**](https://www.passerelleco.info/spip.php?page=article&id_article=423) — Ancien article Passerelle Éco sur un projet d’écoquartier/habitat collectif dans le bassin lémanique.
+- [**Autrement de Beuzec**](http://fermautrement.free.fr/) — Association autour de l’accueil, du partage et de l’apprentissage ; vieux site Free encore accessible.
+- [**Écologîte**](http://ecologite.free.fr/index.htm) — Ancienne ressource Free autour d’un gîte/lieu écologique ; archive consultable.
+- [**La Lune Nette — archive Economads**](https://www.economads.com/log20010608-20010714.php) — Archive 2001 autour d’un projet abandonné/changé ; utile comme trace historique.
 
 ---
 
-## 🔗 Ressources & Annuaires utiles (tous actifs)
+## 🇪🇸 Espagne
 
-- [**Passerelle Éco**](https://www.passerelleco.info/) — Revue et réseau pour les écovillages, habitats groupés et alternatives en France.
-- [**Global Ecovillage Network (GEN)**](https://ecovillage.org/) — Réseau mondial des écovillages. Annuaire, formations, événements.
-- [**Écovillage Global**](https://ecovillageglobal.fr/) — Annuaire francophone des écovillages et écolieux (par Passerelle Éco).
-- [**Coopérative Oasis**](https://cooperative-oasis.org/) — Réseau d'écolieux et habitats participatifs en France (Colibris).
-- [**Habiter Autrement**](https://www.habiter-autrement.org/) — Portail de ressources sur l'habitat alternatif et les écovillages.
-- [**Colibris**](https://www.colibris-lemouvement.org/) — Mouvement citoyen : carte des alternatives, outils collaboratifs.
-- [**WWOOF France**](https://www.wwoof.fr/) — Réseau de fermes biologiques accueillant des volontaires.
-- [**Rete RIVE (Italie)**](https://www.reterive.it/) — Réseau italien des écovillages et communautés intentionnelles.
-- [**Radar Squat**](https://radar.squat.net/) — Annuaire international des squats, centres autonomes et lieux alternatifs.
-
-> _Dernière mise à jour : avril 2026._
->
-> **Légende :** ✅ Actif · 🟡 En veille · ⚠️ Inactif (en ligne mais obsolète) · 🔴 Lien cassé / hors ligne
->
-> _N'hésitez pas à signaler tout lien mort ou toute mise à jour à effectuer._
+- [**Sunseed Desert Technology**](https://www.sunseed.org.uk/) — Projet low-tech et permaculturel en Andalousie : technologies accessibles, sobriété, volontariat et vie collective en zone semi-aride.
+- [**Can Masdeu**](https://canmasdeu.net/) — Communauté rurbaine, centre social autogéré et jardins communautaires à Barcelone ; ancien lien `www.canmasdeu.net` corrigé vers le domaine sans `www`.
+- [**Can Pasqual**](https://kanpasqual.wordpress.com/) — Squat rural historique de la montagne de Collserola, Barcelone ; remplace l’ancien lien `cascall.org/canpasqual`.
+- [**Ecosalvia**](http://www.ecoaldea.com/ecosalvia/) — Projet d’écolieu / écoaldea dans les Pyrénées espagnoles ; site ancien mais encore consultable.
+- [**Beneficio — NuMundo**](https://numundo.org/center/spain/beneficio) — Fiche d’archive/présentation de la communauté de Beneficio ; remplace l’ancien domaine `beneficiofamily.com` hors ligne.
+- [**Arterra Bizimodu**](https://arterrabizimodu.org/) — Communauté intentionnelle et écovillage en Navarre : autosuffisance, éducation, économie solidaire, gouvernance partagée et accueil de formations.
 
 ---
 
-## 🏴 Projets & Lieux Alternatifs en Suisse
+## 🇮🇹 Italie
 
-> **Note :** Ce répertoire centralise des initiatives basées sur l'autogestion, la propriété collective, l'écologie radicale et l'anticapitalisme. Beaucoup de ces réseaux privilégient la sécurité numérique et la présence physique.
-
-### 🏴 Groupes Anarchistes & Lieux Militants
-
-- [**Renversé.co**](https://renverse.co/) — La principale plateforme collaborative romande d'information pour les luttes sociales, anticapitalistes, antifascistes et écologistes. Un passage obligé pour trouver des événements et d'autres collectifs.
-- [**Le Silure (Genève)**](https://silure.noblogs.org/) — Espace de luttes autonomes et anticapitalistes à Genève (Carouge). Il abrite une cantine, une bibliothèque militante, un infokiosque et organise des réunions politiques (Soulèvements de la terre, etc.).
-- [**Espace Noir (Saint-Imier)**](http://www.espacenoir.ch/) — Centre culturel libertaire et coopératif historique, situé dans le Jura bernois, berceau mondial historique de la mouvance anarchiste (Congrès de l'Internationale anti-autoritaire en 1872).
-- [**CIRA (Lausanne)**](https://www.cira.ch/) — Centre International de Recherches sur l'Anarchisme, la plus grande bibliothèque d'Europe dédiée aux archives et ouvrages anarchistes.
-
-### 🏚️ Squats & Espaces Autogérés
-
-- [**Réseau Squat!net Suisse**](https://fr.squat.net/suisse) — Portail d'informations, d'appels à soutien et d'actualités sur le mouvement des squats, ZAD et occupations de lieux en Suisse.
-- [**L'Espace Autogéré (Lausanne)**](https://espaceautogere.squat.net/) — Lieu emblématique d'organisation militante. Accueille des assemblées générales, des collectifs anti-répression, des soirées de soutien et une cantine à prix libre.
-- [**L'Usine (Genève)**](https://www.usine.ch/) — Historiquement issue des mouvements alternatifs, ce centre culturel autogéré abrite de multiples associations (cinéma, concerts, ateliers) fonctionnant de façon horizontale.
-
-### 🏘️ Propriété Collective & Lieux de Vie Collectifs
-
-- [**La Ciguë (Genève)**](https://cigue.ch/) — Coopérative de logement étudiant issue du mouvement squat des années 80. Elle propose des colocations bon marché hors de la spéculation immobilière, avec un fonctionnement participatif.
-- [**CoDHA - Coopérative de l'Habitat Associatif**](https://codha.ch/) — Pionnière en Suisse romande de la construction d'écoquartiers participatifs. La propriété appartient à la coopérative, l'usufruit aux habitants.
-- [**Mehr als Wohnen (Zurich)**](https://www.mehralswohnen.ch/) — *« Plus que du logement »*. Métacoopérative emblématique qui construit et gère de manière autogérée de vastes quartiers à loyer modéré, conçus pour la vie en communauté et l'écologie.
-
-### 🎁 Lieux d'échanges & Magasins Gratuits
-
-- [**Keepinuse.ch (Toute la Suisse romande)**](https://www.keepinuse.ch/) — Le grand portail anti-consumériste de Suisse romande pour les dons et la récupération d'objets.
-- [**Magasin Gratuit de Bellevaux (Lausanne)**](https://www.loisirsgratuits.ch/divers/lausanne/magasin-gratuit-de-bellevaux) — Lieu physique basé sur la décroissance et la solidarité : on y dépose ce dont on ne se sert plus, on prend ce dont on a besoin, le tout 100% sans argent.
-- [**Gratiferia (Genève / Romandie)**](https://www.facebook.com/GratiferiaGeneve/) — Réseau organisant des *« Foires gratuites »*. Le principe : chacun amène des objets et/ou repart avec ce qui lui plaît, sans nécessité d'échange.
-
-### 🌱 Wwoofing Alternatif & Écovillages
-
-- [**WWOOF Suisse**](https://wwoof.ch/) — Réseau officiel permettant de vivre et travailler dans des fermes biologiques, paysannes et souvent alternatives en Suisse. Un échange de bras et de connaissances contre gîte et couvert (zéro flux financier).
-- [**GEN Suisse (Réseau des Écovillages)**](https://gen-suisse.ch/) — Le « Global Ecovillage Network » pour la Suisse. Permet de trouver des projets de lieux de vie collectifs, comme l'écovillage de Sennrüti ou des habitats en permaculture.
-
-### 📱 Groupes WhatsApp, Telegram & Infokiosques
-
-> **Important :** En Suisse, les groupes militants (antifascistes, anarchistes, Soulèvements de la Terre) évitent de publier leurs liens WhatsApp ou Telegram publiquement à cause de la répression policière. La majorité des échanges critiques se font sur l'application cryptée **Signal**.
+- [**Torri Superiore Ecovillage**](https://www.torri-superiore.org/) — Village médiéval restauré écologiquement en Ligurie : écovillage, accueil, stages, permaculture et tourisme responsable.
+- [**Alcatraz**](https://www.alcatraz.it/) — Centre culturel, agritourisme et lieu alternatif en Ombrie, fondé par Jacopo Fo.
+- [**RIVE / Ecovillaggi.it**](https://ecovillaggi.it/) — Réseau italien des écovillages et communautés intentionnelles ; remplace l’ancien lien `reterive.it` non résolu.
+- [**Solaria — Passerelle Éco**](https://www.passerelleco.info/spip.php?page=rubrique&id_rubrique=37) — Archive Passerelle Éco sur un écovillage/projet italien.
+- [**Ecopueblo**](http://chegg.blogspot.com/) — Blog ancien autour d’un projet d’écovillage ; conservé comme archive.
 
 ---
 
-## 📦 Archives Ecoclash (2015)
+## 🇨🇭 Suisse & Romandie
 
-### Réseaux, associations, liste de lieux
-
-- [Lieu de vie ouvert (Sharewiki)](http://sharewiki.org/en/Lieu_de_vie_ouvert)
-- [Carte Google « Lieux de vie, bases nomade, collectifs, squat, ecolieux »](https://maps.google.com/maps/ms?hl=fr&ptab=2&ie=UTF8&oe=UTF8&msa=0&msid=217099418962518226328.00044786646fd2372bada&t=h&ll=47.279229,6.591797&spn=20.886692,37.353516&z=4&source=embed) — Récentes mises à jour, ajouts des diverses cartes des alternatives, luttes, lieux de vie… Vous pouvez participer à la mise à jour de la carte en faisant la demande sur la carte.
-
-#### Europe
-
-- [reclaimthefields.org/fr](http://www.reclaimthefields.org/fr) — Réseau européen Reclaim the fields.
-- [wwolfing.wordpress.com](http://wwolfing.wordpress.com/) — Du wwoof avec des dents ! Issu de RTF.
-- [Gen-europe.org](http://www.gen-europe.org/) — Global ecovillage network, réseau Europe. · [Liste des membres](http://php.ecovillage.org/php/public/evdir/evsearchlist.php?geneu=mem&lg=1)
-- [Eurotopia.de](http://www.eurotopia.de/english.html) — Liste de liens de communautés intentionnelles en Europe.
-- [Eyfa.org](http://www.eyfa.org/) — European youth for action, rencontre ecotopia, caravane à vélo…
-- [Écolieux – Écovillages (Habiter-autrement)](http://www.habiter-autrement.org/05.eco-village/eco.htm)
-
-#### France
-
-- [Passerelle Eco](http://www.passerelleco.info/index.php3) — Réseau d'écovillages, écolieux actifs en France. Une revue, des infos, des liens…
-- [Voyageurs.en-transition.fr](http://voyageurs.en-transition.fr/) — Projets, lieux, carte…
-- [Écolieux-de-France](http://ecolieuxdefrance.free.fr/) — Répertoire des écolieux et divers infos.
-- [Halemfrance.org](http://www.halemfrance.org/) — Association des Habitants de Logements Ephémères ou Mobiles.
-- [Macabane.info](http://www.macabane.info/) — Mouvement autogéré des chercheurs(cheuses) en habitat autonome novateur et écologique…
-- [Katipik.free.fr](http://katipik.free.fr/) — Collectif de lutte contre les expulsions des cabanes en Ariège.
-- [Permisdevivre.org](http://permisdevivre.org/) — Réseau Permis de vivre, regroupement de divers collectifs et associations pour une reconnaissance des modes de vie simple, des habitats alternatifs, yourtes, tipis, cabanes…
-- [Terredeliens.org](http://www.terredeliens.org/) — Changer le rapport à la terre, à l'agriculture, à l'alimentation et à la nature.
-- [Paradigmes](http://www.etyc.org/paradigmes) — Aide à la création de lieu de vie alternatif.
-- [Archiutop.com](http://www.archiutop.com/association.html) — L'Archipel des utopies, mécénat social ou psychologique.
-- [Colibris-lemouvement.org](http://www.colibris-lemouvement.org/index.php/TH) — Le mouvement pour la terre et l'humanisme (Pierre Rabhi).
-- [fr.gaiadir.com/ecovillage](http://fr.gaiadir.com/ecovillage) — Liste d'écolieu, carte, liens.
-
-> ℹ️ Le **Réseau Français des Écovillages (RFEV)** n'est plus → voir Passerelle Eco.
-
-#### Québec, Canada
-
-- [Réseau des ÉcoHameaux et ÉcoVillages du Québec](http://ecohameau.tripod.com/index.html) · [Communauté en fête](http://web.ncf.ca/di760/HTMLpages/indexfr.html) — Page de liens écovillage.
-- [Terravie.org](http://www.terravie.org/) — Fonds foncier communautaire, OSBL de bienfaisance et de conservation.
-- [La plume de feu.com](http://www.laplumedefeu.com/) — La revue Aube, revue du Québec sur les écovillages et les alternatives de vie.
-
-#### International
-
-- [Permacultureglobal.com](http://www.permacultureglobal.com/) (Eng) — Permaculture projects and practitioners worldwide.
-- [Gen.ecovillage.org](http://gen.ecovillage.org/) (Eng) — Global ecovillage network.
-- [Nomadbase.org](http://nomadbase.org/) — Réseau de nomade et de bases.
-- [Category:Intentional communities (Wikipedia)](http://en.wikipedia.org/wiki/Category:Intentional_communities) (Eng) — Les communautés intentionnelles.
-- [Ic.org](http://www.ic.org/) · [Icdb.org](http://www.icdb.org/) (Eng) — Intentional Community database, ecovillages, cohousing, communes, student co-ops, urban housing cooperatives…
-- [List of ecovillages (Sharewiki)](http://sharewiki.org/en/List_of_ecovillages) (Eng).
-
-#### Divers articles et infos
-
-- [Planetfriendly.net/community](http://www.planetfriendly.net/community.html) (Eng) — Liste, liens communautés intentionnelles, écovillage…
-- [Comment monter un projet d'écolieu (Ekopedia)](http://fr.ekopedia.org/Comment_monter_un_projet_d%27%C3%A9colieu) — Infos, liens, lieux…
-- [Communautarisme de lieu de vie (Anarchopedia)](http://fra.anarchopedia.org/Communautarisme_de_lieu_de_vie)
-- [Wiki Ecovillage](http://ecovillage.wikia.com/wiki/Main_Page) — Ecovillage guide that anyone can edit…
-- [Sustainablecommunitiesaroundtheworld.blogspot.com](http://sustainablecommunitiesaroundtheworld.blogspot.com/) — Wwoof, écolieux… (Eng).
-- [L'écohabitat, l'habitat groupé (Spirale.Attac)](http://www.spirale.attac.org/content/leco-habitat-habitat-groupe) · [Vie communautaire ou collective](http://www.spirale.attac.org/content/vie-communautaire-ou-collective)
-- [Archive Radio-Canada – La génération hallucinée](http://archives.radio-canada.ca/IDCC-0-10-561-2871/vie_societe/generation_hippie/)
-- [Livinginthefuture.org](http://www.livinginthefuture.org/) — Série de reportages vidéo sur les habitats simples, écovillages…
-- [Groupe ecovillage (Dailymotion)](http://www.dailymotion.com/group/ecovillage) — Vidéos sur les alternatives.
+- [**Renversé**](https://renverse.co/) — Plateforme collaborative romande d’information pour luttes sociales, anticapitalistes, antifascistes et écologistes.
+- [**Le Silure**](https://silure.noblogs.org/) — Espace de luttes autonomes et anticapitalistes à Genève/Carouge ; cantine, bibliothèque, infokiosque et réunions politiques.
+- [**Espace Noir**](https://www.espacenoir.ch/) — Centre culturel libertaire et coopératif à Saint-Imier, dans le Jura bernois.
+- [**CIRA Lausanne**](https://www.cira.ch/) — Centre International de Recherches sur l’Anarchisme ; bibliothèque et archives anarchistes majeures.
+- [**L’Espace Autogéré — Lausanne**](https://espaceautogere.squat.net/) — Lieu autogéré emblématique : assemblées, soirées de soutien, cantines, concerts, collectifs et infokiosques.
+- [**L’Usine — Genève**](https://www.usine.ch/) — Centre culturel autogéré issu des mouvements alternatifs genevois, regroupant de nombreuses associations et salles.
+- [**La Ciguë — Genève**](https://cigue.ch/) — Coopérative de logement étudiant issue du mouvement squat ; colocations bon marché et fonctionnement participatif.
+- [**CoDHA**](https://www.codha.ch/) — Coopérative de l’habitat associatif en Suisse romande ; écoquartiers participatifs et propriété collective.
+- [**Mehr als Wohnen — Zurich**](https://www.mehralswohnen.ch/) — Métacoopérative zurichoise « plus que du logement » : quartiers coopératifs, loyers modérés, écologie et vie communautaire.
+- [**Keepinuse**](https://keepinuse.ch/) — Portail suisse romand de dons et récupération d’objets, dans une logique anti-gaspillage et non marchande.
+- [**Gratiferia Genève**](https://www.facebook.com/GratiferiaGeneve/) — Réseau de foires gratuites : déposer, prendre, rencontrer, sans argent ni échange obligatoire.
+- [**GEN Suisse**](https://gen-suisse.ch/) — Réseau suisse des écovillages, habitats collectifs et projets de transition.
+- [**Objectif Gaïa / Tiocan**](https://www.objectifgaia.info/) — Projet franco-suisse autour de l’écologie, de l’éducation et de la transformation personnelle ; site ancien mais accessible.
+- [**Goldschopf**](http://www.goldschopf.ch/) — Projet communautaire en Suisse alémanique ; ancien site encore accessible.
+- [**Center New Reality — CNR**](https://cnr.ch/) — Ancien lien Rainbow/communauté suisse ; le domaine répond encore mais le contenu a probablement changé, à considérer avec prudence.
+- [**Ecovillage Sennrüti**](https://sennrueti.ch/) — Écovillage à Degersheim (Saint-Gall) : habitat communautaire, permaculture, ateliers, séjours, culture du consensus et vie intergénérationnelle.
+- [**Schloss Glarisegg**](https://schloss-glarisegg.ch/) — Communauté intentionnelle au bord du lac de Constance : séminaires, permaculture, pédagogie, culture et vie collective.
+- [**Schweibenalp**](https://schweibenalp.ch/) — Centre alpin de permaculture, spiritualité et écologie intégrale au-dessus du lac de Brienz ; jardins, formations, retraites et communauté.
+- [**Kalkbreite**](https://www.kalkbreite.net/) — Coopérative d’habitat et de travail à Zurich : logements mutualisés, espaces communs, sobriété urbaine et mobilité réduite.
+- [**Kraftwerk1**](https://www.kraftwerk1.ch/) — Coopérative zurichoise pionnière de l’habitat collectif, participatif et non spéculatif.
+- [**Ecopol / La Smala**](https://ecopol.net) — Réseau d’écolieux et coopératives d’habitation en Suisse romande ; piste active à visiter/évaluer directement avant engagement.
 
 ---
 
-## 🌍 Quelques Lieux en France
+## 🌍 Autres pays & ressources internationales
 
-- **ZAD : Notre Dame des Landes** : [zad.nadir.org](https://zad.nadir.org/)
-- **Troglobal** : [troglobal.wordpress.com](http://troglobal.wordpress.com/) · Archives : [Troglobal](http://www.web-utopia.org/Le-Village-Troglobal) · [Forum](http://troglobal.frbb.net/)
-- **La Vielle Valette** : [Collectif de la Valette](http://collectif.valette.free.fr/)
-- **Longo Maï** : [Longo Maï](http://www.habiter-autrement.org/05.eco-village/05_eco.htm) · [Présentation audio longo mai](http://www.ork.ch/spip/spip.php?article453) et article sur le Montois (Suisse)
-- **Baluet** : [passerelleco.info/rubrique.php3?id_rubrique=55](http://www.passerelleco.info/rubrique.php3?id_rubrique=55)
-- **Cravirola** : [cravirola.com](http://www.cravirola.com/) — Le Maquis
-- **Caracolesdesuc.org** : [caracolesdesuc.org](http://www.caracolesdesuc.org/) — Ferme collective autogérée en Ardèche.
-- **Collectif-far.org** : [collectif-far.org](http://www.collectif-far.org/)
-- **Lapicharlerie.internetdown.org** : [lien](http://lapicharlerie.internetdown.org/) — Info Cévennes.
-- **Le Cantoyourte** : [Yurtao](http://yurtao.canalblog.com/archives/2008/03/03/8178143.html)
-- **Folleterre.org** : [folleterre.org](http://www.folleterre.org/home.htm) — *« Lieux de vie. We are queer people exploring tribal life, sustainability and harmony with nature… »*
-- **Fermautrement.free.fr** : [lien](http://fermautrement.free.fr/) — Association Autrement de Beuzec : *« Accueil, partage, apprentissage… »*
-- **Sens et autonomie** : [sensetautonomie.wordpress.com](http://sensetautonomie.wordpress.com/) — Projet éducatif, ateliers, formation…
-- **Ecolieu.durantis.eu** : [lien](http://www.ecolieu.durantis.eu/) — Volontariat, ateliers (Cévennes).
-- **Ecolonie** : [ecolonie.org](http://www.ecolonie.org/) / **Écovillage du vieil Audon** : [vielaudon.free.fr](http://vielaudon.free.fr/) / **BeauChamp Visitors** : [onerus.com/beauchamp](http://www.onerus.com/beauchamp/) / **Ecologite** : [lien](http://ecologite.free.fr/index.htm)
-- **Carapa** : [passerelleco.info](http://www.passerelleco.info/rubrique.php3?id_rubrique=8) / **La Lune Nette** : [archives 2001](http://www.economads.com/log20010608-20010714.php) — Changement de projet, abandon.
+- [**TerraVie — Québec**](https://www.terravie.org/) — Fonds foncier communautaire et projet de conservation au Québec, déjà listé en annuaires mais utile aussi comme lieu/réseau.
+- [**Communauté en fête — Canada**](http://web.ncf.ca/di760/HTMLpages/indexfr.html) — Ancienne page de liens canadiens autour des écovillages et communautés ; archive encore consultable.
+- [**Permalot — Tchéquie**](http://www.permalot.org/) — Projet de permaculture et habitat troglodyte en Tchéquie ; ancien mais encore accessible.
+- [**Tamera — Portugal**](https://www.tamera.org/) — Centre de recherche et communauté intentionnelle autour de la paix, de l’eau, de la permaculture, des relations et de la régénération.
+- [**Sieben Linden — Allemagne**](https://siebenlinden.org/) — Écovillage allemand reconnu : habitat écologique, forêt-jardin, sobriété, gouvernance, stages et accueil de visiteur·euses.
+- [**Damanhur — Italie**](https://damanhur.org/) — Fédération de communautés spirituelles et écologiques dans le Piémont : arts, agriculture, monnaies internes, temples et vie collective.
+- [**Findhorn — Écosse**](https://www.findhorn.org/) — Communauté et écovillage historique : spiritualité, écoconstruction, éducation, événements et réseau international.
+- [**Cloughjordan Ecovillage — Irlande**](https://www.thevillage.ie/) — Écovillage irlandais combinant habitat, ferme communautaire, éducation, permaculture et résilience locale.
+- [**Lammas Ecovillage — Pays de Galles**](https://lammas.org.uk/) — Écovillage low-impact légal au Pays de Galles : maisons naturelles, autonomie, agriculture et visites pédagogiques.
+- [**Nature Community — Allemagne**](https://nature.community/) — Communauté vegan et écologique en Bavière, hôte du European Ecovillage Gathering 2026 ; permaculture, vie collective et événements.
+- [**Ecobasa — communities**](https://ecobasa.org/en/communities/) — Annuaire européen/international de communautés, fermes, écovillages et projets d’apprentissage en séjour.
+- [**Shanti Terrian Project — Aude Culture**](http://www.audeculture.com/) — Ancienne trace d’un projet inspiration Rainbow / simplicité / yourte ; le chemin précis `/shanti/` redirige vers l’accueil.
+- [**Somewhere Under The Rainbow**](https://somewhereundertherainbow.org/) — Site d’archives, photos et informations autour de rassemblements Rainbow.
+- [**Welcome Home — Rainbow Family**](http://www.welcomehome.org/rainbow/index.html) — Ressource historique anglophone sur Rainbow Family, rassemblements, textes et archives.
+- [**Rainbow Family France**](https://rainbowfamilyfrance.wordpress.com/) — Site francophone d’information et d’archives autour de la Rainbow Family.
+- [**Global Natives**](https://www.globalnatives.org/) — Réseau/plateforme liée aux cultures alternatives, voyages, rassemblements et spiritualités nature.
+- [**Rainbow Guide Online — Bliss Fire**](https://www.bliss-fire.com/RainbowGuideOnLine.php) — Guide en ligne Rainbow ; ancien design mais lien actif.
+- [**Pèlerins de l’Arc-en-ciel**](http://pelerins.populus.org/) — Ancien site Populus autour d’un projet Rainbow/pèlerinage ; archive encore accessible.
 
-### Quelques projets en France
+---
 
-- **Villagevegan** : [villagevegan.free.fr](http://villagevegan.free.fr/) — Projet vegan en Ardèche (en veille).
-- **Cyclane.decroissance.info** : [passerelleco](http://www.passerelleco.info/rubrique.php?id_rubrique=84) — Projet de village sans voiture (en veille).
-- **Amopie.free.fr** : [lien](http://amopie.free.fr/) — En veille.
-- **Causse de l'Isle** : [caussedelisle.free.fr](http://caussedelisle.free.fr/) — Projet d'achat d'un ancien camp militaire (maj 2004 !).
-- **Écovillage de la Clède** : [fr.gaiadir.com](http://fr.gaiadir.com/ecovillage-de-la-clede) — Cévennes.
-- **Écohameaux** : [construire-sain.com](http://www.construire-sain.com/ecohameau.htm) — Lorraine (en veille).
-- **Nalou** : [nalou.com](http://www.nalou.com/index.htm) — Beaulieu sous la Roche (maj 2008).
-- **Projet habitat groupé dans le Cher** : [passerelleco.info](http://www.passerelleco.info/article.php?id_article=731) (2007).
-- **Phenomenehomme.eklablog.com** : [phenomenum.eklablog.com](http://phenomenum.eklablog.com/) — Projet écolieu Mt Bougarache, alternative jeune.
-- **Egaliville.fr** : [egaliville.clicforum.fr](http://egaliville.clicforum.fr/portal.php) — Projet de village sans argent, forum, infos, liens.
+## 🧯 Liens cassés, domaines repris ou pages à vérifier
 
-### 🇪🇸 Espagne
+> Ces liens étaient dans l’ancienne page mais sont morts, redirigent vers autre chose, ou n’ont pas de remplacement fiable. Ils sont conservés ici pour mémoire, avec une recherche Wayback quand utile.
 
-- **Ecoforest.org** : [ecoforest.org](http://www.ecoforest.org/) — Raw community (Andalousie).
-- **Comunidadcruda.com** : [comunidadcruda.com](http://www.comunidadcruda.com/)
-- **Sunseed.org** : [sunseed.org.uk](http://www.sunseed.org.uk/) — *« Develop, demonstrate and communicate accessible, low-tech methods of sustainability in a semi-arid environment »* (Andalousie).
-- **Matavenero** : [lineone.net/~tonywrench](http://website.lineone.net/~tonywrench/matavenero.htm) (Nord).
-- **Can Pasqual** : [cascall.org/canpasqual](http://www.cascall.org/canpasqual/) — Squat (Barcelone).
-- **Los Arenalejos** : [geocities.com](http://es.geocities.com/arenalejos/socializacion_3en1_fr.htm) — En projet.
-- **Canmasdeu.net** : [canmasdeu.net](http://www.canmasdeu.net/) — Squat, centre autogéré (Barcelone).
-- **Finca el Majolillo** : [fincaelmajolillo.es](http://www.fincaelmajolillo.es/) — Proyecto ecologico (Malaga).
-- **Finca Los Albaricoqueros** : [lafreeschool.webs.com](http://lafreeschool.webs.com/) — Free school project.
-- **Ecosalvia** : [ecoaldea.com](http://www.ecoaldea.com/ecosalvia/) — Projet pyrénées.
+### Réseaux, annuaires & ressources
 
-### 🇮🇹 Italie
+- **Sharewiki — Lieu de vie ouvert** — `http://sharewiki.org/en/Lieu_de_vie_ouvert` — Ancienne page collaborative sur les lieux ouverts ; domaine non résolu. [Recherche Wayback](https://web.archive.org/web/*/http://sharewiki.org/en/Lieu_de_vie_ouvert)
+- **Sharewiki — List of ecovillages** — `http://sharewiki.org/en/List_of_ecovillages` — Ancienne liste d’écovillages ; domaine non résolu. [Recherche Wayback](https://web.archive.org/web/*/http://sharewiki.org/en/List_of_ecovillages)
+- **Ancienne liste membres GEN Europe** — `http://php.ecovillage.org/php/public/evdir/evsearchlist.php?geneu=mem&lg=1` — Chemin mort ; utiliser [GEN Europe](https://gen-europe.org/) ou [GEN Global](https://ecovillage.org/). [Recherche Wayback](https://web.archive.org/web/*/http://php.ecovillage.org/php/public/evdir/evsearchlist.php?geneu=mem&lg=1)
+- **Passerelle Éco ancien index** — `http://www.passerelleco.info/index.php3` — Ancien chemin remplacé par [passerelleco.info](https://www.passerelleco.info/).
+- **Macabane.info** — `http://www.macabane.info/` — Mouvement autour de l’habitat autonome novateur et écologique ; site d’origine hors ligne. Une trace existe sur l’annuaire de *La Maison Écologique*, mais pas de site officiel actif. [Recherche Wayback](https://web.archive.org/web/*/http://www.macabane.info/)
+- **Permis de vivre** — `http://permisdevivre.org/` — Réseau pour la reconnaissance des habitats alternatifs et légers ; domaine non résolu, seulement des mentions secondaires retrouvées. [Recherche Wayback](https://web.archive.org/web/*/http://permisdevivre.org/)
+- **Paradigmes / Etyc** — `http://www.etyc.org/paradigmes` — Ancien site d’aide à la création de lieu de vie alternatif ; serveur instable ou réutilisé. [Recherche Wayback](https://web.archive.org/web/*/http://www.etyc.org/paradigmes)
+- **Archiutop — L’Archipel des Utopies** — `http://www.archiutop.com/association.html` — Ancien domaine hors ligne ; la ressource la plus proche est [archipel-utopies.com](https://archipel-utopies.com/), mais ce n’est pas clairement la même page. [Recherche Wayback](https://web.archive.org/web/*/http://www.archiutop.com/association.html)
+- **GaiaDir — annuaire écovillages** — `http://fr.gaiadir.com/ecovillage` — Domaine repris / réponse anormale ; ne pas utiliser comme annuaire. [Recherche Wayback](https://web.archive.org/web/*/http://fr.gaiadir.com/ecovillage)
+- **Nomadbase.org** — `http://nomadbase.org/` — Réseau de bases nomades ; domaine inactif, pas de remplacement fiable trouvé. [Recherche Wayback](https://web.archive.org/web/*/http://nomadbase.org/)
+- **Ekopedia — monter un projet d’écolieu** — `http://fr.ekopedia.org/Comment_monter_un_projet_d%27%C3%A9colieu` — Ancien lien redirigeait vers `ekopedia.fr`, mais la page ne répond pas de façon fiable au test. [Recherche Wayback](https://web.archive.org/web/*/http://fr.ekopedia.org/Comment_monter_un_projet_d%27%C3%A9colieu)
+- **Spirale Attac — écohabitat / habitat groupé** — `http://www.spirale.attac.org/content/leco-habitat-habitat-groupe` — Domaine non résolu. [Recherche Wayback](https://web.archive.org/web/*/http://www.spirale.attac.org/content/leco-habitat-habitat-groupe)
+- **Spirale Attac — vie communautaire ou collective** — `http://www.spirale.attac.org/content/vie-communautaire-ou-collective` — Domaine non résolu. [Recherche Wayback](https://web.archive.org/web/*/http://www.spirale.attac.org/content/vie-communautaire-ou-collective)
+- **Radio-Canada — ancienne archive “génération hippie”** — `http://archives.radio-canada.ca/IDCC-0-10-561-2871/vie_societe/generation_hippie/` — Permalien obsolète ; page proche retrouvée : [La génération hallucinée](http://archives.radio-canada.ca/societe/jeunesse/dossiers/561-2865/).
+- **Ecovillage Wiki / Fandom** — `https://ecovillage.fandom.com/wiki/Main_Page` — Accès souvent bloqué/403 ; contenu modeste, gardé hors liste principale. [Recherche Wayback](https://web.archive.org/web/*/https://ecovillage.fandom.com/wiki/Main_Page)
+- **ICDB.org** — `http://www.icdb.org/` — Domaine réutilisé / différent de l’ancienne base “Intentional Communities Database” ; utiliser [IC.org](https://www.ic.org/). [Recherche Wayback](https://web.archive.org/web/*/http://www.icdb.org/)
+- **La Plume de Feu** — `http://www.laplumedefeu.com/` — Ancienne revue Aube / Québec ; serveur répond mal et contenu peu fiable. [Recherche Wayback](https://web.archive.org/web/*/http://www.laplumedefeu.com/)
+- **Réseau des ÉcoHameaux et ÉcoVillages du Québec** — `http://ecohameau.tripod.com/index.html` — Ancienne page Tripod non joignable lors du test. [Recherche Wayback](https://web.archive.org/web/*/http://ecohameau.tripod.com/index.html)
+- **Anarchopedia — communautarisme de lieu de vie** — `http://fra.anarchopedia.org/Communautarisme_de_lieu_de_vie` — Wiki instable / non fiable. [Recherche Wayback](https://web.archive.org/web/*/http://fra.anarchopedia.org/Communautarisme_de_lieu_de_vie)
 
-- **Torri-superiore.org** : [torri-superiore.org](http://www.torri-superiore.org/)
-- **Solaria** : [passerelleco.info](http://www.passerelleco.info/rubrique.php3?id_rubrique=37)
-- **Casa Cares** : [danberkeland.com](http://www.danberkeland.com/casacares/page.php?lang=e&page=intro)
-- **Ecopueblo** : [chegg.blogspot.com](http://chegg.blogspot.com/)
-- **Alcatraz** : [alcatraz.it](http://www.alcatraz.it/)
-- **La valle degli Elfi** : [silviamontevecchi.it](http://www.silviamontevecchi.it/bella%20gente/fabiopiacentini.htm)
-- **Italyecovillage.com** : [italyecovillage.com](http://www.italyecovillage.com/)
+### France — lieux et projets
 
-### 🇨🇭 Suisse
+- **Troglobal — Web-Utopia** — `http://www.web-utopia.org/Le-Village-Troglobal` — Ancienne archive devenue inaccessible/erreur serveur ; utiliser le blog WordPress actuel. [Recherche Wayback](https://web.archive.org/web/*/http://www.web-utopia.org/Le-Village-Troglobal)
+- **Forum Troglobal** — `http://troglobal.frbb.net/` — Forum fermé ou supprimé. [Recherche Wayback](https://web.archive.org/web/*/http://troglobal.frbb.net/)
+- **La Picharlerie** — `http://lapicharlerie.internetdown.org/` — Ancien site Cévennes sur hébergeur disparu. [Recherche Wayback](https://web.archive.org/web/*/http://lapicharlerie.internetdown.org/)
+- **Caracoles de Suc** — `http://www.caracolesdesuc.org/` — Domaine non résolu ; traces secondaires retrouvées mais pas de site officiel actuel fiable. [Recherche Wayback](https://web.archive.org/web/*/http://www.caracolesdesuc.org/)
+- **Le Cantoyourte / Yurtao** — `http://yurtao.canalblog.com/archives/2008/03/03/8178143.html` — Ancien article Canalblog sur un projet de yourte/lieu léger ; page 404 au test. [Recherche Wayback](https://web.archive.org/web/*/http://yurtao.canalblog.com/archives/2008/03/03/8178143.html)
+- **Collectif FAR / Ferme Autogérée de la Roya** — `http://www.collectif-far.org/` — Domaine non résolu ; mentions secondaires retrouvées mais pas de remplacement officiel. [Recherche Wayback](https://web.archive.org/web/*/http://www.collectif-far.org/)
+- **Écolieu Durantis** — `http://www.ecolieu.durantis.eu/` — Redirection vers une page allemande en erreur serveur ; à vérifier manuellement avant réintégration. [Recherche Wayback](https://web.archive.org/web/*/http://www.ecolieu.durantis.eu/)
+- **Écohameaux Lorraine / Construire sain** — `http://www.construire-sain.com/ecohameau.htm` — Domaine non résolu. [Recherche Wayback](https://web.archive.org/web/*/http://www.construire-sain.com/ecohameau.htm)
+- **Égaliville** — `http://egaliville.clicforum.fr/portal.php` — Forum Clicforum renvoie vers une erreur/maintenance ; projet en veille. [Recherche Wayback](https://web.archive.org/web/*/http://egaliville.clicforum.fr/portal.php)
+- **Phenomenum / Bugarach** — `http://phenomenum.eklablog.com/` — Blog instable/non joignable au test ; à vérifier manuellement. [Recherche Wayback](https://web.archive.org/web/*/http://phenomenum.eklablog.com/)
+- **BeauChamp Visitors** — `http://www.onerus.com/beauchamp/` — Domaine repris par une page de vente de domaine ; lien hors sujet. [Recherche Wayback](https://web.archive.org/web/*/http://www.onerus.com/beauchamp/)
+- **Fazenda Abracadabra** — `http://fazenda.abracadabra.over-blog.com/` — Over-blog très lent/instable ; pas de remplacement trouvé. [Recherche Wayback](https://web.archive.org/web/*/http://fazenda.abracadabra.over-blog.com/)
+- **Lieu de vie à Genève / Ecoattitude** — `http://www.ecoattitude.org/accueil/node/110` — Redirige vers un site hors sujet ; domaine repris. [Recherche Wayback](https://web.archive.org/web/*/http://www.ecoattitude.org/accueil/node/110)
 
-- **Berne / Eriz** : [cnr.ch](http://cnr.ch/projects/projects.htm) — Center new reality : Rainbow familly.
-- **Ecodoubs.ch** : [ecodoubs.ch](http://www.ecodoubs.ch/) — Les Fermes Communautaires Libres.
-- **Objectifgaia.info** : [objectifgaia.info](http://www.objectifgaia.info/) / Tiocan (France).
-- **Écovillage urbain** : [passerelleco.info](http://www.passerelleco.info/article.php3?id_article=423) ou écoquartier dans le bassin lémanique.
-- **Goldschopf.ch** : [goldschopf.ch](http://www.goldschopf.ch/) — Projet communautaire en Suisse allemande.
-- **Strawd'la Balle (Lausanne)** : [autoconstruction-en-paille.over-blog.com](http://autoconstruction-en-paille.over-blog.com/) — Asso lausannoise. Construction d'une maison en paille dans un jardin public de Lausanne. Maison détruite par un incendie criminel… !
-- **Lieu de vie à Genève** : [ecoattitude.org](http://www.ecoattitude.org/accueil/node/110) — A côté de la STEP d'Aïre, presque au bout de la ligne n°51, sur un bout de terrain herbeux en friche, périmètre de l'ancienne usine Haro & Co, un village de roulottes s'est installé il y a bientôt 4 ans. Une trentaine de familles y vivent.
+### Espagne, Italie, Suisse & international
 
-### Autres
-
-- **Fazenda.abracadabra.over-blog.com** : [lien](http://fazenda.abracadabra.over-blog.com/) — Lieux de vie inspiration rainbow au Brésil.
-- **Communa.org.il** : [communa.org.il](http://www.communa.org.il/welcome.shtml) — Communauté kibboutz… (Israël).
-- **Diewerkstatt.co.uk** : [diewerkstatt.co.uk](http://www.diewerkstatt.co.uk/) — Lieu de vie en Bulgarie.
-- **Permalot.org** : [permalot.org](http://www.permalot.org/) — Lieu permaculture en Tchéquie, troglo.
-- **Bosquevillage.com** : [bosquevillage.com/fr](http://bosquevillage.com/fr/) — Lieu ouvert au Mexique, wwoof, camping.
-
-### 🌈 Rainbow Family
-
-- [Rainbow Family France](https://rainbowfamilyfrance.wordpress.com/) — Le site de la famille française.
-- [Somewhere Under The Rainbow](http://somewhereundertherainbow.org/) — Infos, photos, vidéos, book…
-- [Welcomehome.org – Rainbow International](http://www.welcomehome.org/rainbow/index.html)
-- [Cnr.ch](http://cnr.ch/) — Center new reality and Rainbow tribe suisse.
-- [Rainbowinfo.ch](http://rainbowinfo.ch/) — Alternative network.
-- [Pelerins.populus.org](http://pelerins.populus.org/) — Pèlerins de l'arc en ciel, projet de lieu (France).
-- [Shanti terrian project](http://www.audeculture.com/shanti/) — Simplicité, arc en ciel, yourte…
-- [Beneficiofamily.com](http://beneficiofamily.com/) — Welcome home, site de Beneficio, chat, forum, liens rassemblement…
-- [Spiritofnature.ch](http://spiritofnature.ch/index.en.html) — *« Spirit of Nature & Nature of Spirit, Promoting a meaningful lifestyle »* (CH, NZ).
-- [Globalnatives.org](http://globalnatives.org/)
-- [Weloveyoufilm.com](http://www.weloveyoufilm.com/index.html) — Film rainbow.
-- [Bliss-fire.com – Rainbow Guide On Line](http://www.bliss-fire.com/RainbowGuideOnLine.php)
+- **Ecoforest.org** — `http://www.ecoforest.org/` — Ancienne communauté raw food en Andalousie ; domaine repris par un site japonais de récupération d’encombrants, donc lien hors sujet. [Recherche Wayback](https://web.archive.org/web/*/http://www.ecoforest.org/)
+- **Matavenero — ancien hébergeur Lineone / Tony Wrench** — `http://website.lineone.net/~tonywrench/matavenero.htm` — Ancienne page sur l’écovillage Matavenero ; l’hébergeur initial est mort et la piste Tony Wrench ne répond pas actuellement. [Recherche Wayback](https://web.archive.org/web/*/http://website.lineone.net/~tonywrench/matavenero.htm)
+- **Comunidad Cruda** — `http://www.comunidadcruda.com/` — Domaine non fiable/timeout ; pas de remplacement trouvé. [Recherche Wayback](https://web.archive.org/web/*/http://www.comunidadcruda.com/)
+- **Los Arenalejos / Geocities** — `http://es.geocities.com/arenalejos/socializacion_3en1_fr.htm` — Geocities fermé ; lien mort. [Recherche Wayback](https://web.archive.org/web/*/http://es.geocities.com/arenalejos/socializacion_3en1_fr.htm)
+- **Finca El Majolillo** — `http://www.fincaelmajolillo.es/` — Domaine non résolu. [Recherche Wayback](https://web.archive.org/web/*/http://www.fincaelmajolillo.es/)
+- **Finca Los Albaricoqueros / Free School** — `http://lafreeschool.webs.com/` — Webs.com/hébergeur disparu ou domaine non résolu. [Recherche Wayback](https://web.archive.org/web/*/http://lafreeschool.webs.com/)
+- **Casa Cares — ancien site Dan Berkeland** — `http://www.danberkeland.com/casacares/page.php?lang=e&page=intro` — Domaine non résolu ; pas de remplacement fiable vérifié. [Recherche Wayback](https://web.archive.org/web/*/http://www.danberkeland.com/casacares/page.php?lang=e&page=intro)
+- **La Valle degli Elfi — ancien article** — `http://www.silviamontevecchi.it/bella%20gente/fabiopiacentini.htm` — Page 404. [Recherche Wayback](https://web.archive.org/web/*/http://www.silviamontevecchi.it/bella%20gente/fabiopiacentini.htm)
+- **ItalyEcovillage.com** — `http://www.italyecovillage.com/` — Réponse anormale/domaine peu fiable ; utiliser [ecovillaggi.it](https://ecovillaggi.it/). [Recherche Wayback](https://web.archive.org/web/*/http://www.italyecovillage.com/)
+- **EcoDoubs** — `http://www.ecodoubs.ch/` — Serveur en erreur 503 au test ; à recontrôler manuellement. [Recherche Wayback](https://web.archive.org/web/*/http://www.ecodoubs.ch/)
+- **Straw d’la Balle — Lausanne** — `http://autoconstruction-en-paille.over-blog.com/` — Archive d’une association lausannoise autour de l’autoconstruction en paille ; site très lent/instable au test. [Recherche Wayback](https://web.archive.org/web/*/http://autoconstruction-en-paille.over-blog.com/)
+- **Communa.org.il** — `http://www.communa.org.il/welcome.shtml` — Ancien chemin en 404 ; pas de remplacement clair. [Recherche Wayback](https://web.archive.org/web/*/http://www.communa.org.il/welcome.shtml)
+- **Die Werkstatt** — `http://www.diewerkstatt.co.uk/` — Lieu de vie en Bulgarie ; domaine non résolu. [Recherche Wayback](https://web.archive.org/web/*/http://www.diewerkstatt.co.uk/)
+- **Bosque Village** — `http://bosquevillage.com/fr/` — Lieu ouvert au Mexique, wwoof/camping/volontariat. Domaine non résolu ; une fiche WWOOF Mexico a été trouvée en recherche mais renvoie en 404, donc aucun remplacement fiable. [Recherche Wayback](https://web.archive.org/web/*/http://bosquevillage.com/fr/)
+- **Spirit of Nature** — `http://spiritofnature.ch/index.en.html` — Ancien site CH/NZ ; timeout au test, pas de remplacement fiable. [Recherche Wayback](https://web.archive.org/web/*/http://spiritofnature.ch/index.en.html)
+- **RainbowInfo.ch** — `http://rainbowinfo.ch/` et `http://rainbowinfo.ch/info.htm` — Domaine non résolu ; ancien réseau Rainbow suisse. [Recherche Wayback](https://web.archive.org/web/*/http://rainbowinfo.ch/)
+- **We Love You Film** — `http://www.weloveyoufilm.com/index.html` — Film Rainbow ; domaine hors service. [Recherche Wayback](https://web.archive.org/web/*/http://www.weloveyoufilm.com/index.html)
+- **BeneficioFamily.com** — `http://beneficiofamily.com/` — Site d’origine hors ligne ; remplacé par la fiche NuMundo plus haut. [Recherche Wayback](https://web.archive.org/web/*/http://beneficiofamily.com/)
 
 ---
 
