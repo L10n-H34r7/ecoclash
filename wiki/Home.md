@@ -29,17 +29,12 @@
 ### 🔗 Synergies / Liens
 [Synergies / Liens](synergies.md) Actus, écolieux, partage/troc/don, mobilité/voyage, agendas…
 
-## 📑 Sous-sections
-
 - 📰 [Actu](synergies-actu.md) — News d'un monde… (flux Squat!net, UtopLib…)
 - 🌍 [Village global](synergies-village-global.md) — Lieux de vie, collectifs, fermes, squats, écolieux
 - 🎁 [Partage, échange, troc, don](synergies-partage.md) — Hébergement gratuit, volontariat, SEL, JEU, récup…
 - 🚲 [Mouvement, mobilité, voyage](synergies-mouvement.md) — Vélo, covoiturage, autostop, voyage…
 - 🚶 [Nomades](synergies-mouvement-nomades.md) — Caravanes, marche, roulotte, wwoof…
 - 🕰️ [La porte du temps](synergies-porte-du-temps.md) — Agendas suisse, permaculture, chantiers, stages, rencontres…
-
-🌱 [Sommaire](Home.md) · [Médiathèque](mediatheque.md) · [Contact](contact.md)
-
 
 ### 📰 Blog
 
@@ -58,3 +53,6 @@ Articles, tutoriels, reportages, présentations de lieux de vie, perles d'archiv
 --- 
 
 🌱 Source originale : [ecoclash.jimdofree.com](https://ecoclash.jimdofree.com/)
+
+🏠 [Sommaire](Home.md) · 📖 [Médiathèque](mediatheque.md) · 🏠 [Habitat, autoconstruction](habitat-autoconstruction.md) · 🔨 [Artisanat](artisanat.md) 
+🌱 [Cultiver, jardiner](cultiver-jardiner.md) · 🍞 [Production, transformation](production-transformation.md) · 🌀 [En vrac](en-vrac.md
