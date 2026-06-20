@@ -22,7 +22,6 @@
 - **[Autoconstruction - special vroutsch / 1972](blog/vroutsch-1972.md)** — Zoomes, dôme, tipi, tube, carton, voiture… Une perle de Special Vroutsch (71 pages).
 - **[Habitats - Construction traditionnelles et marginales](blog/habitats-traditionnels.md)** — Plein de documents pour autoconstruire son habitat. En vedette le livre « Habitats » de Lloyd Kahn.
 - **[Autoconstruction d'une yourte locale](blog/yourte-locale.md)** — (Suisse, VD) 4,60 m de diamètre, 16,62 m², 31,7 m³. Bois local : noisetier, châtaigner, frêne. **Total : 129.- CHF !**
-- **[Faites tout vous-même / Savoir revivre / Revivre à la campagne](blog/faites-vous-meme.md)** — Trois livres mythiques pour l'autonomie.
 - **[Habitats d'urgence, autoconstruction bioclimatique](blog/habitats-urgence.md)** — 14m² pour 100€, 33m² pour 380€, etc.
 - **[Comment fabriquer un tipi (tepee)](blog/tipi.md)** — 10 PDFs, plans, tuto, couture, histoire.
 - **[Comment construire un dôme géodésique](blog/dome-geodesique.md)** — Dome Book 2, calculs, plans, tuto, info pratique et théorique.
