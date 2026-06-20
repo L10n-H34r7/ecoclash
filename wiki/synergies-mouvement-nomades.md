@@ -20,29 +20,6 @@
 
 ---
 
-## 🤝 Hébergement, accueil et partage pour nomades
-
-- [**Trustroots**](https://www.trustroots.org/) — Réseau gratuit d’hospitalité pour voyageurs alternatifs, autostoppeurs, cyclistes et nomades ; basé sur des cercles d’intérêts et l’accueil entre membres.
-- [**Trustroots — code source GitHub**](https://github.com/Trustroots/trustroots) — Dépôt open source du projet Trustroots ; utile pour contribuer, suivre le développement ou auto-documenter l’outil.
-- [**BeWelcome**](https://www.bewelcome.org/) — Réseau d’hospitalité non lucratif et communautaire pour héberger, être hébergé, rencontrer des voyageurs et organiser des rencontres locales.
-- [**BeWelcome — code source GitHub**](https://github.com/BeWelcome/rox) — Dépôt principal de la plateforme BeWelcome ; projet libre, maintenu par des bénévoles.
-- [**Couchers.org**](https://couchers.org/) — Alternative communautaire à Couchsurfing, sans but lucratif, pensée pour l’hébergement gratuit et les rencontres locales entre voyageurs.
-- [**Couchers — code source GitHub**](https://github.com/Couchers-org/couchers) — Code open source de Couchers ; permet de suivre les évolutions, signaler des bugs ou contribuer.
-- [**Warmshowers**](https://www.warmshowers.org/) — Réseau d’hospitalité spécialisé pour les voyageuses et voyageurs à vélo : douche, toit, conseils d’itinéraire et entraide cyclonomade.
-- [**sleepy.bike**](https://sleepy.bike/) — Alternative libre et décentralisée orientée cyclotourisme et hospitalité ; projet lié à l’Open Hospitality Network.
-- [**sleepy.bike / Open Hospitality Network — GitHub**](https://github.com/solidcouch/solidcouch) — Projet open source pour une hospitalité décentralisée où les membres gardent la maîtrise de leurs données.
-- [**WWOOF France**](https://wwoof.fr/) — Mise en relation entre fermes biologiques et personnes souhaitant apprendre, aider et être accueillies quelques jours ou semaines.
-- [**Workaway**](https://www.workaway.info/) — Plateforme internationale d’échange aide contre hébergement : fermes, familles, écolieux, auberges, projets éducatifs ou associatifs.
-- [**HelpX**](https://www.helpx.net/) — Ancienne plateforme d’échange de services contre hébergement, proche du wwoofing mais avec des hôtes plus variés.
-- [**Hitchwiki**](https://hitchwiki.org/) — Wiki collaboratif pour l’autostop : bons spots, conseils de route, sécurité, frontières et retours d’expérience.
-- [**Nomadwiki**](https://nomadwiki.org/wiki/Main_Page) — Wiki de ressources pour voyageurs à petit budget : dormir, manger, se déplacer, communautés, lieux et astuces.
-- [**r/couchsurfing**](https://www.reddit.com/r/couchsurfing/) — Subreddit de discussions sur l’hospitalité, les alternatives à Couchsurfing, les bonnes pratiques d’accueil et la sécurité.
-- [**r/hitchhiking**](https://www.reddit.com/r/hitchhiking/) — Subreddit d’entraide autour de l’autostop : itinéraires, expériences, conseils pratiques et questions de sécurité.
-- [**r/vagabond**](https://www.reddit.com/r/vagabond/) — Communauté Reddit sur le vagabondage, la vie sur la route, les abris, l’équipement léger et les récits de voyage.
-- [**r/bicycletouring**](https://www.reddit.com/r/bicycletouring/) — Subreddit pour le voyage à vélo : équipement, itinéraires, bivouac, retours de tours et entraide entre cyclistes.
-
----
-
 ## 📦 Archives — projets anciens encore consultables
 
 - [**Festoch’Road 2010**](http://festi-tour.xooit.com/index.php) — Forum d’un festival itinérant en France ; archives d’organisation et de rencontres nomades.
