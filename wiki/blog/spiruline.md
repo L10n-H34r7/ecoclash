@@ -1,7 +1,5 @@
 # Comment cultiver, produire et transformer la spiruline
 
-> 📅 Publié le 14/08/2014 — Catégories : Cultiver
-
 > Voici ici réunis quelques documents pour se lancer dans la culture de la **spiruline** : manuels de culture, infos nutrition, comment et pourquoi cultiver la spiruline…
 
 ---
