@@ -1,10 +1,6 @@
 # Apiculture pour tous, ruche du peuple, Warre, topbar
 
-> 📅 Publié le 14/08/2014 — Catégories : Cultiver
-
 > Construire une ruche, récolter du miel, construction de ruches Warré, top bar, ruches tronc, récolte du pollen, essaimage, propolis, cire…
-
----
 
 ## 📂 Documents
 
@@ -29,14 +25,12 @@
 - a.bee.keepers.manual.-.167p.pdf
 - l.apiculture.ecologique.infos.-.warre.-.14p.pdf
 
----
-
 ## 🔗 Voir aussi
 
 ### Liens internes
 
 - [Pratique — Infokiosque — Fiches techniques, plan, tuto, infos, brochures](../mediatheque.md)
-- Pratique — [Comment cultiver, produire la spiruline](2014-08-14-spiruline.md)
+- Pratique — [Comment cultiver, produire la spiruline](spiruline.md)
 
 ### Liens externes
 
