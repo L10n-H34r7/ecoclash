@@ -2,15 +2,12 @@
 
 > *De savoir, de temps, d'hébergement, de matériel, de services…*
 
----
-
 ## 🛏️ Hébergement gratuit, volontariat, accueil, aide en échange du logement / nourriture
 
 ### 🤝 Hébergement, accueil et partage pour nomades, Réseaux d'hospitalité
 
 - [**Hospitality Club**](https://www.hospitalityclub.org/) — Réseau mondial d'échange d'hospitalité : des milliers de membres s'entraident pour le logement et les visites de ville.
 - [**Pasporta Servo**](https://www.pasportaservo.org/) — Réseau d'hébergement gratuit pour espérantistes. 2 400+ hôtes dans 121 pays. Géré par TEJO.
-- [**CasaRobino.org**](http://casarobino.org/) — Projet d'hospitalité durable basé à Amsterdam. Communauté liée au mouvement nomade et au volontariat.
 - [**OpenCouchSurfing.org**](http://www.opencouchsurfing.org/) — Projet militant pour un CouchSurfing ouvert et transparent. Wiki, blog et réflexions sur les alternatives libres.
 - [**Host A Sister**](https://www.facebook.com/groups/hostasister/) — Groupe Facebook de femmes offrant l'hospitalité à d'autres femmes dans le monde entier. Échange culturel sûr et solidaire.
 - [**Trustroots**](https://www.trustroots.org/) — Réseau gratuit d’hospitalité pour voyageurs alternatifs, autostoppeurs, cyclistes et nomades ; basé sur des cercles d’intérêts et l’accueil entre membres.
@@ -22,6 +19,7 @@
 - [**Warmshowers**](https://www.warmshowers.org/) — Réseau d’hospitalité spécialisé pour les voyageuses et voyageurs à vélo : douche, toit, conseils d’itinéraire et entraide cyclonomade.
 - [**sleepy.bike**](https://sleepy.bike/) — Alternative libre et décentralisée orientée cyclotourisme et hospitalité ; projet lié à l’Open Hospitality Network.
 - [**sleepy.bike / Open Hospitality Network — GitHub**](https://github.com/solidcouch/solidcouch) — Projet open source pour une hospitalité décentralisée où les membres gardent la maîtrise de leurs données.
+- [**CasaRobino.org**](http://casarobino.org/) — Projet d'hospitalité durable basé à Amsterdam. Communauté liée au mouvement nomade et au volontariat.
 
 ### Annuaires & Guides
 
@@ -34,7 +32,6 @@
 - [**r/hitchhiking**](https://www.reddit.com/r/hitchhiking/) — Subreddit d’entraide autour de l’autostop : itinéraires, expériences, conseils pratiques et questions de sécurité.
 - [**r/vagabond**](https://www.reddit.com/r/vagabond/) — Communauté Reddit sur le vagabondage, la vie sur la route, les abris, l’équipement léger et les récits de voyage.
 - [**r/bicycletouring**](https://www.reddit.com/r/bicycletouring/) — Subreddit pour le voyage à vélo : équipement, itinéraires, bivouac, retours de tours et entraide entre cyclistes.
-
 
 ---
 
