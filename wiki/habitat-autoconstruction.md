@@ -4,31 +4,28 @@
 
 - **Autoconstruction, habitats léger, abris, tente, cabanes…** → [Docs (#D)](http://www.mediafire.com/?itneqcvh72sav)
 
-### Sous-thèmes
-
-| Thème | Docs | Article |
-|---|---|---|
-| **Yourte / Yurt / Ger** | [Docs](http://www.mediafire.com/?4xm93992kjcwi) | [@A — Construire une yourte](blog/yourte.md) |
-| **Tipi / Tepee** | [Docs](http://www.mediafire.com/?4xm93992kjcwi) | [@A — Fabriquer un tipi](blog/tipi.md) |
-| **Dôme géodésique** | [Docs](http://www.mediafire.com/?4xm93992kjcwi) | [@A — Construire un dôme géodésique](blog/dome-geodesique.md) |
-| **Habitat d'urgence** | [Docs](http://www.mediafire.com/?8bb83xrtxmttr) | [@A — Habitat d'urgence bioclimatique](blog/habitats-urgence.md) |
-| **Terre, adobe, torchis** | [Docs](http://www.mediafire.com/?7exr74mwenwj3) | — |
-| **Construction diverse** | [Docs](http://www.mediafire.com/?bvhtwuhky85kg) | — |
+**Yourte / Yurt / Ger** [Docs](http://www.mediafire.com/?4xm93992kjcwi) [@A — Construire une yourte](blog/yourte.md)
+**Tipi / Tepee**  [Docs](http://www.mediafire.com/?4xm93992kjcwi)  [@A — Fabriquer un tipi](blog/tipi.md)
+**Dôme géodésique**  [Docs](http://www.mediafire.com/?4xm93992kjcwi)  [@A — Construire un dôme géodésique](blog/dome-geodesique.md)
+**Habitat d'urgence** | [Docs](http://www.mediafire.com/?8bb83xrtxmttr)  [@A — Habitat d'urgence bioclimatique](blog/habitats-urgence.md)
+**Terre, adobe, torchis** [Docs](http://www.mediafire.com/?7exr74mwenwj3)
+**Construction diverse** [Docs](http://www.mediafire.com/?bvhtwuhky85kg)
 
 > **Légende :** `(#D)` Les docs · `@A` Article associé
+> 
 ---
 
 ## 📰 Articles
 
-— **[Pratique - Comment construire une yourte](blog/yourte.md)** — Construire, fabriquer, monter, coudre une yourte / yurt / ger — infos, plans et calculs.
-— **[Le Kiosque Autonome](blog/kiosque-autonome.md)** — Un kiosque écologique et social sous forme d'une grande remorque (5m × 2,5m × 4m), tirée par un tracteur à l'huile de friture recyclée, avec 20m² de plantes bio, toit en plantes médicinales…
-— **[Autoconstruction - special vroutsch / 1972](blog/vroutsch-1972.md)** — Zoomes, dôme, tipi, tube, carton, voiture… Une perle de Special Vroutsch (71 pages).
-— **[Habitats - Construction traditionnelles et marginales](blog/habitats-traditionnels.md)** — Plein de documents pour autoconstruire son habitat. En vedette le livre « Habitats » de Lloyd Kahn.
-— **[Autoconstruction d'une yourte locale](blog/yourte-locale.md)** — (Suisse, VD) 4,60 m de diamètre, 16,62 m², 31,7 m³. Bois local : noisetier, châtaigner, frêne. **Total : 129.- CHF !**
-— **[Faites tout vous-même / Savoir revivre / Revivre à la campagne](blog/faites-vous-meme.md)** — Trois livres mythiques pour l'autonomie.
-— **[Habitats d'urgence, autoconstruction bioclimatique](blog/habitats-urgence.md)** — 14m² pour 100€, 33m² pour 380€, etc.
-— **[Comment fabriquer un tipi (tepee)](blog/tipi.md)** — 10 PDFs, plans, tuto, couture, histoire.
-— **[Comment construire un dôme géodésique](blog/dome-geodesique.md)** — Dome Book 2, calculs, plans, tuto, info pratique et théorique.
+- **[Pratique - Comment construire une yourte](blog/yourte.md)** — Construire, fabriquer, monter, coudre une yourte / yurt / ger — infos, plans et calculs.
+- **[Le Kiosque Autonome](blog/kiosque-autonome.md)** — Un kiosque écologique et social sous forme d'une grande remorque (5m × 2,5m × 4m), tirée par un tracteur à l'huile de friture recyclée, avec 20m² de plantes bio, toit en plantes médicinales…
+- **[Autoconstruction - special vroutsch / 1972](blog/vroutsch-1972.md)** — Zoomes, dôme, tipi, tube, carton, voiture… Une perle de Special Vroutsch (71 pages).
+- **[Habitats - Construction traditionnelles et marginales](blog/habitats-traditionnels.md)** — Plein de documents pour autoconstruire son habitat. En vedette le livre « Habitats » de Lloyd Kahn.
+- **[Autoconstruction d'une yourte locale](blog/yourte-locale.md)** — (Suisse, VD) 4,60 m de diamètre, 16,62 m², 31,7 m³. Bois local : noisetier, châtaigner, frêne. **Total : 129.- CHF !**
+- **[Faites tout vous-même / Savoir revivre / Revivre à la campagne](blog/faites-vous-meme.md)** — Trois livres mythiques pour l'autonomie.
+- **[Habitats d'urgence, autoconstruction bioclimatique](blog/habitats-urgence.md)** — 14m² pour 100€, 33m² pour 380€, etc.
+- **[Comment fabriquer un tipi (tepee)](blog/tipi.md)** — 10 PDFs, plans, tuto, couture, histoire.
+- **[Comment construire un dôme géodésique](blog/dome-geodesique.md)** — Dome Book 2, calculs, plans, tuto, info pratique et théorique.
 
 ---
 
