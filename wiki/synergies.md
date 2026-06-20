@@ -10,7 +10,6 @@
 
 ## 📑 Sous-sections
 
-- 📰 [Actu](synergies-actu.md) — News d'un monde… (flux Squat!net, UtopLib…)
 - 🌍 [Village global](synergies-village-global.md) — Lieux de vie, collectifs, fermes, squats, écolieux
 - 🎁 [Partage, échange, troc, don](synergies-partage.md) — Hébergement gratuit, volontariat, SEL, JEU, récup…
 - 🚲 [Mouvement, mobilité, voyage](synergies-mouvement.md) — Vélo, covoiturage, autostop, voyage…
