@@ -1,11 +1,5 @@
 # 🏠 Habitat, autoconstruction
 
-![Habitat](https://raw.githubusercontent.com/L10n-H34r7/ecoclash/main/images/og-banner.jpg)
-
-> **Légende :** `(#D)` Les docs · `@A` Article associé
-
----
-
 ## 📂 Documents
 
 - **Autoconstruction, habitats léger, abris, tente, cabanes…** → [Docs (#D)](http://www.mediafire.com/?itneqcvh72sav)
@@ -21,24 +15,20 @@
 | **Terre, adobe, torchis** | [Docs](http://www.mediafire.com/?7exr74mwenwj3) | — |
 | **Construction diverse** | [Docs](http://www.mediafire.com/?bvhtwuhky85kg) | — |
 
+> **Légende :** `(#D)` Les docs · `@A` Article associé
 ---
 
-## 📰 Articles récents
+## 📰 Articles
 
-### 🟢 2015
-
-- 17/08 — **[Pratique - Comment construire une yourte](blog/yourte.md)** — Construire, fabriquer, monter, coudre une yourte / yurt / ger — infos, plans et calculs.
-
-### 🟡 2014
-
-- 14/09 — **[Le Kiosque Autonome](blog/kiosque-autonome.md)** — Un kiosque écologique et social sous forme d'une grande remorque (5m × 2,5m × 4m), tirée par un tracteur à l'huile de friture recyclée, avec 20m² de plantes bio, toit en plantes médicinales…
-- 14/09 — **[Autoconstruction - special vroutsch / 1972](blog/vroutsch-1972.md)** — Zoomes, dôme, tipi, tube, carton, voiture… Une perle de Special Vroutsch (71 pages).
-- 14/08 — **[Habitats - Construction traditionnelles et marginales](blog/habitats-traditionnels.md)** — Plein de documents pour autoconstruire son habitat. En vedette le livre « Habitats » de Lloyd Kahn.
-- 03/09 — **[Autoconstruction d'une yourte locale](blog/yourte-locale.md)** — (Suisse, VD) 4,60 m de diamètre, 16,62 m², 31,7 m³. Bois local : noisetier, châtaigner, frêne. **Total : 129.- CHF !**
-- 25/08 — **[Faites tout vous-même / Savoir revivre / Revivre à la campagne](blog/faites-vous-meme.md)** — Trois livres mythiques pour l'autonomie.
-- 14/08 — **[Habitats d'urgence, autoconstruction bioclimatique](blog/habitats-urgence.md)** — 14m² pour 100€, 33m² pour 380€, etc.
-- 14/08 — **[Comment fabriquer un tipi (tepee)](blog/tipi.md)** — 10 PDFs, plans, tuto, couture, histoire.
-- 14/08 — **[Comment construire un dôme géodésique](blog/dome-geodesique.md)** — Dome Book 2, calculs, plans, tuto, info pratique et théorique.
+— **[Pratique - Comment construire une yourte](blog/yourte.md)** — Construire, fabriquer, monter, coudre une yourte / yurt / ger — infos, plans et calculs.
+— **[Le Kiosque Autonome](blog/kiosque-autonome.md)** — Un kiosque écologique et social sous forme d'une grande remorque (5m × 2,5m × 4m), tirée par un tracteur à l'huile de friture recyclée, avec 20m² de plantes bio, toit en plantes médicinales…
+— **[Autoconstruction - special vroutsch / 1972](blog/vroutsch-1972.md)** — Zoomes, dôme, tipi, tube, carton, voiture… Une perle de Special Vroutsch (71 pages).
+— **[Habitats - Construction traditionnelles et marginales](blog/habitats-traditionnels.md)** — Plein de documents pour autoconstruire son habitat. En vedette le livre « Habitats » de Lloyd Kahn.
+— **[Autoconstruction d'une yourte locale](blog/yourte-locale.md)** — (Suisse, VD) 4,60 m de diamètre, 16,62 m², 31,7 m³. Bois local : noisetier, châtaigner, frêne. **Total : 129.- CHF !**
+— **[Faites tout vous-même / Savoir revivre / Revivre à la campagne](blog/faites-vous-meme.md)** — Trois livres mythiques pour l'autonomie.
+— **[Habitats d'urgence, autoconstruction bioclimatique](blog/habitats-urgence.md)** — 14m² pour 100€, 33m² pour 380€, etc.
+— **[Comment fabriquer un tipi (tepee)](blog/tipi.md)** — 10 PDFs, plans, tuto, couture, histoire.
+— **[Comment construire un dôme géodésique](blog/dome-geodesique.md)** — Dome Book 2, calculs, plans, tuto, info pratique et théorique.
 
 ---
 
@@ -137,4 +127,7 @@
 - [Instructables – Bicycle Wheel Windmill](http://www.instructables.com/id/Ted-Baer_s-Bicycle-Wheel-Windmill/) — Moulin à vent avec roues de vélo
 - [Basurillas – Maison en palettes](http://www.basurillas.org/viviendas-populares-autoconstruidas-con-tarimas-de-madera-y-otros-materiales-reciclables/) — Maison en palettes et matériaux de récupération
 
-🌱 [Sommaire](Home.md) · [Habitat, autoconstruction](habitat-autoconstruction.md)
+---
+
+🏠 [Sommaire](Home.md) · 📖 [Médiathèque](mediatheque.md) · 🏠 [Habitat, autoconstruction](habitat-autoconstruction.md) · 🔨 [Artisanat](artisanat.md) 
+🌱 [Cultiver, jardiner](cultiver-jardiner.md) · 🍞 [Production, transformation](production-transformation.md) · 🌀 [En vrac](en-vrac.md
