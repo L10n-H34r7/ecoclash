@@ -3,19 +3,18 @@
 ## 📂 Documents
 
 - **Cultiver, jardiner…** Tout les docs → [Docs (#D)](http://www.mediafire.com/?p0v38j0xabpxj)
-
-- **Apiculture** (Warré, top bar, ruche tronc) | [Docs](http://www.mediafire.com/?6sxxnd6c68ava) | [@A — Apiculture pour tous](blog/apiculture.md) |
-- **Agrodok — cultures diverses** | [Docs](http://www.mediafire.com/?k6mvmraozqkgl) | — |
-- **Agroforesterie** | [Docs](http://www.mediafire.com/?dvhea4eyj7ndx) | — |
-- **Compost, purin, intrants** | [Docs](http://www.mediafire.com/?1h2u6v3gfur2p) | — |
-- **Cultiver, jardiner — divers** | [Docs](http://www.mediafire.com/?h38ao5dsy0h5f) | — |
-- **Cultiver, jardiner — machines, outils, objets** | [Docs](http://www.mediafire.com/?bwou1cyoh11m7) | — |
-- **Culture des champignons / mycologie** | [Docs](http://www.mediafire.com/?t922h6alzca09) | [@A — Champignons](blog/champignons.md) |
-- **Culture de la spiruline** | [Docs](http://www.mediafire.com/?j64bp1a71nyez) | [@A — Spiruline](blog/spiruline.md) |
-- **Eau, phytoépuration, gestion** | [Docs](http://www.mediafire.com/?g8393hf9wxji6) | — |
-- **ITAN — Institut Technique d'Agriculture Naturelle** | [Docs](http://www.mediafire.com/?jkatb8bd21q98) | — |
-- **Permaculture (Fr)** | [Docs](http://www.mediafire.com/?94fp6cc92q9fu) | — |
-- **Permaculture (Eng)** | [Docs](http://www.mediafire.com/?dakgpubr2t9i2) | — |
+- **Apiculture** (Warré, top bar, ruche tronc) [Docs](http://www.mediafire.com/?6sxxnd6c68ava) [@A — Apiculture pour tous](blog/apiculture.md) 
+- **Agrodok — cultures diverses** [Docs](http://www.mediafire.com/?k6mvmraozqkgl)
+- **Agroforesterie** [Docs](http://www.mediafire.com/?dvhea4eyj7ndx)
+- **Compost, purin, intrants** [Docs](http://www.mediafire.com/?1h2u6v3gfur2p) 
+- **Cultiver, jardiner — divers** [Docs](http://www.mediafire.com/?h38ao5dsy0h5f) 
+- **Cultiver, jardiner — machines, outils, objets** [Docs](http://www.mediafire.com/?bwou1cyoh11m7) 
+- **Culture des champignons / mycologie** [Docs](http://www.mediafire.com/?t922h6alzca09) [@A — Champignons](blog/champignons.md) 
+- **Culture de la spiruline** [Docs](http://www.mediafire.com/?j64bp1a71nyez) [@A — Spiruline](blog/spiruline.md)
+- **Eau, phytoépuration, gestion** | [Docs](http://www.mediafire.com/?g8393hf9wxji6) 
+- **ITAN — Institut Technique d'Agriculture Naturelle** [Docs](http://www.mediafire.com/?jkatb8bd21q98) 
+- **Permaculture (Fr)** [Docs](http://www.mediafire.com/?94fp6cc92q9fu) 
+- **Permaculture (Eng)** [Docs](http://www.mediafire.com/?dakgpubr2t9i2) 
 
 > **Légende :** `(#D)` Les docs · `@A` Article associé
 ---
