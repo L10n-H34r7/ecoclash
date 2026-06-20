@@ -1,10 +1,9 @@
 # 🔨 Artisanat, bricolage, « tout faire soi-même »
-> Fabrication d'outils, meubles, vannerie, couture, bushcraft, survival et DIY open-source. Techniques manuelles, réparables et autonomes.
+> Fabrication d'outils, meubles, vannerie, couture, bushcraft, survival et DIY open-source.
 
-
+---
 ## 📂 Documents
 - Tout les docs → · [#D](https://www.mediafire.com/?4huc2kfj5dpko#raaulzlc5fyav)
-
 ---
 
 ## 📰 Articles divers
@@ -13,10 +12,9 @@
 
 ## 🧺 Vannerie, Tressage & Objets en Matériaux Naturels
 - **[Comment tresser un panier avec du papier journal, vannerie de papier, récup](blog/vannerie.md)** — *« Rien ne se perd, rien ne se crée, tout se transforme… »* Apprendre la vannerie, le tressage du papier, de l'osier… Documents, liens, photos et vidéo.
-- 
+ 
 ### 📂 Documents
 - **Vannerie** → [Docs](http://www.mediafire.com/?c4o2bxfd3pnep)
-
 
 #### 🔗 Liens
 - [**Vannerie.com**](https://www.vannerie.com/) — Techniques de vannerie traditionnelle, tutoriels et ressources (français).
