@@ -55,7 +55,7 @@
 ---
 
 ## 🏘️ Lieux & projets — France
-
+- https://www.lasuitedumonde.com/
 - [**ZAD Notre-Dame-des-Landes**](https://zad.nadir.org/) — Zone À Défendre historique en Loire-Atlantique ; après l’abandon du projet d’aéroport, le territoire continue avec fermes, ateliers, habitats collectifs et lieux de lutte.
 - [**Village Troglobal**](https://troglobal.wordpress.com/) — Collectif autogéré installé dans d’anciennes caves troglodytiques à Grézillé, Maine-et-Loire ; ancien forum et archives Web-Utopia déplacés en archive.
 - [**La Vieille Valette**](http://collectif.valette.free.fr/) — Collectif dans une vallée cévenole : autonomie libertaire, expérimentations rurales, vie collective et accueil de projets.
