@@ -17,6 +17,8 @@
 - [**Transiscope — carte des alternatives**](https://transiscope.org/carte-des-alternatives/) — Carte collaborative des alternatives écologiques, sociales et solidaires : lieux, collectifs, associations, tiers-lieux, monnaies locales, ressourceries, etc.
 - [**Passerelle Éco**](https://www.passerelleco.info/) — Revue, petites annonces et réseau historique autour des écovillages, habitats groupés, écolieux et alternatives en France.
 - [**Écovillage Global**](https://ecovillageglobal.fr/) — Annuaire francophone et annonces liées à Passerelle Éco pour trouver ou proposer des écolieux, chantiers, stages et habitats collectifs.
+- [**Carte aux trésors — Hameaux Légers**](https://hameaux-legers.org/habitat-reversible/carte_aux_tresors) — Carte d’initiatives autour de l’habitat léger/réversible et des collectifs en création.
+- [**Archipel du Vivant — annuaires écolieux**](https://archipelduvivant.org/ressources/annuaires/ecovillages-ecolieux/) — Page ressource qui regroupe plusieurs annuaires et cartes d’écolieux, écovillages, habitats participatifs et hameaux légers.
 - [**Reclaim the Fields**](https://reclaimthefields.org/) — Constellation européenne de paysan·nes, sans-terre et collectifs qui reprennent la main sur la terre, les semences et la production alimentaire.
 - [**Wwoofing with Teeth**](https://wwolfing.wordpress.com/) — Blog issu de Reclaim the Fields autour du wwoofing militant, des fermes autogérées, des ZAD et des lieux paysans radicaux ; contenu ancien mais consultable.
 - [**Global Ecovillage Network — GEN**](https://ecovillage.org/) — Réseau mondial des écovillages : carte internationale, ressources, formations, événements et fiches de projets.
@@ -29,8 +31,6 @@
 - [**Carte nationale Oasis / Habitat Participatif**](https://hameaux-legers.org/parcours-creation-hameau-leger/apports-theoriques/carte-nationale-des-projets-dhabitat-participatif-et-des-oasis) — Carte commune Coopérative Oasis + Habitat Participatif France pour repérer les collectifs et projets d’habitat partagé.
 - [**Habitat Participatif France**](https://www.habitatparticipatif-france.fr/) — Mouvement national de l’habitat participatif : ressources, carte, groupes locaux, événements et documentation juridique.
 - [**Hameaux Légers**](https://www.hameaux-legers.org/) — Association qui accompagne les habitats réversibles, sobres et participatifs, en lien avec des communes et collectifs d’habitant·es.
-- [**Carte aux trésors — Hameaux Légers**](https://hameaux-legers.org/habitat-reversible/carte_aux_tresors) — Carte d’initiatives autour de l’habitat léger/réversible et des collectifs en création.
-- [**Archipel du Vivant — annuaires écolieux**](https://archipelduvivant.org/ressources/annuaires/ecovillages-ecolieux/) — Page ressource qui regroupe plusieurs annuaires et cartes d’écolieux, écovillages, habitats participatifs et hameaux légers.
 - [**HALEM France**](https://www.halemfrance.org/) — Association de défense des habitant·es de logements éphémères ou mobiles : yourtes, caravanes, camions, cabanes, habitats légers.
 - [**Terre de Liens**](https://terredeliens.org/) — Mouvement qui sort des terres agricoles de la spéculation pour installer des paysan·nes, souvent en agriculture biologique et collective.
 - [**Colibris**](https://www.colibris-lemouvement.org/) — Mouvement citoyen de transition écologique et sociale ; ressources, formations, carte d’initiatives et appui aux projets collectifs.
