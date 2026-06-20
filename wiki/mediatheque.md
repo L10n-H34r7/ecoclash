@@ -7,13 +7,6 @@ Partage d'**infos pratiques** pour :
 
 ## 📂 l'Infokiosque : Tout les documents à télécharger > — Dossier global : [FileFolder MF](http://www.mediafire.com/?4huc2kfj5dpko)
 
----
-
-## 📬 Dropbox collective
-📥 [Voir le contenu de la dropbox](https://www.mediafire.com/folder/nvclk8y8a1df7/M%C3%A9diath%C3%A8que_-_Boite_au_lettre)
-
----
-
 # 📖 Liste de médiathèques, bases de données et ressources PDF
 
 > 🆕 **Mise à jour avril 2026** — Liens actifs et à jour.
