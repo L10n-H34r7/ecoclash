@@ -130,4 +130,4 @@
 ---
 
 🏠 [Sommaire](Home.md) · 📖 [Médiathèque](mediatheque.md) · 🏠 [Habitat, autoconstruction](habitat-autoconstruction.md) · 🔨 [Artisanat](artisanat.md) 
-🌱 [Cultiver, jardiner](cultiver-jardiner.md) · 🍞 [Production, transformation](production-transformation.md) · 🌀 [En vrac](en-vrac.md
+🌱 [Cultiver, jardiner](cultiver-jardiner.md) · 🍞 [Production, transformation](production-transformation.md) · 🌀 [En vrac](en-vrac.md)
