@@ -1,41 +1,32 @@
 # 🌱 Cultiver, jardiner
 
-> **Légende :** `(#D)` Les docs · `@A` Article associé
-
----
-
 ## 📂 Documents
 
-- **Cultiver, jardiner…** → [Docs (#D)](http://www.mediafire.com/?p0v38j0xabpxj)
+- **Cultiver, jardiner…** Tout les docs → [Docs (#D)](http://www.mediafire.com/?p0v38j0xabpxj)
 
-### Sous-thèmes
+- **Apiculture** (Warré, top bar, ruche tronc) | [Docs](http://www.mediafire.com/?6sxxnd6c68ava) | [@A — Apiculture pour tous](blog/apiculture.md) |
+- **Agrodok — cultures diverses** | [Docs](http://www.mediafire.com/?k6mvmraozqkgl) | — |
+- **Agroforesterie** | [Docs](http://www.mediafire.com/?dvhea4eyj7ndx) | — |
+- **Compost, purin, intrants** | [Docs](http://www.mediafire.com/?1h2u6v3gfur2p) | — |
+- **Cultiver, jardiner — divers** | [Docs](http://www.mediafire.com/?h38ao5dsy0h5f) | — |
+- **Cultiver, jardiner — machines, outils, objets** | [Docs](http://www.mediafire.com/?bwou1cyoh11m7) | — |
+- **Culture des champignons / mycologie** | [Docs](http://www.mediafire.com/?t922h6alzca09) | [@A — Champignons](blog/champignons.md) |
+- **Culture de la spiruline** | [Docs](http://www.mediafire.com/?j64bp1a71nyez) | [@A — Spiruline](blog/spiruline.md) |
+- **Eau, phytoépuration, gestion** | [Docs](http://www.mediafire.com/?g8393hf9wxji6) | — |
+- **ITAN — Institut Technique d'Agriculture Naturelle** | [Docs](http://www.mediafire.com/?jkatb8bd21q98) | — |
+- **Permaculture (Fr)** | [Docs](http://www.mediafire.com/?94fp6cc92q9fu) | — |
+- **Permaculture (Eng)** | [Docs](http://www.mediafire.com/?dakgpubr2t9i2) | — |
 
-| Thème | Docs | Article |
-|---|---|---|
-| **Apiculture** (Warré, top bar, ruche tronc) | [Docs](http://www.mediafire.com/?6sxxnd6c68ava) | [@A — Apiculture pour tous](blog/apiculture.md) |
-| **Agrodok — cultures diverses** | [Docs](http://www.mediafire.com/?k6mvmraozqkgl) | — |
-| **Agroforesterie** | [Docs](http://www.mediafire.com/?dvhea4eyj7ndx) | — |
-| **Compost, purin, intrants** | [Docs](http://www.mediafire.com/?1h2u6v3gfur2p) | — |
-| **Cultiver, jardiner — divers** | [Docs](http://www.mediafire.com/?h38ao5dsy0h5f) | — |
-| **Cultiver, jardiner — machines, outils, objets** | [Docs](http://www.mediafire.com/?bwou1cyoh11m7) | — |
-| **Culture des champignons / mycologie** | [Docs](http://www.mediafire.com/?t922h6alzca09) | [@A — Champignons](blog/champignons.md) |
-| **Culture de la spiruline** | [Docs](http://www.mediafire.com/?j64bp1a71nyez) | [@A — Spiruline](blog/spiruline.md) |
-| **Eau, phytoépuration, gestion** | [Docs](http://www.mediafire.com/?g8393hf9wxji6) | — |
-| **ITAN — Institut Technique d'Agriculture Naturelle** | [Docs](http://www.mediafire.com/?jkatb8bd21q98) | — |
-| **Permaculture (Fr)** | [Docs](http://www.mediafire.com/?94fp6cc92q9fu) | — |
-| **Permaculture (Eng)** | [Docs](http://www.mediafire.com/?dakgpubr2t9i2) | — |
-
+> **Légende :** `(#D)` Les docs · `@A` Article associé
 ---
 
 ## 📰 Articles
 
-### 🟡 2014
-
-- 14/09 — **[Le Kiosque Autonome](blog/kiosque-autonome.md)** — Un kiosque écologique et social sous forme d'une grande remorque…
-- 25/08 — **[Faites tout vous-même / Savoir revivre / Revivre à la campagne](blog/faites-vous-meme.md)** — Trois livres mythiques pour l'autonomie.
-- 14/08 — **[Apiculture pour tous, ruche du peuple, Warré, topbar](blog/apiculture.md)** — Construire une ruche, récolter du miel, construction de ruches Warré, top bar, ruches tronc, récolte du pollen, essaimage, propolis, cire…
-- 14/08 — **[Comment cultiver, produire et transformer la spiruline](blog/spiruline.md)** — Manuels de culture, infos nutrition, comment et pourquoi cultiver la spiruline.
-- 10/08 — **[La culture des champignons - mycologie](blog/champignons.md)** — Cultiver, produire et connaître les champignons comestibles, médicinaux et psychoactifs.
+- **[Le Kiosque Autonome](blog/kiosque-autonome.md)** — Un kiosque écologique et social sous forme d'une grande remorque…
+- **[Faites tout vous-même / Savoir revivre / Revivre à la campagne](blog/faites-vous-meme.md)** — Trois livres mythiques pour l'autonomie.
+- **[Apiculture pour tous, ruche du peuple, Warré, topbar](blog/apiculture.md)** — Construire une ruche, récolter du miel, construction de ruches Warré, top bar, ruches tronc, récolte du pollen, essaimage, propolis, cire…
+- **[Comment cultiver, produire et transformer la spiruline](blog/spiruline.md)** — Manuels de culture, infos nutrition, comment et pourquoi cultiver la spiruline.
+- **[La culture des champignons - mycologie](blog/champignons.md)** — Cultiver, produire et connaître les champignons comestibles, médicinaux et psychoactifs.
 
 ---
 
@@ -151,4 +142,5 @@
 - [Pro Specie Rara](http://www.prospecierara.ch/) — Maintien et promotion de la diversité biologique
 - [Biaugerme.com](http://www.biaugerme.com/) — Semences biologiques et biodynamiques
 
-🌱 [Sommaire](Home.md) · [Cultiver, jardiner](cultiver-jardiner.md)
+🏠 [Sommaire](Home.md) · 📖 [Médiathèque](mediatheque.md) · 🏠 [Habitat, autoconstruction](habitat-autoconstruction.md) · 🔨 [Artisanat](artisanat.md) 
+🌱 [Cultiver, jardiner](cultiver-jardiner.md) · 🍞 [Production, transformation](production-transformation.md) · 🌀 [En vrac](en-vrac.md)
