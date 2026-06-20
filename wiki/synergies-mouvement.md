@@ -1,8 +1,6 @@
 # 🚲 Mouvement, mobilité, voyage
 
 > *Vélo, covoiturage, Critical Mass, autostop, voyage…*
->
-> *Liens vérifiés et mis à jour — juillet 2025*
 
 ---
 
